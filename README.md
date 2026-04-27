@@ -4,8 +4,6 @@ Currently this mod only adds one new Ancient, but more will come in the future a
 Please direct any bug reports and balance feedback to the forum in the STS Discord server, I'm much more likely to see it there.
 
 Contributors:
-CrypticAurora
-SoyTheProton
-(Plus assistance from #sts2-modding)
+CrypticAurora & SoyTheProton (Plus assistance from #sts2-modding)
 
 No generative AI of any sort was used in the making of this mod. 
