@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqrltpvr66v1v"]
+
+[ext_resource type="Texture2D" uid="uid://i12uhkqsb0q3" path="res://AncientsAwakened/images/ancients/Mithrix/mithrixpeak.png" id="1_p42sc"]
+
+[node name="Mithrix" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -484.0
+offset_top = -189.0
+offset_right = 2553.0
+offset_bottom = 1276.0
+texture = ExtResource("1_p42sc")
+expand_mode = 1

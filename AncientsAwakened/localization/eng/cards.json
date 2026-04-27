@@ -1,0 +1,37 @@
+{
+  "ANCIENTSAWAKENED-EGOCENTRISM.description": "If this is in your hand at the end of your turn, [gold]Transform[/gold] ALL cards in your hand into [gold]Egocentrism[/gold].",
+  "ANCIENTSAWAKENED-EGOCENTRISM.title": "Egocentrism",
+
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage. \n Take an extra turn after this one.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "Break Beneath Me",
+
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Deal {Damage:diff()} damage. \n Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.title": "Demonic Strike",
+
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Lose {HpLoss:diff()} HP.",
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.title": "Demonic Defend",
+
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.description": "Deal {Damage:diff()} damage.\n Apply {PoisonPower:diff()} [gold]Poison[/gold].",
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.title": "Deadly Strike",
+
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Add {Shivs:diff()} [gold]Shivs[/gold] into your [gold]Hand[/gold]. \n Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.title": "Deadly Defend",
+
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.description": "Deal {Damage:diff()} damage. \n [gold]Forge[/gold] {Forge:diff()}. \n Gain {Stars:starIcons()}.",
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.title": "Cosmic Strike",
+
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Add 1 random Minion card into your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.title": "Cosmic Defend",
+
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage. \n Apply {DoomPower:diff()} [gold]Doom[/gold].",
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "Eternal Strike",
+
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]Summon[/gold] {Summon:diff()}. \n Add a [gold]{IfUpgraded:show:Soul+|Soul}[/gold] into your draw pile.",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "Eternal Defend",
+  
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage twice. \n Add a [gold]Dazed[/gold] into your hand.",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "Empowered Strike",
+  
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend"
+}

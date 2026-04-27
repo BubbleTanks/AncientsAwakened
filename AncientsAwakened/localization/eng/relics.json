@@ -1,0 +1,43 @@
+{
+  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Upon pickup, Enchant all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "As the sharpness of the edge drives you, it also makes you brittle.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.title": "Shaped Glass",
+  
+  "ANCIENTSAWAKENED-STARSEED.description": "Upon pickup, obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [red]Egocentrism[/red] to your deck.",
+  "ANCIENTSAWAKENED-STARSEED.flavor": "It sounds like two brothers, chasing glass frogs in the sun.",
+  "ANCIENTSAWAKENED-STARSEED.title": "Starseed",
+
+  "ANCIENTSAWAKENED-SHARED_DESIGN.description": "At the end of combat, you may remove [blue]2[/blue] cards from your deck if you took no damage.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.flavor": "Through flawless design, you may seek perfection.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.title": "Shared Design",
+
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "Add [blue]Break Beneath Me[/blue] to your deck.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.flavor": "Elegant design. Heavy mass. A drop of blood. Yes, this will do perfectly.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Flawless Hammer",
+
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "Cards transformed by [gold]Ancient Scepter[/gold]",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Upon pickup, [gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into [blue]Perfected[/blue] versions.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "The crystal pulsates with powerful energy as you pick it up.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "Ancient Scepter",
+
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.description": "After your first turn, take an extra turn. Whenever you play a card on your first turn, lose [blue]1[/blue] Max HP.",
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.flavor": "A massive crack runs down the length of the blade.",
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.title": "Fractured Blade",
+
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "Enchant all card rewards with [gold]Mass[/gold].",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.flavor": "Mass is simple. The base of all forms, shaped and molded. Take this, and create your own vision.",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.title": "Pillar Of Mass",
+
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.selectionScreenPrompt": "What is your command?",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "Choose any [blue]1[/blue] non-special card to add to your deck.",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"Take a sip of the drink, and the mind becomes malleable....and the world around you follows your example.\" - Sigibold the Drunken",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Artifact Of Command",
+
+  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "All combats drop an additional relic. Rest Sites are replaced with Elites.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "Rain pours down on your head. You feel a sense of dread as you hold it.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.title": "Monsoon Charm",
+
+  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Relic rewards are replaced with random non-Neow [gold]Ancient[/gold] relics.",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Architect...your death is fated. When you die - and you WILL die - I will be ready. I have been patient for millennia. This Spire...is mine.\"",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Eulogy Zero"
+}
