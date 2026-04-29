@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx187xi803w3t"]
+
+[ext_resource type="Texture2D" uid="uid://bn4qxy1xbkrg0" path="res://AncientsAwakened/images/ancients/Sebastian/sebimage.png" id="1_yapme"]
+
+[node name="Mithrix" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 468.0
+offset_top = 133.0
+offset_right = 508.0
+offset_bottom = 173.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -624.0
+offset_top = -233.0
+offset_right = 1608.0
+offset_bottom = 1182.0
+texture = ExtResource("1_yapme")
+expand_mode = 1

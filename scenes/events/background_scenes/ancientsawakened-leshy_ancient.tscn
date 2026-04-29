@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://caj7u30f2irsk"]
+
+[ext_resource type="Texture2D" uid="uid://bgy2qxkdsxpkn" path="res://AncientsAwakened/images/ancients/Leshy/leshyfixed.png" id="1_w24dn"]
+
+[node name="Mithrix" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -19.0
+offset_top = -10.0
+offset_right = 21.0
+offset_bottom = 30.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -309.0
+offset_top = -148.0
+offset_right = 2182.0
+offset_bottom = 1230.0
+texture = ExtResource("1_w24dn")
+expand_mode = 1

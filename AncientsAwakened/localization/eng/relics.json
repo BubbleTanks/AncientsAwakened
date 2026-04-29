@@ -7,7 +7,7 @@
   "ANCIENTSAWAKENED-STARSEED.flavor": "It sounds like two brothers, chasing glass frogs in the sun.",
   "ANCIENTSAWAKENED-STARSEED.title": "Starseed",
 
-  "ANCIENTSAWAKENED-SHARED_DESIGN.description": "At the end of combat, you may remove [blue]2[/blue] cards from your deck if you took no damage.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.description": "At the end of combat, you may remove [blue]2[/blue] cards from your deck if you took no unblocked attack damage.",
   "ANCIENTSAWAKENED-SHARED_DESIGN.flavor": "Through flawless design, you may seek perfection.",
   "ANCIENTSAWAKENED-SHARED_DESIGN.title": "Shared Design",
 
@@ -37,7 +37,7 @@
   "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "Rain pours down on your head. You feel a sense of dread as you hold it.",
   "ANCIENTSAWAKENED-MONSOON_CHARM.title": "Monsoon Charm",
 
-  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Relic rewards are replaced with random non-Neow [gold]Ancient[/gold] relics.",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Combat relic rewards are replaced with random non-Neow [gold]Ancient[/gold] relics.",
   "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Architect...your death is fated. When you die - and you WILL die - I will be ready. I have been patient for millennia. This Spire...is mine.\"",
   "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Eulogy Zero"
 }

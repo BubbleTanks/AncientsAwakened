@@ -82,5 +82,23 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-2r.next": "Reply",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-3r.char": "[i][font_size=22]<affirmative beep boop>[/font_size][/i]",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-3r.next": "Continue",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-4r.ancient": "Perhaps not all constructs of soul are as vile as the Guardian once was."
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-4r.ancient": "Perhaps not all constructs of soul are as vile as the Guardian once was.",
+
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.title": "Leshy",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.epithet": "Scrybe of Beasts",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.ancient": "Welcome. Please, have a seat.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.next": "Continue",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-1.ancient": "You are welcome to take one of my relics, but first, how about a round of cards?",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.0-0r.ancient": "Welcome back. Would you care to play a round?",
+
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.title": "Sebastian",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.epithet": "Disgraced Handyman",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.firstVisitEver.0-0.ancient": "Welcome, welcome! Care to pick up one of these... \"loose assets\" I've found?~",
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-0r.ancient": "Oh hey! Check it, I was going around the Hive, lots of goodies. I found your body, and some of your relics were still intact!",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-1r.ancient": "Hey, don't worry about it, you can have them back....for a price~"
 }
