@@ -16,6 +16,6 @@ public class WeighedDown : AncientsAwakenedCard
     {}
     
     public override bool CanBeGeneratedByModifiers => false;
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Unplayable, CardKeyword.Innate];
+    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Unplayable, CardKeyword.Innate, CardKeyword.Eternal, CardKeyword.Retain];
     public override int MaxUpgradeLevel => 0;
 }
