@@ -40,6 +40,7 @@ public class SebastianAncient : CustomAncientModel
 
             list.Add(AncientOption<ShotgunShells>());
             list.Add(AncientOption<SebbyCharm>());
+            list.Add(AncientOption<ShippingRequest>());
             
             return list;
         }
@@ -60,6 +61,7 @@ public class SebastianAncient : CustomAncientModel
         RelicOption<MedicalKit>(),
         RelicOption<WildlifeDocuments>(),
         RelicOption<ShotgunShells>(),
-        RelicOption<SebbyCharm>()
+        RelicOption<SebbyCharm>(),
+        RelicOption<ShippingRequest>()
     ];
 }

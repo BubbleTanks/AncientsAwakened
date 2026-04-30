@@ -36,5 +36,8 @@
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend",
 
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times. \n Draw {Cards:diff()} cards.",
-  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun"
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun",
+
+  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Can be opened at the start of the next act.",
+  "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate"
 }
