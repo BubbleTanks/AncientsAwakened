@@ -33,5 +33,8 @@
   "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "Empowered Strike",
   
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
-  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend"
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend",
+
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times. \n Draw {Cards:diff()} cards.",
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun"
 }

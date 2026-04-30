@@ -1,5 +1,9 @@
 {
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "At the end of your turn, take an extra turn.",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "At the end of your turn, take an extra turn.",
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Break Beneath Me"
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Break Beneath Me",
+
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Disadvantaged"
 }

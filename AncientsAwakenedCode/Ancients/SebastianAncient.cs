@@ -22,16 +22,14 @@ public class SebastianAncient : CustomAncientModel
 
     private WeightedList<AncientOption> OptionPool1 =>
     [
-        AncientOption<Anchor>(),
-        AncientOption<Anchor>(),
-        AncientOption<Anchor>()
+        AncientOption<FlashBeacon>(),
+        AncientOption<SebastiansScanner>(),
+        AncientOption<MedicalKit>()
     ];
     
     private WeightedList<AncientOption> OptionPool2 =>
     [
-        AncientOption<Anchor>(), 
-        AncientOption<Anchor>(),
-        AncientOption<Anchor>()
+        AncientOption<WildlifeDocuments>()
     ];
     
     private WeightedList<AncientOption> OptionPool3
@@ -40,9 +38,8 @@ public class SebastianAncient : CustomAncientModel
         {
             WeightedList<AncientOption> list = new WeightedList<AncientOption>();
 
-            list.Add(AncientOption<Anchor>());
-            list.Add(AncientOption<Anchor>());
-            list.Add(AncientOption<Anchor>());
+            list.Add(AncientOption<ShotgunShells>());
+            list.Add(AncientOption<SebbyCharm>());
             
             return list;
         }
@@ -54,12 +51,15 @@ public class SebastianAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return false;
-        
         return act.ActNumber() == 2;
     }
 
     public override IEnumerable<EventOption> AllPossibleOptions => [
-        RelicOption<Anchor>()
+        RelicOption<FlashBeacon>(),
+        RelicOption<SebastiansScanner>(),
+        RelicOption<MedicalKit>(),
+        RelicOption<WildlifeDocuments>(),
+        RelicOption<ShotgunShells>(),
+        RelicOption<SebbyCharm>()
     ];
 }

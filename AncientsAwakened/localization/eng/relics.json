@@ -39,5 +39,29 @@
 
   "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Combat relic rewards are replaced with random non-Neow [gold]Ancient[/gold] relics.",
   "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Architect...your death is fated. When you die - and you WILL die - I will be ready. I have been patient for millennia. This Spire...is mine.\"",
-  "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Eulogy Zero"
+  "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Eulogy Zero",
+
+  "ANCIENTSAWAKENED-FLASH_BEACON.description": "Every [blue]4[/blue] turns, all enemies lose [blue]10[/blue] [gold]Strength[/gold] for [blue]1[/blue] turn.",
+  "ANCIENTSAWAKENED-FLASH_BEACON.flavor": "\"Truth be told, I hate this one. Damn thing hurts my eyes. Just..keep it pointed away, would ya?\"",
+  "ANCIENTSAWAKENED-FLASH_BEACON.title": "Flash Beacon",
+
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.description": "Upon pickup, mark [blue]9[/blue] random combats. Rewards in those rooms include an additional relic reward.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"You want the scanner? What, am I not good enough at finding things for you?~ Fine, fine, but if you break it, I'll rip off your head, got it?\"",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "Sebastian's Scanner",
+
+  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "When you enter a [gold]Rest Site[/gold], procure a [gold]Neloprephine Shot[/gold].",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.flavor": "\"This one's not anything special. Just contains a collection of bandages, gauze, some tools and implements, and a good amount of this miracle serum I found.\"",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.title": "Medical Kit",
+
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "At the start of combat, apply [blue]3[/blue] [gold]Disadvantaged[/gold] to all enemies. ",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"This should contain everything you need to know about all the monsters and freaks you may encounter in the Spire. Written by yours truly, of course~\"",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Wildlife Documents",
+
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Choose a [gold]Power[/gold] in your deck to Enchant with [gold]Charmed[/gold].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Fine, fine. Since you're just so fond of me for some reason, how about a little charm? Best I can do, terribly sorry~\"",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Sebby Charm",
+
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "Add [gold]Triple Barrel Shotgun[/gold] to your deck.",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.flavor": "\"Ahh, definitely one of my favorite inventions from the gizmo makers back in R&D. Just be sure to bring it back in one piece, yeah?\"",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title": "Shotgun Shells"
 }

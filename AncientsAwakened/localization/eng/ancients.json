@@ -85,6 +85,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-4r.ancient": "Perhaps not all constructs of soul are as vile as the Guardian once was.",
 
 
+  
   "ANCIENTSAWAKENED-LESHY_ANCIENT.title": "Leshy",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.epithet": "Scrybe of Beasts",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.ancient": "Welcome. Please, have a seat.",
@@ -93,6 +94,33 @@
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.0-0r.ancient": "Welcome back. Would you care to play a round?",
 
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Soldier, rest your blade. How about a warm drink?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-1r.char": "[i][font_size=22]The Ironclad bows, taking a seat.[/font_size][/i]",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.SILENT.0-0r.ancient": "[i][font_size=22]Leshy eyes the Silent, gesturing to the open chair.[/font_size][/i]",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.SILENT.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.SILENT.0-1r.char": "[i][font_size=22]The Silent sits, partaking in a game with them.[/font_size][/i]",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-0r.char": "Ancient of the forest, I come seeking a blessing!",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-1r.ancient": "Of course, your majesty, but perhaps you may bless me with a round of cards before you go?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-1r.next": "Respond",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-2r.char": "If that is what you desire, then so shall it be! But do hurry, I have important matters to attend to.",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-0r.ancient": "Good evening. Would you care to play a game?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-0r.next": "Talk",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.char": "I'm sorry, I don't have time right now. Perhaps next time?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-2r.ancient": "It is alright. I can wait. I have nothing but time.",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-0r.ancient": "Are you one of his creations?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-0r.next": "Reply",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<confused beep>[/font_size][/i]",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-2r.ancient": "Hmm...no, too respectful. Please, take a relic, and continue your climb.",
+  
+  
 
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.title": "Sebastian",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.epithet": "Disgraced Handyman",
@@ -100,5 +128,39 @@
 
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-0r.ancient": "Oh hey! Check it, I was going around the Hive, lots of goodies. I found your body, and some of your relics were still intact!",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-0r.next": "Continue",
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-1r.ancient": "Hey, don't worry about it, you can have them back....for a price~"
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-1r.ancient": "Hey, don't worry about it, you can have them back....for a price~",
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Surely that armor's gotta be heavy. Have you ever taken it off?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-1r.char": "[i][font_size=22]The Ironclad shakes their head.[/font_size][/i]",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-2r.ancient": "Heh, bet that sucks. Maybe you should relax a little more.",
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-0r.ancient": "Say, what's a huntress like you doing in a place like this?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-0r.next": "Say nothing.",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-1r.char": "...",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-2r.ancient": "...yeesh, alright. Just take something and go, then.",
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-0r.char": "You there, giant fish! Where is the ancient of this layer?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-1r.ancient": "...excuse me? I [i]am[/i] the ancient here. Have some respect.",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-1r.next": "Scoff",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-2r.char": "You? An ancient? How disappointing. Reward me so I may be on my way!",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-2r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.REGENT.0-3r.ancient": "[i][font_size=22]Sebastian grumbles quietly and sets a few items in front of you.[/font_size][/i]",
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.NECROBINDER.0-0r.ancient": "Ah, another climber passes my shop. What can I do for you?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.NECROBINDER.0-0r.next": "Talk",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.NECROBINDER.0-1r.char": "Do you have anything that can kill the architect?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.NECROBINDER.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Oh I'm sure I've got something that'll suit your needs~",
+
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-0r.ancient": "Hmm? My, aren't you a rebellious little construct~",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-0r.next": "Reply",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<beep boop?>[/font_size][/i]",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.ancient": "Fix you? Fix your friend? Why, for such a cute little robot he should do that! Get out there and beat him up!",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.next": "Reply",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<energetic beeps!>[/font_size][/i]"
 }
