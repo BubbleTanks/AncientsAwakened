@@ -14,7 +14,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 [Pool(typeof(EventCardPool))]
 public class TripleBarrelShotgun() : AncientsAwakenedCard(1, CardType.Attack, CardRarity.Ancient, TargetType.AllEnemies)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(9, ValueProp.Move), new CardsVar(2), new RepeatVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8, ValueProp.Move), new CardsVar(2), new RepeatVar(3)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

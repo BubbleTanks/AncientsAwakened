@@ -16,7 +16,7 @@ public class DisadvantagedPower : AncientsAwakenedPower
     public override PowerType Type => PowerType.Debuff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("DamageDecrease", 0.75M), new DynamicVar("DamageIncrease", 1.5M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("DamageDecrease", 0.85M), new DynamicVar("DamageIncrease", 1.3M)];
 
     public override Decimal ModifyDamageMultiplicative(
         Creature? target,

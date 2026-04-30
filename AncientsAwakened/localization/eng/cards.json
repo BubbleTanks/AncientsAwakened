@@ -39,5 +39,8 @@
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun",
 
   "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Can be opened at the start of the next act.",
-  "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate"
+  "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate",
+
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "",
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down"
 }

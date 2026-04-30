@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
+using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -29,6 +30,7 @@ public class ShippingRequest : AncientsAwakenedRelic
     public override async Task AfterObtained()
     {
         CardCmd.PreviewCardPileAdd([await CardPileCmd.Add(Owner.RunState.CreateCard<HeavyCrate>(Owner), PileType.Deck)], 2F);
+        await CardPileCmd.AddCurseToDeck<WeighedDown>(Owner);
     }
     
     public override async Task AfterCombatEnd(CombatRoom room)
@@ -44,6 +46,13 @@ public class ShippingRequest : AncientsAwakenedRelic
             RewardAmount++;
             removeCards.Add(card);
         }
+        
+        /*
+        foreach (CardModel card in Owner.Deck.Cards.Where(c => c is WeighedDown))
+        {
+            removeCards.Add(card);
+        } 
+        */
 
         foreach (CardModel card in removeCards)
         {
