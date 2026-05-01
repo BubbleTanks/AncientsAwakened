@@ -3,6 +3,7 @@ using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.Models;
@@ -26,15 +27,33 @@ public class SebastianAncient : CustomAncientModel
         AncientOption<SebastiansScanner>(3),
         AncientOption<MedicalKit>(2)
     ];
-    
-    private WeightedList<AncientOption> OptionPool2 =>
-    [
-        AncientOption<WildlifeDocuments>(2),
-        AncientOption<SebbyCharm>(3),
-        AncientOption<SalineInfuser>(2)
-    ];
-    
-    private WeightedList<AncientOption> OptionPool3
+
+    private WeightedList<AncientOption> OptionPool2 
+    {
+        get
+        {
+             WeightedList<AncientOption> list = new WeightedList<AncientOption>();
+
+             list.Add(AncientOption<WildlifeDocuments>(2));
+             list.Add(AncientOption<SalineInfuser>(2));
+
+             bool hasPower = false;
+             foreach (CardModel c in Owner.Deck.Cards)
+             {
+                 if (c.Type == CardType.Power)
+                 {
+                     hasPower = true;
+                 }
+             }
+             
+             if (hasPower) list.Add(AncientOption<SebbyCharm>(3));
+
+             return list;
+    }
+
+}
+
+private WeightedList<AncientOption> OptionPool3
     {
         get
         {
