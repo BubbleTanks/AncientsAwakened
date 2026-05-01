@@ -4,6 +4,10 @@
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Break Beneath Me",
 
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "Disadvantaged creatures deal [blue]15%[/blue] less attack damage and take [blue]30%[/blue] more damage from attacks.",
-  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Deal [blue]{DamageDecrease}%[/blue] less attack damage and receive [blue]{DamageIncrease}%[/blue] more attack damage for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
-  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Disadvantaged"
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Deal [blue]15%[/blue] less attack damage and receive [blue]30%[/blue] more attack damage for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Disadvantaged",
+
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.description": "",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.title": "Sleight of Hand"
 }

@@ -22,14 +22,16 @@ public class SebastianAncient : CustomAncientModel
 
     private WeightedList<AncientOption> OptionPool1 =>
     [
-        AncientOption<FlashBeacon>(),
-        AncientOption<SebastiansScanner>(),
-        AncientOption<MedicalKit>()
+        AncientOption<FlashBeacon>(2),
+        AncientOption<SebastiansScanner>(3),
+        AncientOption<MedicalKit>(2)
     ];
     
     private WeightedList<AncientOption> OptionPool2 =>
     [
-        AncientOption<WildlifeDocuments>()
+        AncientOption<WildlifeDocuments>(2),
+        AncientOption<SebbyCharm>(3),
+        AncientOption<SalineInfuser>(2)
     ];
     
     private WeightedList<AncientOption> OptionPool3
@@ -38,9 +40,14 @@ public class SebastianAncient : CustomAncientModel
         {
             WeightedList<AncientOption> list = new WeightedList<AncientOption>();
 
-            list.Add(AncientOption<ShotgunShells>());
-            list.Add(AncientOption<SebbyCharm>());
-            list.Add(AncientOption<ShippingRequest>());
+            list.Add(AncientOption<ShotgunShells>(3));
+            list.Add(AncientOption<GlowingVial>(2));
+            list.Add(AncientOption<ShippingRequest>(3));
+            
+            if (((ExperimentalSerum)ModelDb.Relic<ExperimentalSerum>().ToMutable()).SetupForPlayer(Owner))
+            {
+                list.Add(AncientOption<ExperimentalSerum>(2));
+            }
             
             return list;
         }
@@ -62,6 +69,9 @@ public class SebastianAncient : CustomAncientModel
         RelicOption<WildlifeDocuments>(),
         RelicOption<ShotgunShells>(),
         RelicOption<SebbyCharm>(),
-        RelicOption<ShippingRequest>()
+        RelicOption<ShippingRequest>(),
+        RelicOption<GlowingVial>(),
+        RelicOption<SalineInfuser>(),
+        RelicOption<ExperimentalSerum>()
     ];
 }

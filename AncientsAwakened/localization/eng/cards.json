@@ -42,5 +42,20 @@
   "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate",
 
   "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "",
-  "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down"
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down",
+
+  "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HPLoss:diff()} HP twice. \n Heal {Heal:diff()} HP.",
+  "ANCIENTSAWAKENED-CINDERBORN.title": "Cinderborn",
+
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Whenever you play a card this turn, add {Shivs:diff()} [gold]Shiv[/gold] into your hand.",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.title": "Sleight of Hand",
+
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "Forge {Forge:diff()}. \n Return this card to your Hand.",
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "Nebula Hammer",
+
+  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Summon[/gold] {Summon:diff()}. \n [gold]Transform[/gold] your hand into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
+  "ANCIENTSAWAKENED-NECROTIC_BURST.title": "Necrotic Burst",
+
+  "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold]. \n Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
+  "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze"
 }

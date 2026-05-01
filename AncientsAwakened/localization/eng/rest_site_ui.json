@@ -1,0 +1,5 @@
+﻿{
+  "OPTION_AAVIAL.description": "[gold]Transform[/gold] [blue]1[/blue] card in your [gold]Deck[/gold] and lose [blue]3[/blue] HP.",
+  "OPTION_AAVIAL.descriptionDisabled": "[red]You need at least 1 transformable card in your Deck.[/red]",
+  "OPTION_AAVIAL.name": "Mutate"
+}
