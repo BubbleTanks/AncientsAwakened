@@ -88,10 +88,10 @@ rest_site_ui.json::JSON::-1::1777603935::0::1::::<><><>0<>0<><>::
 static_hover_tips.json::JSON::-1::1775884710::0::1::::<><><>0<>0<><>::
 ::res://AncientsAwakenedCode/::1777601078
 MainFile.cs::CSharpScript::7663993321233032145::1777056498::0::1::::<><><>0<>0<><>::
-::res://AncientsAwakenedCode/Ancients/::1777614616
+::res://AncientsAwakenedCode/Ancients/::1777615644
 LeshyAncient.cs::CSharpScript::3019785867491676161::1777426501::0::1::::<><><>0<>0<><>::
 MithrixAncient.cs::CSharpScript::4165434155775839978::1776997435::0::1::::<><><>0<>0<><>::
-SebastianAncient.cs::CSharpScript::3903197806625420241::1777614616::0::1::::<><><>0<>0<><>::
+SebastianAncient.cs::CSharpScript::3903197806625420241::1777615644::0::1::::<><><>0<>0<><>::
 ::res://AncientsAwakenedCode/Cards/::1777513398
 AncientsAwakenedCard.cs::CSharpScript::8610375192954476082::1775884721::0::1::::<><><>0<>0<><>::
 ::res://AncientsAwakenedCode/Cards/Mithrix/::1777578771
@@ -170,7 +170,7 @@ GlowingVialOption.cs::CSharpScript::351178276569400872::1777604189::0::1::::<><>
 ::res://bin/::1775887120
 ::res://bin/ExportRelease/::1775887120
 ::res://bin/ExportRelease/net9.0/::1775887120
-::res://bin/ExportRelease/net9.0/publish/::1777614996
+::res://bin/ExportRelease/net9.0/publish/::1777615754
 AncientsAwakened.deps.json::JSON::-1::1777602699::0::1::::<><><>0<>0<><>::
 ::res://images/::1776221765
 ::res://images/enchantments/::1776487245
