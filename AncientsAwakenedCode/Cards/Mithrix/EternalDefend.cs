@@ -37,7 +37,7 @@ public class EternalDefend() : AncientsAwakenedCard(1,
             foreach (CardModel card in cards)
                 CardCmd.Upgrade(card);
         }
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Draw, Owner, CardPilePosition.Random));
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Draw, true, CardPilePosition.Random));
     }
 
     protected override void OnUpgrade()

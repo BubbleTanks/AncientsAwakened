@@ -32,7 +32,7 @@ public class EmpoweredDefend() : AncientsAwakenedCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        await PowerCmd.Apply<EmpoweredDefendPower>(choiceContext, Owner.Creature, DynamicVars.Power<FocusPower>().BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<EmpoweredDefendPower>(Owner.Creature, DynamicVars.Power<FocusPower>().BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

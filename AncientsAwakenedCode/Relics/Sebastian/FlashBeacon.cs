@@ -60,7 +60,7 @@ public class FlashBeacon : AncientsAwakenedRelic
         }
     }
     
-    public override async Task AfterSideTurnStart(CombatSide side, ICombatState combatState)
+    public override async Task AfterSideTurnStart(CombatSide side, CombatState combatState)
     {
         if (side != Owner.Creature.Side)
             return;
@@ -69,7 +69,7 @@ public class FlashBeacon : AncientsAwakenedRelic
         if (TurnsSeen != 0)
             return;
         TaskHelper.RunSafely(DoActivateVisuals());
-        await PowerCmd.Apply<FlashBeaconPower>(new ThrowingPlayerChoiceContext(), combatState.HittableEnemies, DynamicVars.Power<FlashBeaconPower>().BaseValue, Owner.Creature, null);
+        await PowerCmd.Apply<FlashBeaconPower>(combatState.HittableEnemies, DynamicVars.Power<FlashBeaconPower>().BaseValue, Owner.Creature, null);
     }
     
     private async Task DoActivateVisuals()

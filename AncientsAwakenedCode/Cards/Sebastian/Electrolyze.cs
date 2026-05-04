@@ -27,7 +27,7 @@ public class Electrolyze() : AncientsAwakenedCard(2,
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
             await OrbCmd.Channel<LightningOrb>(choiceContext, Owner);
-        await PowerCmd.Apply<ElectrolyzePower>(choiceContext, Owner.Creature, DynamicVars.Power<FocusPower>().BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<ElectrolyzePower>(Owner.Creature, DynamicVars.Power<FocusPower>().BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

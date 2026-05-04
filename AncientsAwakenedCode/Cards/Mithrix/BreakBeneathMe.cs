@@ -21,7 +21,7 @@ public class BreakBeneathMe() : AncientsAwakenedCard(4, CardType.Attack, CardRar
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
-        await PowerCmd.Apply<BreakBeneathMePower>(choiceContext, Owner.Creature, DynamicVars.Power<BreakBeneathMePower>().BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<BreakBeneathMePower>(Owner.Creature, DynamicVars.Power<BreakBeneathMePower>().BaseValue, Owner.Creature, this);
     }
     
     protected override void OnUpgrade() => DynamicVars.Damage.UpgradeValueBy(10M);

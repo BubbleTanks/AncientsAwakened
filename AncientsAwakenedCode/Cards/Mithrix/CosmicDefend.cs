@@ -39,7 +39,7 @@ public class CosmicDefend() : AncientsAwakenedCard(1,
         if (card == null) {
             Log.Info("Minions don't exist, lol, lmao.");
             return; }
-        await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, Owner);
+        await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, true);
     }
 
     protected override void OnUpgrade()

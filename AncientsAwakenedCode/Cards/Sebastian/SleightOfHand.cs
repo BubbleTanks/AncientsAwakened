@@ -22,7 +22,7 @@ public class SleightOfHand() : AncientsAwakenedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await PowerCmd.Apply<SleightOfHandPower>(choiceContext, Owner.Creature, DynamicVars.Power<SleightOfHandPower>().BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<SleightOfHandPower>(Owner.Creature, DynamicVars.Power<SleightOfHandPower>().BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade() => AddKeyword(CardKeyword.Retain);

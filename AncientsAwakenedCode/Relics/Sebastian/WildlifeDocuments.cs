@@ -25,11 +25,11 @@ public class WildlifeDocuments : AncientsAwakenedRelic
     public override async Task BeforeSideTurnStart(
         PlayerChoiceContext choiceContext,
         CombatSide side,
-        ICombatState combatState)
+        CombatState combatState)
     {
         if (side != Owner.Creature.Side || combatState.RoundNumber > 1)
             return;
         Flash();
-        await PowerCmd.Apply<DisadvantagedPower>(choiceContext, combatState.HittableEnemies, DynamicVars["DisadvantagedPower"].BaseValue, Owner.Creature, (CardModel) null);
+        await PowerCmd.Apply<DisadvantagedPower>(combatState.HittableEnemies, DynamicVars["DisadvantagedPower"].BaseValue, Owner.Creature, (CardModel) null);
     }
 }

@@ -34,7 +34,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
     {
         if (!Osty.CheckMissingWithAnim(Owner))
             await DamageCmd.Attack(DynamicVars.OstyDamage.BaseValue).FromOsty(Owner.Osty, this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
-        await PowerCmd.Apply<DoomPower>(choiceContext, play.Target, DynamicVars.Doom.BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<DoomPower>(play.Target, DynamicVars.Doom.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
