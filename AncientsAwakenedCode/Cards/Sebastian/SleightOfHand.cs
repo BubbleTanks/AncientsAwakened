@@ -16,7 +16,7 @@ public class SleightOfHand() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<SleightOfHandPower>(1M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<SleightOfHandPower>(1M), new DynamicVar("Shivs", 1)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

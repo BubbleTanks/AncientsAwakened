@@ -1,4 +1,6 @@
 ﻿using BaseLib.Abstracts;
+using MegaCrit.Sts2.Core.Combat;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -17,9 +19,17 @@ public class SleightOfHandPower : AncientsAwakenedPower
     {
         if (cardPlay.Card.Owner != Owner.Player)
             return;
-        Flash();
-        if (!(cardPlay.Card is Shiv))
+        if (!(cardPlay.Card is Shiv)) {
+            Flash();
             await Shiv.CreateInHand(Owner.Player, Amount, CombatState);
+            }
         
+    }
+    
+    public override async Task AfterTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)
+    {
+        if (side != CombatSide.Enemy)
+            return;
+        await PowerCmd.TickDownDuration(this);
     }
 }

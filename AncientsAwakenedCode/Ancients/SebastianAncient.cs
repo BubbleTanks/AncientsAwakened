@@ -70,8 +70,13 @@ private WeightedList<AncientOption> OptionPool3
             
             return list;
         }
-    } 
-    
+    }
+
+    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
+    {
+        return act.ActNumber() == 2;
+    }
+
     public override Color ButtonColor => new(0.05f, 0.05f, 0.15f, 0.8f);
 
     public override Color DialogueColor => new("161430");

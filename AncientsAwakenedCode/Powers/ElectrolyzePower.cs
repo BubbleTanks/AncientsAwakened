@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
+using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
@@ -10,7 +11,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Powers;
 
 public class ElectrolyzePower : TemporaryFocusPower, ICustomPower
 {
-    public override AbstractModel OriginModel => ModelDb.Card<EmpoweredDefend>();
+    public override AbstractModel OriginModel => ModelDb.Card<Electrolyze>();
     
     public string CustomPackedIconPath
     {

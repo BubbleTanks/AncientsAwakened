@@ -9,5 +9,9 @@
 
   "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.description": "",
   "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.smartDescription": "",
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.title": "Sleight of Hand"
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.title": "Sleight of Hand",
+
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "At the start of your turn, deal damage to all enemies.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "At the start of your turn, deal [blue]{Amount}[blue] damage to all enemies.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Lunatic Ritual"
 }

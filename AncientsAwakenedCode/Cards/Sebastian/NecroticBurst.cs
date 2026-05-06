@@ -18,7 +18,7 @@ public class NecroticBurst() : AncientsAwakenedCard(0,
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.SummonDynamic, DynamicVars.Summon)];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new SummonVar(6M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new SummonVar(4M)];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

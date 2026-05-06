@@ -15,7 +15,7 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ForgeVar(9)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ForgeVar(7)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
     
@@ -37,6 +37,6 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Forge.UpgradeValueBy(4M);
+        DynamicVars.Forge.UpgradeValueBy(3M);
     }
 }
