@@ -30,6 +30,6 @@ public class SleightOfHandPower : AncientsAwakenedPower
     {
         if (side != CombatSide.Enemy)
             return;
-        await PowerCmd.TickDownDuration(this);
+        await PowerCmd.Remove(this);
     }
 }

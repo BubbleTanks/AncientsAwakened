@@ -79,5 +79,30 @@
 
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "Upon pickup, obtain an [gold]Ancient Card[/gold]. (hovertip is fucked rn ask pyro i sent a list)",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"Can't say I recommend the serum. It's horribly painful, no matter how rewarding the results may be.\"",
-  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Experimental Serum"
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Experimental Serum",
+
+  "ANCIENTSAWAKENED-FILM_ROLL.description": "Add [gold]Inscrybe[/gold] to your deck.",
+  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "",
+  "ANCIENTSAWAKENED-FILM_ROLL.title": "Film Roll",
+
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "You may [gold]Mine[/gold] at Rest Sites.",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Prospecting Pick",
+
+  "ANCIENTSAWAKENED-PACK_RAT.description": "more relics, bozo",
+  "ANCIENTSAWAKENED-PACK_RAT.flavor": "",
+  "ANCIENTSAWAKENED-PACK_RAT.title": "Pack Rat",
+
+  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "Choose cards to duplicate.",
+  "ANCIENTSAWAKENED-GOOBERT.description": "dolly mirror 3 times",
+  "ANCIENTSAWAKENED-GOOBERT.flavor": "",
+  "ANCIENTSAWAKENED-GOOBERT.title": "Goobert",
+
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "its like luminesce but cooler because i made it",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Squirrel in a Bottle",
+
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "centennial puzzle but i also give you two energy and a fourth card but ironclad cant proc it for free",
+  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "",
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke"
 }

@@ -22,16 +22,14 @@ public class LeshyAncient : CustomAncientModel
 
     private WeightedList<AncientOption> OptionPool1 =>
     [
-        AncientOption<Anchor>(),
-        AncientOption<Anchor>(),
-        AncientOption<Anchor>()
+        AncientOption<SquirrelInABottle>(),
+        AncientOption<PackRat>()
     ];
     
     private WeightedList<AncientOption> OptionPool2 =>
     [
-        AncientOption<Anchor>(), 
-        AncientOption<Anchor>(),
-        AncientOption<Anchor>()
+        AncientOption<TheSmoke>(), 
+        AncientOption<ProspectingPick>()
     ];
     
     private WeightedList<AncientOption> OptionPool3
@@ -40,9 +38,8 @@ public class LeshyAncient : CustomAncientModel
         {
             WeightedList<AncientOption> list = new WeightedList<AncientOption>();
 
-            list.Add(AncientOption<Anchor>());
-            list.Add(AncientOption<Anchor>());
-            list.Add(AncientOption<Anchor>());
+            list.Add(AncientOption<FilmRoll>());
+            list.Add(AncientOption<Goobert>());
             
             return list;
         }
@@ -54,12 +51,20 @@ public class LeshyAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return false;
-        
+        return act.ActNumber() == 2;
+    }
+    
+    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
+    {
         return act.ActNumber() == 2;
     }
 
     public override IEnumerable<EventOption> AllPossibleOptions => [
-        RelicOption<Anchor>()
+        RelicOption<PackRat>(),
+        RelicOption<SquirrelInABottle>(),
+        RelicOption<ProspectingPick>(),
+        RelicOption<TheSmoke>(),
+        RelicOption<FilmRoll>(),
+        RelicOption<Goobert>()
     ];
 }

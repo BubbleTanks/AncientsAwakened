@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
@@ -58,10 +59,10 @@ private WeightedList<AncientOption> OptionPool3
         get
         {
             WeightedList<AncientOption> list = new WeightedList<AncientOption>();
-
-            list.Add(AncientOption<ShotgunShells>(3));
-            list.Add(AncientOption<GlowingVial>(2));
-            list.Add(AncientOption<ShippingRequest>(3));
+            
+                list.Add(AncientOption<ShotgunShells>(3));
+                list.Add(AncientOption<GlowingVial>(2));
+                list.Add(AncientOption<ShippingRequest>(3));
             
             if (((ExperimentalSerum)ModelDb.Relic<ExperimentalSerum>().ToMutable()).SetupForPlayer(Owner))
             {
@@ -74,7 +75,8 @@ private WeightedList<AncientOption> OptionPool3
 
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        return act.ActNumber() == 2;
+        return false;
+        // return act.ActNumber() == 2;
     }
 
     public override Color ButtonColor => new(0.05f, 0.05f, 0.15f, 0.8f);

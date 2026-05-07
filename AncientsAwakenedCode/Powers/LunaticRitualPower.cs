@@ -15,8 +15,8 @@ namespace AncientsAwakened.AncientsAwakenedCode.Powers;
 
 public class LunaticRitualPower : AncientsAwakenedPower
 {
-    public override PowerType Type { get; }
-    public override PowerStackType StackType { get; }
+    public override PowerType Type => PowerType.Buff;
+    public override PowerStackType StackType => PowerStackType.Counter;
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {

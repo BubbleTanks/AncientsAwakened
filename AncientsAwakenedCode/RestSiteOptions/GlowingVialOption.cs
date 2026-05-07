@@ -53,6 +53,12 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
             await CardCmd.TransformToRandom(original, Owner.RunState.Rng.Niche, CardPreviewStyle.EventLayout);
             await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, new DamageVar(8M, ValueProp.Unblockable | ValueProp.Unpowered), null, null);
         }
+
+        if (Owner.Creature.CurrentHp <= 0)
+        {
+            return true;
+        }
+        
         return false;
     }
 }
