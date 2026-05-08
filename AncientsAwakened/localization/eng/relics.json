@@ -77,7 +77,8 @@
   "ANCIENTSAWAKENED-SALINE_INFUSER.flavor": "\"Ooh, I love this thing! Adds a nice salty taste to anything you drink. Might even be able to bring out a little extra life in those potions you're fond of...\"",
   "ANCIENTSAWAKENED-SALINE_INFUSER.title": "Saline Infuser",
 
-  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "Upon pickup, obtain an [gold]Ancient Card[/gold]. (hovertip is fucked rn ask pyro i sent a list)",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "Upon pickup, obtain {card.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.eventDescription": "Obtain {card.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"Can't say I recommend the serum. It's horribly painful, no matter how rewarding the results may be.\"",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Experimental Serum",
 
@@ -89,7 +90,7 @@
   "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "",
   "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Prospecting Pick",
 
-  "ANCIENTSAWAKENED-PACK_RAT.description": "more relics, bozo",
+  "ANCIENTSAWAKENED-PACK_RAT.description": "more rewards, bozo",
   "ANCIENTSAWAKENED-PACK_RAT.flavor": "",
   "ANCIENTSAWAKENED-PACK_RAT.title": "Pack Rat",
 

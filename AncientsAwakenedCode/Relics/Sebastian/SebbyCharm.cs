@@ -14,6 +14,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
+using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 
@@ -27,11 +28,23 @@ public class SebbyCharm : AncientsAwakenedRelic
     public override bool HasUponPickupEffect => true;
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1), new StringVar("Enchantment", ModelDb.Enchantment<Charmed>().Title.GetFormattedText())];
-            
-
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips
     {
         get => HoverTipFactory.FromEnchantment<Charmed>();
+    }
+
+    public override bool IsAllowed(IRunState runState)
+    {
+        foreach (CardModel c in Owner.Deck.Cards)
+        {
+            if (c.Type == CardType.Power)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public override async Task AfterObtained()
