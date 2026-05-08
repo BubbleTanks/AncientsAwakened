@@ -19,7 +19,7 @@ public class Egocentrism : AncientsAwakenedCard
     public override bool HasTurnEndInHandEffect => true;
     public override int MaxUpgradeLevel => 0;
 
-    public override async Task OnTurnEndInHand(PlayerChoiceContext choiceContext)
+    protected override async Task OnTurnEndInHand(PlayerChoiceContext choiceContext)
     {
         List<CardModel> list = PileType.Hand.GetPile(Owner).Cards.ToList();
 
