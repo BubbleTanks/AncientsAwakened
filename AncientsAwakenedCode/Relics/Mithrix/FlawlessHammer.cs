@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 
@@ -15,6 +16,8 @@ public class FlawlessHammer : AncientsAwakenedRelic
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<BreakBeneathMe>();
+    
+    public override bool IsAllowed(IRunState runState) => runState.Players.Count == 1;
 
     public override async Task AfterObtained()
     {

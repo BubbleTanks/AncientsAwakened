@@ -13,6 +13,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.Nodes.Screens;
+using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 
@@ -21,6 +22,8 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 public class AncientScepter : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
+
+    public override bool IsAllowed(IRunState runState) => SetupForPlayer(LocalContext.GetMe(runState));
     
     public bool SetupForPlayer(Player player)
     {

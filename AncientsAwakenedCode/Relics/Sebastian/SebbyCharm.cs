@@ -4,6 +4,7 @@ using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Extensions;
@@ -36,7 +37,7 @@ public class SebbyCharm : AncientsAwakenedRelic
 
     public override bool IsAllowed(IRunState runState)
     {
-        foreach (CardModel c in Owner.Deck.Cards)
+        foreach (CardModel c in LocalContext.GetMe(runState).Deck.Cards)
         {
             if (c.Type == CardType.Power)
             {

@@ -18,60 +18,29 @@ public class SebastianAncient : CustomAncientModel
     protected override OptionPools MakeOptionPools =>
 
         new(
-            OptionPool1,
-            OptionPool2,
-            OptionPool3);
-
-    private WeightedList<AncientOption> OptionPool1 =>
-    [
-        AncientOption<FlashBeacon>(2),
-        AncientOption<SebastiansScanner>(3),
-        AncientOption<MedicalKit>(2)
-    ];
-
-    private WeightedList<AncientOption> OptionPool2 
-    {
-        get
-        {
-             WeightedList<AncientOption> list = new WeightedList<AncientOption>();
-
-             list.Add(AncientOption<WildlifeDocuments>(2));
-             list.Add(AncientOption<SalineInfuser>(2));
-
-             bool hasPower = false;
-             foreach (CardModel c in Owner.Deck.Cards)
-             {
-                 if (c.Type == CardType.Power)
-                 {
-                     hasPower = true;
-                 }
-             }
-             
-             if (hasPower) list.Add(AncientOption<SebbyCharm>(3));
-
-             return list;
-    }
-
-}
-
-private WeightedList<AncientOption> OptionPool3
-    {
-        get
-        {
-            WeightedList<AncientOption> list = new WeightedList<AncientOption>();
-            
-                list.Add(AncientOption<ShotgunShells>(3));
-                list.Add(AncientOption<GlowingVial>(2));
-                list.Add(AncientOption<ShippingRequest>(3));
-            
-            if (((ExperimentalSerum)ModelDb.Relic<ExperimentalSerum>().ToMutable()).SetupForPlayer(Owner))
-            {
-                list.Add(AncientOption<ExperimentalSerum>(2));
-            }
-            
-            return list;
-        }
-    }
+            MakePool(
+                AncientOption<FlashBeacon>(3),
+                AncientOption<WildlifeDocuments>(2),
+                AncientOption<MedicalKit>(2)
+            ),
+            MakePool(
+                AncientOption<SebbyCharm>(4),
+                AncientOption<SebastiansScanner>(3),
+                AncientOption<SalineInfuser>(2),
+                AncientOption<ShippingRequest>(2)
+            ),
+            MakePool(
+                AncientOption<ShotgunShells>(3),
+                AncientOption<GlowingVial>(1),
+                AncientOption<ExperimentalSerum>(5, serum =>
+                {
+                    if (Owner != null)
+                    {
+                        serum.SetupForPlayer(Owner);
+                    }
+                    return serum;
+                })
+            ));
 
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
@@ -87,17 +56,4 @@ private WeightedList<AncientOption> OptionPool3
     {
         return act.ActNumber() == 2;
     }
-
-    public override IEnumerable<EventOption> AllPossibleOptions => [
-        RelicOption<FlashBeacon>(),
-        RelicOption<SebastiansScanner>(),
-        RelicOption<MedicalKit>(),
-        RelicOption<WildlifeDocuments>(),
-        RelicOption<ShotgunShells>(),
-        RelicOption<SebbyCharm>(),
-        RelicOption<ShippingRequest>(),
-        RelicOption<GlowingVial>(),
-        RelicOption<SalineInfuser>(),
-        RelicOption<ExperimentalSerum>()
-    ];
 }
