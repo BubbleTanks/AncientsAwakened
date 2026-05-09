@@ -19,11 +19,11 @@ Art not listed were either made by us or commissioned specifcally for this mod.
 *Mithrix Ancient Art* by **alm4nditte**  
 *Mithrix Full-Art Card* by **u/egeees** on Reddit
 
-_Sebastian Ancient Art_ by unknown artist
-_Sebastian Full-Art Card_ by **mothulhu**
-_Ironclad Ancient Skill_ traced from **u/CutCosplay** on Reddit
-_Silent Ancient Skill_ traced from **Jason Wang**
-_Defect Ancient Skill_ traced from **Jason Wang**
+_Sebastian Ancient Art_ by unknown artist 
+_Sebastian Full-Art Card_ by **mothulhu** 
+_Ironclad Ancient Skill_ traced from **u/CutCosplay** on Reddit 
+_Silent Ancient Skill_ traced from **Jason Wang** 
+_Defect Ancient Skill_ traced from **Jason Wang** 
 
 ### Commissions
 **starstruck_venus** for Mithrix's Map Icon & Dialogue Icon
