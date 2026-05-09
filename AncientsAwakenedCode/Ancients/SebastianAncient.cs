@@ -6,6 +6,7 @@ using Godot;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Events;
+using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.Relics;
@@ -19,12 +20,20 @@ public class SebastianAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<FlashBeacon>(3),
+                AncientOption<FlashBeacon>(3, flash =>
+                {
+                    Log.Info("flash beacon prep start");
+                    if (Owner != null)
+                    {
+                        Log.Info("flash beacon owner nullcheck");
+                    }
+                    return flash;
+                }),
                 AncientOption<WildlifeDocuments>(2),
                 AncientOption<MedicalKit>(2)
             ),
             MakePool(
-                AncientOption<SebbyCharm>(4),
+                AncientOption<SebbyCharm>(400000000),
                 AncientOption<SebastiansScanner>(3),
                 AncientOption<SalineInfuser>(2),
                 AncientOption<ShippingRequest>(2)
@@ -36,6 +45,7 @@ public class SebastianAncient : CustomAncientModel
                 {
                     if (Owner != null)
                     {
+                        Log.Info("relic prepped");
                         serum.SetupForPlayer(Owner);
                     }
                     return serum;
@@ -44,8 +54,8 @@ public class SebastianAncient : CustomAncientModel
 
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        return false;
-        // return act.ActNumber() == 2;
+        //return false;
+        return act.ActNumber() == 2;
     }
 
     public override Color ButtonColor => new(0.05f, 0.05f, 0.15f, 0.8f);

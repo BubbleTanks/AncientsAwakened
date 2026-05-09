@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lamfg78iuked"
-path="res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"
+uid="uid://do8vvkb2lru2j"
+path="res://.godot/imported/weighed_down.png-b616e53831a5c0992fa21a272269c963.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/card_portraits/big/heavy_crate.png"
-dest_files=["res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"]
+source_file="res://AncientsAwakened/images/card_portraits/big/weighed_down.png"
+dest_files=["res://.godot/imported/weighed_down.png-b616e53831a5c0992fa21a272269c963.ctex"]
 
 [params]
 

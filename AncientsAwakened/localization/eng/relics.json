@@ -1,9 +1,11 @@
 {
   "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Upon pickup, Enchant all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "Enchant all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "As the sharpness of the edge drives you, it also makes you brittle.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.title": "Shaped Glass",
   
   "ANCIENTSAWAKENED-STARSEED.description": "Upon pickup, obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [red]Egocentrism[/red] to your deck.",
+  "ANCIENTSAWAKENED-STARSEED.eventDescription": "Obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [red]Egocentrism[/red] to your deck.",
   "ANCIENTSAWAKENED-STARSEED.flavor": "It sounds like two brothers, chasing glass frogs in the sun.",
   "ANCIENTSAWAKENED-STARSEED.title": "Starseed",
 
@@ -11,12 +13,14 @@
   "ANCIENTSAWAKENED-SHARED_DESIGN.flavor": "Through flawless design, you may seek perfection.",
   "ANCIENTSAWAKENED-SHARED_DESIGN.title": "Shared Design",
 
-  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "Add [blue]Break Beneath Me[/blue] to your deck.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "Upon pickup, add [blue]Break Beneath Me[/blue] to your deck.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.eventDescription": "Add [blue]Break Beneath Me[/blue] to your deck.",
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.flavor": "Elegant design. Heavy mass. A drop of blood. Yes, this will do perfectly.",
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Flawless Hammer",
 
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "Cards transformed by [gold]Ancient Scepter[/gold]",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Upon pickup, [gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into [blue]Perfected[/blue] versions.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into [blue]Perfected[/blue] versions.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "The crystal pulsates with powerful energy as you pick it up.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "Ancient Scepter",
 
@@ -29,7 +33,8 @@
   "ANCIENTSAWAKENED-PILLAR_OF_MASS.title": "Pillar Of Mass",
 
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.selectionScreenPrompt": "What is your command?",
-  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "Choose any [blue]1[/blue] non-special card to add to your deck.",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "Upon pickup, choose any [blue]1[/blue] non-special card to add to your deck.",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.eventDescription": "Choose any [blue]1[/blue] non-special card to add to your deck.",
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"Take a sip of the drink, and the mind becomes malleable....and the world around you follows your example.\" - Sigibold the Drunken",
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Artifact Of Command",
 
@@ -46,6 +51,7 @@
   "ANCIENTSAWAKENED-FLASH_BEACON.title": "Flash Beacon",
 
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.description": "Upon pickup, mark [blue]10[/blue] random combats. Rewards in those rooms include an additional relic reward.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.eventDescription": "Mark [blue]10[/blue] random combats. Rewards in those rooms include an additional relic reward.",
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"You want the scanner? What, am I not good enough at finding things for you?~ Fine, fine, but if you break it, I'll rip off your head, got it?\"",
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "Sebastian's Scanner",
 
@@ -57,15 +63,18 @@
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"This should contain everything you need to know about all the monsters and freaks you may encounter in the Spire. Written by yours truly, of course~\"",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Wildlife Documents",
 
-  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Choose a [gold]Power[/gold] in your deck to Enchant with [gold]Charmed[/gold].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, choose a [gold]Power[/gold] in your deck to Enchant with [gold]Charmed[/gold].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "Choose a [gold]Power[/gold] in your deck to Enchant with [gold]Charmed[/gold].",
   "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Fine, fine. Since you're just so fond of me for some reason, how about a little charm? Best I can do, terribly sorry~\"",
   "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Sebby Charm",
 
-  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "Add [gold]Triple Barrel Shotgun[/gold] to your deck.",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "Upon pickup, add [gold]Triple Barrel Shotgun[/gold] to your deck.",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.eventDescription": "Add [gold]Triple Barrel Shotgun[/gold] to your deck.",
   "ANCIENTSAWAKENED-SHOTGUN_SHELLS.flavor": "\"Ahh, definitely one of my favorite inventions from the gizmo makers back in R&D. Just be sure to bring it back in one piece, yeah?\"",
   "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title": "Shotgun Shells",
 
-  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Obtain [gold]Heavy Crate[/gold]. Add [red]Weighed Down[/red] to your deck. The crate contains gold, [blue]2[/blue] potions, [blue]4[/blue] relics, [blue]3[/blue] card rewards, [blue]1[/blue] rare card reward, and [blue]2[/blue] card removals.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Upon pickup, obtain [gold]Heavy Crate[/gold]. Add [red]Weighed Down[/red] to your deck. The crate will be opened after defeating the boss.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Obtain [gold]Heavy Crate[/gold]. Add [red]Weighed Down[/red] to your deck. The crate will be opened after defeating the boss.",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"The big crate? Yeah, you can have it, and whatever's inside. You'll have to head on up to get the key, though, I dropped the damn thing and I'm pretty sure the big guy at the top of this layer has it.\"",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "Shipping Request",
   

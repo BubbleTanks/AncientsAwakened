@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lamfg78iuked"
-path="res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"
+uid="uid://bemxsali6i03r"
+path="res://.godot/imported/disadvantaged_power.png-514c65d919036ec954195b62e2fb5f44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/card_portraits/big/heavy_crate.png"
-dest_files=["res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"]
+source_file="res://AncientsAwakened/images/powers/big/disadvantaged_power.png"
+dest_files=["res://.godot/imported/disadvantaged_power.png-514c65d919036ec954195b62e2fb5f44.ctex"]
 
 [params]
 

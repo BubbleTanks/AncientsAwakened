@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lamfg78iuked"
-path="res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"
+uid="uid://b52f70bxrni7a"
+path="res://.godot/imported/electrolyze_power.png-4521d2d7c044999419a48eb62731207b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/card_portraits/big/heavy_crate.png"
-dest_files=["res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"]
+source_file="res://AncientsAwakened/images/powers/big/electrolyze_power.png"
+dest_files=["res://.godot/imported/electrolyze_power.png-4521d2d7c044999419a48eb62731207b.ctex"]
 
 [params]
 

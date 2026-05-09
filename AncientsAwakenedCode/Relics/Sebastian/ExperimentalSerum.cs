@@ -24,12 +24,12 @@ public class ExperimentalSerum : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    private ModelId _ancientCard;
+    private ModelId? _ancientCard;
     
     private IEnumerable<IHoverTip> _extraHoverTips = Array.Empty<IHoverTip>();
 
     [SavedProperty]
-    private ModelId AncientCard
+    private ModelId? AncientCard
     {
         get => _ancientCard;
         set
@@ -51,53 +51,57 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
 
-    private static Dictionary<ModelId, ModelId> ExperimentalCards;
+    private static Dictionary<ModelId, ModelId> ExperimentalCards = new()
+    {
+        {
+            ModelDb.Character<Ironclad>().Id,
+            ModelDb.Card<Cinderborn>().Id
+        },
+        {
+            ModelDb.Character<Silent>().Id,
+            ModelDb.Card<SleightOfHand>().Id
+        },
+        {
+            ModelDb.Character<Regent>().Id,
+            ModelDb.Card<NebulaHammer>().Id
+        },
+        {
+            ModelDb.Character<Necrobinder>().Id,
+            ModelDb.Card<NecroticBurst>().Id
+        },
+        {
+            ModelDb.Character<Defect>().Id,
+            ModelDb.Card<Electrolyze>().Id
+        }
+    };
     
     public override bool IsAllowed(IRunState runState)
     {
-        return SetupForPlayer(LocalContext.GetMe(runState));
+        Log.Info("isallowed called");
+        return LocalContext.GetMe(runState) != null && SetupForPlayer(LocalContext.GetMe(runState));
     }
     
     public bool SetupForPlayer(Player player)
     {
+        Log.Info("pre setupforplayer");
         if (ExperimentalCards == null)
         {
-            ExperimentalCards = new Dictionary<ModelId, ModelId>()
-            {
-                {
-                    ModelDb.Character<Ironclad>().Id,
-                    ModelDb.Card<Cinderborn>().Id
-                },
-                {
-                    ModelDb.Character<Silent>().Id,
-                    ModelDb.Card<SleightOfHand>().Id
-                },
-                {
-                    ModelDb.Character<Regent>().Id,
-                    ModelDb.Card<NebulaHammer>().Id
-                },
-                {
-                    ModelDb.Character<Necrobinder>().Id,
-                    ModelDb.Card<NecroticBurst>().Id
-                },
-                {
-                    ModelDb.Character<Defect>().Id,
-                    ModelDb.Card<Electrolyze>().Id
-                }
-            };
+            
         }
 
         if (ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card))
         {
             AncientCard = card;
+            Log.Info(AncientCard.Entry + "post set ancientcard");
             return true;
         }
-
+        Log.Info("failed set ancientcard");
         return false;
     }
     
     public override async Task AfterObtained()
     {
+        Log.Info("afterobtained");
         //AncientCard = ExperimentalCards[Owner.Character.Id];
         CardModel card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
         if (card == null) return;

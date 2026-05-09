@@ -51,20 +51,16 @@ public class LeshyAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
+        return false;
         return act.ActNumber() == 2;
     }
     
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        return act.ActNumber() == 2;
+        return false;
+        //return act.ActNumber() == 2;
     }
 
     public override IEnumerable<EventOption> AllPossibleOptions => [
-        RelicOption<PackRat>(),
-        RelicOption<SquirrelInABottle>(),
-        RelicOption<ProspectingPick>(),
-        RelicOption<TheSmoke>(),
-        RelicOption<FilmRoll>(),
-        RelicOption<Goobert>()
     ];
 }

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lamfg78iuked"
-path="res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"
+uid="uid://bm21utyxg3k56"
+path="res://.godot/imported/glowing_vial.png-67d626112e6c7277d418685e06636fca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/card_portraits/big/heavy_crate.png"
-dest_files=["res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"]
+source_file="res://AncientsAwakened/images/relics/big/glowing_vial.png"
+dest_files=["res://.godot/imported/glowing_vial.png-67d626112e6c7277d418685e06636fca.ctex"]
 
 [params]
 

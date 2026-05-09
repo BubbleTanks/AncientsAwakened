@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lamfg78iuked"
-path="res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"
+uid="uid://dj7u6u4u2k2w0"
+path="res://.godot/imported/flash_beacon_power.png-de6912c3961186a0f5c9581b14daba06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/card_portraits/big/heavy_crate.png"
-dest_files=["res://.godot/imported/heavy_crate.png-814e32e59f521e91729b7081c339fbb6.ctex"]
+source_file="res://AncientsAwakened/images/powers/big/flash_beacon_power.png"
+dest_files=["res://.godot/imported/flash_beacon_power.png-de6912c3961186a0f5c9581b14daba06.ctex"]
 
 [params]
 
