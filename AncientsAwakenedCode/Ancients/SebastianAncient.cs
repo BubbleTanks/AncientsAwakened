@@ -34,7 +34,7 @@ public class SebastianAncient : CustomAncientModel
                 AncientOption<MedicalKit>(2)
             ),
             MakePool(
-                AncientOption<SebbyCharm>(400000000),
+                AncientOption<SebbyCharm>(4),
                 AncientOption<SebastiansScanner>(3),
                 AncientOption<SalineInfuser>(2),
                 AncientOption<ShippingRequest>(2)

@@ -1,6 +1,6 @@
 {
-  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Upon pickup, Enchant all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
-  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "Enchant all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Upon pickup, [gold]Enchant[/gold] all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]Enchant[/gold] all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "As the sharpness of the edge drives you, it also makes you brittle.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.title": "Shaped Glass",
   
