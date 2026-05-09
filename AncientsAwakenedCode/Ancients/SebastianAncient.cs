@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -64,6 +65,6 @@ public class SebastianAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 2;
+        return act.ActNumber() == 2 && AncientConfigs.EnableSebastianAncient;
     }
 }

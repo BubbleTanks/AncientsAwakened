@@ -1,3 +1,5 @@
+using AncientsAwakened.AncientsAwakenedCode.UI;
+using BaseLib.Config;
 using BaseLib.Patches.Content;
 using Godot;
 using HarmonyLib;
@@ -18,7 +20,7 @@ public partial class MainFile : Node
     public static void Initialize()
     {
         Harmony harmony = new(ModId);
-
+        ModConfigRegistry.Register(ModId, new AncientConfigs());
         harmony.PatchAll();
     }
 }
