@@ -47,7 +47,7 @@ public class FlashBeacon : AncientsAwakenedRelic
         }
     }
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new (_turnsKey, turnsThreshold), new PowerVar<FlashBeaconPower>(-10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new (_turnsKey, turnsThreshold), new PowerVar<FlashBeaconPower>(10)];
 
     private bool IsActivating
     {

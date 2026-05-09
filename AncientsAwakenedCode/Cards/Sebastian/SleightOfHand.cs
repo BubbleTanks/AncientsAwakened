@@ -19,7 +19,7 @@ public class SleightOfHand() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.AnyEnemy)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PoisonPower>(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PoisonPower>(4)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Sly];
 
@@ -43,6 +43,6 @@ public class SleightOfHand() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Poison.UpgradeValueBy(1);
+        DynamicVars.Poison.UpgradeValueBy(6);
     }
 }

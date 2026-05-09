@@ -30,4 +30,6 @@ public class FlashBeaconPower : TemporaryStrengthPower, ICustomPower
             return ResourceLoader.Exists(path) ? path : "power.png".BigPowerImagePath();
         }
     }
+    
+    protected override bool IsPositive => false;
 }

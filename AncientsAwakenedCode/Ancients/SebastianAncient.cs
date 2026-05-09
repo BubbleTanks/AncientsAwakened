@@ -54,8 +54,8 @@ public class SebastianAncient : CustomAncientModel
 
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        //return false;
-        return act.ActNumber() == 2;
+        return false;
+        //return act.ActNumber() == 2;
     }
 
     public override Color ButtonColor => new(0.05f, 0.05f, 0.15f, 0.8f);
