@@ -1,10 +1,12 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Utils;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Factories;
+using MegaCrit.Sts2.Core.Hooks;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Events;
@@ -24,9 +26,8 @@ public class EulogyZero : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
+    public override bool TryModifyRewardsLate(Player player, List<Reward> rewards, AbstractRoom? room)
     {
-
         if (player != Owner || room == null)
             return false;
 
@@ -70,13 +71,13 @@ public class EulogyZero : AncientsAwakenedRelic
     }
     /// <summary>
     /// This is just for vanilla relics (I did not want to patch them 3:)
+    /// To anyone who remembers I blacklisted things like Black Star, I have fixed that issue, relic rewards should behave correctly now.
     /// </summary>
     private List<RelicModel> BlacklistedRelics()
     {
         var listVar = new List<RelicModel>();
         
         listVar.Add(ModelDb.Relic<GoldenCompass>());
-        listVar.Add(ModelDb.Relic<BlackStar>());
         foreach (EventOption relic in ModelDb.Event<Neow>().AllPossibleOptions)
         {
             listVar.Add(relic.Relic);

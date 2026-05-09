@@ -44,18 +44,28 @@
   "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "",
   "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down",
 
-  "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HPLoss:diff()} HP twice. \n Heal {Heal:diff()} HP.",
+  "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HpLoss:diff()} HP twice. \n Heal {Heal:diff()} HP.",
   "ANCIENTSAWAKENED-CINDERBORN.title": "Cinderborn",
 
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Whenever you play a card this turn, add {Shivs:diff()} [gold]Shiv[/gold] into your hand.",
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.title": "Sleight of Hand",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold]. \n Whenever you discard another card, add this to your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.title": "Viper",
 
-  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "Forge {Forge:diff()}. \n Return this card to your Hand.",
-  "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "Nebula Hammer",
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "[gold]Forge[/gold] {Forge:diff()}. \n Return this card to your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "Starfaller",
 
-  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Summon[/gold] {Summon:diff()}. \n [gold]Transform[/gold] your hand into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
+  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Summon[/gold] {Summon:diff()}. \n [gold]Transform[/gold] your [gold]Hand[/gold] into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
   "ANCIENTSAWAKENED-NECROTIC_BURST.title": "Necrotic Burst",
 
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold]. \n Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
-  "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze"
+  "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze",
+
+  "ANCIENTSAWAKENED-SQUIRREL.description": "Draw {Cards:diff()} cards.",
+  "ANCIENTSAWAKENED-SQUIRREL.title": "Squirrel",
+
+  "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "Choose a card to inscrybe.",
+  "ANCIENTSAWAKENED-INSCRYBE.description": "Deal {Damage:diff()} damage. \n Choose a card in your [gold]Hand[/gold] to make a copy of.",
+  "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe",
+
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold]. \n At the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies. \n",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual"
 }

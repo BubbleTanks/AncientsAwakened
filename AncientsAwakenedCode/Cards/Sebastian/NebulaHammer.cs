@@ -15,7 +15,7 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ForgeVar(9)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ForgeVar(7)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
     
@@ -29,14 +29,14 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
         await ForgeCmd.Forge(DynamicVars.Forge.IntValue, Owner, this);
     }
     
-    protected override PileType GetResultPileType()
+    protected override PileType GetResultPileTypeForCardPlay()
     {
-        PileType resultPileType = base.GetResultPileType();
+        PileType resultPileType = base.GetResultPileTypeForCardPlay();
         return resultPileType != PileType.Discard ? resultPileType : PileType.Hand;
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Forge.UpgradeValueBy(4M);
+        DynamicVars.Forge.UpgradeValueBy(3M);
     }
 }
