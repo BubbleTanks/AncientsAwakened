@@ -1,6 +1,7 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
 using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using Godot;

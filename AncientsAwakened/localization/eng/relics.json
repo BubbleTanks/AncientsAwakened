@@ -1,11 +1,11 @@
 {
-  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Upon pickup, [gold]Enchant[/gold] all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
-  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]Enchant[/gold] all Attacks in your Deck with [gold]Design[/gold] and lose half your Max HP.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Upon pickup, [gold]Enchant[/gold] all Attacks in your [gold]Deck[/gold] with [gold]Design[/gold] and lose half your Max HP.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]Enchant[/gold] all Attacks in your [gold]Deck[/gold] with [gold]Design[/gold] and lose half your Max HP.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "As the sharpness of the edge drives you, it also makes you brittle.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.title": "Shaped Glass",
   
-  "ANCIENTSAWAKENED-STARSEED.description": "Upon pickup, obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [red]Egocentrism[/red] to your deck.",
-  "ANCIENTSAWAKENED-STARSEED.eventDescription": "Obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [red]Egocentrism[/red] to your deck.",
+  "ANCIENTSAWAKENED-STARSEED.description": "Upon pickup, obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [blue]1[/blue] [red]Egocentrism[/red] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-STARSEED.eventDescription": "Obtain [blue]5[/blue] [gold]Rare[/gold] card rewards. Add [blue]1[/blue] [red]Egocentrism[/red] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-STARSEED.flavor": "It sounds like two brothers, chasing glass frogs in the sun.",
   "ANCIENTSAWAKENED-STARSEED.title": "Starseed",
 
@@ -13,8 +13,8 @@
   "ANCIENTSAWAKENED-SHARED_DESIGN.flavor": "Through flawless design, you may seek perfection.",
   "ANCIENTSAWAKENED-SHARED_DESIGN.title": "Shared Design",
 
-  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "Upon pickup, add [blue]Break Beneath Me[/blue] to your deck.",
-  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.eventDescription": "Add [blue]Break Beneath Me[/blue] to your deck.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "Upon pickup, add [blue]1[/blue] [color=#2596be]Break Beneath Me[/color] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.eventDescription": "Add [blue]1[/blue] [color=#2596be]Break Beneath Me[/color] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.flavor": "Elegant design. Heavy mass. A drop of blood. Yes, this will do perfectly.",
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Flawless Hammer",
 
@@ -28,13 +28,13 @@
   "ANCIENTSAWAKENED-FRACTURED_BLADE.flavor": "A massive crack runs down the length of the blade.",
   "ANCIENTSAWAKENED-FRACTURED_BLADE.title": "Fractured Blade",
 
-  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "Enchant all card rewards with [gold]Mass[/gold].",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "[gold]Enchant[/gold] all card rewards with [gold]Mass[/gold].",
   "ANCIENTSAWAKENED-PILLAR_OF_MASS.flavor": "Mass is simple. The base of all forms, shaped and molded. Take this, and create your own vision.",
   "ANCIENTSAWAKENED-PILLAR_OF_MASS.title": "Pillar Of Mass",
 
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.selectionScreenPrompt": "What is your command?",
-  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "Upon pickup, choose any [blue]1[/blue] non-special card to add to your deck.",
-  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.eventDescription": "Choose any [blue]1[/blue] non-special card to add to your deck.",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "Upon pickup, choose any [blue]1[/blue] non-special card to add to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.eventDescription": "Choose any [blue]1[/blue] non-special card to add to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"Take a sip of the drink, and the mind becomes malleable....and the world around you follows your example.\" - Sigibold the Drunken",
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Artifact Of Command",
 
@@ -46,7 +46,7 @@
   "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Architect...your death is fated. When you die - and you WILL die - I will be ready. I have been patient for millennia. This Spire...is mine.\"",
   "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Eulogy Zero",
 
-  "ANCIENTSAWAKENED-FLASH_BEACON.description": "Every [blue]4[/blue] turns, all enemies lose [blue]10[/blue] [gold]Strength[/gold] for [blue]1[/blue] turn.",
+  "ANCIENTSAWAKENED-FLASH_BEACON.description": "Every [blue]4[/blue] turns, ALL enemies lose [blue]10[/blue] [gold]Strength[/gold] for [blue]1[/blue] turn.",
   "ANCIENTSAWAKENED-FLASH_BEACON.flavor": "\"Truth be told, I hate this one. Damn thing hurts my eyes. Just..keep it pointed away, would ya?\"",
   "ANCIENTSAWAKENED-FLASH_BEACON.title": "Flash Beacon",
 
@@ -55,30 +55,30 @@
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"You want the scanner? What, am I not good enough at finding things for you?~ Fine, fine, but if you break it, I'll rip off your head, got it?\"",
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "Sebastian's Scanner",
 
-  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "When you enter a [gold]Rest Site[/gold], procure a [gold]Neloprephine Shot[/gold].",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "When you enter a Rest Site, procure a [gold]Neloprephine Shot[/gold].",
   "ANCIENTSAWAKENED-MEDICAL_KIT.flavor": "\"This one's not anything special. Just contains a collection of bandages, gauze, some tools and implements, and a good amount of this miracle serum I found.\"",
   "ANCIENTSAWAKENED-MEDICAL_KIT.title": "Medical Kit",
 
-  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "At the start of combat, apply [blue]3[/blue] [gold]Disadvantaged[/gold] to all enemies. ",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "At the start of combat, apply [blue]3[/blue] [gold]Disadvantaged[/gold] to ALL enemies. ",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"This should contain everything you need to know about all the monsters and freaks you may encounter in the Spire. Written by yours truly, of course~\"",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Wildlife Documents",
 
-  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, choose a [gold]Power[/gold] in your deck to Enchant with [gold]Charmed[/gold].",
-  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "Choose a [gold]Power[/gold] in your deck to Enchant with [gold]Charmed[/gold].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, choose a [gold]Power[/gold] in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [gold]Charmed[/gold].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "Choose a [gold]Power[/gold] in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [gold]Charmed[/gold].",
   "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Fine, fine. Since you're just so fond of me for some reason, how about a little charm? Best I can do, terribly sorry~\"",
   "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Sebby Charm",
 
-  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "Upon pickup, add [gold]Triple Barrel Shotgun[/gold] to your deck.",
-  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.eventDescription": "Add [gold]Triple Barrel Shotgun[/gold] to your deck.",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "Upon pickup, add [blue]1[/blue] [gold]Triple Barrel Shotgun[/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.eventDescription": "Add [blue]1[/blue] [gold]Triple Barrel Shotgun[/gold] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-SHOTGUN_SHELLS.flavor": "\"Ahh, definitely one of my favorite inventions from the gizmo makers back in R&D. Just be sure to bring it back in one piece, yeah?\"",
   "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title": "Shotgun Shells",
 
-  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Upon pickup, obtain [gold]Heavy Crate[/gold]. Add [red]Weighed Down[/red] to your deck. The crate will be opened after defeating the boss.",
-  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Obtain [gold]Heavy Crate[/gold]. Add [red]Weighed Down[/red] to your deck. The crate will be opened after defeating the boss.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Upon pickup, add [blue]1[/blue] [gold]Heavy Crate[/gold] and [blue]1[/blue] [red]Weighed Down[/red] to your [gold]Deck[/gold]. The crate will be opened after defeating the boss.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Add [blue]1[/blue] [gold]Heavy Crate[/gold] and [blue]1[/blue] [red]Weighed Down[/red] to your [gold]Deck[/gold]. The crate will be opened after defeating the boss.",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"The big crate? Yeah, you can have it, and whatever's inside. You'll have to head on up to get the key, though, I dropped the damn thing and I'm pretty sure the big guy at the top of this layer has it.\"",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "Shipping Request",
   
-  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "You may [gold]Mutate[/gold] at Rest Sites as a free action.",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "You may [gold]Mutate[/gold] any number of times at Rest Sites as a free action.",
   "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "\"Hey, be careful with this one now, it's pretty potent. You might feel one or two of your bones breaking. That means it's working!\"",
   "ANCIENTSAWAKENED-GLOWING_VIAL.title": "Glowing Vial",
 
@@ -91,7 +91,7 @@
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"Can't say I recommend the serum. It's horribly painful, no matter how rewarding the results may be.\"",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Experimental Serum",
 
-  "ANCIENTSAWAKENED-FILM_ROLL.description": "Add [gold]Inscrybe[/gold] to your deck.",
+  "ANCIENTSAWAKENED-FILM_ROLL.description": "Add [blue]1[/blue] [gold]Inscrybe[/gold] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-FILM_ROLL.flavor": "",
   "ANCIENTSAWAKENED-FILM_ROLL.title": "Film Roll",
 

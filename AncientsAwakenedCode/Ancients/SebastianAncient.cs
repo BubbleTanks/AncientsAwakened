@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
@@ -21,15 +22,7 @@ public class SebastianAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<FlashBeacon>(3, flash =>
-                {
-                    Log.Info("flash beacon prep start");
-                    if (Owner != null)
-                    {
-                        Log.Info("flash beacon owner nullcheck");
-                    }
-                    return flash;
-                }),
+                AncientOption<FlashBeacon>(3),
                 AncientOption<WildlifeDocuments>(2),
                 AncientOption<MedicalKit>(2)
             ),
@@ -46,18 +39,11 @@ public class SebastianAncient : CustomAncientModel
                 {
                     if (Owner != null)
                     {
-                        Log.Info("relic prepped");
                         serum.SetupForPlayer(Owner);
                     }
                     return serum;
                 })
             ));
-
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return false;
-        //return act.ActNumber() == 2;
-    }
 
     public override Color ButtonColor => new(0.05f, 0.05f, 0.15f, 0.8f);
 

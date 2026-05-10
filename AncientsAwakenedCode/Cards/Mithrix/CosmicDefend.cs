@@ -1,22 +1,16 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Pools;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
 using BaseLib.Utils;
-using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Extensions;
-using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
-using MegaCrit.Sts2.Core.Models.Cards;
-using MegaCrit.Sts2.Core.Unlocks;
 using MegaCrit.Sts2.Core.ValueProps;
-using Logger = MegaCrit.Sts2.Core.Logging.Logger;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Cards;
+namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(RegentCardPool))]
 public class CosmicDefend() : AncientsAwakenedCard(1,

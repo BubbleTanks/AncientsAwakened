@@ -1,71 +1,71 @@
 {
-  "ANCIENTSAWAKENED-EGOCENTRISM.description": "If this is in your hand at the end of your turn, [gold]Transform[/gold] ALL cards in your hand into [gold]Egocentrism[/gold].",
+  "ANCIENTSAWAKENED-EGOCENTRISM.description": "At the end of your turn, if this is in your [gold]Hand[/gold], [gold]Transform[/gold] ALL cards in your [gold]Hand[/gold] into [gold]Egocentrism[/gold].",
   "ANCIENTSAWAKENED-EGOCENTRISM.title": "Egocentrism",
 
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage. \n Take an extra turn after this one.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\nTake an extra turn after this one.",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "Break Beneath Me",
 
-  "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Deal {Damage:diff()} damage. \n Apply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
   "ANCIENTSAWAKENED-DEMONIC_STRIKE.title": "Demonic Strike",
 
-  "ANCIENTSAWAKENED-DEMONIC_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Lose {HpLoss:diff()} HP.",
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\nLose {HpLoss:diff()} HP.",
   "ANCIENTSAWAKENED-DEMONIC_DEFEND.title": "Demonic Defend",
 
-  "ANCIENTSAWAKENED-DEADLY_STRIKE.description": "Deal {Damage:diff()} damage.\n Apply {PoisonPower:diff()} [gold]Poison[/gold].",
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.description": "Deal {Damage:diff()} damage.\nApply {PoisonPower:diff()} [gold]Poison[/gold].",
   "ANCIENTSAWAKENED-DEADLY_STRIKE.title": "Deadly Strike",
 
-  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Add {Shivs:diff()} [gold]Shivs[/gold] into your [gold]Hand[/gold]. \n Draw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Shivs:diff()} [gold]Shivs[/gold] into your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-DEADLY_DEFEND.title": "Deadly Defend",
 
-  "ANCIENTSAWAKENED-COSMIC_STRIKE.description": "Deal {Damage:diff()} damage. \n [gold]Forge[/gold] {Forge:diff()}. \n Gain {Stars:starIcons()}.",
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.description": "Deal {Damage:diff()} damage.\n[gold]Forge[/gold] {Forge:diff()}.\nGain {Stars:starIcons()}.",
   "ANCIENTSAWAKENED-COSMIC_STRIKE.title": "Cosmic Strike",
 
-  "ANCIENTSAWAKENED-COSMIC_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Add 1 random Minion card into your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd 1 random Minion card into your [gold]Hand[/gold].",
   "ANCIENTSAWAKENED-COSMIC_DEFEND.title": "Cosmic Defend",
 
-  "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage. \n Apply {DoomPower:diff()} [gold]Doom[/gold].",
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nApply {DoomPower:diff()} [gold]Doom[/gold].",
   "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "Eternal Strike",
 
-  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]Summon[/gold] {Summon:diff()}. \n Add a [gold]{IfUpgraded:show:Soul+|Soul}[/gold] into your draw pile.",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]Summon[/gold] {Summon:diff()}.\nAdd a [gold]{IfUpgraded:show:Soul+|Soul}[/gold] into your draw pile.",
   "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "Eternal Defend",
   
-  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage twice. \n Add a [gold]Dazed[/gold] into your hand.",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage twice.\n[gold]Channel[/gold] 1 [gold]Glass[/gold].\nAdd a [gold]Dazed[/gold] into your hand.",
   "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "Empowered Strike",
   
-  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold]. \n Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Channel[/gold] 2 [gold]Frost[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend",
 
-  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times. \n Draw {Cards:diff()} cards.",
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nDraw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun",
 
-  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Can be opened at the start of the next act.",
+  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Will be opened after defeating the boss.",
   "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate",
 
   "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "",
   "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down",
 
-  "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HpLoss:diff()} HP twice. \n Heal {Heal:diff()} HP.",
+  "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HpLoss:diff()} HP {Repeat:diff()} times.\nHeal {Heal:diff()} HP.",
   "ANCIENTSAWAKENED-CINDERBORN.title": "Cinderborn",
 
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold]. \n Whenever you discard another card, add this to your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold].\nWhenever you discard another card, add this to your [gold]Hand[/gold].",
   "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.title": "Viper",
 
-  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "[gold]Forge[/gold] {Forge:diff()}. \n Return this card to your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "[gold]Forge[/gold] {Forge:diff()}.\nReturn this card to your [gold]Hand[/gold].",
   "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "Starfaller",
 
-  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Summon[/gold] {Summon:diff()}. \n [gold]Transform[/gold] your [gold]Hand[/gold] into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
+  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Summon[/gold] {Summon:diff()}.\n[gold]Transform[/gold] your [gold]Hand[/gold] into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
   "ANCIENTSAWAKENED-NECROTIC_BURST.title": "Necrotic Burst",
 
-  "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold]. \n Gain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
+  "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze",
 
   "ANCIENTSAWAKENED-SQUIRREL.description": "Draw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-SQUIRREL.title": "Squirrel",
 
   "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "Choose a card to inscrybe.",
-  "ANCIENTSAWAKENED-INSCRYBE.description": "Deal {Damage:diff()} damage. \n Choose a card in your [gold]Hand[/gold] to make a copy of.",
+  "ANCIENTSAWAKENED-INSCRYBE.description": "Deal {Damage:diff()} damage.\nChoose a card in your [gold]Hand[/gold] to make a copy of.",
   "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe",
 
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold]. \n At the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies. \n",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold].\nAt the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies.",
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual"
 }
