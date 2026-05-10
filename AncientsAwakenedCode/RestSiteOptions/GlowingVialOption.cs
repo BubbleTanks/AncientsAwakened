@@ -10,17 +10,20 @@ using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
+using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.RestSiteOptions;
 
 public class GlowingVialOption : RestSiteOption, ICustomModel
 {
+    public const decimal HP_LOSS = 8M;
     
     public GlowingVialOption(Player owner)
         : base(owner)
     {
-        IsEnabled = GetRemovableCardCount(owner) >= 1;
+        IsEnabled = GetRemovableCardCount(owner) >= 1 && owner.Creature.CurrentHp > HP_LOSS;
     }
     
     private static int GetRemovableCardCount(Player player)
@@ -35,7 +38,10 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
         get
         {
             if (!IsEnabled)
+            {
+                if(Owner.Creature.CurrentHp <= HP_LOSS) return new LocString("rest_site_ui", $"OPTION_{OptionId}.descriptionHpDisabled");
                 return new LocString("rest_site_ui", $"OPTION_{OptionId}.descriptionDisabled");
+            }
             LocString description = new LocString("rest_site_ui", $"OPTION_{OptionId}.description");
             return description;
         }
@@ -51,12 +57,18 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
         if (original != null)
         {
             await CardCmd.TransformToRandom(original, Owner.RunState.Rng.Niche, CardPreviewStyle.EventLayout);
-            await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, new DamageVar(8M, ValueProp.Unblockable | ValueProp.Unpowered), null, null);
+            await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, new DamageVar(HP_LOSS, ValueProp.Unblockable | ValueProp.Unpowered), null, null);
         }
 
-        if (Owner.Creature.CurrentHp <= 0)
+        if (Owner.Creature.CurrentHp <= 8)
         {
-            return true;
+            IsEnabled = false;
+            var button = NRestSiteRoom.Instance.GetButtonForOption(this);
+            if (button != null)
+            {
+                button.Reload();
+                button._isUnclickable = !IsEnabled;
+            }
         }
         
         return false;

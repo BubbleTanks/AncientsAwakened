@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Pools;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -12,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Monsters;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Cards;
+namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(NecrobinderCardPool))]
 public class EternalStrike() : AncientsAwakenedCard(1,
@@ -23,7 +22,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<DoomPower>()];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(10, ValueProp.Move), new PowerVar<DoomPower>(15)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(8, ValueProp.Move), new PowerVar<DoomPower>(10)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike, CardTag.OstyAttack];
 
     protected override bool ShouldGlowRedInternal => Owner.IsOstyMissing;
@@ -39,7 +38,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.OstyDamage.UpgradeValueBy(4M);
+        DynamicVars.OstyDamage.UpgradeValueBy(2M);
         DynamicVars.Doom.UpgradeValueBy(5M);
     }
 }

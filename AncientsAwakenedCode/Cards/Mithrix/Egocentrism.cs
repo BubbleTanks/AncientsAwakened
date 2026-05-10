@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Cards;
+namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
   [Pool(typeof(CurseCardPool))]
 public class Egocentrism : AncientsAwakenedCard

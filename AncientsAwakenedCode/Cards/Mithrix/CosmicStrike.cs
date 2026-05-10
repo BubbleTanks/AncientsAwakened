@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Pools;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -10,7 +9,7 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Cards;
+namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(RegentCardPool))]
 public class CosmicStrike() : AncientsAwakenedCard(1,

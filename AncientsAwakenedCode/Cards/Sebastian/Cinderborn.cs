@@ -15,7 +15,7 @@ public class Cinderborn() : AncientsAwakenedCard(2,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(2), new HealVar(16)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HpLossVar(2), new HealVar(12), new RepeatVar(3)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
 
@@ -24,8 +24,8 @@ public class Cinderborn() : AncientsAwakenedCard(2,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this);
-        await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this);
+        for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
+            await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this);
         await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
     }
 

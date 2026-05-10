@@ -43,6 +43,6 @@ public class SleightOfHand() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Poison.UpgradeValueBy(6);
+        DynamicVars.Poison.UpgradeValueBy(2);
     }
 }
