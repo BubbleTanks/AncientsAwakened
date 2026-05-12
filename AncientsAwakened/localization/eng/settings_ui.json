@@ -2,13 +2,18 @@
   "ANCIENTSAWAKENED-ANCIENT_ENABLER.title": "Enable Ancients",
   
   "ANCIENTSAWAKENED-ENABLE_MITHRIX_ANCIENT.title": "Enable Mithrix Ancient",
-  "ANCIENTSAWAKENED-ENABLE_MITHRIX_ANCIENT.hover.desc": "Determines if [gold]Mithrix[/gold] can spawn or not.\n(Can work mid-run if Ancient hasn't been rolled yet.)",
+  "ANCIENTSAWAKENED-ENABLE_MITHRIX_ANCIENT.hover.desc": "Determines if Mithrix can spawn or not.\n(Can work mid-run if Ancient hasn't been rolled yet.)",
   
   "ANCIENTSAWAKENED-ENABLE_SEBASTIAN_ANCIENT.title": "Enable Sebastian Ancient",
-  "ANCIENTSAWAKENED-ENABLE_SEBASTIAN_ANCIENT.hover.desc": "Determines if [gold]Sebastian[/gold] can spawn or not.\n(Can work mid-run if Ancient hasn't been rolled yet.)",
+  "ANCIENTSAWAKENED-ENABLE_SEBASTIAN_ANCIENT.hover.desc": "Determines if Sebastian can spawn or not.\n(Can work mid-run if Ancient hasn't been rolled yet.)",
 
   "ANCIENTSAWAKENED-ANCIENT_FORCER.title": "Force Ancients",
 
+  "ANCIENTSAWAKENED-FORCE_MITHRIX_ENABLER.title": "Force Mithrix",
+  "ANCIENTSAWAKENED-FORCE_MITHRIX_ENABLER.hover.desc": "Force spawn Mithrix in Act 3 (may cause conflicts)",
+  "ANCIENTSAWAKENED-FORCE_SEBASTIAN_ENABLER.title": "Force Sebastian",
+  "ANCIENTSAWAKENED-FORCE_SEBASTIAN_ENABLER.hover.desc": "Force spawn Sebastian in Act 2 (may cause conflicts)",
+  
   "ANCIENTSAWAKENED-MITHRIX.title": "Mithrix Relic Configs",
   
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "Enable Flawless Hammer in Multiplayer",

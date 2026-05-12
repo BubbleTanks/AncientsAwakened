@@ -10,8 +10,8 @@ internal class AncientConfigs : SimpleModConfig
     public static bool EnableSebastianAncient { get; set; } = true;
     
     [ConfigSection("AncientForcer")]   
-    public static bool EnableMithrixForcer { get; set; } = true;
-    public static bool EnableSebastianForcer { get; set; } = true;
+    public static bool ForceMithrixEnabler { get; set; } = false;
+    public static bool ForceSebastianEnabler { get; set; } = false;
     
     [ConfigSection("Mithrix")]
     public static bool MultiplayerFlawlessHammer { get; set; } = false;
