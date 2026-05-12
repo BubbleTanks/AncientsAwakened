@@ -38,6 +38,11 @@ public class MithrixAncient : CustomAncientModel
 
     public override Color DialogueColor => new("384d7a");
     
+    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
+    {
+        return AncientConfigs.EnableMithrixForcer;
+    }
+    
     public override bool IsValidForAct(ActModel act)
     {
         return act.ActNumber() == 3 && AncientConfigs.EnableMithrixAncient;

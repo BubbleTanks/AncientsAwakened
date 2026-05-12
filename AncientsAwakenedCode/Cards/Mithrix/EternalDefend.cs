@@ -20,7 +20,7 @@ public class EternalDefend() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.SummonDynamic, DynamicVars.Summon), HoverTipFactory.FromCard<Soul>()];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new SummonVar(8M), new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new SummonVar(7M), new CardsVar(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 
     protected override async Task OnPlay(
@@ -41,6 +41,6 @@ public class EternalDefend() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Summon.UpgradeValueBy(3M);
+        DynamicVars.Summon.UpgradeValueBy(2M);
     }
 }

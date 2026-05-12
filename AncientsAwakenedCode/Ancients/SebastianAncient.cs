@@ -53,4 +53,8 @@ public class SebastianAncient : CustomAncientModel
     {
         return act.ActNumber() == 2 && AncientConfigs.EnableSebastianAncient;
     }
+    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
+    {
+        return AncientConfigs.EnableSebastianAncient;
+    }
 }

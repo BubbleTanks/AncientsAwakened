@@ -18,6 +18,8 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 public class Starseed : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
+    
+    public override bool HasUponPickupEffect => true;
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<Egocentrism>();
     

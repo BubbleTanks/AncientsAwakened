@@ -37,6 +37,8 @@ public class ShapedGlass : AncientsAwakenedRelic
         return 2M;
     }*/
     
+    public override bool HasUponPickupEffect => true;
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips
     {
         get => HoverTipFactory.FromEnchantment<Design>();
