@@ -38,7 +38,7 @@
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"Take a sip of the drink, and the mind becomes malleable....and the world around you follows your example.\" - Sigibold the Drunken",
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Artifact Of Command",
 
-  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "All combats drop an additional relic. Rest Sites are replaced with Elites.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "All combats drop an additional relic. [gold]Rest Sites[/gold] are replaced with [gold]Elites[/gold].",
   "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "Rain pours down on your head. You feel a sense of dread as you hold it.",
   "ANCIENTSAWAKENED-MONSOON_CHARM.title": "Monsoon Charm",
 
@@ -55,7 +55,7 @@
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"You want the scanner? What, am I not good enough at finding things for you?~ Fine, fine, but if you break it, I'll rip off your head, got it?\"",
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "Sebastian's Scanner",
 
-  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "When you enter a Rest Site, procure a [gold]Neloprephine Shot[/gold].",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "Whenever you enter a [gold]Rest Site[/gold], gain [blue]{PotionSlots}[/blue] potion slot with a [gold]Neloprephine Shot[/gold].",
   "ANCIENTSAWAKENED-MEDICAL_KIT.flavor": "\"This one's not anything special. Just contains a collection of bandages, gauze, some tools and implements, and a good amount of this miracle serum I found.\"",
   "ANCIENTSAWAKENED-MEDICAL_KIT.title": "Medical Kit",
 
@@ -78,7 +78,7 @@
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"The big crate? Yeah, you can have it, and whatever's inside. You'll have to head on up to get the key, though, I dropped the damn thing and I'm pretty sure the big guy at the top of this layer has it.\"",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "Shipping Request",
   
-  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "You may [gold]Mutate[/gold] any number of times at Rest Sites as a free action.",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "You may [gold]Mutate[/gold] any number of times at [gold]Rest Sites[/gold] as a free action.",
   "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "\"Hey, be careful with this one now, it's pretty potent. You might feel one or two of your bones breaking. That means it's working!\"",
   "ANCIENTSAWAKENED-GLOWING_VIAL.title": "Glowing Vial",
 
@@ -95,7 +95,7 @@
   "ANCIENTSAWAKENED-FILM_ROLL.flavor": "",
   "ANCIENTSAWAKENED-FILM_ROLL.title": "Film Roll",
 
-  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "You may [gold]Mine[/gold] at Rest Sites.",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "You may [gold]Mine[/gold] at [gold]Rest Sites[/gold].",
   "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "",
   "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Prospecting Pick",
 

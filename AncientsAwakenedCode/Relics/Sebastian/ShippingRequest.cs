@@ -21,6 +21,8 @@ public class ShippingRequest : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
+    public override bool HasUponPickupEffect => true;
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<WeighedDown>();
 
     private int RewardAmount;
@@ -35,7 +37,6 @@ public class ShippingRequest : AncientsAwakenedRelic
     {
         if (room.RoomType != RoomType.Boss)
             return;
-        Flash();
 
         List<CardModel> removeCards = new List<CardModel>();
         
@@ -55,6 +56,7 @@ public class ShippingRequest : AncientsAwakenedRelic
         foreach (CardModel card in removeCards)
         {
             await CardPileCmd.RemoveFromDeck(card);
+            Flash();
         }
     }
     
@@ -64,8 +66,7 @@ public class ShippingRequest : AncientsAwakenedRelic
         {
             for (int i = 0; i < RewardAmount; i++)
             {
-                
-                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(200,300), player));
+                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,300), player));
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new RelicReward(RelicRarity.Common, player));
@@ -76,6 +77,7 @@ public class ShippingRequest : AncientsAwakenedRelic
                 rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
                 rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
                 rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
+                rewards.Add(new CardRemovalReward(player));
                 rewards.Add(new CardRemovalReward(player));
                 rewards.Add(new CardRemovalReward(player));
             }

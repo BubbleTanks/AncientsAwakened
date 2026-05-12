@@ -3,7 +3,7 @@
   "name": "Ancients Awakened",
   "author": "CrypticAurora",
   "description": "An Ancient mod by your local crazy moth.",
-  "version": "v1.2.1",
+  "version": "v1.2.2",
   "has_pck": true,
   "has_dll": true,
   "dependencies": [{"id": "BaseLib", "min_version": "3.1.2"}],

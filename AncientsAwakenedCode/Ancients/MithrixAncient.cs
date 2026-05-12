@@ -42,4 +42,9 @@ public class MithrixAncient : CustomAncientModel
     {
         return act.ActNumber() == 3 && AncientConfigs.EnableMithrixAncient;
     }
+    
+    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
+    {
+        return AncientConfigs.ForceMithrixEnabler && act.ActNumber() == 3;
+    }
 }
