@@ -22,19 +22,19 @@ public class SebastianAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<FlashBeacon>(3),
-                AncientOption<WildlifeDocuments>(2),
-                AncientOption<MedicalKit>(2)
+                AncientOption<FlashBeacon>(),
+                AncientOption<WildlifeDocuments>(),
+                AncientOption<MedicalKit>()
             ),
             MakePool(
-                AncientOption<SebbyCharm>(4),
+                AncientOption<SebbyCharm>(3),
                 AncientOption<SebastiansScanner>(3),
-                AncientOption<SalineInfuser>(2),
+                AncientOption<SalineInfuser>(3),
                 AncientOption<ShippingRequest>(2)
             ),
             MakePool(
                 AncientOption<ShotgunShells>(3),
-                AncientOption<GlowingVial>(1),
+                AncientOption<GlowingVial>(2),
                 AncientOption<ExperimentalSerum>(5, serum =>
                 {
                     if (Owner != null)

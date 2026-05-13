@@ -17,7 +17,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 
 [Pool(typeof(EventRelicPool))]
-public class ShippingRequest : AncientsAwakenedRelic
+public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulogy
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -28,7 +28,8 @@ public class ShippingRequest : AncientsAwakenedRelic
     public override async Task AfterObtained()
     {
         CardCmd.PreviewCardPileAdd([await CardPileCmd.Add(Owner.RunState.CreateCard<HeavyCrate>(Owner), PileType.Deck)], 2F);
-        await CardPileCmd.AddCurseToDeck<WeighedDown>(Owner);
+        WeighedDown c = (WeighedDown) await CardPileCmd.AddCurseToDeck<WeighedDown>(Owner);
+        c.FindTreasureCoords();
     }
     
     public override async Task AfterCombatEnd(CombatRoom room)

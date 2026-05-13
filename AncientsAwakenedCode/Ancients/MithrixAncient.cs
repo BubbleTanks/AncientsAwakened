@@ -18,9 +18,9 @@ public class MithrixAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<SharedDesign>(3),
-                AncientOption<ShapedGlass>(2),
-                AncientOption<PillarOfMass>(3)
+                AncientOption<SharedDesign>(),
+                AncientOption<ShapedGlass>(),
+                AncientOption<PillarOfMass>()
             ),
             MakePool(
                 AncientOption<Starseed>(3),
@@ -29,7 +29,7 @@ public class MithrixAncient : CustomAncientModel
             ),
             MakePool(
                 AncientOption<FlawlessHammer>(3),
-                AncientOption<ArtifactOfCommand>(1),
+                AncientOption<ArtifactOfCommand>(2),
                 AncientOption<EulogyZero>(2),
                 AncientOption<AncientScepter>(3)
             ));

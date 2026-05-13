@@ -41,7 +41,7 @@
   "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Will be opened after defeating the boss.",
   "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate",
 
-  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "",
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "Removed from your [gold]Deck[/gold] after the Act {ActNumber:diff()} [gold]Treasure Room[/gold].",
   "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down",
 
   "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HpLoss:diff()} HP {Repeat:diff()} times.\nHeal {Heal:diff()} HP.",
