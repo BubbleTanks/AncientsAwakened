@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -16,6 +17,8 @@ public class MonsoonCharm : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulo
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
+    public override bool HasUponPickupEffect => true;
+    
     public override async Task AfterObtained()
     {
 
@@ -28,9 +31,11 @@ public class MonsoonCharm : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulo
                 point.PointType = MapPointType.Elite; 
             }
         }
-        
-        
-
+    }
+    
+    public override bool IsAllowed(IRunState runState)
+    {
+        return runState.Players.Count == 1 || AncientConfigs.MultiplayerMonsoonCharm;
     }
     
     public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)

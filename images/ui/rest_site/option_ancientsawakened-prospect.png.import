@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmtabnvj4gjtv"
-path="res://.godot/imported/option_aavial.png-2f7af3064b93792345acc53e5ed66d15.ctex"
+uid="uid://col1ms775ffb4"
+path="res://.godot/imported/option_ancientsawakened-prospect.png-9e04e65ca7b105450c659e7208cd5f06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ui/rest_site/option_aavial.png"
-dest_files=["res://.godot/imported/option_aavial.png-2f7af3064b93792345acc53e5ed66d15.ctex"]
+source_file="res://images/ui/rest_site/option_ancientsawakened-prospect.png"
+dest_files=["res://.godot/imported/option_ancientsawakened-prospect.png-9e04e65ca7b105450c659e7208cd5f06.ctex"]
 
 [params]
 

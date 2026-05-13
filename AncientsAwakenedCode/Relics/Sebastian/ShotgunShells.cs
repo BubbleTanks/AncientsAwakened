@@ -15,6 +15,8 @@ public class ShotgunShells : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
+    public override bool HasUponPickupEffect => true;
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<TripleBarrelShotgun>();
 
     public override async Task AfterObtained()

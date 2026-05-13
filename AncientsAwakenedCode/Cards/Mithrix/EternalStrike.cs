@@ -22,7 +22,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<DoomPower>()];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(8, ValueProp.Move), new PowerVar<DoomPower>(10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(6, ValueProp.Move), new PowerVar<DoomPower>(10)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike, CardTag.OstyAttack];
 
     protected override bool ShouldGlowRedInternal => Owner.IsOstyMissing;
@@ -38,7 +38,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.OstyDamage.UpgradeValueBy(2M);
+        DynamicVars.OstyDamage.UpgradeValueBy(3M);
         DynamicVars.Doom.UpgradeValueBy(5M);
     }
 }

@@ -26,7 +26,7 @@ public class Cinderborn() : AncientsAwakenedCard(2,
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
             await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this);
-        await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
+        if(Owner.Creature.CurrentHp > 0) await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
     }
 
     protected override void OnUpgrade()

@@ -21,6 +21,8 @@ public class SebastiansScanner : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
+    public override bool HasUponPickupEffect => true;
+    
     private const string _combatsKey = "Combats";
     private int _sebastiansScannerActIndex = -1;
     
@@ -55,6 +57,13 @@ public class SebastiansScanner : AncientsAwakenedRelic
 
   public override ActMap ModifyGeneratedMapLate(IRunState runState, ActMap map, int actIndex)
   {
+    if (actIndex != SebastiansScannerActIndex)
+    {
+      SebastiansScannerCoordCols = [];
+      SebastiansScannerCoordRows = [];
+      SebastiansScannerCoordsSet = false;
+      return map;
+    }
     return AddMarkedRooms(map);
   }
 
@@ -114,7 +123,7 @@ public class SebastiansScanner : AncientsAwakenedRelic
   public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
   {
     List<MapCoord> markedCoords = GetMarkedCoords();
-    if (player != Owner || markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord))
+    if (markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord) || player.Relics.All(r => r.Id != Id))
       return false;
     rewards.Add(new RelicReward(player));
     return true;

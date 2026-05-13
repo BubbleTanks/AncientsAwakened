@@ -21,6 +21,8 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 public class ExperimentalSerum : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
+    
+    public override bool HasUponPickupEffect => true;    
 
     private ModelId? _ancientCard;
     
@@ -75,6 +77,7 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     public override bool IsAllowed(IRunState runState)
     {
+        if (!IsMutable) return true;
         return LocalContext.GetMe(runState) != null && SetupForPlayer(LocalContext.GetMe(runState));
     }
     

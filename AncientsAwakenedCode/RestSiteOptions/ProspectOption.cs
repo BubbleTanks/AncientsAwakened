@@ -23,7 +23,7 @@ public class ProspectOption : RestSiteOption, ICustomModel
         IsEnabled = true;
     }
 
-    public override string OptionId => "AAPROSPECT";
+    public override string OptionId => "ANCIENTSAWAKENED-PROSPECT";
     
     public override LocString Description
     {

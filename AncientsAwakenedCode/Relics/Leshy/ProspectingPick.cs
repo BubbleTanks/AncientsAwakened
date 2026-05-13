@@ -17,7 +17,7 @@ public class ProspectingPick : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "OPTION_AAPROSPECT.name"), new LocString("rest_site_ui", "OPTION_AAPROSPECT.description"))];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-PROSPECT.name"), new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-PROSPECT.description"))];
 
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
     {

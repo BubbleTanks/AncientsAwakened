@@ -24,7 +24,13 @@ public class AncientScepter : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override bool IsAllowed(IRunState runState) => SetupForPlayer(LocalContext.GetMe(runState));
+    public override bool IsAllowed(IRunState runState)
+    {
+        if(IsMutable) return SetupForPlayer(LocalContext.GetMe(runState));
+        return true;
+    }
+
+    public override bool HasUponPickupEffect => true;
     
     public bool SetupForPlayer(Player player)
     {

@@ -18,7 +18,7 @@ public class GlowingVial : AncientsAwakenedRelic
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     private ICollection<RestSiteOption> _options;
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "OPTION_AAVIAL.name"), new LocString("rest_site_ui", "OPTION_AAVIAL.description"))];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-VIAL.name"), new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-VIAL.description"))];
 
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
     {
@@ -31,7 +31,7 @@ public class GlowingVial : AncientsAwakenedRelic
     
     public override bool ShouldDisableRemainingRestSiteOptions(Player player)
     {
-        if (Owner.Creature.CurrentHp >= GlowingVialOption.HP_LOSS)
+        if (Owner.Creature.CurrentHp >= GlowingVialOption.HpCost(player))
         {
             if (_options == null)
             {
@@ -41,6 +41,7 @@ public class GlowingVial : AncientsAwakenedRelic
             {
                 if (option is GlowingVialOption)
                 {
+                    if (option.IsEnabled) return true;
                     option.IsEnabled = true;
                     if (NRestSiteRoom.Instance != null)
                     {
