@@ -72,7 +72,6 @@ public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromE
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new RelicReward(RelicRarity.Common, player));
                 rewards.Add(new RelicReward(RelicRarity.Uncommon, player));
-                rewards.Add(new RelicReward(RelicRarity.Uncommon, player));
                 rewards.Add(new RelicReward(RelicRarity.Rare, player));
                 rewards.Add(new CardReward(CardCreationOptions.ForNonCombatWithUniformOdds([Owner.Character.CardPool], c => c.Rarity == CardRarity.Rare).WithFlags(CardCreationFlags.NoRarityModification), 3, player));
                 rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
