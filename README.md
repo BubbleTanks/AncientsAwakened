@@ -26,4 +26,4 @@ _Silent Ancient Skill_ traced from **Jason Wang**
 _Defect Ancient Skill_ traced from **Jason Wang**  
 
 ### Commissions
-**starstruck_venus** for Mithrix's Map Icon & Dialogue Icon
+**starstruck_venus** for Mithrix's & Sebastian's Map Icon & Dialogue Icon
