@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
@@ -25,7 +26,6 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 public class EulogyZero : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
-
     public override bool TryModifyRewardsLate(Player player, List<Reward> rewards, AbstractRoom? room)
     {
         if (player != Owner || room == null)
@@ -82,6 +82,14 @@ public class EulogyZero : AncientsAwakenedRelic
         {
             listVar.Add(relic.Relic);
         }
+        
+        // just to make it easy I'm putting all the leshy relics here.
+        listVar.Add(ModelDb.Relic<FilmRoll>());
+        listVar.Add(ModelDb.Relic<Goobert>());
+        listVar.Add(ModelDb.Relic<PackRat>());
+        listVar.Add(ModelDb.Relic<ProspectingPick>());
+        listVar.Add(ModelDb.Relic<SquirrelInABottle>());
+        listVar.Add(ModelDb.Relic<TheSmoke>());
         
         return listVar;
     }

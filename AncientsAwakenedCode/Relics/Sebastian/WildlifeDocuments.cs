@@ -2,6 +2,7 @@
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
@@ -24,9 +25,10 @@ public class WildlifeDocuments : AncientsAwakenedRelic
     public override async Task BeforeSideTurnStart(
         PlayerChoiceContext choiceContext,
         CombatSide side,
+        IReadOnlyList<Creature> participants,
         ICombatState combatState)
     {
-        if (side != Owner.Creature.Side || combatState.RoundNumber > 1)
+        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState.TurnNumber > 1)
             return;
         Flash();
         await PowerCmd.Apply<DisadvantagedPower>(choiceContext, combatState.HittableEnemies, DynamicVars["DisadvantagedPower"].BaseValue, Owner.Creature, (CardModel) null);

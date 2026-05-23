@@ -1,17 +1,10 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
-using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
-using MegaCrit.Sts2.Core.Events;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Characters;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
@@ -22,19 +15,19 @@ public class SebastianAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<FlashBeacon>(3),
-                AncientOption<WildlifeDocuments>(2),
-                AncientOption<MedicalKit>(2)
+                AncientOption<FlashBeacon>(),
+                AncientOption<WildlifeDocuments>(),
+                AncientOption<MedicalKit>()
             ),
             MakePool(
-                AncientOption<SebbyCharm>(4),
+                AncientOption<SebbyCharm>(3),
                 AncientOption<SebastiansScanner>(3),
-                AncientOption<SalineInfuser>(2),
+                AncientOption<SalineInfuser>(3),
                 AncientOption<ShippingRequest>(2)
             ),
             MakePool(
                 AncientOption<ShotgunShells>(3),
-                AncientOption<GlowingVial>(1),
+                AncientOption<GlowingVial>(2),
                 AncientOption<ExperimentalSerum>(5, serum =>
                 {
                     if (Owner != null)

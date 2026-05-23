@@ -27,15 +27,15 @@ public class SebastiansScanner : AncientsAwakenedRelic
     private int _sebastiansScannerActIndex = -1;
     
     [SavedProperty]
-  private int SebastiansScannerActIndex
-  {
-    get => _sebastiansScannerActIndex;
-    set
+    private int SebastiansScannerActIndex
     {
-      AssertMutable();
-      _sebastiansScannerActIndex = value;
+        get => _sebastiansScannerActIndex;
+        set
+        {
+          AssertMutable();
+          _sebastiansScannerActIndex = value;
+        }
     }
-  }
 
   [SavedProperty]
   private int[] SebastiansScannerCoordCols { get; set; } = Array.Empty<int>();

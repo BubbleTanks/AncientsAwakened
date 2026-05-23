@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Models;
@@ -14,7 +15,7 @@ public class CardFactoryPatch
         public static IEnumerable<CardModel> Postfix(IEnumerable<CardModel> __result)
         {
             
-            IEnumerable<CardModel> card = __result.Where(c => c.Rarity != CardRarity.Token);
+            IEnumerable<CardModel> card = __result.Where(c => c.VisualCardPool is not PerfectedPool);
             return card;
 
         }
