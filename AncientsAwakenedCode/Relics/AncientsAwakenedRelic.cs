@@ -34,4 +34,9 @@ public abstract class AncientsAwakenedRelic : CustomRelicModel
             return ResourceLoader.Exists(path) ? path : "relic.png".BigRelicImagePath();
         }
     }
+
+    protected AncientsAwakenedRelic()
+    {
+        this.AddCustomAncientSpawnCondition(model => ToMutable().IsAllowed(model.Owner.RunState));
+    }
 }

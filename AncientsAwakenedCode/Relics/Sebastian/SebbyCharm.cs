@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Enchantments;
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -9,6 +10,7 @@ using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes;
@@ -35,7 +37,6 @@ public class SebbyCharm : AncientsAwakenedRelic
 
     public override bool IsAllowed(IRunState runState)
     { 
-        if(runState.Players.Count != 1) return false;
         foreach (CardModel c in LocalContext.GetMe(runState).Deck.Cards)
         {
             if (c.Type == CardType.Power)

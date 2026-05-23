@@ -1,17 +1,10 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
-using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
-using MegaCrit.Sts2.Core.Events;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Characters;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 

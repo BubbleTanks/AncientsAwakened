@@ -16,11 +16,6 @@ public class SalineInfuser : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    public override bool IsAllowed(IRunState runState)
-    {
-        return runState.Players.Count == 1;
-    }
-    
     public override async Task AfterPotionUsed(PotionModel potion, Creature? target)
     {
         if (potion.Owner != Owner || SaltyPatch.SaltyField.Get(potion))

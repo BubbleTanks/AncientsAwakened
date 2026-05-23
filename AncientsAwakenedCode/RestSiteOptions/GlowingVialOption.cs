@@ -1,4 +1,5 @@
 ﻿using BaseLib.Abstracts;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -23,7 +24,7 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
 
     public static decimal HpCost(Player player)
     {
-        return Hook.ModifyHpLostAfterOsty(player.RunState, player.Creature.CombatState, player.Creature, HP_LOSS, ValueProp.Unpowered | ValueProp.Unblockable, player.Creature, null, out _);
+        return Hook.ModifyHpLost(player.RunState, player.Creature.CombatState, player.Creature, HP_LOSS, ValueProp.Unpowered | ValueProp.Unblockable, player.Creature, null,HpLossHookPhase.AfterOsty, out _);
     }
     
     public GlowingVialOption(Player owner)
@@ -72,7 +73,7 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
             var button = NRestSiteRoom.Instance.GetButtonForOption(this);
             if (button != null)
             {
-                button.Reload();
+                AccessTools.Method(typeof(void), "Reload").Invoke(button, null);
                 button._isUnclickable = !IsEnabled;
             }
         }
