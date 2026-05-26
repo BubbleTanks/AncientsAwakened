@@ -10,8 +10,7 @@ using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
-
-public class LeshyAncient : CustomAncientModel
+public class MeloettaAncient : CustomAncientModel
 {
     protected override OptionPools MakeOptionPools =>
 

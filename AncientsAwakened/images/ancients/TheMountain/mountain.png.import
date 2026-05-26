@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rih5scs3187x"
-path="res://.godot/imported/ancientsawakened-sebastian_ancient.png-4147f7ddfe4634df158000329309465b.ctex"
+uid="uid://lqthieem1rlg"
+path="res://.godot/imported/mountain.png-76b47caa351266c820d418219e5db219.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ui/run_history/ancientsawakened-sebastian_ancient.png"
-dest_files=["res://.godot/imported/ancientsawakened-sebastian_ancient.png-4147f7ddfe4634df158000329309465b.ctex"]
+source_file="res://AncientsAwakened/images/ancients/TheMountain/mountain.png"
+dest_files=["res://.godot/imported/mountain.png-76b47caa351266c820d418219e5db219.ctex"]
 
 [params]
 

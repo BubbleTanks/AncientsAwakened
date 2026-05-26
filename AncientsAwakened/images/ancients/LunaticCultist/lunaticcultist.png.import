@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rih5scs3187x"
-path="res://.godot/imported/ancientsawakened-sebastian_ancient.png-4147f7ddfe4634df158000329309465b.ctex"
+uid="uid://ycy8t7tp4pkr"
+path="res://.godot/imported/lunaticcultist.png-157c4c6598ef7c34bc95b42b52c9091e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ui/run_history/ancientsawakened-sebastian_ancient.png"
-dest_files=["res://.godot/imported/ancientsawakened-sebastian_ancient.png-4147f7ddfe4634df158000329309465b.ctex"]
+source_file="res://AncientsAwakened/images/ancients/LunaticCultist/lunaticcultist.png"
+dest_files=["res://.godot/imported/lunaticcultist.png-157c4c6598ef7c34bc95b42b52c9091e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rih5scs3187x"
-path="res://.godot/imported/ancientsawakened-sebastian_ancient.png-4147f7ddfe4634df158000329309465b.ctex"
+uid="uid://cx1q558v4i42"
+path="res://.godot/imported/meloetta.png-ddf58e074ba7bf90c60c2938aae092b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ui/run_history/ancientsawakened-sebastian_ancient.png"
-dest_files=["res://.godot/imported/ancientsawakened-sebastian_ancient.png-4147f7ddfe4634df158000329309465b.ctex"]
+source_file="res://AncientsAwakened/images/ancients/Meloetta/meloetta.png"
+dest_files=["res://.godot/imported/meloetta.png-ddf58e074ba7bf90c60c2938aae092b9.ctex"]
 
 [params]
 

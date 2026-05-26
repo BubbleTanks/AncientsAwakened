@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://mhbok2b5gk1c"]
+
+[ext_resource type="Texture2D" uid="uid://ycy8t7tp4pkr" path="res://AncientsAwakened/images/ancients/LunaticCultist/lunaticcultist.png" id="1_2sbyq"]
+
+[node name="Mithrix" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 16.0
+offset_top = 3.0
+offset_right = 56.0
+offset_bottom = 43.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -309.0
+offset_top = -148.0
+offset_right = 2182.0
+offset_bottom = 1230.0
+texture = ExtResource("1_2sbyq")
+expand_mode = 1

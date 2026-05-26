@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bks4yobg3sah0"]
+
+[ext_resource type="Texture2D" uid="uid://cx1q558v4i42" path="res://AncientsAwakened/images/ancients/Meloetta/meloetta.png" id="1_y2xxk"]
+
+[node name="Mithrix" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 34.0
+offset_top = 9.0
+offset_right = 74.0
+offset_bottom = 49.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -309.0
+offset_top = -148.0
+offset_right = 2182.0
+offset_bottom = 1230.0
+texture = ExtResource("1_y2xxk")
+expand_mode = 1

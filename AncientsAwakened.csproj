@@ -38,7 +38,7 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.1.4" PrivateAssets="All" />
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.1.8" PrivateAssets="All" />
         <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
         <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="All">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -69,6 +69,10 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="AncientsAwakenedCode\Cards\Meloetta\" />
+        <Folder Include="AncientsAwakenedCode\Cards\Mountain\" />
+        <Folder Include="AncientsAwakenedCode\Relics\Meloetta\" />
+        <Folder Include="AncientsAwakenedCode\Relics\Mountain\" />
         <Folder Include="AncientsAwakened\images\card_portraits\big\"/>
         <Folder Include="AncientsAwakened\images\powers\big\"/>
         <Folder Include="AncientsAwakened\images\relics\big\"/>
