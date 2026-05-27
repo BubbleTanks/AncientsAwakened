@@ -67,5 +67,11 @@
   "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe",
 
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold].\nAt the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual"
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual",
+
+  "ANCIENTSAWAKENED-CRESCENDO.description": "",
+  "ANCIENTSAWAKENED-CRESCENDO.title": "Crescendo",
+
+  "ANCIENTSAWAKENED-DIMINUENDO.description": "",
+  "ANCIENTSAWAKENED-DIMINUENDO.title": "Diminuendo"
 }

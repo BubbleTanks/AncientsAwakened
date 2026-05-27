@@ -28,9 +28,9 @@ public class MountainAncient : CustomAncientModel
                 AncientOption<Goobert>()
             ));
     
-    public override Color ButtonColor => new(0.15f, 0.04f, 0.07f, 0.8f);
+    public override Color ButtonColor => new(0.05f, 0.05f, 0.05f, 0.8f);
 
-    public override Color DialogueColor => new("693019");
+    public override Color DialogueColor => new("060606");
     
     public override bool IsValidForAct(ActModel act)
     {

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ci7mjy4rpe4yt"]
 
-[ext_resource type="Texture2D" uid="uid://lqthieem1rlg" path="res://AncientsAwakened/images/ancients/TheMountain/mountain.png" id="1_2m4ah"]
+[ext_resource type="Texture2D" uid="uid://nvagl0l02odn" path="res://AncientsAwakened/images/ancients/TheMountain/mountain.png" id="1_2m4ah"]
 
 [node name="Mithrix" type="Control"]
 layout_mode = 3

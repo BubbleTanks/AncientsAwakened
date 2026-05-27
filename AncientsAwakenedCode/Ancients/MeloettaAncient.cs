@@ -28,9 +28,9 @@ public class MeloettaAncient : CustomAncientModel
                 AncientOption<Goobert>()
             ));
     
-    public override Color ButtonColor => new(0.15f, 0.04f, 0.07f, 0.8f);
+    public override Color ButtonColor => new(0.17f, 0.45f, 0.21f, 0.8f);
 
-    public override Color DialogueColor => new("693019");
+    public override Color DialogueColor => new("75e07f");
     
     public override bool IsValidForAct(ActModel act)
     {

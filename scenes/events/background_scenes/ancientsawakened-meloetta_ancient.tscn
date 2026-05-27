@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bks4yobg3sah0"]
 
-[ext_resource type="Texture2D" uid="uid://cx1q558v4i42" path="res://AncientsAwakened/images/ancients/Meloetta/meloetta.png" id="1_y2xxk"]
+[ext_resource type="Texture2D" uid="uid://k72x128q6vm2" path="res://AncientsAwakened/images/ancients/Meloetta/meloetta.png" id="1_y2xxk"]
 
 [node name="Mithrix" type="Control"]
 layout_mode = 3

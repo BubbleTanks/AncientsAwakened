@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://mhbok2b5gk1c"]
 
-[ext_resource type="Texture2D" uid="uid://ycy8t7tp4pkr" path="res://AncientsAwakened/images/ancients/LunaticCultist/lunaticcultist.png" id="1_2sbyq"]
+[ext_resource type="Texture2D" uid="uid://cyotsxvhnn2i1" path="res://AncientsAwakened/images/ancients/LunaticCultist/lunaticcultist.png" id="1_2sbyq"]
 
 [node name="Mithrix" type="Control"]
 layout_mode = 3

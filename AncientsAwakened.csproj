@@ -69,7 +69,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="AncientsAwakenedCode\Cards\Meloetta\" />
         <Folder Include="AncientsAwakenedCode\Cards\Mountain\" />
         <Folder Include="AncientsAwakenedCode\Relics\Meloetta\" />
         <Folder Include="AncientsAwakenedCode\Relics\Mountain\" />
