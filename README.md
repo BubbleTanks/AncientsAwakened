@@ -9,6 +9,9 @@ CrypticAurora & SoyTheProton (Plus assistance from #sts2-modding)
 
 ***No generative AI of any sort was used in the making of this mod.***
 
+# Localization
+**Korean Localization** from **F_iS_ma**
+
 # Art Credits
 Credits for the art found in this mod.   
 Art not listed were either made by us or commissioned specifcally for this mod.  
