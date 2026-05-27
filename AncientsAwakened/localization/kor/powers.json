@@ -1,0 +1,17 @@
+{
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "턴 종료 시, 추가 턴을 얻습니다.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "턴 종료 시, 추가 턴을 얻습니다.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "내 아래로 부서져라",
+
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "공격 피해를 [blue]15%[/blue] 덜 입히며, 공격으로 받는 피해가 [blue]30%[/blue] 증가합니다.",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "[blue]{Amount}[/blue] {Amount:plural:턴|턴} 동안 공격 피해를 [blue]15%[/blue] 덜 입히고, 받는 공격 피해가 [blue]30%[/blue] 증가합니다.",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "불리",
+
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.description": "",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.title": "속임수",
+
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "턴 시작 시, 모든 적에게 피해를 줍니다.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "턴 시작 시, 모든 적에게 [blue]{Amount}[/blue]의 피해를 줍니다.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "광기의 의식"
+}

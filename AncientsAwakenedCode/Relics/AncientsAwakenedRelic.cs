@@ -2,6 +2,7 @@
 using BaseLib.Extensions;
 using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using Godot;
+using MegaCrit.Sts2.Core.Entities.Players;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 
@@ -35,8 +36,13 @@ public abstract class AncientsAwakenedRelic : CustomRelicModel
         }
     }
 
+    protected virtual bool RelicAllowedToSpawn(Player owner)
+    {
+        return true;
+    }
+
     protected AncientsAwakenedRelic()
     {
-        this.AddCustomAncientSpawnCondition(model => ToMutable().IsAllowed(model.Owner.RunState));
+        this.AddCustomAncientSpawnCondition(model => ((AncientsAwakenedRelic)ToMutable()).RelicAllowedToSpawn(model.Owner));
     }
 }

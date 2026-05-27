@@ -1,0 +1,10 @@
+﻿{
+  "ANCIENTSAWAKENED-MASS.description": "이번 전투 동안 이 카드의 비용이 {energyPrefix:energyIcons(1)} 감소합니다. (전투당 1회)",
+  "ANCIENTSAWAKENED-MASS.title": "질량",
+
+  "ANCIENTSAWAKENED-DESIGN.description": "이 카드는 [gold]재사용[/gold] [blue]1[/blue]을 얻습니다.",
+  "ANCIENTSAWAKENED-DESIGN.title": "설계",
+
+  "ANCIENTSAWAKENED-CHARMED.description": "이 카드는 [gold]재사용[/gold] [blue]1[/blue]을 얻습니다.",
+  "ANCIENTSAWAKENED-CHARMED.title": "매혹"
+}

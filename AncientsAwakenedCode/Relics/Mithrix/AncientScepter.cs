@@ -24,10 +24,10 @@ public class AncientScepter : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override bool IsAllowed(IRunState runState)
+    
+    protected override bool RelicAllowedToSpawn(Player owner)
     {
-        if(IsMutable) return SetupForPlayer(LocalContext.GetMe(runState));
-        return true;
+        return SetupForPlayer(owner);
     }
 
     public override bool HasUponPickupEffect => true;

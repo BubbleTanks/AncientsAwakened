@@ -75,10 +75,9 @@ public class ExperimentalSerum : AncientsAwakenedRelic
         }
     };
     
-    public override bool IsAllowed(IRunState runState)
+    protected override bool RelicAllowedToSpawn(Player owner)
     {
-        if (!IsMutable) return true;
-        return LocalContext.GetMe(runState) != null && SetupForPlayer(LocalContext.GetMe(runState));
+        return SetupForPlayer(owner);
     }
     
     public bool SetupForPlayer(Player player)

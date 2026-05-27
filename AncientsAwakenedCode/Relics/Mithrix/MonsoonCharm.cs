@@ -37,7 +37,12 @@ public class MonsoonCharm : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulo
     {
         return runState.Players.Count == 1 || AncientConfigs.MultiplayerMonsoonCharm;
     }
-    
+
+    protected override bool RelicAllowedToSpawn(Player owner)
+    {
+        return IsAllowed(owner.RunState);
+    }
+
     public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
     {
         if (player != Owner || (room != null ? (room.RoomType != RoomType.Elite && room.RoomType != RoomType.Monster ? 1 : 0) : 1) != 0)
