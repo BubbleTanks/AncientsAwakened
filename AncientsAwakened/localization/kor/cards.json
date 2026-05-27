@@ -1,0 +1,71 @@
+{
+  "ANCIENTSAWAKENED-EGOCENTRISM.description": "턴 종료 시, 이 카드가 [gold]손[/gold]에 있다면 [gold]손[/gold]에 있는 모든 카드를 [gold]자기중심적[/gold]으로 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-EGOCENTRISM.title": "자기중심적",
+
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "피해를 {Damage:diff()} 줍니다.\n이번 턴이 끝난 후, 추가 턴을 얻습니다.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "내 아래로 부서져라",
+
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]힘[/gold]을 {StrengthPower:diff()} 얻습니다.\n[gold]취약[/gold]을 {VulnerablePower:diff()} 부여합니다.",
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.title": "악마의 타격",
+
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n체력을 {HpLoss:diff()} 잃습니다.",
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.title": "악마의 수비",
+
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]중독[/gold]을 {PoisonPower:diff()} 부여합니다.",
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.title": "치명적인 타격",
+
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]단도[/gold]를 {Shivs:diff()}장 [gold]손[/gold]에 추가합니다.\n카드를 {Cards:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.title": "치명적인 수비",
+
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]단조[/gold] {Forge:diff()}.\n{Stars:starIcons()}를 얻습니다.",
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.title": "천상의 타격",
+
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n무작위 하수인 카드 1장을 [gold]손[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.title": "천상의 수비",
+
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]골골이[/gold]가 피해를 {OstyDamage:diff()} 줍니다.\n[gold]종말[/gold]을 {DoomPower:diff()} 부여합니다.",
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "영원의 타격",
+
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]소환[/gold] {Summon:diff()}.\n[gold]뽑을 카드 더미[/gold]에 [gold]{IfUpgraded:show:영혼+|영혼}[/gold] 1장을 추가합니다.",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "영원의 수비",
+  
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "피해를 {Damage:diff()}만큼 2번 줍니다.\n[gold]유리[/gold]를 1번 [gold]영창[/gold]합니다.\n[gold]손[/gold]에 [gold]어지러움[/gold] 1장을 추가합니다.",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "강화된 타격",
+  
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]냉기[/gold]를 2번 [gold]영창[/gold]합니다.\n이번 턴에 [gold]밀집[/gold]을 {FocusPower:diff()} 얻습니다.",
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "강화된 수비",
+
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "모든 적에게 피해를 {Damage:diff()}만큼 {Repeat:diff()}번 줍니다.\n카드를 {Cards:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "트리플 배럴 샷건",
+
+  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "보스를 처치한 후 열립니다.",
+  "ANCIENTSAWAKENED-HEAVY_CRATE.title": "무거운 상자",
+
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "",
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "짓눌림",
+
+  "ANCIENTSAWAKENED-CINDERBORN.description": "체력을 {HpLoss:diff()}만큼 {Repeat:diff()}번 잃습니다.\n체력을 {Heal:diff()} 회복합니다.",
+  "ANCIENTSAWAKENED-CINDERBORN.title": "재의 자손",
+
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "[gold]중독[/gold]을 {PoisonPower:diff()} 부여합니다.\n다른 카드를 버릴 때마다, 이 카드를 [gold]손[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.title": "살모사",
+
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "[gold]단조[/gold] {Forge:diff()}.\n이 카드를 [gold]손[/gold]으로 되돌립니다.",
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "천상의 망치",
+
+  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]소환[/gold] {Summon:diff()}.\n[gold]손[/gold]에 있는 카드를 [gold]{IfUpgraded:show:사령 폭발+|사령 폭발}[/gold]로 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-NECROTIC_BURST.title": "사령 폭발",
+
+  "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]전기[/gold]를 {Repeat:diff()}번 [gold]영창[/gold]합니다.\n이번 턴에 [gold]밀집[/gold]을 {FocusPower:diff()} 얻습니다.",
+  "ANCIENTSAWAKENED-ELECTROLYZE.title": "전기 분해",
+
+  "ANCIENTSAWAKENED-SQUIRREL.description": "카드를 {Cards:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-SQUIRREL.title": "다람쥐",
+
+  "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "새길 카드를 고르세요.",
+  "ANCIENTSAWAKENED-INSCRYBE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]손[/gold]에 있는 카드 중 하나를 골라 복사본을 만듭니다.",
+  "ANCIENTSAWAKENED-INSCRYBE.title": "새기기",
+
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "[gold]의식[/gold]을 {RitualPower:diff()} 얻습니다.\n매 턴 시작 시, 모든 적에게 피해를 {LunaticRitualPower:diff()} 줍니다.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "광기의 의식"
+}

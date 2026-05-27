@@ -36,7 +36,12 @@ public class ShapedGlass : AncientsAwakenedRelic
         
         return 2M;
     }*/
-    
+
+    protected override bool RelicAllowedToSpawn(Player Owner)
+    {
+        return Owner.Deck.Cards.Any(c => c.Type == CardType.Attack);
+    }
+
     public override bool HasUponPickupEffect => true;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips
