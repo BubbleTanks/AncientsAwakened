@@ -73,7 +73,7 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
             var button = NRestSiteRoom.Instance.GetButtonForOption(this);
             if (button != null)
             {
-                AccessTools.Method(typeof(void), "Reload").Invoke(button, null);
+                button.Reload();
                 button._isUnclickable = !IsEnabled;
             }
         }

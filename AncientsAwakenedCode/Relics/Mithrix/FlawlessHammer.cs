@@ -4,6 +4,7 @@ using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.RelicPools;
@@ -24,6 +25,11 @@ public class FlawlessHammer : AncientsAwakenedRelic
     public override bool IsAllowed(IRunState runState)
     {
         return runState.Players.Count == 1 || AncientConfigs.MultiplayerFlawlessHammer;
+    }
+    
+    protected override bool RelicAllowedToSpawn(Player owner)
+    {
+        return IsAllowed(owner.RunState);
     }
 
     public override async Task AfterObtained()

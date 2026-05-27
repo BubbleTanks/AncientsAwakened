@@ -5,6 +5,7 @@ using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Helpers;
@@ -30,22 +31,11 @@ public class SebbyCharm : AncientsAwakenedRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1), new StringVar("Enchantment", ModelDb.Enchantment<Charmed>().Title.GetFormattedText())];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Charmed>();
+
+    protected override bool RelicAllowedToSpawn(Player owner)
     {
-        get => HoverTipFactory.FromEnchantment<Charmed>();
-    }
-
-    public override bool IsAllowed(IRunState runState)
-    { 
-        foreach (CardModel c in LocalContext.GetMe(runState).Deck.Cards)
-        {
-            if (c.Type == CardType.Power)
-            {
-                return true;
-            }
-        }
-
-        return false;
+        return owner.Deck.Cards.Any(card => card.Type == CardType.Power);
     }
 
     public override async Task AfterObtained()
