@@ -69,12 +69,14 @@
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold].\nAt the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies.",
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual",
 
+  "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
+  "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
+  
   "ANCIENTSAWAKENED-CRESCENDO.description": "",
   "ANCIENTSAWAKENED-CRESCENDO.title": "Crescendo",
 
   "ANCIENTSAWAKENED-DIMINUENDO.description": "",
   "ANCIENTSAWAKENED-DIMINUENDO.title": "Diminuendo",
-
 
   "ANCIENTSAWAKENED-MELODY_BERRY.description": "heal draw 1 ill FUCKING WRITE IT LATER",
   "ANCIENTSAWAKENED-MELODY_BERRY.title": "Melody Berry"

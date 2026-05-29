@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using HarmonyLib;
