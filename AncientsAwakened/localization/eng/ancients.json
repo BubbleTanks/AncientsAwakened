@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.title": "Mithrix",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.firstVisitEver.0-0.ancient": "Greetings, vermin.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.epithet": "King of Nothing",
-  
+
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.0-0r.ancient": "You return? How vile.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.1-0r.ancient": "We meet again. Take my blessing and go, vermin.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.2-0r.ancient": "Tireless, you are. It will not matter.",
@@ -45,7 +45,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-3r.char": "I should smite you where you stand, but I will show you mercy! Offer to me a gift and I will be on my way!",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-3r.next": "Continue",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-4r.ancient": "If it will silence you, then so be it.",
-  
+
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-0r.ancient": "The king of the vermin returns.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-0r.next": "Respond",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-1r.char": "Insolent fool! Have you any idea who I am?",
@@ -183,9 +183,9 @@
 
   "ANCIENTSAWAKENED-MELOETTA_ANCIENT.title": "Meloetta",
   "ANCIENTSAWAKENED-MELOETTA_ANCIENT.epithet": "Spirit of Harmony",
-  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.talk.ANY.0-0r.ancient": "???",
+  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.talk.ANY.0-0r.ancient": "",
 
-  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.talk.firstVisitEver.0-0.ancient": "???",
+  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.talk.firstVisitEver.0-0.ancient": "",
 
 
 

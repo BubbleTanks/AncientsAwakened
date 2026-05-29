@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -34,14 +35,12 @@ public class MountainAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return false;
-        return act.ActNumber() == 2;
+        return act.ActNumber() == 3 && AncientConfigs.EnableMountainAncient;
     }
     
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        return false;
-        //return act.ActNumber() == 2;
+        return AncientConfigs.ForceMountainEnabler && act.ActNumber() == 3;
     }
 
     public override IEnumerable<EventOption> AllPossibleOptions => [

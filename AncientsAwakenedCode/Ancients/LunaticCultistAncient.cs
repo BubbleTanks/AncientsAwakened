@@ -1,4 +1,6 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -16,16 +18,13 @@ public class LunaticCultistAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<SquirrelInABottle>(),
-                AncientOption<PackRat>()
+                AncientOption<CelestialSigil>()
             ),
             MakePool(
-                AncientOption<TheSmoke>(), 
-                AncientOption<ProspectingPick>()
+                AncientOption<CelestialSigil>()
             ),
             MakePool(
-                AncientOption<FilmRoll>(),
-                AncientOption<Goobert>()
+                AncientOption<CelestialSigil>()
             ));
     
     public override Color ButtonColor => new(0.1f, 0.04f, 0.2f, 0.8f);
@@ -34,14 +33,12 @@ public class LunaticCultistAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return false;
-        return act.ActNumber() == 2;
+        return act.ActNumber() == 3 && AncientConfigs.EnableLunaticCultistAncient;
     }
     
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        return false;
-        //return act.ActNumber() == 2;
+        return AncientConfigs.ForceLunaticCultistEnabler && act.ActNumber() == 3;
     }
 
     public override IEnumerable<EventOption> AllPossibleOptions => [

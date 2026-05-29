@@ -1,4 +1,6 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -16,16 +18,13 @@ public class MeloettaAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<SquirrelInABottle>(),
-                AncientOption<PackRat>()
+                AncientOption<Harmonizer>()
             ),
             MakePool(
-                AncientOption<TheSmoke>(), 
-                AncientOption<ProspectingPick>()
+                AncientOption<Harmonizer>()
             ),
             MakePool(
-                AncientOption<FilmRoll>(),
-                AncientOption<Goobert>()
+                AncientOption<Harmonizer>()
             ));
     
     public override Color ButtonColor => new(0.17f, 0.45f, 0.21f, 0.8f);
@@ -34,14 +33,12 @@ public class MeloettaAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return false;
-        return act.ActNumber() == 2;
+        return act.ActNumber() == 2 && AncientConfigs.EnableMeloettaAncient;
     }
     
     public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
     {
-        return false;
-        //return act.ActNumber() == 2;
+        return AncientConfigs.ForceMeloettaEnabler && act.ActNumber() == 2;
     }
 
     public override IEnumerable<EventOption> AllPossibleOptions => [
