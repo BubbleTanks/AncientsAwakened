@@ -18,13 +18,16 @@ public class MeloettaAncient : CustomAncientModel
 
         new(
             MakePool(
+                AncientOption<MelodyBerryBasket>(),
                 AncientOption<Harmonizer>()
             ),
             MakePool(
-                AncientOption<Harmonizer>()
+                AncientOption<AncientLullaby>(),
+                AncientOption<TrebleClef>()
             ),
             MakePool(
-                AncientOption<Harmonizer>()
+                AncientOption<SepiaPhotograph>(),
+                AncientOption<RelicSong>()
             ));
     
     public override Color ButtonColor => new(0.17f, 0.45f, 0.21f, 0.8f);
