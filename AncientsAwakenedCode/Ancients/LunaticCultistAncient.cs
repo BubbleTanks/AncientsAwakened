@@ -18,13 +18,19 @@ public class LunaticCultistAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<CelestialSigil>()
+                AncientOption<RefinedChlorophyte>(),
+                AncientOption<WormScarf>(),
+                AncientOption<FallenStar>()
             ),
             MakePool(
-                AncientOption<CelestialSigil>()
+                AncientOption<SolarBrazier>(),
+                AncientOption<VortexEye>(),
+                AncientOption<NebulaTome>()
             ),
             MakePool(
-                AncientOption<CelestialSigil>()
+                AncientOption<MysteriousTablet>(),
+                AncientOption<CelestialSigil>(),
+                AncientOption<BottleOfEctoplasm>()
             ));
     
     public override Color ButtonColor => new(0.1f, 0.04f, 0.2f, 0.8f);
@@ -40,7 +46,4 @@ public class LunaticCultistAncient : CustomAncientModel
     {
         return AncientConfigs.ForceLunaticCultistEnabler && act.ActNumber() == 3;
     }
-
-    public override IEnumerable<EventOption> AllPossibleOptions => [
-    ];
 }

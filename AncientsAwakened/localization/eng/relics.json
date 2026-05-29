@@ -99,20 +99,37 @@
   "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "",
   "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Prospecting Pick",
 
-  "ANCIENTSAWAKENED-PACK_RAT.description": "more rewards, bozo",
+  "ANCIENTSAWAKENED-PACK_RAT.description": "Enemies drop an additional random reward.",
   "ANCIENTSAWAKENED-PACK_RAT.flavor": "",
   "ANCIENTSAWAKENED-PACK_RAT.title": "Pack Rat",
 
-  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "Choose cards to duplicate.",
-  "ANCIENTSAWAKENED-GOOBERT.description": "dolly mirror 3 times",
+  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "Select cards to [gold]Copy[/gold]",
+  "ANCIENTSAWAKENED-GOOBERT.description": "Upon pickup, obtain an additional copy of up to [blue]{Cards}[/blue] cards in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-GOOBERT.eventDescription": "Obtain an additional copy of up to [blue]{Cards}[/blue] cards in your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-GOOBERT.flavor": "",
   "ANCIENTSAWAKENED-GOOBERT.title": "Goobert",
 
-  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "its like luminesce but cooler because i made it",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.description": "Enemies in non-Boss combats have [blue]{HpPercentage}%[/blue] less HP.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.flavor": "",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.title": "Bone Lord's Boon",
+
+  "ANCIENTSAWAKENED-CARVING_KNIFE.description": "The first [gold]Hand[/gold] you draw each combat costs [blue]1[/blue] less {energyPrefix:energyIcons(1)}.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.flavor": "",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.title": "Carving Knife",
+
+  "ANCIENTSAWAKENED-FISH_HOOK.description": "At the start of each [gold]Elite[/gold] combat, [gold]Stun[/gold] ALL enemies.",
+  "ANCIENTSAWAKENED-FISH_HOOK.flavor": "",
+  "ANCIENTSAWAKENED-FISH_HOOK.title": "Fish Hook",
+
+  "ANCIENTSAWAKENED-THE_MOON.description": "Whenever you would receive [blue]{DamageThreshold}[/blue] or less unblocked attack damage, reduce it to [blue]{DamageMaximum}[/blue].",
+  "ANCIENTSAWAKENED-THE_MOON.flavor": "",
+  "ANCIENTSAWAKENED-THE_MOON.title": "The Moon",
+  
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Squirrel|Squirrels}[/gold] into your [gold]Hand[/gold].",
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "",
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Squirrel in a Bottle",
 
-  "ANCIENTSAWAKENED-THE_SMOKE.description": "centennial puzzle but i also give you two energy and a fourth card but ironclad cant proc it for free",
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards} and gain {Energy:energyIcons()} next turn.",
   "ANCIENTSAWAKENED-THE_SMOKE.flavor": "",
   "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke",
 
@@ -140,7 +157,40 @@
   "ANCIENTSAWAKENED-ANCIENT_LULLABY.flavor": "",
   "ANCIENTSAWAKENED-ANCIENT_LULLABY.title": "AncientLullaby",
 
-  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.description": "according to all known laws of aviation, there is no way a bee should be able to fly. it's wings are too small to get it's fat little body off the ground. the bee, of course, flies anyway, because bees don't care what humans think is impossible.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Add [blue]1[/blue] [gold]Lunatic Ritual[/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
+
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.description": "Whenever you play an Power, gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
   "ANCIENTSAWAKENED-CELESTIAL_SIGIL.flavor": "",
-  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.title": "Celestial Sigil"
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.title": "Celestial Sigil",
+
+  "ANCIENTSAWAKENED-WORM_SCARF.description": "Start each combat with [blue]{BufferPower}[/blue] [gold]Buffer[/gold].",
+  "ANCIENTSAWAKENED-WORM_SCARF.flavor": "",
+  "ANCIENTSAWAKENED-WORM_SCARF.title": "Worm Scarf",
+
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to a random enemy.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "",
+  "ANCIENTSAWAKENED-FALLEN_STAR.title": "Fallen Star",
+
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold] and increase it by [blue]{Scaling}[/blue] permanently.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
+
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.description": "The first time end your turn without [gold]Block[/gold] each combat, gain [blue]{IntangiblePower}[/blue] [gold]Intangible[/gold].",
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.flavor": "",
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.title": "Bottle of Ectoplasm",
+
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Solar Brazier",
+
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "At the start of your turn, deal [blue]{DamagePercentage}%[/blue] more damage for the rest of combat",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "",
+  "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
+  
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle a [gold]Cosmic Dust[/gold] into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "",
+  "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome"
 }

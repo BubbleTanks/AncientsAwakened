@@ -8,9 +8,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
 public class ProspectingPick : AncientsAwakenedRelic

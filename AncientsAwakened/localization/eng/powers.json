@@ -13,5 +13,9 @@
 
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "At the start of your turn, deal damage to all enemies.",
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "At the start of your turn, deal [blue]{Amount}[blue] damage to all enemies.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Lunatic Ritual"
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Lunatic Ritual",
+
+  "ANCIENTSAWAKENED-VORTEX_POWER.description": "Attacks deal [blue]10%[/blue] more damage.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "Attacks deal [blue]{Amount}%[/blue] more damage",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "Vortex"
 }

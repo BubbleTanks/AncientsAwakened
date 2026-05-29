@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
@@ -19,14 +20,18 @@ public class LeshyAncient : CustomAncientModel
         new(
             MakePool(
                 AncientOption<SquirrelInABottle>(),
-                AncientOption<PackRat>()
+                AncientOption<PackRat>(),
+                AncientOption<BoneLordBoon>()
             ),
             MakePool(
                 AncientOption<TheSmoke>(), 
+                AncientOption<CarvingKnife>(),
+                AncientOption<FishHook>(),
                 AncientOption<ProspectingPick>()
             ),
             MakePool(
                 AncientOption<FilmRoll>(),
+                AncientOption<TheMoon>(),
                 AncientOption<Goobert>()
             ));
     
@@ -43,7 +48,4 @@ public class LeshyAncient : CustomAncientModel
     {
         return AncientConfigs.ForceLeshyEnabler && act.ActNumber() == 2;
     }
-
-    public override IEnumerable<EventOption> AllPossibleOptions => [
-    ];
 }

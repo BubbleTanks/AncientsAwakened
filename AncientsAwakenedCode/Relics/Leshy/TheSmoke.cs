@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 
 [Pool(typeof(EventRelicPool))]
