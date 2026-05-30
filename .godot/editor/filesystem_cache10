@@ -128,14 +128,14 @@ shotgun_shells.png::CompressedTexture2D::8647715328105055035::1778477158::177984
 starseed.png::CompressedTexture2D::8903503834028798787::1776482655::1779840116::1::::<><><>0<>0<>bf74f1e7dd2ffa0473daaa9002fe7b67<>res://.godot/imported/starseed.png-261359729f1bd634ace838cadf368256.ctex::
 wildlife_documents.png::CompressedTexture2D::7142620693333591::1778477158::1779840116::1::::<><><>0<>0<>058e6b0945c784f4b2ae6fe389307f2b<>res://.godot/imported/wildlife_documents.png-fdbaf2a547c8babb3b506c52cf2d0293.ctex::
 ::res://AncientsAwakened/localization/::1779855968
-::res://AncientsAwakened/localization/eng/::1780069874
-ancients.json::JSON::-1::1780069874::0::1::::<><><>0<>0<><>::
+::res://AncientsAwakened/localization/eng/::1780109713
+ancients.json::JSON::-1::1780109713::0::1::::<><><>0<>0<><>::
 cards.json::JSON::-1::1780069874::0::1::::<><><>0<>0<><>::
 card_keywords.json::JSON::-1::1775884710::0::1::::<><><>0<>0<><>::
 enchantments.json::JSON::-1::1777520170::0::1::::<><><>0<>0<><>::
 potions.json::JSON::-1::1778477158::0::1::::<><><>0<>0<><>::
 powers.json::JSON::-1::1780069874::0::1::::<><><>0<>0<><>::
-relics.json::JSON::-1::1780069874::0::1::::<><><>0<>0<><>::
+relics.json::JSON::-1::1780107933::0::1::::<><><>0<>0<><>::
 rest_site_ui.json::JSON::-1::1779830644::0::1::::<><><>0<>0<><>::
 settings_ui.json::JSON::-1::1780019363::0::1::::<><><>0<>0<><>::
 static_hover_tips.json::JSON::-1::1775884710::0::1::::<><><>0<>0<><>::
@@ -285,7 +285,7 @@ AncientConfigs.cs::CSharpScript::5894817745094801263::1780019442::0::1::::<><><>
 ::res://bin/::1775887120
 ::res://bin/ExportRelease/::1775887120
 ::res://bin/ExportRelease/net9.0/::1775887120
-::res://bin/ExportRelease/net9.0/publish/::1780069959
+::res://bin/ExportRelease/net9.0/publish/::1780109714
 AncientsAwakened.deps.json::JSON::-1::1780069959::0::1::::<><><>0<>0<><>::
 ::res://images/::1778477158
 ::res://images/enchantments/::1779840115
