@@ -30,7 +30,6 @@ public class SquirrelInABottle : AncientsAwakenedRelic
         if (player != Owner || Owner.PlayerCombatState.TurnNumber != 1)
             return;
         List<CardModel> cards = new List<CardModel>();
-        cards.Add(Owner.Creature.CombatState.CreateCard<Squirrel>(Owner));
         for (int index = 0; index < DynamicVars.Cards.IntValue; ++index)
             cards.Add(Owner.Creature.CombatState.CreateCard<Squirrel>(Owner));
         await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, Owner);
