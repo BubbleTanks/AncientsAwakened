@@ -27,7 +27,7 @@ public class Diminuendo() : AncientsAwakenedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay cardPlay)
     {
-        await PowerCmd.Apply<DiminuendoPower>(choiceContext, Owner.Creature, DynamicVars.Strength.BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<DiminuendoPower>(choiceContext, Owner.Creature, DynamicVars.Dexterity.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
