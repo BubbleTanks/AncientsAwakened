@@ -92,45 +92,45 @@
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Experimental Serum",
 
   "ANCIENTSAWAKENED-FILM_ROLL.description": "Add [blue]1[/blue] [gold]Inscrybe[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "",
+  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "A dusty roll of camera film. Strange symbols are inscribed upon it.",
   "ANCIENTSAWAKENED-FILM_ROLL.title": "Film Roll",
 
   "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "You may [gold]Mine[/gold] at [gold]Rest Sites[/gold].",
-  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "A heavy pickaxe, rusted with time. Any rocks struck with it seem to mysteriously be filled with gold.",
   "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Prospecting Pick",
 
   "ANCIENTSAWAKENED-PACK_RAT.description": "Enemies drop an additional random reward.",
-  "ANCIENTSAWAKENED-PACK_RAT.flavor": "",
+  "ANCIENTSAWAKENED-PACK_RAT.flavor": "A small rat with a pack far too large for it. It occasionally offers you various items, though you do not know where it procures them.",
   "ANCIENTSAWAKENED-PACK_RAT.title": "Pack Rat",
 
   "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "Select cards to [gold]Copy[/gold]",
   "ANCIENTSAWAKENED-GOOBERT.description": "Upon pickup, obtain an additional copy of up to [blue]{Cards}[/blue] cards in your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-GOOBERT.eventDescription": "Obtain an additional copy of up to [blue]{Cards}[/blue] cards in your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-GOOBERT.flavor": "",
+  "ANCIENTSAWAKENED-GOOBERT.flavor": "You have no idea what this is.",
   "ANCIENTSAWAKENED-GOOBERT.title": "Goobert",
 
   "ANCIENTSAWAKENED-BONE_LORD_BOON.description": "Enemies in non-Boss combats have [blue]{HpPercentage}%[/blue] less HP.",
-  "ANCIENTSAWAKENED-BONE_LORD_BOON.flavor": "",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.flavor": "A token of ivory with a bone marked into it. You feel blessed while carrying it.",
   "ANCIENTSAWAKENED-BONE_LORD_BOON.title": "Bone Lord's Boon",
 
   "ANCIENTSAWAKENED-CARVING_KNIFE.description": "The first [gold]Hand[/gold] you draw each combat costs [blue]1[/blue] less {energyPrefix:energyIcons(1)}.",
-  "ANCIENTSAWAKENED-CARVING_KNIFE.flavor": "",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.flavor": "A pristine knife, shaped for carving wood. You can hear whispers from the totems you carve with it.",
   "ANCIENTSAWAKENED-CARVING_KNIFE.title": "Carving Knife",
 
   "ANCIENTSAWAKENED-FISH_HOOK.description": "At the start of each [gold]Elite[/gold] combat, [gold]Stun[/gold] ALL enemies.",
-  "ANCIENTSAWAKENED-FISH_HOOK.flavor": "",
+  "ANCIENTSAWAKENED-FISH_HOOK.flavor": "A steel fishing hook. Nothing remarkable about it presents itself.",
   "ANCIENTSAWAKENED-FISH_HOOK.title": "Fish Hook",
 
   "ANCIENTSAWAKENED-THE_MOON.description": "Whenever you would receive [blue]{DamageThreshold}[/blue] or less unblocked attack damage, reduce it to [blue]{DamageMaximum}[/blue].",
-  "ANCIENTSAWAKENED-THE_MOON.flavor": "",
+  "ANCIENTSAWAKENED-THE_MOON.flavor": "A miniature replica of a celestial body. It seems to be made of real moon rocks.",
   "ANCIENTSAWAKENED-THE_MOON.title": "The Moon",
   
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "At the start of each combat, add [blue]{Cards}[/blue] [gold]{Cards:plural:Squirrel|Squirrels}[/gold] into your [gold]Hand[/gold].",
-  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "A playing card, drawn to appear as if it were a squirrel. You feel uneasy as you stare at it.",
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Squirrel in a Bottle",
 
   "ANCIENTSAWAKENED-THE_SMOKE.description": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards} and gain {Energy:energyIcons()} next turn.",
-  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "",
+  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "Smoke from an expired candle, preserved in glass. Some of it leaks out, tainting your breath.",
   "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke",
 
   "ANCIENTSAWAKENED-HARMONIZER.description": "2 energy when playing power",
@@ -155,42 +155,42 @@
 
   "ANCIENTSAWAKENED-ANCIENT_LULLABY.description": "four fucking red masks",
   "ANCIENTSAWAKENED-ANCIENT_LULLABY.flavor": "",
-  "ANCIENTSAWAKENED-ANCIENT_LULLABY.title": "AncientLullaby",
+  "ANCIENTSAWAKENED-ANCIENT_LULLABY.title": "Ancient Lullaby",
 
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Add [blue]1[/blue] [gold]Lunatic Ritual[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "The hooded figure told you to be careful with these spells. It would be wise to listen.",
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
 
   "ANCIENTSAWAKENED-CELESTIAL_SIGIL.description": "Whenever you play an Power, gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
-  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.flavor": "",
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.flavor": "The symbols etched into this medallion are unsettling.",
   "ANCIENTSAWAKENED-CELESTIAL_SIGIL.title": "Celestial Sigil",
 
   "ANCIENTSAWAKENED-WORM_SCARF.description": "Start each combat with [blue]{BufferPower}[/blue] [gold]Buffer[/gold].",
-  "ANCIENTSAWAKENED-WORM_SCARF.flavor": "",
+  "ANCIENTSAWAKENED-WORM_SCARF.flavor": "Quite comfortable to wear, though the appearance leaves quite a bit to be desired.",
   "ANCIENTSAWAKENED-WORM_SCARF.title": "Worm Scarf",
 
   "ANCIENTSAWAKENED-FALLEN_STAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to a random enemy.",
-  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "A shard of the heavens that crash landed, now yours to wield.",
   "ANCIENTSAWAKENED-FALLEN_STAR.title": "Fallen Star",
 
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold] and increase it by [blue]{Scaling}[/blue] permanently.",
-  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "The strange metal in your hands seems to pulse and glow, as if growing even as you watch it.",
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
 
   "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.description": "The first time end your turn without [gold]Block[/gold] each combat, gain [blue]{IntangiblePower}[/blue] [gold]Intangible[/gold].",
-  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.flavor": "",
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.flavor": "You can't tell if the gel inside is created by spirits or is a spirit itself.",
   "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.title": "Bottle of Ectoplasm",
 
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
-  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "The flame roars endlessly, devouring everything you feed into it. The heat is unbearable.",
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Solar Brazier",
 
   "ANCIENTSAWAKENED-VORTEX_EYE.description": "At the start of your turn, deal [blue]{DamagePercentage}%[/blue] more damage for the rest of combat",
-  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
   "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
   
   "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle a [gold]Cosmic Dust[/gold] into your [gold]Draw Pile[/gold].",
-  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
   "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome"
 }
