@@ -13,7 +13,7 @@ public class MelodyBerry() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.None)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(3M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(3M), new CardsVar(1)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
@@ -23,6 +23,7 @@ public class MelodyBerry() : AncientsAwakenedCard(1,
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, Owner);
     }
 
     protected override void OnUpgrade()

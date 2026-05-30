@@ -72,12 +72,15 @@
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
   
-  "ANCIENTSAWAKENED-CRESCENDO.description": "",
+  "ANCIENTSAWAKENED-CRESCENDO.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.",
   "ANCIENTSAWAKENED-CRESCENDO.title": "Crescendo",
 
-  "ANCIENTSAWAKENED-DIMINUENDO.description": "",
+  "ANCIENTSAWAKENED-DIMINUENDO.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
   "ANCIENTSAWAKENED-DIMINUENDO.title": "Diminuendo",
 
-  "ANCIENTSAWAKENED-MELODY_BERRY.description": "heal draw 1 ill FUCKING WRITE IT LATER",
-  "ANCIENTSAWAKENED-MELODY_BERRY.title": "Melody Berry"
+  "ANCIENTSAWAKENED-MELODY_BERRY.description": "Heal {Heal:diff()} HP.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-MELODY_BERRY.title": "Melody Berry",
+
+  "ANCIENTSAWAKENED-STRESS.description": "Whenever you draw this card, you receive {StressPower:diff()} additional damage for the rest of combat.",
+  "ANCIENTSAWAKENED-STRESS.title": "Stress"
 }

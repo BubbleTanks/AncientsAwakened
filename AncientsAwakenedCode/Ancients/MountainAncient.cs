@@ -43,7 +43,4 @@ public class MountainAncient : CustomAncientModel
     {
         return AncientConfigs.ForceMountainEnabler && act.ActNumber() == 3;
     }
-
-    public override IEnumerable<EventOption> AllPossibleOptions => [
-    ];
 }

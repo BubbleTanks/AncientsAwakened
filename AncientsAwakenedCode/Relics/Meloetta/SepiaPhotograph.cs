@@ -31,15 +31,15 @@ public class SepiaPhotograph() : AncientsAwakenedRelic
         }
     }
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("Relics", 2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("RelicsNow", 2),new ("RelicsLater", 2)];
     
     public override bool HasUponPickupEffect => true;
     
     public override async Task AfterObtained()
     {
         List<Reward> rewards = new List<Reward>();
-        rewards.Add(new RelicReward(Owner));
-        rewards.Add(new RelicReward(Owner));
+        for (int index = 0; index < DynamicVars["RelicsNow"].IntValue; ++index)
+            rewards.Add(new RelicReward(Owner));
         await RewardsCmd.OfferCustom(Owner, rewards);
     }
     
@@ -48,7 +48,7 @@ public class SepiaPhotograph() : AncientsAwakenedRelic
         if (player != Owner || (room != null ? (room.RoomType != RoomType.Boss ? 1 : 0) : 1) != 0 || HasTriggered)
             return false;
         Flash();
-        for (int index = 0; index < DynamicVars["Relics"].IntValue; ++index)
+        for (int index = 0; index < DynamicVars["RelicsLater"].IntValue; ++index)
             rewards.Add(new RelicReward(player));
         HasTriggered = true;
         Status = RelicStatus.Disabled;

@@ -43,7 +43,4 @@ public class MeloettaAncient : CustomAncientModel
     {
         return AncientConfigs.ForceMeloettaEnabler && act.ActNumber() == 2;
     }
-
-    public override IEnumerable<EventOption> AllPossibleOptions => [
-    ];
 }

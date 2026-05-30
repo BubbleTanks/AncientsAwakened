@@ -69,8 +69,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Folder Include="AncientsAwakenedCode\Cards\Mountain\" />
-        <Folder Include="AncientsAwakenedCode\Relics\Mountain\" />
         <Folder Include="AncientsAwakened\images\card_portraits\big\"/>
         <Folder Include="AncientsAwakened\images\powers\big\"/>
         <Folder Include="AncientsAwakened\images\relics\big\"/>

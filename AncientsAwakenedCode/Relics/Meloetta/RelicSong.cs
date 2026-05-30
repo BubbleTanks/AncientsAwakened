@@ -15,9 +15,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
 public class RelicSong() : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
-    
     public override bool HasUponPickupEffect => true;
 
     public override async Task AfterObtained()
