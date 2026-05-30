@@ -156,12 +156,12 @@ settings_ui.json::JSON::-1::1779854168::0::1::::<><><>0<>0<><>::
 static_hover_tips.json::JSON::-1::1779854168::0::1::::<><><>0<>0<><>::
 ::res://AncientsAwakenedCode/::1778355433
 MainFile.cs::CSharpScript::7663993321233032145::1778355433::0::1::::<><><>0<>0<><>::
-::res://AncientsAwakenedCode/Ancients/::1780119038
+::res://AncientsAwakenedCode/Ancients/::1780125810
 LeshyAncient.cs::CSharpScript::3019785867491676161::1780044255::0::1::::<><><>0<>0<><>::
 LunaticCultistAncient.cs::CSharpScript::7288387241667914998::1780044255::0::1::::<><><>0<>0<><>::
 MeloettaAncient.cs::CSharpScript::1688012570935901983::1780119038::0::1::::<><><>0<>0<><>::
 MithrixAncient.cs::CSharpScript::4165434155775839978::1779855800::0::1::::<><><>0<>0<><>::
-MountainAncient.cs::CSharpScript::4350446046849087406::1780119038::0::1::::<><><>0<>0<><>::
+MountainAncient.cs::CSharpScript::4350446046849087406::1780125810::0::1::::<><><>0<>0<><>::
 SebastianAncient.cs::CSharpScript::3903197806625420241::1779738691::0::1::::<><><>0<>0<><>::
 ::res://AncientsAwakenedCode/Cards/::1780037766
 AncientsAwakenedCard.cs::CSharpScript::8610375192954476082::1778355433::0::1::::<><><>0<>0<><>::
@@ -298,7 +298,7 @@ AncientConfigs.cs::CSharpScript::5894817745094801263::1780032086::0::1::::<><><>
 ::res://bin/::1778368808
 ::res://bin/ExportRelease/::1778368808
 ::res://bin/ExportRelease/net9.0/::1778368808
-::res://bin/ExportRelease/net9.0/publish/::1780119044
+::res://bin/ExportRelease/net9.0/publish/::1780125814
 AncientsAwakened.deps.json::JSON::-1::1780119044::0::1::::<><><>0<>0<><>::
 ::res://images/::1778355433
 ::res://images/enchantments/::1778355433

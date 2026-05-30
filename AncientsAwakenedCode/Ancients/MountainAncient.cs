@@ -1,5 +1,6 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
 using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
@@ -18,16 +19,16 @@ public class MountainAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<SquirrelInABottle>(),
-                AncientOption<PackRat>()
+                AncientOption<Loathing>(),
+                AncientOption<InfernalFlame>()
             ),
             MakePool(
-                AncientOption<TheSmoke>(), 
-                AncientOption<ProspectingPick>()
+                AncientOption<CardinalStar>(), 
+                AncientOption<ExemplarTrophy>()
             ),
             MakePool(
-                AncientOption<FilmRoll>(),
-                AncientOption<Goobert>()
+                AncientOption<IronCrown>(),
+                AncientOption<EyeOfObsession>()
             ));
     
     public override Color ButtonColor => new(0.05f, 0.05f, 0.05f, 0.8f);
