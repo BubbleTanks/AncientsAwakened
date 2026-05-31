@@ -8,11 +8,10 @@ namespace AncientsAwakened.AncientsAwakenedCode.Enchantments;
 public class Mass : CustomEnchantmentModel
 {
 
-    public override Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)
+    public override Task OnPlay(PlayerChoiceContext context, CardPlay? cardPlay)
     {
-        if (cardPlay.Card != Card)
+        if (Status != EnchantmentStatus.Normal)
             return Task.CompletedTask;
-
         Status = EnchantmentStatus.Disabled;
         return Task.CompletedTask;
     }

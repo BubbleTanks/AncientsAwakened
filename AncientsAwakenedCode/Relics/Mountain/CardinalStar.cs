@@ -4,6 +4,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
@@ -16,6 +17,8 @@ public class CardinalStar : AncientsAwakenedRelic
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [..HoverTipFactory.FromEnchantment<Ordained>(), HoverTipFactory.FromCard<Stress>()];
     
     public override async Task AfterObtained()
     {

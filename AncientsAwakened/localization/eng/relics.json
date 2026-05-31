@@ -188,8 +188,8 @@
   "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.flavor": "You can't tell if the gel inside is created by spirits or is a spirit itself.",
   "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.title": "Bottle of Ectoplasm",
 
-  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
-  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remove [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "The flame roars endlessly, devouring everything you feed into it. The heat is unbearable.",
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Solar Brazier",
 
@@ -200,6 +200,11 @@
   "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle a [gold]Cosmic Dust[/gold] into your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
   "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome",
+
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "[gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Stardust Shackles",
 
   
   "ANCIENTSAWAKENED-IRON_CROWN.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold]. You can no longer heal.",
@@ -219,13 +224,13 @@
   "ANCIENTSAWAKENED-EYE_OF_OBSESSION.flavor": "",
   "ANCIENTSAWAKENED-EYE_OF_OBSESSION.title": "Eye of Obsession",
   
-  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.description": "Upon pickup, obtain [blue]{Relics}[/blue] common [gold]Relics[/gold] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.eventDescription": "Obtain [blue]{Relics}[/blue] [gold]Relics[/gold] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.description": "Upon pickup, obtain [blue]{Relics}[/blue] Common [gold]Relics[/gold] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.eventDescription": "Obtain [blue]{Relics}[/blue] Common [gold]Relics[/gold] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.flavor": "",
   "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.title": "Exemplar's Trophy",
 
-  "ANCIENTSAWAKENED-CARDINAL_STAR.description": "Upon pickup, [gold]Enchant[/gold] [blue]{Cards}[/blue] Attacks with [purple]Ordained[/purple] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-CARDINAL_STAR.eventDescription": "[gold]Enchant[/gold] [blue]{Cards}[/blue] Attacks with [purple]Ordained[/purple] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-CARDINAL_STAR.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] Attacks with [purple]Ordained[/purple] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-CARDINAL_STAR.eventDescription": "[gold]Enchant[/gold] up to [blue]{Cards}[/blue] Attacks with [purple]Ordained[/purple] and add [blue]1[/blue] [red]Stress[/red] into your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-CARDINAL_STAR.flavor": "",
   "ANCIENTSAWAKENED-CARDINAL_STAR.title": "Cardinal's Star"
 }

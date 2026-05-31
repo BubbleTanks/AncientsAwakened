@@ -8,7 +8,11 @@
   "ANCIENTSAWAKENED-CHARMED.description": "This card gains [gold]Replay[/gold] [blue]1[/blue].",
   "ANCIENTSAWAKENED-CHARMED.title": "Charmed",
 
-  "ANCIENTSAWAKENED-ORDAINED.description": "When you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold]",
+  "ANCIENTSAWAKENED-ORDAINED.description": "When you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
   "ANCIENTSAWAKENED-ORDAINED.extraCardText": "Whenever you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
-  "ANCIENTSAWAKENED-ORDAINED.title": "Ordained"
+  "ANCIENTSAWAKENED-ORDAINED.title": "Ordained",
+
+  "ANCIENTSAWAKENED-CELESTIAL.description": "Gain {Amount:energyIcons()}.",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Gain {Amount:energyIcons()}.",
+  "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial"
 }
