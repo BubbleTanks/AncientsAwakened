@@ -15,15 +15,19 @@ public class MountainAncient : CustomAncientModel
         new(
             MakePool(
                 AncientOption<Loathing>(),
-                AncientOption<InfernalFlame>()
+                AncientOption<InfernalFlame>(),
+                AncientOption<EvangelistBlades>()
             ),
             MakePool(
                 AncientOption<CardinalStar>(), 
-                AncientOption<ExemplarTrophy>()
+                AncientOption<ExemplarTrophy>(),
+                AncientOption<DeaconFlesh>()
             ),
             MakePool(
                 AncientOption<IronCrown>(),
-                AncientOption<EyeOfObsession>()
+                AncientOption<EyeOfObsession>(),
+                AncientOption<CursedCache>(),
+                AncientOption<BloodstainedSnow>()
             ));
     
     public override Color ButtonColor => new(0.05f, 0.05f, 0.05f, 0.8f);

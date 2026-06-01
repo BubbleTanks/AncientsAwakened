@@ -8,7 +8,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
-
 [Pool(typeof(IroncladCardPool))]
 public class Cinderborn() : AncientsAwakenedCard(2,
     CardType.Skill, CardRarity.Ancient,

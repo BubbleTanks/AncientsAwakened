@@ -9,7 +9,6 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
-
 [Pool(typeof(SilentCardPool))]
 public class SleightOfHand() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,

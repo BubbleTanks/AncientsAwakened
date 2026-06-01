@@ -4,7 +4,6 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
-
 [Pool(typeof(StatusCardPool))]
 public class CosmicDust() : AncientsAwakenedCard(-1, CardType.Status, CardRarity.Status, TargetType.None)
 {

@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
-using AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;

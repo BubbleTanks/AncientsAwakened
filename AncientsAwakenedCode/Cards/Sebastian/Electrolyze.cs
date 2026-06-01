@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
-using AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,7 +10,6 @@ using MegaCrit.Sts2.Core.Models.Orbs;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
-
 
 [Pool(typeof(DefectCardPool))]
 public class Electrolyze() : AncientsAwakenedCard(2,

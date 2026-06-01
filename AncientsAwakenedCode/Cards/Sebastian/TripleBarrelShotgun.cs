@@ -8,7 +8,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
-
 [Pool(typeof(EventCardPool))]
 public class TripleBarrelShotgun() : AncientsAwakenedCard(1, CardType.Attack, CardRarity.Ancient, TargetType.AllEnemies)
 {

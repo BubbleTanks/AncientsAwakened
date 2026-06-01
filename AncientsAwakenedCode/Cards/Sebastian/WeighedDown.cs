@@ -10,7 +10,6 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
-
 [Pool(typeof(CurseCardPool))]
 public class WeighedDown : AncientsAwakenedCard
 {

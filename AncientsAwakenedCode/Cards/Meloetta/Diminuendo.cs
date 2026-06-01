@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
-using AncientsAwakened.AncientsAwakenedCode.Powers.Meloetta;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Meloetta;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -9,7 +8,6 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Meloetta;
-
 
 [Pool(typeof(EventCardPool))]
 public class Diminuendo() : AncientsAwakenedCard(1,

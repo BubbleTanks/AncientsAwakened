@@ -25,6 +25,9 @@
 
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Stunned creatures cannot act.",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns}, this creature is [gold]Stunned[/gold].",
-  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn"
-  
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn",
+
+  "ANCIENTSAWAKENED-TRIPLE_DAMAGE_POWER.description": "The next Attack you play deals triple damage.",
+  "ANCIENTSAWAKENED-TRIPLE_DAMAGE_POWER.smartDescription": "The next Attack you play deals [blue]{DisplayAmount}%[/blue] damage.",
+  "ANCIENTSAWAKENED-TRIPLE_DAMAGE_POWER.title": "Triple Damage Next Attack"
 }

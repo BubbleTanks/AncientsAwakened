@@ -9,7 +9,6 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
-
 [Pool(typeof(NecrobinderCardPool))]
 public class NecroticBurst() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Ancient,

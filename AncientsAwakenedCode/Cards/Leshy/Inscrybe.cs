@@ -10,7 +10,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Leshy;
 
-
 [Pool(typeof(EventCardPool))]
 public class Inscrybe() : AncientsAwakenedCard(1,
     CardType.Attack, CardRarity.Ancient,

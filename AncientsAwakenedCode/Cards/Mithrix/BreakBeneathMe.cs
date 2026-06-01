@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
-using AncientsAwakened.AncientsAwakenedCode.Powers.Mithrix;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Mithrix;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -13,7 +12,6 @@ namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 [Pool(typeof(EventCardPool))]
 public class BreakBeneathMe() : AncientsAwakenedCard(4, CardType.Attack, CardRarity.Ancient, TargetType.AnyEnemy)
 {
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(36, ValueProp.Move), new PowerVar<BreakBeneathMePower>(1)];
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)

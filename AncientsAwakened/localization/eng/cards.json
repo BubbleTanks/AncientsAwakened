@@ -82,5 +82,8 @@
   "ANCIENTSAWAKENED-MELODY_BERRY.title": "Melody Berry",
 
   "ANCIENTSAWAKENED-STRESS.description": "Whenever you draw this card, you receive {StressPower:diff()} additional damage for the rest of combat.",
-  "ANCIENTSAWAKENED-STRESS.title": "Stress"
+  "ANCIENTSAWAKENED-STRESS.title": "Stress",
+  
+  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.description": "Gain 1 [gold]Buffer[/gold].\nYour next Attack deals triple damage.",
+  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commute"
 }

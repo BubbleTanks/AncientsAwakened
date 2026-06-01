@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
-using AncientsAwakened.AncientsAwakenedCode.Powers.Mountain;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Mountain;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -10,7 +9,6 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mountain;
-
 
 [Pool(typeof(CurseCardPool))]
 public class Stress() : AncientsAwakenedCard(

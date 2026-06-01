@@ -5,7 +5,6 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
-
 [Pool(typeof(QuestCardPool))]
 public class HeavyCrate() : AncientsAwakenedCard(-1, CardType.Quest, CardRarity.Quest, TargetType.None)
 {
@@ -14,8 +13,4 @@ public class HeavyCrate() : AncientsAwakenedCard(-1, CardType.Quest, CardRarity.
     public override int MaxUpgradeLevel => 0;
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Unplayable];
-
-    
-
-    
 }
