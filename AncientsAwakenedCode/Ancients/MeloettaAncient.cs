@@ -1,14 +1,10 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
-using MegaCrit.Sts2.Core.Entities.Players;
-using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
@@ -18,16 +14,20 @@ public class MeloettaAncient : CustomAncientModel
 
         new(
             MakePool(
-                AncientOption<MelodyBerryBasket>(),
-                AncientOption<Harmonizer>()
-            ),
-            MakePool(
+                AncientOption<CardSleeve>(),
                 AncientOption<AncientLullaby>(),
                 AncientOption<TrebleClef>()
             ),
             MakePool(
+                AncientOption<MelodyBerryBasket>(),
                 AncientOption<SepiaPhotograph>(),
                 AncientOption<RelicSong>()
+            ),
+            MakePool(
+                AncientOption<AriaMastery>(),
+                AncientOption<PirouetteMastery>(),
+                AncientOption<Harmonizer>(2),
+                AncientOption<SingerScarf>(2)
             ));
     
     public override Color ButtonColor => new(0.17f, 0.45f, 0.21f, 0.8f);

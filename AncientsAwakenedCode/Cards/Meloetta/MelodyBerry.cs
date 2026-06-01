@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -13,7 +12,7 @@ public class MelodyBerry() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.None)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(3M), new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(3M), new CardsVar(2)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 

@@ -1,6 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
-using AncientsAwakened.AncientsAwakenedCode.Relics;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Context;
@@ -14,10 +12,8 @@ using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.Nodes.Screens;
-using MegaCrit.Sts2.Core.Runs;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
 public class AncientScepter : AncientsAwakenedRelic

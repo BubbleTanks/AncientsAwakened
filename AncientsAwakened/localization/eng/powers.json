@@ -21,5 +21,10 @@
 
   "ANCIENTSAWAKENED-STRESS_POWER.description": "Stressed creatures take additional damage from Attacks.",
   "ANCIENTSAWAKENED-STRESS_POWER.smartDescription": "Receive [blue]{Amount}[/blue] additional damage from Attacks.",
-  "ANCIENTSAWAKENED-STRESS_POWER.title": "Stress"
+  "ANCIENTSAWAKENED-STRESS_POWER.title": "Stress",
+
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Stunned creatures cannot act.",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns}, this creature is [gold]Stunned[/gold].",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn"
+  
 }

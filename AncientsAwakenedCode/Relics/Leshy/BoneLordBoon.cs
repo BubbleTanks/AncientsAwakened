@@ -8,8 +8,6 @@ using MegaCrit.Sts2.Core.Rooms;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
-
-
 [Pool(typeof(EventRelicPool))]
 public class BoneLordBoon : AncientsAwakenedRelic
 {

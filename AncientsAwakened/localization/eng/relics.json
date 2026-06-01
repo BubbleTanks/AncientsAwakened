@@ -64,8 +64,8 @@
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"This should contain everything you need to know about all the monsters and freaks you may encounter in the Spire. Written by yours truly, of course~\"",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Wildlife Documents",
 
-  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, choose a [gold]Power[/gold] in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [purple]Charmed[/purple].",
-  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "Choose a [gold]Power[/gold] in your [gold]Deck[/gold] to [gold]Enchant[/gold] with [purple]Charmed[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, [gold]Enchant[/gold] a Power with [purple]Charmed[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]Enchant[/gold] a Power with [purple]Charmed[/purple].",
   "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Fine, fine. Since you're just so fond of me for some reason, how about a little charm? Best I can do, terribly sorry~\"",
   "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Sebby Charm",
 
@@ -163,18 +163,34 @@
   "ANCIENTSAWAKENED-ANCIENT_LULLABY.flavor": "",
   "ANCIENTSAWAKENED-ANCIENT_LULLABY.title": "Ancient Lullaby",
 
+  "ANCIENTSAWAKENED-SINGER_SCARF.description": "Gain {Energy:energyIcons()} at the start of each turn. Cards of a different type than the first card you play each turn cost {Energy:energyIcons()} more.",
+  "ANCIENTSAWAKENED-SINGER_SCARF.flavor": "",
+  "ANCIENTSAWAKENED-SINGER_SCARF.title": "Singer's Scarf",
+
+  "ANCIENTSAWAKENED-CARD_SLEEVE.description": "Upon pickup, [gold]Enchant[/gold] an Attack or Skill with [purple]Prized[/purple].",
+  "ANCIENTSAWAKENED-CARD_SLEEVE.eventDescription": "[gold]Enchant[/gold] an Attack or Skill with [purple]Prized[/purple].",
+  "ANCIENTSAWAKENED-CARD_SLEEVE.flavor": "",
+  "ANCIENTSAWAKENED-CARD_SLEEVE.title": "Card Sleeve",
+
+  "ANCIENTSAWAKENED-ARIA_MASTERY.description": "Upon pickup, [gold]Enchant[/gold] all [gold]Strikes[/gold] in your [gold]Deck[/gold] with [purple]Aria[/purple].",
+  "ANCIENTSAWAKENED-ARIA_MASTERY.flavor": "",
+  "ANCIENTSAWAKENED-ARIA_MASTERY.title": "Aria Mastery",
+
+  "ANCIENTSAWAKENED-PIROUETTE_MASTERY.description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] in your [gold]Deck[/gold] with [purple]Aria[/purple].",
+  "ANCIENTSAWAKENED-PIROUETTE_MASTERY.flavor": "",
+  "ANCIENTSAWAKENED-PIROUETTE_MASTERY.title": "Pirouette Mastery",
   
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Add [blue]1[/blue] [gold]Lunatic Ritual[/gold] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "The hooded figure told you to be careful with these spells. It would be wise to listen.",
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
 
-  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.description": "Whenever you play an Power, gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.description": "Whenever you play a Power, gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
   "ANCIENTSAWAKENED-CELESTIAL_SIGIL.flavor": "The symbols etched into this medallion are unsettling.",
   "ANCIENTSAWAKENED-CELESTIAL_SIGIL.title": "Celestial Sigil",
 
-  "ANCIENTSAWAKENED-WORM_SCARF.description": "Start each combat with [blue]{BufferPower}[/blue] [gold]Buffer[/gold].",
-  "ANCIENTSAWAKENED-WORM_SCARF.flavor": "Quite comfortable to wear, though the appearance leaves quite a bit to be desired.",
-  "ANCIENTSAWAKENED-WORM_SCARF.title": "Worm Scarf",
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, use a random potion.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "",
+  "ANCIENTSAWAKENED-MANA_FLOWER.title": "Mana Flower",
 
   "ANCIENTSAWAKENED-FALLEN_STAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to a random enemy.",
   "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "A shard of the heavens that crash landed, now yours to wield.",
@@ -184,7 +200,7 @@
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "The strange metal in your hands seems to pulse and glow, as if growing even as you watch it.",
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
 
-  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.description": "The first time end your turn without [gold]Block[/gold] each combat, gain [blue]{IntangiblePower}[/blue] [gold]Intangible[/gold].",
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.description": "The first time you end your turn without [gold]Block[/gold] each combat, gain [blue]{IntangiblePower}[/blue] [gold]Intangible[/gold].",
   "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.flavor": "You can't tell if the gel inside is created by spirits or is a spirit itself.",
   "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.title": "Bottle of Ectoplasm",
 
@@ -197,7 +213,7 @@
   "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
   "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
   
-  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle a [gold]Cosmic Dust[/gold] into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle [blue]{Status}[/blue] [gold]Cosmic Dusts[/gold] into your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
   "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome",
 

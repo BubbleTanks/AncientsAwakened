@@ -1,11 +1,8 @@
-﻿using System.Reflection.Emit;
-using System.Text.RegularExpressions;
-using AncientsAwakened.AncientsAwakenedCode.Pools;
-using Godot.Bridge;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
+using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Enchantments;
-using MethodInfo = System.Reflection.MethodInfo;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 

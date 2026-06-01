@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
+using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 using AncientsAwakened.AncientsAwakenedCode.Powers;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -23,7 +24,7 @@ public class NebulaTome : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new ("Status", 2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<CosmicDust>();
     
@@ -34,10 +35,9 @@ public class NebulaTome : AncientsAwakenedRelic
     {
         if (player != Owner)
             return;
-        CardModel cosmicDust = Owner.Creature.CombatState.CreateCard<CosmicDust>(Owner);
-        await CardPileCmd.AddGeneratedCardToCombat(cosmicDust, PileType.Draw, Owner, CardPilePosition.Random);
+        for (int i = 0; i < DynamicVars["Status"].BaseValue; ++i)
+            CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(Owner.Creature.CombatState.CreateCard<CosmicDust>(Owner), PileType.Draw, Owner));
         Flash();
-        CardCmd.Preview(cosmicDust, 0.75f);
         await Cmd.Wait(1f);
         CardModel card = await CardSelectCmd.FromChooseACardScreen(choiceContext, CardFactory.GetDistinctForCombat(Owner, Owner.Character.CardPool.GetUnlockedCards(Owner.UnlockState, Owner.RunState.CardMultiplayerConstraint).Where(c => c.Type == CardType.Power), DynamicVars.Cards.IntValue, Owner.RunState.Rng.CombatCardGeneration).ToList(), Owner, true);
         if (card == null)

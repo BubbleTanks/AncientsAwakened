@@ -1,16 +1,11 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
-using AncientsAwakened.AncientsAwakenedCode.Relics;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.Combat;
@@ -18,8 +13,7 @@ using MegaCrit.Sts2.Core.Nodes.Screens.CardSelection;
 using MegaCrit.Sts2.Core.Nodes.Screens.Overlays;
 using MegaCrit.Sts2.Core.Runs;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
 public class ArtifactOfCommand : AncientsAwakenedRelic
@@ -43,8 +37,8 @@ public class ArtifactOfCommand : AncientsAwakenedRelic
             CardCmd.PreviewCardPileAdd([await CardPileCmd.Add(card2, PileType.Deck)], 2F);
         }
     }
-    
-    public static async Task<IEnumerable<CardModel>> FromSimpleGrid(
+
+    private static async Task<IEnumerable<CardModel>> FromSimpleGrid(
         IReadOnlyList<CardModel> cardsIn,
         Player player,
         CardSelectorPrefs prefs)

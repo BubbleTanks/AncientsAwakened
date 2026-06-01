@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -10,8 +9,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Runs;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
 public class FlawlessHammer : AncientsAwakenedRelic

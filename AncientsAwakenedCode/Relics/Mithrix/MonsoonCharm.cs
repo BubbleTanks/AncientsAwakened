@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.UI;
+﻿using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -9,8 +8,7 @@ using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
 public class MonsoonCharm : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulogy

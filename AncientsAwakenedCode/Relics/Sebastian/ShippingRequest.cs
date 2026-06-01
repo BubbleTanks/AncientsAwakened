@@ -1,5 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,8 +13,6 @@ using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
-
-
 
 [Pool(typeof(EventRelicPool))]
 public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulogy

@@ -1,4 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,7 +11,6 @@ using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
-
 
 [Pool(typeof(EventRelicPool))]
 public class WildlifeDocuments : AncientsAwakenedRelic

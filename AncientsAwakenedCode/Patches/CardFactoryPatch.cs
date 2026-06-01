@@ -1,6 +1,6 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
+using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
-using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Models;
 

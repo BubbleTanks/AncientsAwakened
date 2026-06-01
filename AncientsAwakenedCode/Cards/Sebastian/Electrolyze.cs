@@ -1,5 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Powers;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
+using AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;

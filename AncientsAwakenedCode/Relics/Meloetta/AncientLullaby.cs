@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -12,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
 
 [Pool(typeof(EventRelicPool))]
-public class AncientLullaby() : AncientsAwakenedRelic
+public class AncientLullaby : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

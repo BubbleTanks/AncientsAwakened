@@ -1,5 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mountain;
-using AncientsAwakened.AncientsAwakenedCode.Enchantments;
+using AncientsAwakened.AncientsAwakenedCode.Enchantments.Mountain;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;

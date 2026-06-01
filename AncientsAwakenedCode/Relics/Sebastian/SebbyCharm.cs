@@ -1,9 +1,7 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Enchantments;
-using BaseLib.Extensions;
+﻿using AncientsAwakened.AncientsAwakenedCode.Enchantments.Sebastian;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -11,16 +9,12 @@ using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
-using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
-
-
 
 [Pool(typeof(EventRelicPool))]
 public class SebbyCharm : AncientsAwakenedRelic
@@ -29,7 +23,7 @@ public class SebbyCharm : AncientsAwakenedRelic
 
     public override bool HasUponPickupEffect => true;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1), new StringVar("Enchantment", ModelDb.Enchantment<Charmed>().Title.GetFormattedText())];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Charmed>();
 
@@ -40,10 +34,10 @@ public class SebbyCharm : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        EnchantmentModel royalStamp = ModelDb.Enchantment<Charmed>();
-        List<CardModel> list = PileType.Deck.GetPile(Owner).Cards.Where(c => royalStamp.CanEnchant(c)).ToList();
+        EnchantmentModel enchantment = ModelDb.Enchantment<Charmed>();
+        List<CardModel> list = PileType.Deck.GetPile(Owner).Cards.Where(enchantment.CanEnchant).ToList();
         CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 1);
-        CardModel card = (await CardSelectCmd.FromDeckForEnchantment(list.UnstableShuffle(Owner.RunState.Rng.Niche).ToList(), royalStamp, 1, prefs)).FirstOrDefault();
+        CardModel card = (await CardSelectCmd.FromDeckForEnchantment(list.UnstableShuffle(Owner.RunState.Rng.Niche).ToList(), enchantment, 1, prefs)).FirstOrDefault();
         if (card == null)
             return;
         CardCmd.Enchant<Charmed>(card, 1M);

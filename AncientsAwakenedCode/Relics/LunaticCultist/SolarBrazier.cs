@@ -1,16 +1,13 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
-using BaseLib.Extensions;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -20,6 +17,11 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 public class SolarBrazier : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
+    
+    protected override bool RelicAllowedToSpawn(Player owner)
+    {
+        return owner.Deck.Cards.Count(c => c.IsRemovable) > 6;
+    }
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2M, ValueProp.Unpowered), new CardsVar(6)];
 

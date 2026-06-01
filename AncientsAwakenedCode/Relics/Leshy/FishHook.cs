@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
+using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -16,7 +17,6 @@ using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
-
 
 [Pool(typeof(EventRelicPool))]
 public class FishHook : AncientsAwakenedRelic
@@ -37,6 +37,11 @@ public class FishHook : AncientsAwakenedRelic
         IReadOnlyList<Creature> hittableEnemies = Owner.Creature.CombatState.HittableEnemies;
         VfxCmd.PlayOnCreatureCenters(hittableEnemies, "vfx/vfx_starry_impact");
         foreach (Creature creature in hittableEnemies)
-            await CreatureCmd.Stun(creature);
+        {
+            if (!creature.IsStunned)
+                await CreatureCmd.Stun(creature);
+            else
+                await PowerCmd.Apply<StunNextTurnPower>(choiceContext, creature, 1, null, null);
+        }
     }
 }

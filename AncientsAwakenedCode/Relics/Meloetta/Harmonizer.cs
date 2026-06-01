@@ -12,11 +12,21 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
 
 
 [Pool(typeof(EventRelicPool))]
-public class Harmonizer() : AncientsAwakenedRelic
+public class Harmonizer : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
+
+    private bool _powerPlayed;
     
-    public bool PowerPlayed;
+    private bool PowerPlayed
+    {
+        get => _powerPlayed;
+        set
+        {
+            AssertMutable();
+            _powerPlayed = value;
+        }
+    }
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2)];
 

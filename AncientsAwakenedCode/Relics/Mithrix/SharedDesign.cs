@@ -9,18 +9,17 @@ using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Saves.Runs;
 using MegaCrit.Sts2.Core.ValueProps;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
-  
 [Pool(typeof(EventRelicPool))]
 public class SharedDesign : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
- 
-    public bool _tookDamageThisCombat;
+
+    private bool _tookDamageThisCombat;
     
     [SavedProperty]
-    public bool TookDamageThisCombat
+    private bool TookDamageThisCombat
     {
         get => this._tookDamageThisCombat;
         set

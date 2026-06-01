@@ -1,7 +1,7 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
+using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Badges;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;

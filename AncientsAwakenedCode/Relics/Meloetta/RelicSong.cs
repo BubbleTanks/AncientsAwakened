@@ -10,7 +10,6 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
 
-
 [Pool(typeof(EventRelicPool))]
 public class RelicSong() : AncientsAwakenedRelic
 {

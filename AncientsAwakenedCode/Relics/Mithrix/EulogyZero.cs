@@ -1,24 +1,20 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
-using BaseLib.Extensions;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 using BaseLib.Utils;
-using HarmonyLib;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Events;
 using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.Factories;
-using MegaCrit.Sts2.Core.Hooks;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Events;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
+
 // ReSharper disable All
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 /// <summary>
 /// If you are looking for ways to blacklist relics from appearing for Eulogy Zero, please look at the IBlacklistFromEulogy interface.

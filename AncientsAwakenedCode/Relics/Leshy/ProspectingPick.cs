@@ -1,5 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions;
+﻿using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions;
+using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Leshy;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;

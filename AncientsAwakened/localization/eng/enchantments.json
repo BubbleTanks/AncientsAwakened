@@ -14,5 +14,17 @@
 
   "ANCIENTSAWAKENED-CELESTIAL.description": "Gain {Amount:energyIcons()}.",
   "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Gain {Amount:energyIcons()}.",
-  "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial"
+  "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial",
+
+  "ANCIENTSAWAKENED-PRIZED.description": "When this card is played, shuffle it into the [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-PRIZED.extraCardText": "Shuffle this card into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-PRIZED.title": "Prized",
+
+  "ANCIENTSAWAKENED-ARIA.description": "This card deals [blue]{Damage}[/blue] additional damage and gives [blue]{StrengthPower}[/blue] [gold]Strength[/gold] when played.",
+  "ANCIENTSAWAKENED-ARIA.extraCardText": "Gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+  "ANCIENTSAWAKENED-ARIA.title": "Aria",
+
+  "ANCIENTSAWAKENED-PIROUETTE.description": "This card gains [blue]{Block}[/blue] additional [gold]Block[/gold] and gives [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold] when played.",
+  "ANCIENTSAWAKENED-PIROUETTE.extraCardText": "Gain [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold].",
+  "ANCIENTSAWAKENED-PIROUETTE.title": "Pirouette"
 }
