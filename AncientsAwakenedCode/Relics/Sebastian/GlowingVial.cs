@@ -42,7 +42,6 @@ public class GlowingVial : AncientsAwakenedRelic
                 if (option is GlowingVialOption)
                 {
                     if (option.IsEnabled) return true;
-                    option.IsEnabled = true;
                     if (NRestSiteRoom.Instance != null)
                     {
                         var button = NRestSiteRoom.Instance.GetButtonForOption(option);
