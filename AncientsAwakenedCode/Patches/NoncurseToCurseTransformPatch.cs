@@ -36,9 +36,9 @@ public class NoncurseToCurseTransformPatch
             return codeMatcher.InstructionEnumeration();
         }
 
-        static bool CheckForField(bool _, CardModel cardModel)
+        static bool CheckForField(bool init, CardModel cardModel)
         {
-            return CursableField.Get(cardModel);
+            return !init ? CursableField.Get(cardModel) : init;
         }
     }
 }

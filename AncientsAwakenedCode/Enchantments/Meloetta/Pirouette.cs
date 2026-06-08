@@ -19,7 +19,7 @@ public class Pirouette : CustomEnchantmentModel
 
     public override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay? cardPlay)
     {
-        await PowerCmd.Apply<DexterityPower>(choiceContext, Card.Owner.Creature, DynamicVars.Strength.BaseValue, Card.Owner.Creature, Card);
+        await PowerCmd.Apply<DexterityPower>(choiceContext, Card.Owner.Creature, DynamicVars.Dexterity.BaseValue, Card.Owner.Creature, Card);
     }
     
     public override Decimal EnchantBlockAdditive(Decimal originalBlock) => DynamicVars.Block.BaseValue;

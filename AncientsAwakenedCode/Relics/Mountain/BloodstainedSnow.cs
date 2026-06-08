@@ -32,7 +32,6 @@ public class BloodstainedSnow : AncientsAwakenedRelic
             NoncurseToCurseTransformPatch.CursableField.Set(transformation.Original, true);
         }
         await CardCmd.Transform(transformations, Owner.PlayerRng.Transformations);
-        await Cmd.Wait(0.75f);
         
         List<Reward> list = [];
         decimal maxHP = 0;

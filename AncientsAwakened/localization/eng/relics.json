@@ -174,10 +174,12 @@
   "ANCIENTSAWAKENED-CARD_SLEEVE.title": "Card Sleeve",
 
   "ANCIENTSAWAKENED-ARIA_MASTERY.description": "Upon pickup, [gold]Enchant[/gold] all [gold]Strikes[/gold] in your [gold]Deck[/gold] with [purple]Aria[/purple].",
+  "ANCIENTSAWAKENED-ARIA_MASTERY.eventDescription": "[gold]Enchant[/gold] all [gold]Strikes[/gold] in your [gold]Deck[/gold] with [purple]Aria[/purple].",
   "ANCIENTSAWAKENED-ARIA_MASTERY.flavor": "",
   "ANCIENTSAWAKENED-ARIA_MASTERY.title": "Aria Mastery",
 
-  "ANCIENTSAWAKENED-PIROUETTE_MASTERY.description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] in your [gold]Deck[/gold] with [purple]Aria[/purple].",
+  "ANCIENTSAWAKENED-PIROUETTE_MASTERY.description": "Upon pickup, [gold]Enchant[/gold] all [gold]Defends[/gold] in your [gold]Deck[/gold] with [purple]Pirouette[/purple].",
+  "ANCIENTSAWAKENED-PIROUETTE_MASTERY.eventDescription": "[gold]Enchant[/gold] all [gold]Defends[/gold] in your [gold]Deck[/gold] with [purple]Pirouette[/purple].",
   "ANCIENTSAWAKENED-PIROUETTE_MASTERY.flavor": "",
   "ANCIENTSAWAKENED-PIROUETTE_MASTERY.title": "Pirouette Mastery",
   
@@ -270,6 +272,7 @@
 
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.description": "Upon pickup, [gold]Transform[/gold] any number of cards into random [red]Curses[/red] and, for every [red]Curse[/red] in your [gold]Deck[/gold], raise your Max HP by [blue]{MaxHp}[/blue] and obtain [blue]{Relics}[/blue] [gold]{Relics:plural:Relic|Relics}[/gold].",
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.eventDescription": "[gold]Transform[/gold] any number of cards into random [red]Curses[/red] and, for every [red]Curse[/red] in your [gold]Deck[/gold], raise your Max HP by [blue]{MaxHp}[/blue] and obtain [blue]{Relics}[/blue] [gold]{Relics:plural:Relic|Relics}[/gold].",
+  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.selectionScreenPrompt": "Select cards to [gold]Transform[/gold] into [red]Curses[/red].",
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.flavor": "",
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Cursed Cache"
+  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Bloodstained Snow"
 }
