@@ -20,8 +20,9 @@ public class ProspectOption : RestSiteOption, ICustomModel
     public ProspectOption(Player owner)
         : base(owner)
     {
-        IsEnabled = true;
     }
+    
+    
 
     public override string OptionId => "ANCIENTSAWAKENED-PROSPECT";
     

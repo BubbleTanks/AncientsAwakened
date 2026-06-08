@@ -18,20 +18,16 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.RestSiteOptions;
 
-public class GlowingVialOption : RestSiteOption, ICustomModel
+public class GlowingVialOption(Player owner) : RestSiteOption(owner), ICustomModel
 {
-    public const decimal HP_LOSS = 8M;
+    private const decimal HP_LOSS = 8M;
 
     public static decimal HpCost(Player player)
     {
         return Hook.ModifyHpLost(player.RunState, player.Creature.CombatState, player.Creature, HP_LOSS, ValueProp.Unpowered | ValueProp.Unblockable, player.Creature, null,HpLossHookPhase.AfterOsty, out _);
     }
-    
-    public GlowingVialOption(Player owner)
-        : base(owner)
-    {
-        IsEnabled = GetRemovableCardCount(owner) >= 1 && (owner.Creature.CurrentHp > HpCost(owner) || !Hook.ShouldDie(owner.RunState, owner.Creature.CombatState, owner.Creature, out _));
-    }
+
+    public override bool IsEnabled => GetRemovableCardCount(Owner) >= 1 && (Owner.Creature.CurrentHp > HpCost(Owner) || !Hook.ShouldDie(Owner.RunState, Owner.Creature.CombatState, Owner.Creature, out _));
     
     private static int GetRemovableCardCount(Player player)
     {
@@ -67,14 +63,13 @@ public class GlowingVialOption : RestSiteOption, ICustomModel
             await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, new DamageVar(HP_LOSS, ValueProp.Unblockable | ValueProp.Unpowered), null, null);
         }
 
-        if (Owner.Creature.CurrentHp <= HpCost(Owner) && Hook.ShouldDie(Owner.RunState, Owner.Creature.CombatState, Owner.Creature, out _))
+        if (IsEnabled)
         {
-            IsEnabled = false;
             var button = NRestSiteRoom.Instance.GetButtonForOption(this);
             if (button != null)
             {
                 button.Reload();
-                button._isUnclickable = !IsEnabled;
+                button._isUnclickable = false;
             }
         }
         
