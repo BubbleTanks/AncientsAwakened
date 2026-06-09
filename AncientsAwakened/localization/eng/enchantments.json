@@ -20,11 +20,13 @@
   "ANCIENTSAWAKENED-PRIZED.extraCardText": "Shuffle this card into your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-PRIZED.title": "Prized",
 
-  "ANCIENTSAWAKENED-ARIA.description": "This card deals [blue]{Damage}[/blue] additional damage and gives [blue]{StrengthPower}[/blue] [gold]Strength[/gold] when played.",
-  "ANCIENTSAWAKENED-ARIA.extraCardText": "Gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+  "ANCIENTSAWAKENED-ARIA.description": "This card deals [blue]{Damage}[/blue] additional damage and chooses a card from your [gold]Discard Pile[/gold] to put on top of your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-ARIA.extraCardText": "Put a card from your [gold]Discard Pile[/gold] on top of your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-ARIA.selectionScreenPrompt": "Choose a card to put on top of your Draw Pile.",
   "ANCIENTSAWAKENED-ARIA.title": "Aria",
 
-  "ANCIENTSAWAKENED-PIROUETTE.description": "This card gains [blue]{Block}[/blue] additional [gold]Block[/gold] and gives [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold] when played.",
-  "ANCIENTSAWAKENED-PIROUETTE.extraCardText": "Gain [blue]{DexterityPower}[/blue] [gold]Dexterity[/gold].",
+  "ANCIENTSAWAKENED-PIROUETTE.description": "This card gains [blue]{Block}[/blue] additional [gold]Block[/gold] and chooses [blue]1[/blue] of [blue]{Cards}[/blue] cards in your [gold]Draw Pile[/gold] to add into your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-PIROUETTE.extraCardText": "Choose 1 of {Cards} cards in your [gold]Draw Pile[/gold] to add into your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-PIROUETTE.selectionScreenPrompt": "Select a card to put in your Hand.",
   "ANCIENTSAWAKENED-PIROUETTE.title": "Pirouette"
 }

@@ -24,7 +24,7 @@ public class PirouetteMastery : AncientsAwakenedRelic
 
     protected override bool RelicAllowedToSpawn(Player owner)
     {
-        return owner.Deck.Cards.Any(card => card.Tags.Contains(CardTag.Defend) && card.Rarity == CardRarity.Basic);
+        return owner.Deck.Cards.Count(card => card.Tags.Contains(CardTag.Defend) && card.Rarity == CardRarity.Basic) >= 3;
     }
 
     public override Task AfterObtained()

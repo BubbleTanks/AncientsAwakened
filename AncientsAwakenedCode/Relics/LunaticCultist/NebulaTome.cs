@@ -36,7 +36,7 @@ public class NebulaTome : AncientsAwakenedRelic
         if (player != Owner)
             return;
         for (int i = 0; i < DynamicVars["Status"].BaseValue; ++i)
-            CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(Owner.Creature.CombatState.CreateCard<CosmicDust>(Owner), PileType.Draw, Owner));
+            CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(Owner.Creature.CombatState.CreateCard<CosmicDust>(Owner), PileType.Draw, Owner, CardPilePosition.Random));
         Flash();
         await Cmd.Wait(1f);
         CardModel card = await CardSelectCmd.FromChooseACardScreen(choiceContext, CardFactory.GetDistinctForCombat(Owner, Owner.Character.CardPool.GetUnlockedCards(Owner.UnlockState, Owner.RunState.CardMultiplayerConstraint).Where(c => c.Type == CardType.Power), DynamicVars.Cards.IntValue, Owner.RunState.Rng.CombatCardGeneration).ToList(), Owner, true);
