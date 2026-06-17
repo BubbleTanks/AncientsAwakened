@@ -12,7 +12,7 @@ public class MelodyBerry() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.None)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(3M), new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new HealVar(2M), new CardsVar(2)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
 
@@ -27,6 +27,6 @@ public class MelodyBerry() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Heal.UpgradeValueBy(2M);
+        DynamicVars.Heal.UpgradeValueBy(1M);
     }
 }

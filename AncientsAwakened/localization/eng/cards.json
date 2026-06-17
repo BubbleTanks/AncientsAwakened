@@ -72,10 +72,10 @@
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
   
-  "ANCIENTSAWAKENED-CRESCENDO.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold] this turn.",
+  "ANCIENTSAWAKENED-CRESCENDO.description": "Apply {Power:diff()} [gold]Weak[/gold] and [gold]Vulnerable[/gold].",
   "ANCIENTSAWAKENED-CRESCENDO.title": "Crescendo",
 
-  "ANCIENTSAWAKENED-DIMINUENDO.description": "Gain {DexterityPower:diff()} [gold]Dexterity[/gold] this turn.",
+  "ANCIENTSAWAKENED-DIMINUENDO.description": "Next turn, gain {Energy:energyIcons()} and draw {Cards:diff()} {Cards:plural:card|cards}..",
   "ANCIENTSAWAKENED-DIMINUENDO.title": "Diminuendo",
 
   "ANCIENTSAWAKENED-MELODY_BERRY.description": "Heal {Heal:diff()} HP.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",

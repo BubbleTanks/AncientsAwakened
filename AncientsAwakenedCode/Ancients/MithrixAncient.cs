@@ -29,8 +29,15 @@ public class MithrixAncient : CustomAncientModel
                 AncientOption<FlawlessHammer>(3),
                 AncientOption<ArtifactOfCommand>(2),
                 AncientOption<EulogyZero>(2),
-                AncientOption<AncientScepter>(3)
-            ));
+                AncientOption<AncientScepter>(3, relic =>
+                {
+                    if (Owner != null)
+                    {
+                        relic.SetupForPlayer(Owner);
+                    }
+                    return relic;
+                }))
+            );
     
     public override Color ButtonColor => new(0.05f, 0.07f, 0.2f, 0.8f);
 

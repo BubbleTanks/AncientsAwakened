@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Meloetta;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -14,7 +13,7 @@ public class Diminuendo() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DexterityPower>(5M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2), new CardsVar(2)];
     
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Innate, CardKeyword.Retain];
 
@@ -22,11 +21,14 @@ public class Diminuendo() : AncientsAwakenedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay cardPlay)
     {
-        await PowerCmd.Apply<DiminuendoPower>(choiceContext, Owner.Creature, DynamicVars.Dexterity.BaseValue, Owner.Creature, this);
+        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
+        await PowerCmd.Apply<EnergyNextTurnPower>(choiceContext, Owner.Creature, DynamicVars.Energy.BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<DrawCardsNextTurnPower>(choiceContext, Owner.Creature, DynamicVars.Cards.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Dexterity.UpgradeValueBy(2M);
+        DynamicVars.Cards.UpgradeValueBy(1);
+        DynamicVars.Energy.UpgradeValueBy(1);
     }
 }

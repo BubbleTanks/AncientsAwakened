@@ -21,7 +21,7 @@ public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromE
     
     public override bool HasUponPickupEffect => true;
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<WeighedDown>();
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<WeighedDown>().Concat(HoverTipFactory.FromCardWithCardHoverTips<HeavyCrate>());
 
     private int RewardAmount;
 

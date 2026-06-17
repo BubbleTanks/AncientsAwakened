@@ -91,7 +91,6 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     public override async Task AfterObtained()
     {
-        if(AncientCard == null) SetupForPlayer(Owner); // temporary fix
         CardModel card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
         if (card == null) return;
         CardCmd.Upgrade(card);
