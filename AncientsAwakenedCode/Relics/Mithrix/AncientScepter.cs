@@ -24,8 +24,7 @@ public class AncientScepter : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    private const string _strikeCardKey = "PerfectedStrikeCard";
-    private const string _defendCardKey = "PerfectedDefendCard";
+    private const string _perfectedPrefixKey = "PerfectedPrefixKey";
 
     private List<IHoverTip> _extraHoverTips = [];
 
@@ -34,7 +33,7 @@ public class AncientScepter : AncientsAwakenedRelic
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => _extraHoverTips;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar(_strikeCardKey), new StringVar(_defendCardKey)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar(_perfectedPrefixKey)];
     
     protected override bool RelicAllowedToSpawn(Player owner)
     {
@@ -185,14 +184,21 @@ public class AncientScepter : AncientsAwakenedRelic
             CardModel card = CardModel.FromSerializable(StrikeCard);
             _extraHoverTips.AddRange(card.HoverTips);
             _extraHoverTips.Add(HoverTipFactory.FromCard(card));
-            ((StringVar)DynamicVars[_strikeCardKey]).StringValue = card.Title;
+            ((StringVar)DynamicVars[_perfectedPrefixKey]).StringValue = GetPrefixString(card.Title);
         }
         if (DefendCard != null)
         {
-            CardModel card1 = CardModel.FromSerializable(DefendCard);
-            _extraHoverTips.AddRange(card1.HoverTips);
-            _extraHoverTips.Add(HoverTipFactory.FromCard(card1));
-            ((StringVar)DynamicVars[_defendCardKey]).StringValue = card1.Title;
+            CardModel card = CardModel.FromSerializable(DefendCard);
+            _extraHoverTips.AddRange(card.HoverTips);
+            _extraHoverTips.Add(HoverTipFactory.FromCard(card));
+            ((StringVar)DynamicVars[_perfectedPrefixKey]).StringValue = GetPrefixString(card.Title);
         }
+    }
+
+    private String GetPrefixString(String title)
+    {
+        var strikeTitle = new LocString("cards", "STRIKE_IRONCLAD.title").GetFormattedText();
+        var defendTitle = new LocString("cards", "DEFEND_IRONCLAD.title").GetFormattedText();
+        return title.Replace(strikeTitle, "").Replace(defendTitle, "");
     }
 }

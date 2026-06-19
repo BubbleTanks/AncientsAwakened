@@ -72,7 +72,7 @@ public class WeighedDown : AncientsAwakenedCard
         }
     }
     
-    private List<MapCoord>? GetMarkedCoords()
+    private List<MapCoord> GetMarkedCoords()
     {
         if (!TreasureCoordsSet)
             FindTreasureCoords();

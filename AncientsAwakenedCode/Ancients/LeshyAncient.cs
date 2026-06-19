@@ -37,11 +37,6 @@ public class LeshyAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 2 && AncientConfigs.EnableLeshyAncient;
-    }
-    
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return AncientConfigs.ForceLeshyEnabler && act.ActNumber() == 2;
+        return act.ActNumber() == 2;
     }
 }

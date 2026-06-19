@@ -36,11 +36,6 @@ public class MountainAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 3 && AncientConfigs.EnableMountainAncient;
-    }
-    
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return AncientConfigs.ForceMountainEnabler && act.ActNumber() == 3;
+        return act.ActNumber() == 3;
     }
 }

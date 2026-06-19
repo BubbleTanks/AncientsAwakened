@@ -36,11 +36,6 @@ public class LunaticCultistAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 3 && AncientConfigs.EnableLunaticCultistAncient;
-    }
-    
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return AncientConfigs.ForceLunaticCultistEnabler && act.ActNumber() == 3;
+        return act.ActNumber() == 3;
     }
 }

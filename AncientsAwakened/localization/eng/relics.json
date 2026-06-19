@@ -19,8 +19,8 @@
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Flawless Hammer",
 
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "Cards transformed by [gold]Ancient Scepter[/gold]",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Upon pickup, [gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into [blue]Perfected[/blue] versions.",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into [blue]Perfected[/blue] versions.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Upon pickup, [gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfected[/blue] }versions.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfected[/blue] }versions.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "The crystal pulsates with powerful energy as you pick it up.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "Ancient Scepter",
 

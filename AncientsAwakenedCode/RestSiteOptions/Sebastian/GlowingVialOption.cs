@@ -60,13 +60,13 @@ public class GlowingVialOption(Player owner) : RestSiteOption(owner), ICustomMod
             await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, new DamageVar(HP_LOSS, ValueProp.Unblockable | ValueProp.Unpowered), null, null);
         }
 
-        if (IsEnabled)
+        if (!IsEnabled)
         {
             var button = NRestSiteRoom.Instance.GetButtonForOption(this);
             if (button != null)
             {
                 button.Reload();
-                button._isUnclickable = false;
+                button._isUnclickable = true;
             }
         }
         

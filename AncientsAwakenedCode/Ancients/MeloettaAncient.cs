@@ -36,11 +36,6 @@ public class MeloettaAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 2 && AncientConfigs.EnableMeloettaAncient;
-    }
-    
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return AncientConfigs.ForceMeloettaEnabler && act.ActNumber() == 2;
+        return act.ActNumber() == 2;
     }
 }

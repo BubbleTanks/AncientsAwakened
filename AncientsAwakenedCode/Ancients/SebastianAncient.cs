@@ -34,6 +34,7 @@ public class SebastianAncient : CustomAncientModel
                     {
                         serum.SetupForPlayer(Owner);
                     }
+
                     return serum;
                 })
             ));
@@ -41,13 +42,9 @@ public class SebastianAncient : CustomAncientModel
     public override Color ButtonColor => new(0.05f, 0.05f, 0.15f, 0.8f);
 
     public override Color DialogueColor => new("161430");
-    
+
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 2 && AncientConfigs.EnableSebastianAncient;
-    }
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return act.ActNumber() == 2 && AncientConfigs.ForceSebastianEnabler;
+        return act.ActNumber() == 2;
     }
 }

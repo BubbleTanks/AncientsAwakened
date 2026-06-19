@@ -29,7 +29,7 @@ public class MithrixAncient : CustomAncientModel
                 AncientOption<FlawlessHammer>(3),
                 AncientOption<ArtifactOfCommand>(2),
                 AncientOption<EulogyZero>(2),
-                AncientOption<AncientScepter>(3, relic =>
+                AncientOption<AncientScepter>(99, relic =>
                 {
                     if (Owner != null)
                     {
@@ -45,11 +45,6 @@ public class MithrixAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 3 && AncientConfigs.EnableMithrixAncient;
-    }
-    
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return AncientConfigs.ForceMithrixEnabler && act.ActNumber() == 3;
+        return act.ActNumber() == 3;
     }
 }
