@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
+﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using AncientsAwakened.AncientsAwakenedCode.Interops;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -27,7 +28,7 @@ public class EulogyZero : AncientsAwakenedRelic
     {
         if (player != Owner || room == null)
             return false;
-
+        
         foreach (Reward r in rewards)
         {
             if (r is RelicReward)
@@ -51,7 +52,7 @@ public class EulogyZero : AncientsAwakenedRelic
             return;
         }
         
-        List<RelicModel> relics = ModelDb.RelicPool<EventRelicPool>().GetUnlockedRelics(Owner.UnlockState).Where(r => r.Rarity == RelicRarity.Ancient && !(r is IBlacklistFromEulogy) && !(BlacklistedRelics().Any(relic => relic.Id == r.Id)) && !(Owner.Relics.Any(relic => relic.Id == r.Id))).ToList();
+        List<RelicModel> relics = ModelDb.RelicPool<EventRelicPool>().GetUnlockedRelics(Owner.UnlockState).Where(r => r.Rarity == RelicRarity.Ancient && !(BlacklistedRelics().Any(relic => relic.Id == r.Id)) && !(Owner.Relics.Any(relic => relic.Id == r.Id))).ToList();
         
         foreach (RelicModel relicModel in relics)
         {
@@ -73,28 +74,39 @@ public class EulogyZero : AncientsAwakenedRelic
     private List<RelicModel> BlacklistedRelics()
     {
         var listVar = new List<RelicModel>();
+
+        foreach (var relicModel in BlacklistFromEulogyExtension.EulogyBlacklist)
+        {
+            listVar.Add(ModelDb.GetById<RelicModel>(relicModel));
+        }
         
         listVar.Add(ModelDb.Relic<GoldenCompass>());
+        
         foreach (EventOption relic in ModelDb.Event<Neow>().AllPossibleOptions)
         {
             listVar.Add(relic.Relic);
         }
         
-        // just to make it easy I'm putting all the leshy relics here.
-        listVar.Add(ModelDb.Relic<FilmRoll>());
-        listVar.Add(ModelDb.Relic<Goobert>());
-        listVar.Add(ModelDb.Relic<PackRat>());
-        listVar.Add(ModelDb.Relic<ProspectingPick>());
-        listVar.Add(ModelDb.Relic<SquirrelInABottle>());
-        listVar.Add(ModelDb.Relic<TheSmoke>());
+        if (AncientConfigsPlusInterop.SlotProps != null)
+        {
+            AncientsAwakenedMain.Logger.Info("AncientConfigsPlusConfig detected.");
+            for (int slot = 1; slot <= 3; slot++)
+            {
+                foreach (var kv in AncientConfigsPlusInterop.ParseWeights(slot))
+                {
+                    if (kv.Value == 0)
+                    {
+                        var ancientModel = ModelDb.AllAncients.Where(a => a.GetType().Name == kv.Key).FirstOrDefault();
+                        foreach (EventOption relic in ancientModel.AllPossibleOptions)
+                        {
+                            listVar.Add(relic.Relic);
+                        }
+                    }
+                }
+            }
+        }
+        AncientsAwakenedMain.Logger.Info(listVar.ToString());
         
         return listVar;
-    }
-
-    /// <summary>
-    /// Implement this into your relics if you want to blacklist them
-    /// </summary>
-    public interface IBlacklistFromEulogy
-    {
     }
 }

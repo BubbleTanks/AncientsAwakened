@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
+using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Utils;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
@@ -30,6 +31,9 @@ public class AncientScepter : AncientsAwakenedRelic
 
     private SerializableCard? _serializableStrikeCard;
     private SerializableCard? _serializableDefendCard;
+
+    private static Dictionary<ModelId, ModelId>? _perfectedStrikeUpgrades;
+    private static Dictionary<ModelId, ModelId>? _perfectedDefendUpgrades;
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => _extraHoverTips;
     
@@ -38,6 +42,46 @@ public class AncientScepter : AncientsAwakenedRelic
     protected override bool RelicAllowedToSpawn(Player owner)
     {
         return SetupForPlayer(owner);
+    }
+
+    private static Dictionary<ModelId, ModelId> PerfectedStrikeUpgrades
+    {
+        get
+        {
+            if (_perfectedStrikeUpgrades == null)
+            {
+                _perfectedStrikeUpgrades = new Dictionary<ModelId, ModelId>();
+                foreach (var kv in VanillaPerfectedStrikeUpgrades)
+                {
+                    _perfectedStrikeUpgrades.Add(kv.Key, kv.Value);
+                }
+                foreach (var kv in CustomPerfectedCardExtension.CustomPerfectedStrikeCards)
+                {
+                    _perfectedStrikeUpgrades.Add(kv.Key, kv.Value);
+                }
+            }
+            return _perfectedStrikeUpgrades;
+        }
+    }
+    
+    private static Dictionary<ModelId, ModelId> PerfectedDefendUpgrades
+    {
+        get
+        {
+            if (_perfectedDefendUpgrades == null)
+            {
+                _perfectedDefendUpgrades = new Dictionary<ModelId, ModelId>();
+                foreach (var kv in VanillaPerfectedDefendUpgrades)
+                {
+                    _perfectedDefendUpgrades.Add(kv.Key, kv.Value);
+                }
+                foreach (var kv in CustomPerfectedCardExtension.CustomPerfectedStrikeCards)
+                {
+                    _perfectedDefendUpgrades.Add(kv.Key, kv.Value);
+                }
+            }
+            return _perfectedDefendUpgrades;
+        }
     }
 
     public override bool HasUponPickupEffect => true;
@@ -79,9 +123,9 @@ public class AncientScepter : AncientsAwakenedRelic
         if (strikeCount + defendCount >= 3)
         {
             if (PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedStrikeCard))
-                StrikeCard = perfectedStrikeCard.ToMutable().ToSerializable();
+                StrikeCard = ModelDb.GetById<CardModel>(perfectedStrikeCard).ToMutable().ToSerializable();
             if (PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedDefendCard))
-                DefendCard = perfectedDefendCard.ToMutable().ToSerializable();
+                DefendCard =  ModelDb.GetById<CardModel>(perfectedDefendCard).ToMutable().ToSerializable();
             UpdateHoverTips();
             return true;
         }
@@ -104,10 +148,10 @@ public class AncientScepter : AncientsAwakenedRelic
 
     private CardModel GetPerfectedTransformedCard(CardModel starterCard)
     {
-        CardModel? replacement = PerfectedStrikeUpgrades.TryGetValue(starterCard.Id, out replacement) ? replacement : PerfectedDefendUpgrades.TryGetValue(starterCard.Id, out replacement) ? replacement : null;
+        ModelId replacement = PerfectedStrikeUpgrades.TryGetValue(starterCard.Id, out replacement) ? replacement : PerfectedDefendUpgrades.TryGetValue(starterCard.Id, out replacement) ? replacement : null;
         if (replacement != null)
         {
-            CardModel cardModel = starterCard.Owner.RunState.CreateCard(replacement, starterCard.Owner);
+            CardModel cardModel = starterCard.Owner.RunState.CreateCard(ModelDb.GetById<CardModel>(replacement), starterCard.Owner);
             if (starterCard.IsUpgraded)
             {
                 CardCmd.Upgrade(cardModel);
@@ -122,51 +166,51 @@ public class AncientScepter : AncientsAwakenedRelic
         return Owner.RunState.CreateCard<Doubt>(starterCard.Owner);
     }
     
-    private static Dictionary<ModelId, CardModel> PerfectedStrikeUpgrades => new()
+    private static Dictionary<ModelId, ModelId> VanillaPerfectedStrikeUpgrades => new()
     {
         {
             ModelDb.Card<StrikeIronclad>().Id,
-            ModelDb.Card<DemonicStrike>()
+            ModelDb.Card<DemonicStrike>().Id
         },
         {
             ModelDb.Card<StrikeSilent>().Id,
-            ModelDb.Card<DeadlyStrike>()
+            ModelDb.Card<DeadlyStrike>().Id
         },
         {
             ModelDb.Card<StrikeRegent>().Id,
-            ModelDb.Card<CosmicStrike>()
+            ModelDb.Card<CosmicStrike>().Id
         },
         {
             ModelDb.Card<StrikeNecrobinder>().Id,
-            ModelDb.Card<EternalStrike>()
+            ModelDb.Card<EternalStrike>().Id
         },
         {
             ModelDb.Card<StrikeDefect>().Id,
-            ModelDb.Card<EmpoweredStrike>()
+            ModelDb.Card<EmpoweredStrike>().Id
         }
     };
     
-    private static Dictionary<ModelId, CardModel> PerfectedDefendUpgrades => new()
+    private static Dictionary<ModelId, ModelId> VanillaPerfectedDefendUpgrades => new()
     {
         {
             ModelDb.Card<DefendIronclad>().Id,
-            ModelDb.Card<DemonicDefend>()
+            ModelDb.Card<DemonicDefend>().Id
         },
         {
             ModelDb.Card<DefendSilent>().Id,
-            ModelDb.Card<DeadlyDefend>()
+            ModelDb.Card<DeadlyDefend>().Id
         },
         {
             ModelDb.Card<DefendRegent>().Id,
-            ModelDb.Card<CosmicDefend>()
+            ModelDb.Card<CosmicDefend>().Id
         },
         {
             ModelDb.Card<DefendNecrobinder>().Id,
-            ModelDb.Card<EternalDefend>()
+            ModelDb.Card<EternalDefend>().Id
         },
         {
             ModelDb.Card<DefendDefect>().Id,
-            ModelDb.Card<EmpoweredDefend>()
+            ModelDb.Card<EmpoweredDefend>().Id
         }
     };
 

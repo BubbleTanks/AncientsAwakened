@@ -1,4 +1,5 @@
-﻿using BaseLib.Utils;
+﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -11,7 +12,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Meloetta;
 
 [Pool(typeof(EventRelicPool))]
-public class SepiaPhotograph() : AncientsAwakenedRelic
+public class SepiaPhotograph : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
@@ -32,6 +33,11 @@ public class SepiaPhotograph() : AncientsAwakenedRelic
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ("RelicsNow", 2),new ("RelicsLater", 2)];
     
     public override bool HasUponPickupEffect => true;
+
+    public SepiaPhotograph()
+    {
+        this.BlacklistFromEulogy();
+    }
     
     public override async Task AfterObtained()
     {

@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.UI;
+﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -11,11 +12,16 @@ using MegaCrit.Sts2.Core.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
-public class MonsoonCharm : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulogy
+public class MonsoonCharm : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
     public override bool HasUponPickupEffect => true;
+
+    public MonsoonCharm()
+    {
+        this.BlacklistFromEulogy();
+    }
     
     public override async Task AfterObtained()
     {

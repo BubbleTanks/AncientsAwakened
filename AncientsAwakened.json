@@ -1,12 +1,12 @@
 {
   "id": "AncientsAwakened",
   "name": "Ancients Awakened",
-  "author": "CrypticAurora",
-  "description": "An Ancient mod by your local crazy moth.",
-  "version": "v1.2.4",
+  "author": "CrypticAurora & SoytheProton",
+  "description": "An Ancient mod by your local crazy moth and protogen.",
+  "version": "v1.5.0",
   "has_pck": true,
   "has_dll": true,
-  "dependencies": [{"id": "BaseLib", "min_version": "3.1.5"}],
-  "min_game_version": "0.105.0",
+  "dependencies": [{"id": "BaseLib", "min_version": "3.3.0"}],
+  "min_game_version": "0.107.1",
   "affects_gameplay": true
 }

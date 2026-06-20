@@ -1,7 +1,7 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -10,7 +10,6 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Characters;
 using MegaCrit.Sts2.Core.Models.RelicPools;
-using MegaCrit.Sts2.Core.Runs;
 using MegaCrit.Sts2.Core.Saves;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
@@ -19,6 +18,28 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 [Pool(typeof(EventRelicPool))]
 public class ExperimentalSerum : AncientsAwakenedRelic
 {
+    private static Dictionary<ModelId, ModelId>? _experimentalCards;
+
+    private static Dictionary<ModelId, ModelId> ExperimentalCards
+    {
+        get
+        {
+            if (_experimentalCards == null)
+            {
+                _experimentalCards = new Dictionary<ModelId, ModelId>();
+                foreach (var kv in VanillaExperimentalCards)
+                {
+                    _experimentalCards.Add(kv.Key, kv.Value);
+                }
+                foreach (var kv in CustomExperimentalCardExtension.CustomExperimentalCards)
+                {
+                    _experimentalCards.Add(kv.Key, kv.Value);
+                }
+            }
+            return _experimentalCards;
+        }
+    }
+    
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     public override bool HasUponPickupEffect => true;    
@@ -50,7 +71,7 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
 
-    private static Dictionary<ModelId, ModelId> ExperimentalCards = new()
+    private static Dictionary<ModelId, ModelId> VanillaExperimentalCards = new()
     {
         {
             ModelDb.Character<Ironclad>().Id,

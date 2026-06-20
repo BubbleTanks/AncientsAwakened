@@ -1,14 +1,11 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
+using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Utils;
-using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Logging;
-using MegaCrit.Sts2.Core.Map;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rewards;
@@ -19,7 +16,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulogy
+public class ShippingRequest : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -38,6 +35,11 @@ public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromE
             AssertMutable();
             _rewardAmount = value;
         }
+    }
+    
+    public ShippingRequest()
+    {
+        this.BlacklistFromEulogy();
     }
 
     public override async Task AfterObtained()

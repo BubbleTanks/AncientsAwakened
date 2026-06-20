@@ -27,6 +27,20 @@
         </Reference>
     </ItemGroup>
 
+    <ItemGroup Condition="Exists('$(SteamLibraryPath)/workshop/content/2868840/3747493112')">
+        <Reference Include="ancientconfigsplus">
+            <HintPath>$(SteamLibraryPath)/workshop/content/2868840/3747493112/AncientConfigsPlus.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup Condition="Exists('$(SteamLibraryPath)/workshop/content/2868840/3747609123')">
+        <Reference Include="runesmith2">
+            <HintPath>$(SteamLibraryPath)/workshop/content/2868840/3747609123/Runesmith2/Runesmith2.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
     <ItemGroup> <!--Allows access to originally private/protected members but may (unlikely to) cause errors.-->
         <Publicize Include="sts2" IncludeVirtualMembers="false" IncludeCompilerGeneratedMembers="false" />
         <Publicize Include="BaseLib" IncludeVirtualMembers="false" IncludeCompilerGeneratedMembers="false" />
@@ -38,7 +52,7 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.1.8" PrivateAssets="All" />
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="3.3.0" PrivateAssets="All" />
         <PackageReference Include="JetBrains.Annotations" Version="2025.2.4" />
         <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="All">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
