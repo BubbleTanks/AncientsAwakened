@@ -173,38 +173,4 @@
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.ancient": "Fix you? Fix your friend? Why, for such a cute little robot he should do that! Get out there and beat him up!",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.next": "Reply",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<energetic beeps!>[/font_size][/i]",
-
-
-
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.title": "Lunatic Cultist",
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.epithet": "Celestial Savant",
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.firstVisitEver.0-0.ancient": "You interrupt my studies. Collect a charm and begone from here.",
-  
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.ANY.0-0r.ancient": "[i][font_size=22]Gestures towards a table with a few relics upon it, then returns to their studies.[/font_size][/i]",
-
-
-
-  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.title": "Meloetta",
-  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.epithet": "Spirit of Harmony",
-  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.talk.ANY.0-0r.ancient": "",
-
-  "ANCIENTSAWAKENED-MELOETTA_ANCIENT.talk.firstVisitEver.0-0.ancient": "",
-
-
-
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.title": "The Mountain",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.epithet": "Coalescence of Sin",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.firstVisitEver.0-0.ancient": "[i][font_size=22]An otherworldy chill rolls down your spine. You feel compelled to pray.[/font_size][/i]",
-
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.0-0r.ancient": "[i][font_size=22]The wind howls around you as visions of your failure flicker in and out of view.[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.1-0r.ancient": "[i][font_size=22]The air grows colder as you approach the mountain.[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.2-0r.ancient": "[i][font_size=22]The path before you stretches out endlessly as you trudge onwards.[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.3-0r.ancient": "[i][font_size=22]Your wrongdoings echo around you as you hesitate. Is this really worth it?[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.4-0r.ancient": "[i][font_size=22]The summit of the mountain feels unattainable...but you must carry on.[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.5-0r.ancient": "[i][font_size=22]Icy winds rake across your face as you trek down the path.[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.6-0r.ancient": "[i][font_size=22]The burden of your pack grows heavy with grief as you scale the mountain. You are overwhelmed with pain.[/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.7-0r.ancient": "[i][font_size=22][wave amp=30.0 freq=2.0 connected=1][color=#630e0e]You do not deserve to climb this Spire. Submit to your guilt, sinner.[/color][/wave][/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.8-0r.ancient": "[i][font_size=22][wave amp=30.0 freq=2.0 connected=1][color=#630e0e]Lay down your weapon. Perish in the snow like those before you, sinner.[/color][/wave][/font_size][/i]",
-  "ANCIENTSAWAKENED-MOUNTAIN_ANCIENT.talk.ANY.9-0r.ancient": "[i][font_size=22][wave amp=30.0 freq=2.0 connected=1][color=#630e0e]You are not worthy of this path. Give up. Accept your failure, sinner.[/color][/wave][/font_size][/i]"
-  
 }

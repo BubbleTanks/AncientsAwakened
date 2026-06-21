@@ -6,28 +6,8 @@
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "Disadvantaged creatures deal [blue]15%[/blue] less attack damage and take [blue]30%[/blue] more damage from Attacks.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Deal [blue]15%[/blue] less attack damage and receive [blue]30%[/blue] more attack damage for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Disadvantaged",
-
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.description": "",
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.smartDescription": "",
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.title": "Sleight of Hand",
-
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "At the start of your turn, deal damage to all enemies.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "At the start of your turn, deal [blue]{Amount}[/blue] damage to all enemies.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Lunatic Ritual",
-
-  "ANCIENTSAWAKENED-VORTEX_POWER.description": "Attacks deal [blue]10%[/blue] more damage.",
-  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "Attacks deal [blue]{Amount}%[/blue] more damage",
-  "ANCIENTSAWAKENED-VORTEX_POWER.title": "Vortex",
-
-  "ANCIENTSAWAKENED-STRESS_POWER.description": "Stressed creatures take additional damage from Attacks.",
-  "ANCIENTSAWAKENED-STRESS_POWER.smartDescription": "Receive [blue]{Amount}[/blue] additional damage from Attacks.",
-  "ANCIENTSAWAKENED-STRESS_POWER.title": "Stress",
-
+  
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Stunned creatures cannot act.",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns}, this creature is [gold]Stunned[/gold].",
-  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn",
-
-  "ANCIENTSAWAKENED-TRIPLE_DAMAGE_POWER.description": "The next Attack you play deals triple damage.",
-  "ANCIENTSAWAKENED-TRIPLE_DAMAGE_POWER.smartDescription": "The next Attack you play deals [blue]{DisplayAmount}%[/blue] damage.",
-  "ANCIENTSAWAKENED-TRIPLE_DAMAGE_POWER.title": "Triple Damage Next Attack"
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn"
 }
