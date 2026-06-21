@@ -29,8 +29,8 @@ _Silent Ancient Skill_ traced from **Jason Wang**
 _Regent Ancient Skill_ traced from u/Trashochist on Reddit
 _Defect Ancient Skill_ traced from **Jason Wang**  
 
-_Leshy Ancient Art_ by **skellulite**
-_Leshy Full-Art Card_ by **Nevskaya Alexandra**
+_Leshy Ancient Art_ by **skellulite**  
+_Leshy Full-Art Card_ by **Nevskaya Alexandra**  
 
 ### Commissions
 **starstruck_venus** for Mithrix's, Sebastian's, & Leshy's Map Icon & Dialogue Icon
