@@ -6,6 +6,6 @@ namespace AncientsAwakened.AncientsAwakenedCode.UI;
 internal class AncientConfigs : SimpleModConfig
 {
     [ConfigSection("Mithrix")]
-    public static bool MultiplayerFlawlessHammer { get; set; } = false;
+    public static bool MultiplayerFlawlessHammer { get; set; } = true;
     public static bool MultiplayerMonsoonCharm { get; set; } = false;
 }

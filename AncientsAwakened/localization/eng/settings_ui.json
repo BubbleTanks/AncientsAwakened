@@ -3,9 +3,9 @@
   
   "ANCIENTSAWAKENED-MITHRIX.title": "Mithrix Relic Configs",
   
-  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "Enable Flawless Hammer in Multiplayer",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "Enable Multiplayer Flawless Hammer",
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "Multiplayer Flawless Hammer",
-  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "Disabled on default due to extra turns being not very multiplayer friendly.",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "Enables a unique version of Flawless Hammer for multiplayer with +1 cost, but giving an extra turn to ALL allies.\n(Disabling uses the singleplayer version in Multiplayer instead.)",
   
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "Enable Monsoon Charm in Multiplayer",
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "Multiplayer Monsoon Charm",
