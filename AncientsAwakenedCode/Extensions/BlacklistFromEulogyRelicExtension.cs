@@ -2,7 +2,7 @@
 
 namespace AncientsAwakened.AncientsAwakenedCode.Extensions;
 
-public static class BlacklistFromEulogyExtension
+public static class BlacklistFromEulogyRelicExtension
 {
     internal static readonly List<ModelId> EulogyBlacklist = [];
     

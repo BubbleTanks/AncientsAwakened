@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b52f70bxrni7a"
-path="res://.godot/imported/electrolyze_power.png-4521d2d7c044999419a48eb62731207b.ctex"
+uid="uid://bwt12cuadavwd"
+path="res://.godot/imported/fallen_star.png-2de939a09ac173c1dbccbd99941c2531.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/powers/big/electrolyze_power.png"
-dest_files=["res://.godot/imported/electrolyze_power.png-4521d2d7c044999419a48eb62731207b.ctex"]
+source_file="res://AncientsAwakened/images/relics/big/fallen_star.png"
+dest_files=["res://.godot/imported/fallen_star.png-2de939a09ac173c1dbccbd99941c2531.ctex"]
 
 [params]
 

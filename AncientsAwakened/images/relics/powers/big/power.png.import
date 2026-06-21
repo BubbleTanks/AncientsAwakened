@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcuuxvycclncv"
-path="res://.godot/imported/break_beneath_me_power.png-c7c7634a1cd5ae01f74bee7b6746255b.ctex"
+uid="uid://cofxh1eallumq"
+path="res://.godot/imported/power.png-a9cdda7594064902d6fcea599bcb2a55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/powers/big/break_beneath_me_power.png"
-dest_files=["res://.godot/imported/break_beneath_me_power.png-c7c7634a1cd5ae01f74bee7b6746255b.ctex"]
+source_file="res://AncientsAwakened/images/relics/powers/big/power.png"
+dest_files=["res://.godot/imported/power.png-a9cdda7594064902d6fcea599bcb2a55.ctex"]
 
 [params]
 

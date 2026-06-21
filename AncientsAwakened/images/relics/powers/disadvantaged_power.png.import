@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdtyy0rqxnatk"
-path="res://.godot/imported/power.png-5b108e8c130e8cd595d2e9d45ab1ee7a.ctex"
+uid="uid://bhytwvpknao6q"
+path="res://.godot/imported/disadvantaged_power.png-74291b7af0a6b6c24954c9bfc75cdadd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/powers/power.png"
-dest_files=["res://.godot/imported/power.png-5b108e8c130e8cd595d2e9d45ab1ee7a.ctex"]
+source_file="res://AncientsAwakened/images/relics/powers/disadvantaged_power.png"
+dest_files=["res://.godot/imported/disadvantaged_power.png-74291b7af0a6b6c24954c9bfc75cdadd.ctex"]
 
 [params]
 

@@ -26,15 +26,23 @@ public class MithrixAncient : CustomAncientModel
                 AncientOption<MonsoonCharm>(2)
             ),
             MakePool(
-                AncientOption<FlawlessHammer>(3),
+                AncientOption<FlawlessHammer>(993, hammer =>
+                {
+                    if(Owner != null)
+                        hammer.SetupForPlayer(Owner);
+                    return hammer;
+                }),
                 AncientOption<ArtifactOfCommand>(2),
-                AncientOption<EulogyZero>(2),
-                AncientOption<AncientScepter>(99, relic =>
+                AncientOption<EulogyZero>(2, zero =>
                 {
                     if (Owner != null)
-                    {
+                        zero.SetupForPlayer(Owner);
+                    return zero;
+                } ),
+                AncientOption<AncientScepter>(3, relic =>
+                {
+                    if (Owner != null)
                         relic.SetupForPlayer(Owner);
-                    }
                     return relic;
                 }))
             );

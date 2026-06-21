@@ -31,10 +31,7 @@ public class SebastianAncient : CustomAncientModel
                 AncientOption<ExperimentalSerum>(5, serum =>
                 {
                     if (Owner != null)
-                    {
                         serum.SetupForPlayer(Owner);
-                    }
-
                     return serum;
                 })
             ));

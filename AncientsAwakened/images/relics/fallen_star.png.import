@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyowmxuoqfv2x"
-path="res://.godot/imported/empowered_defend_power.png-c24a855c856440f4a572123ef08f0d40.ctex"
+uid="uid://dj48lroci4nso"
+path="res://.godot/imported/fallen_star.png-67f2395ba829d35c23a13f554ae22f3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/powers/empowered_defend_power.png"
-dest_files=["res://.godot/imported/empowered_defend_power.png-c24a855c856440f4a572123ef08f0d40.ctex"]
+source_file="res://AncientsAwakened/images/relics/fallen_star.png"
+dest_files=["res://.godot/imported/fallen_star.png-67f2395ba829d35c23a13f554ae22f3d.ctex"]
 
 [params]
 

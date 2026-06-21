@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-EGOCENTRISM.description": "At the end of your turn, if this is in your [gold]Hand[/gold], [gold]Transform[/gold] ALL cards in your [gold]Hand[/gold] into [gold]Egocentrism[/gold].",
   "ANCIENTSAWAKENED-EGOCENTRISM.title": "Egocentrism",
 
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\nTake an extra turn after this one.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\n{IsMultiplayer:ALL players take an extra turn after this one.|Take an extra turn after this one.}",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "Break Beneath Me",
 
   "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
@@ -34,6 +34,7 @@
   
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Channel[/gold] 2 [gold]Frost[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend",
+  
 
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nDraw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun",
@@ -58,6 +59,7 @@
 
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze",
+  
 
   "ANCIENTSAWAKENED-SQUIRREL.description": "Draw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-SQUIRREL.title": "Squirrel",
@@ -65,12 +67,14 @@
   "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "Choose a card to inscrybe.",
   "ANCIENTSAWAKENED-INSCRYBE.description": "Deal {Damage:diff()} damage.\nChoose a card in your [gold]Hand[/gold] to make a copy of.",
   "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe",
+  
 
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold].\nAt the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies.",
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual",
 
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
+  
   
   "ANCIENTSAWAKENED-CRESCENDO.description": "Apply {Power:diff()} [gold]Weak[/gold] and [gold]Vulnerable[/gold].",
   "ANCIENTSAWAKENED-CRESCENDO.title": "Crescendo",
@@ -80,10 +84,11 @@
 
   "ANCIENTSAWAKENED-MELODY_BERRY.description": "Heal {Heal:diff()} HP.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-MELODY_BERRY.title": "Melody Berry",
+  
 
   "ANCIENTSAWAKENED-STRESS.description": "Whenever you draw this card, you receive {StressPower:diff()} additional damage for the rest of combat.",
   "ANCIENTSAWAKENED-STRESS.title": "Stress",
   
   "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.description": "Gain 1 [gold]Buffer[/gold].\nYour next Attack deals triple damage.",
-  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commute"
+  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commune"
 }

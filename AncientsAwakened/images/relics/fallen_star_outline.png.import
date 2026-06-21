@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cahyi6b1ywa0"
-path="res://.godot/imported/break_beneath_me_power.png-94fde20e95dd61c5d293cdd4155e349c.ctex"
+uid="uid://cp1dkh52vgfes"
+path="res://.godot/imported/fallen_star_outline.png-3922b110eee0cef68f57780e3468d23d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/powers/break_beneath_me_power.png"
-dest_files=["res://.godot/imported/break_beneath_me_power.png-94fde20e95dd61c5d293cdd4155e349c.ctex"]
+source_file="res://AncientsAwakened/images/relics/fallen_star_outline.png"
+dest_files=["res://.godot/imported/fallen_star_outline.png-3922b110eee0cef68f57780e3468d23d.ctex"]
 
 [params]
 

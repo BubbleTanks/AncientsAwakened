@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://crhlfh3a2tbkq"
-path="res://.godot/imported/flash_beacon_power.png-aeb429b7c7846d93337e13d018b46cc1.ctex"
+uid="uid://c227ldhiixkv5"
+path="res://.godot/imported/electrolyze_power.png-964b905decf4425b638fe3935a3bba6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/powers/flash_beacon_power.png"
-dest_files=["res://.godot/imported/flash_beacon_power.png-aeb429b7c7846d93337e13d018b46cc1.ctex"]
+source_file="res://AncientsAwakened/images/relics/powers/electrolyze_power.png"
+dest_files=["res://.godot/imported/electrolyze_power.png-964b905decf4425b638fe3935a3bba6b.ctex"]
 
 [params]
 
