@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj7u6u4u2k2w0"
-path="res://.godot/imported/flash_beacon_power.png-f607ff6fda1f61ffd43d6234d088ac83.ctex"
+path="res://.godot/imported/flash_beacon_power.png-de6912c3961186a0f5c9581b14daba06.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/relics/powers/big/flash_beacon_power.png"
-dest_files=["res://.godot/imported/flash_beacon_power.png-f607ff6fda1f61ffd43d6234d088ac83.ctex"]
+source_file="res://AncientsAwakened/images/powers/big/flash_beacon_power.png"
+dest_files=["res://.godot/imported/flash_beacon_power.png-de6912c3961186a0f5c9581b14daba06.ctex"]
 
 [params]
 

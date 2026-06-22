@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dcuuxvycclncv"
-path="res://.godot/imported/break_beneath_me_power.png-811bc9a7544c8ddd5dc90240379019da.ctex"
+path="res://.godot/imported/break_beneath_me_power.png-c7c7634a1cd5ae01f74bee7b6746255b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/relics/powers/big/break_beneath_me_power.png"
-dest_files=["res://.godot/imported/break_beneath_me_power.png-811bc9a7544c8ddd5dc90240379019da.ctex"]
+source_file="res://AncientsAwakened/images/powers/big/break_beneath_me_power.png"
+dest_files=["res://.godot/imported/break_beneath_me_power.png-c7c7634a1cd5ae01f74bee7b6746255b.ctex"]
 
 [params]
 

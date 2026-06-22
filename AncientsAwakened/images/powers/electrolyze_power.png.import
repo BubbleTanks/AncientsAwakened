@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c227ldhiixkv5"
-path="res://.godot/imported/electrolyze_power.png-964b905decf4425b638fe3935a3bba6b.ctex"
+path="res://.godot/imported/electrolyze_power.png-9094a81697eb09d12cca1cade9989618.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/relics/powers/electrolyze_power.png"
-dest_files=["res://.godot/imported/electrolyze_power.png-964b905decf4425b638fe3935a3bba6b.ctex"]
+source_file="res://AncientsAwakened/images/powers/electrolyze_power.png"
+dest_files=["res://.godot/imported/electrolyze_power.png-9094a81697eb09d12cca1cade9989618.ctex"]
 
 [params]
 

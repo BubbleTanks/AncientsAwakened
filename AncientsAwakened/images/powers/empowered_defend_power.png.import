@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dyowmxuoqfv2x"
-path="res://.godot/imported/empowered_defend_power.png-3804828a801e990b3c725498866610cb.ctex"
+path="res://.godot/imported/empowered_defend_power.png-c24a855c856440f4a572123ef08f0d40.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/relics/powers/empowered_defend_power.png"
-dest_files=["res://.godot/imported/empowered_defend_power.png-3804828a801e990b3c725498866610cb.ctex"]
+source_file="res://AncientsAwakened/images/powers/empowered_defend_power.png"
+dest_files=["res://.godot/imported/empowered_defend_power.png-c24a855c856440f4a572123ef08f0d40.ctex"]
 
 [params]
 

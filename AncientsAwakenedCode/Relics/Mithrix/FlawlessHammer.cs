@@ -23,9 +23,8 @@ public class FlawlessHammer : AncientsAwakenedRelic
     {
         get
         {
-            if (Owner == null || IsCanonical || !IsMutable)
+            if (IsCanonical || !IsMutable)
                 return HoverTipFactory.FromCardWithCardHoverTips<BreakBeneathMe>();
-            
 
             if (_extraHoverTips.Count == 0)
             {
@@ -42,6 +41,7 @@ public class FlawlessHammer : AncientsAwakenedRelic
     
     private void UpdateHoverTips(Player player)
     {
+        if (player == null) return;
         _extraHoverTips.Clear();
         if (player.RunState.Players.Count > 1 && (AncientConfigs.MultiplayerFlawlessHammer || MultiplayerHammerInDeck(player)))
         {
