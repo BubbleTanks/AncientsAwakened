@@ -1,11 +1,11 @@
 {
-  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "획득 시, [gold]덱[/gold]에 있는 모든 공격 카드에 [gold]설계[/gold]를 [gold]부여[/gold]합니다. 최대 체력의 절반을 잃습니다.",
-  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]덱[/gold]에 있는 모든 공격 카드에 [gold]설계[/gold]를 [gold]부여[/gold]합니다. 최대 체력의 절반을 잃습니다.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "획득 시, [gold]덱[/gold]에 있는 모든 공격 카드에 [gold]설계[/gold]를 추가합니다. 최대 체력의 절반을 잃습니다.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]덱[/gold]에 있는 모든 공격 카드에 [gold]설계[/gold]를 추가합니다. 최대 체력의 절반을 잃습니다.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "날카로운 칼날이 당신을 몰아세우지만, 동시에 당신을 부서지기 쉽게 만든다.",
   "ANCIENTSAWAKENED-SHAPED_GLASS.title": "모양이 있는 유리",
   
-  "ANCIENTSAWAKENED-STARSEED.description": "획득 시, [blue]희귀[/blue] 카드 보상을 [blue]5[/blue]장 얻습니다. [gold]덱[/gold]에 [red]자기중심적[/red] 1장을 추가합니다.",
-  "ANCIENTSAWAKENED-STARSEED.eventDescription": "[blue]희귀[/blue] 카드 보상을 [blue]5[/blue]장 얻습니다. [gold]덱[/gold]에 [red]자기중심적[/red] 1장을 추가합니다.",
+  "ANCIENTSAWAKENED-STARSEED.description": "획득 시, [blue]희귀[/blue] 카드 보상을 [blue]{Cards}[/blue]장 얻습니다. [gold]덱[/gold]에 [red]자기중심적[/red] 1장을 추가합니다.",
+  "ANCIENTSAWAKENED-STARSEED.eventDescription": "[blue]희귀[/blue] 카드 보상을 [blue]{Cards}[/blue]장 얻습니다. [gold]덱[/gold]에 [red]자기중심적[/red] 1장을 추가합니다.",
   "ANCIENTSAWAKENED-STARSEED.flavor": "햇살 아래 유리 개구리를 쫓던 두 형제의 웃음소리가 들려온다.",
   "ANCIENTSAWAKENED-STARSEED.title": "별의 씨앗",
 
@@ -18,17 +18,17 @@
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.flavor": "우아한 설계. 묵직한 질량. 피 한 방울. 그래, 이것이면 완벽하다.",
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "완벽한 망치",
 
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "[gold]고대의 지팡이[/gold]에 의해 변환된 카드",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "획득 시, 모든 [gold]타격[/gold]과 [gold]수비[/gold]를 [blue]완벽한[/blue] 버전으로 [gold]변환[/gold]합니다.",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "모든 [gold]타격[/gold]과 [gold]수비[/gold]를 [blue]완벽한[/blue] 버전으로 [gold]변환[/gold]합니다.",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "[gold]고대의 지팡이[/gold]에 의해 변환된 카드",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "[gold]고대의 지팡이[/gold]에 의해 변화된 카드",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "획득 시, 모든 [gold]타격[/gold]과 [gold]수비[/gold]를 {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]완성된[/blue] }버전으로 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "모든 [gold]타격[/gold]과 [gold]수비[/gold]를 {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]완성된[/blue] }버전으로 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "유물을 집어 들자 수정이 강력한 에너지로 진동합니다.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "고대의 지팡이",
 
   "ANCIENTSAWAKENED-FRACTURED_BLADE.description": "첫 번째 턴이 끝난 후, 추가 턴을 갖습니다. 첫 번째 턴에 카드를 사용할 때마다 최대 체력을 [blue]1[/blue] 잃습니다.",
   "ANCIENTSAWAKENED-FRACTURED_BLADE.flavor": "검을 따라 길게 뻗은 커다란 균열이 보인다.",
   "ANCIENTSAWAKENED-FRACTURED_BLADE.title": "균열된 검",
 
-  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "모든 카드 보상에 [gold]질량[/gold]을 [gold]부여[/gold]합니다.",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "모든 카드 보상에 [gold]질량[/gold]을 추가합니다.",
   "ANCIENTSAWAKENED-PILLAR_OF_MASS.flavor": "질량은 단순하다. 모든 형태의 근간이며, 다듬어지고 만들어지는 것이다. 이것을 취하여, 당신만의 비전을 창조하라.",
   "ANCIENTSAWAKENED-PILLAR_OF_MASS.title": "질량의 기둥",
 
@@ -38,20 +38,20 @@
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"이 술을 한 모금 마시면 정신이 유연해지고... 세상 만물이 당신의 뜻을 따르게 된다.\" - 취객 시기볼드",
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "지휘의 유물",
 
-  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "모든 전투에서 유물을 [blue]1[/blue]개 추가로 획득합니다. [gold]휴식[/gold]이 [gold]정예 전투[/gold]로 대체됩니다.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "모든 전투에서 유물을 [blue]1[/blue]개를 추가로 획득합니다. [gold]휴식 장소[/gold]가 [gold]정예 전투[/gold]로 대체됩니다.",
   "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "머리 위로 비가 쏟아진다. 이 부적을 쥐자 공포감이 엄습한다.",
   "ANCIENTSAWAKENED-MONSOON_CHARM.title": "몬순의 부적",
 
-  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "전투 보상으로 나오는 유물이 니오우를 제외한 무작위 [gold]고대의[/gold] 유물로 대체됩니다.",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "전투 보상으로 나오는 유물이 니오우를 제외한 무작위 [gold]고대의 존재[/gold] 유물로 대체됩니다.",
   "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"건축가여... 너의 죽음은 운명이다. 네가 죽을 때 - 넌 분명 죽을 테니 - 내가 준비하고 있겠다. 나는 수천 년 동안 인내해 왔다. 이 첨탑은... 나의 것이다.\"",
   "ANCIENTSAWAKENED-EULOGY_ZERO.title": "0의 찬미가",
 
-  "ANCIENTSAWAKENED-FLASH_BEACON.description": "[blue]4[/blue]턴마다, 모든 적이 [blue]1[/blue]턴 동안 [gold]근력[/gold]을 [blue]10[/blue] 잃습니다.",
+  "ANCIENTSAWAKENED-FLASH_BEACON.description": "[blue]{Turns}[/blue]턴마다, 모든 적이 [blue]1[/blue]턴 동안 [gold]힘[/gold]을 [blue]{FlashBeaconPower}[/blue] 잃습니다.",
   "ANCIENTSAWAKENED-FLASH_BEACON.flavor": "\"솔직히 말해서, 난 이거 싫어. 빌어먹을 게 눈이 너무 아프거든. 그냥... 내 쪽이 아닌 다른 데를 향하게 해줄래?\"",
   "ANCIENTSAWAKENED-FLASH_BEACON.title": "빛나는 신호기",
 
-  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.description": "획득 시, 무작위 전투 [blue]10[/blue]곳을 표시합니다. 해당 구역의 보상에 유물 [blue]1[/blue]개가 추가됩니다.",
-  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.eventDescription": "무작위 전투 [blue]10[/blue]곳을 표시합니다. 해당 구역의 보상에 유물 [blue]1[/blue]개가 추가됩니다.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.description": "획득 시, 무작위 전투 [blue]{Combats}[/blue]곳을 표시합니다. 해당 구역의 보상에 유물이 추가됩니다.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.eventDescription": "무작위 전투 [blue]{Combats}[/blue]곳을 표시합니다. 해당 구역의 보상에 유물이 추가됩니다.",
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"스캐너가 갖고 싶다고? 뭐야, 내가 찾아주는 걸로는 부족해?~ 좋아, 알았어. 근데 이거 부수기만 해봐, 머리를 확 뜯어버릴 테니까, 알겠어?\"",
   "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "세바스찬의 스캐너",
 
@@ -59,12 +59,12 @@
   "ANCIENTSAWAKENED-MEDICAL_KIT.flavor": "\"이건 딱히 별거 아냐. 그냥 붕대랑 거즈, 몇 가지 도구들이랑 내가 발견한 이 기적의 혈청을 좀 넉넉히 담아둔 것뿐이야.\"",
   "ANCIENTSAWAKENED-MEDICAL_KIT.title": "구급상자",
 
-  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "전투 시작 시, 모든 적에게 [gold]불리[/gold]를 [blue]3[/blue] 부여합니다.",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "전투 시작 시, 모든 적에게 [gold]불리[/gold]를 [blue]{DisadvantagedPower}[/blue] 부여합니다.",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"이 첨탑에서 마주칠 수 있는 모든 괴물들과 변종들에 대해 알아야 할 모든 내용이 담겨 있지. 물론, 바로 이 몸이 직접 쓴 거라구~\"",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "야생 생태 보고서",
 
-  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "획득 시, [gold]덱[/gold]에 있는 [gold]파워[/gold] 카드 [blue]1[/blue]장을 선택하여 [gold]매혹[/gold]을 [gold]부여[/gold]합니다.",
-  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]덱[/gold]에 있는 [gold]파워[/gold] 카드 [blue]1[/blue]장을 선택하여 [gold]매혹[/gold]을 [gold]부여[/gold]합니다.",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "획득 시, [gold]덱[/gold]에 있는 [gold]파워[/gold] 카드 [blue]1[/blue]장을 골라 [gold]매혹[/gold]을 추가합니다.",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]덱[/gold]에 있는 [gold]파워[/gold] 카드 [blue]1[/blue]장을 골라 [gold]매혹[/gold]을 추가합니다.",
   "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"좋아, 알았어. 어째서인지 너희들이 자꾸 나를 따르니까, 부적이라도 하나 줄까? 이게 최선이야, 정말 미안하게 됐네~\"",
   "ANCIENTSAWAKENED-SEBBY_CHARM.title": "세비의 부적",
 
@@ -78,7 +78,7 @@
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"그 큰 상자? 그래, 가져가. 안에 든 것도 전부 네 거야. 다만 열쇠는 네가 직접 위층까지 올라가서 찾아야 할 거야. 빌어먹을 열쇠를 떨어뜨렸는데, 이 층 꼭대기에 있는 거구의 녀석이 가지고 있는 게 거의 확실하거든.\"",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "운송 의뢰",
   
-  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "[gold]휴식[/gold]에서 횟수 제한 없이 [gold]변이[/gold]할 수 있습니다.",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "[gold]휴식 장소[/gold]에서 횟수 제한 없이 [gold]변이[/gold]할 수 있습니다.",
   "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "\"어이, 이건 조심해서 다뤄야 해. 꽤 강력하거든. 뼈가 한두 개쯤 부러지는 느낌이 들 수도 있는데, 그건 잘 작동하고 있다는 증거니까!\"",
   "ANCIENTSAWAKENED-GLOWING_VIAL.title": "빛나는 약병",
 
@@ -89,5 +89,48 @@
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "획득 시, {card.StringValue:cond:[gold]{}[/gold]|[gold]고대의 카드[/gold]}를 얻습니다.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.eventDescription": "{card.StringValue:cond:[gold]{}+[/gold]|[gold]고대의 카드[/gold]}를 얻습니다.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"이 혈청을 추천하진 않아. 결과가 얼마나 만족스럽든 간에, 정말 끔찍할 정도로 고통스럽거든.\"",
-  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "실험용 혈청"
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "실험용 혈청",
+
+  "ANCIENTSAWAKENED-FILM_ROLL.description": "획득 시, [gold]인스크립션[/gold] [blue]1[/blue]장을 [gold]덱[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-FILM_ROLL.eventDescription": "[gold]인스크립션[/gold] [blue]1[/blue]장을 [gold]덱[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "먼지 쌓인 카메라 필름 통입니다. 기이한 문양들이 새겨져 있습니다.",
+  "ANCIENTSAWAKENED-FILM_ROLL.title": "필름 통",
+
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "[gold]휴식 장소[/gold]에서 [gold]채굴[/gold]을 할 수 있습니다.",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "세월이 흘러 녹슨 무거운 곡괭이입니다. 이것으로 내리친 바위는 무엇이든 신비롭게도 금으로 가득 차는 것 같습니다.",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "탐광용 곡괭이",
+
+  "ANCIENTSAWAKENED-PACK_RAT.description": "적이 무작위 보상을 추가로 떨어뜨립니다.",
+  "ANCIENTSAWAKENED-PACK_RAT.flavor": "자신보다 훨씬 큰 보따리를 멘 작은 쥐입니다. 이 쥐가 물건들을 어디서 조달해 오는지는 알 수 없지만, 가끔 당신에게 다양한 아이템을 건네줍니다.",
+  "ANCIENTSAWAKENED-PACK_RAT.title": "보따리 쥐",
+
+  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "[gold]복사[/gold]할 카드를 선택하십시오.",
+  "ANCIENTSAWAKENED-GOOBERT.description": "획득 시, [gold]덱[/gold]에 있는 카드를 최대 [blue]{Cards}[/blue]장까지 골라 복사본을 [gold]덱[/gold]에 추가합니다",
+  "ANCIENTSAWAKENED-GOOBERT.eventDescription": "[gold]덱[/gold]에 있는 카드를 최대 [blue]{Cards}[/blue]장까지 골라 복사본을 [gold]덱[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-GOOBERT.flavor": "당신은 이것이 도대체 무엇인지 감조차 잡지 못합니다.",
+  "ANCIENTSAWAKENED-GOOBERT.title": "구버트",
+
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.description": "보스전이 아닌 전투에서 적의 체력이 [blue]{HpPercentage}%[/blue] 감소합니다.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.flavor": "뼈 문양이 새겨진 상아 징표입니다. 이것을 소지하고 있으면 축복을 받은 듯한 기분이 듭니다.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.title": "뼈왕의 은총",
+
+  "ANCIENTSAWAKENED-CARVING_KNIFE.description": "매 전투마다 처음으로 뽑은 [gold]손[/gold]의 카드는 해당 턴에만 비용이 {energyPrefix:energyIcons(1)} 감소합니다.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.flavor": "나무를 깎는 용도로 정교하게 만들어진 조각칼입니다. 이것으로 토템을 깎고 있으면 토템 속에서 속삭이는 소리가 들려옵니다.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.title": "조각칼",
+
+  "ANCIENTSAWAKENED-FISH_HOOK.description": "[gold]엘리트[/gold] 전투 시작 시, 모든 적을 [gold]기절[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-FISH_HOOK.flavor": "강철로 된 낚시바늘입니다. 특별히 눈에 띄는 점은 보이지 않습니다.",
+  "ANCIENTSAWAKENED-FISH_HOOK.title": "낚시바늘",
+
+  "ANCIENTSAWAKENED-THE_MOON.description": "막히지 않은 공격 피해를 [blue]{DamageThreshold}[/blue] 이하로 받을 때, 해당 피해를 [blue]{DamageMaximum}[/blue](으)로 감소시킵니다.",
+  "ANCIENTSAWAKENED-THE_MOON.flavor": "천체를 본떠 만든 작은 복제품입니다. 진짜 달에서 가져온 암석으로 만들어진 것처럼 보입니다.",
+  "ANCIENTSAWAKENED-THE_MOON.title": "달 모형",
+  
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "전투 시작 시, [gold]다람쥐[/gold] 카드 [blue]{Cards}[/blue]장을 [gold]손[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "다람쥐처럼 보이도록 그려진 게임용 카드입니다. 가만히 쳐다보고 있으면 마음이 불안해집니다.",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "병 속의 다람쥐",
+
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "전투에서 처음으로 체력을 잃을 때, 다음 턴에 카드를 [blue]{Cards}[/blue]장 뽑고 {Energy:energyIcons()}를 얻습니다.",
+  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "꺼진 양초에서 피어오른 연기가 유리 안에 보존되어 있습니다. 연기 일부가 밖으로 새어 나와 숨결을 더럽힙니다.",
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "연기"
 }

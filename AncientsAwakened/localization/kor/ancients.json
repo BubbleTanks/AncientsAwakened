@@ -83,6 +83,43 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-3r.char": "[i][font_size=22]<긍정의 비프음>[/font_size][/i]",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-3r.next": "계속",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.DEFECT.1-4r.ancient": "영혼으로 빚어진 모든 구조물이 과거의 수호자만큼 역겹지는 않은 모양이군.",
+
+
+  
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.title": "레쉬",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.epithet": "야수의 기록자",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.ancient": "어서 오게나. 자, 앉아서 쉬도록 해.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.next": "계속",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-1.ancient": "내 유물 하나쯤은 가져가도 좋네만, 그전에 카드 한 판 어떠한가?",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.0-0r.ancient": "다시 왔군. 한 판 하지 않겠나?",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.ancient": "용병 양반, 검은 내려두게나. 따뜻한 차라도 한 잔 어떤가?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.next": "계속",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-1r.char": "[i][font_size=22]아이언클래드가 고개를 끄덕이며 자리에 앉는다.[/font_size][/i]",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.SILENT.0-0r.ancient": "[i][font_size=22]레시가 사일런트를 빤히 바라보며 빈 의자를 가리킨다.[/font_size][/i]",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.SILENT.0-0r.next": "계속",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.SILENT.0-1r.char": "[i][font_size=22]사일런트가 자리에 앉아, 그와 함께 게임을 시작한다.[/font_size][/i]",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-0r.char": "숲의 고대 존재여, 나는 축복을 받으러 왔다!",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-0r.next": "계속",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-1r.ancient": "물론이지, 폐하. 하지만 가시기 전에 카드 한 판으로 나를 즐겁게 해주실 수 있겠나?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-1r.next": "대답",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.REGENT.0-2r.char": "네가 정 원한다면, 그렇게 해주지! 하지만 서두르도록, 처리할 중요한 일들이 있으니까.",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-0r.ancient": "좋은 밤이군. 한 게임 하지 않겠나?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-0r.next": "대화",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.char": "죄송하지만, 지금은 시간이 없어요. 다음번에 하는 건 어떨까요?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.next": "계속",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-2r.ancient": "괜찮네. 기다릴 수 있지. 내게 남은 건 시간뿐이라네.",
+
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-0r.ancient": "자네, 그 자가 만든 피조물인가?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-0r.next": "Reply",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<혼란의 비프음>[/font_size][/i]",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-1r.next": "계속",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-2r.ancient": "흠... 아니군, 너무 예의가 발라. 부디 유물 하나를 챙겨서, 자네의 탑을 계속 오르게나.",
+  
   
 
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.title": "세바스찬",

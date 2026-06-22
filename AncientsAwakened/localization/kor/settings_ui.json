@@ -1,13 +1,13 @@
 ﻿{
-  "ANCIENTSAWAKENED-ANCIENT_ENABLER.title": "고대 존재 활성화",
+  "ANCIENTSAWAKENED.mod_title": "Ancients Awakened",
   
   "ANCIENTSAWAKENED-MITHRIX.title": "미스릭스 유물 설정",
   
-  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "멀티플레이어에서 무결함의 망치 활성화",
-  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "무결함의 망치",
-  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "추가 턴은 멀티플레이어 환경에서 원활하지 않아 기본적으로 비활성화되어 있습니다.",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "멀티플레이용 완벽한 망치 활성화",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "멀티플레이용 완벽한 망치",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "멀티플레이를 위해 비용이 +1 증가하는 대신, 모든 아군에게 추가 턴을 부여하는 특별한 버전의 '완벽한 망치'를 활성화합니다.\n(비활성화 시, 멀티플레이에서도 싱글플레이 버전의 카드를 사용합니다.)",
   
-  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "멀티플레이어에서 몬순의 부적 활성화",
-  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "몬순의 부적",
-  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "고의적인 방해(트롤링) 가능성이 있어 기본적으로 비활성화되어 있습니다."
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "멀티플레이에서 몬순의 부적 활성화",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "멀티플레이용 몬순의 부적",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "고의 트롤의 소지가 있어 기본적으로 비활성화되어 있습니다."
 }
