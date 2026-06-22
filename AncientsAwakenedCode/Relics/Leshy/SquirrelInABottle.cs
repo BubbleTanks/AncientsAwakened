@@ -8,11 +8,11 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
 public class SquirrelInABottle : AncientsAwakenedRelic
@@ -21,17 +21,17 @@ public class SquirrelInABottle : AncientsAwakenedRelic
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<Squirrel>();
 
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
     public override async Task BeforeHandDraw(
         Player player,
         PlayerChoiceContext choiceContext,
         ICombatState combatState)
     {
-        if (player != Owner || combatState.RoundNumber != 1)
+        if (player != Owner || Owner.PlayerCombatState.TurnNumber != 1)
             return;
-        
         List<CardModel> cards = new List<CardModel>();
-        cards.Add(Owner.Creature.CombatState.CreateCard<Squirrel>(Owner));
-        
+        for (int index = 0; index < DynamicVars.Cards.IntValue; ++index)
+            cards.Add(Owner.Creature.CombatState.CreateCard<Squirrel>(Owner));
         await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, Owner);
     }
 }

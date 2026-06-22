@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Cards.Leshy;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Leshy;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -7,9 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
 public class FilmRoll : AncientsAwakenedRelic

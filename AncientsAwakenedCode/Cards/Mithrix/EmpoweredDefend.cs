@@ -1,5 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
-using AncientsAwakened.AncientsAwakenedCode.Powers;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+using AncientsAwakened.AncientsAwakenedCode.Powers.Mithrix;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;

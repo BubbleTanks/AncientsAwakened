@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions;
+using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Sebastian;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -10,7 +11,6 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
-
 
 [Pool(typeof(EventRelicPool))]
 public class GlowingVial : AncientsAwakenedRelic

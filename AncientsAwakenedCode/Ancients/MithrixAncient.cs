@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
@@ -25,11 +26,26 @@ public class MithrixAncient : CustomAncientModel
                 AncientOption<MonsoonCharm>(2)
             ),
             MakePool(
-                AncientOption<FlawlessHammer>(3),
+                AncientOption<FlawlessHammer>(993, hammer =>
+                {
+                    if(Owner != null)
+                        hammer.SetupForPlayer(Owner);
+                    return hammer;
+                }),
                 AncientOption<ArtifactOfCommand>(2),
-                AncientOption<EulogyZero>(2),
-                AncientOption<AncientScepter>(3)
-            ));
+                AncientOption<EulogyZero>(2, zero =>
+                {
+                    if (Owner != null)
+                        zero.SetupForPlayer(Owner);
+                    return zero;
+                } ),
+                AncientOption<AncientScepter>(3, relic =>
+                {
+                    if (Owner != null)
+                        relic.SetupForPlayer(Owner);
+                    return relic;
+                }))
+            );
     
     public override Color ButtonColor => new(0.05f, 0.07f, 0.2f, 0.8f);
 
@@ -37,11 +53,6 @@ public class MithrixAncient : CustomAncientModel
     
     public override bool IsValidForAct(ActModel act)
     {
-        return act.ActNumber() == 3 && AncientConfigs.EnableMithrixAncient;
-    }
-    
-    public override bool ShouldForceSpawn(ActModel act, AncientEventModel? rngChosenAncient)
-    {
-        return AncientConfigs.ForceMithrixEnabler && act.ActNumber() == 3;
+        return act.ActNumber() == 3;
     }
 }

@@ -7,11 +7,7 @@
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "[blue]{Amount}[/blue] {Amount:plural:턴|턴} 동안 공격 피해를 [blue]15%[/blue] 덜 입히고, 받는 공격 피해가 [blue]30%[/blue] 증가합니다.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "불리",
 
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.description": "",
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.smartDescription": "",
-  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND_POWER.title": "속임수",
-
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "턴 시작 시, 모든 적에게 피해를 줍니다.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "턴 시작 시, 모든 적에게 [blue]{Amount}[/blue]의 피해를 줍니다.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "광기의 의식"
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "기절한 대상는 행동할 수 없습니다.",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:다음 턴에|다음 [blue]{}[/blue]턴 동안} [gold]기절[/gold]합니다.",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "다음 턴 기절"
 }

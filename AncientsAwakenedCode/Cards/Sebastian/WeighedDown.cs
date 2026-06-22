@@ -2,16 +2,13 @@
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Map;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Cards;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(CurseCardPool))]
 public class WeighedDown : AncientsAwakenedCard
@@ -75,7 +72,7 @@ public class WeighedDown : AncientsAwakenedCard
         }
     }
     
-    private List<MapCoord>? GetMarkedCoords()
+    private List<MapCoord> GetMarkedCoords()
     {
         if (!TreasureCoordsSet)
             FindTreasureCoords();

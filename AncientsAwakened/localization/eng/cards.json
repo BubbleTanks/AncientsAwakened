@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-EGOCENTRISM.description": "At the end of your turn, if this is in your [gold]Hand[/gold], [gold]Transform[/gold] ALL cards in your [gold]Hand[/gold] into [gold]Egocentrism[/gold].",
   "ANCIENTSAWAKENED-EGOCENTRISM.title": "Egocentrism",
 
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\nTake an extra turn after this one.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\n{IsMultiplayer:ALL players take an extra turn after this one.|Take an extra turn after this one.}",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "Break Beneath Me",
 
   "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
@@ -34,6 +34,7 @@
   
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Channel[/gold] 2 [gold]Frost[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend",
+  
 
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nDraw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun",
@@ -58,14 +59,12 @@
 
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze",
+  
 
   "ANCIENTSAWAKENED-SQUIRREL.description": "Draw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-SQUIRREL.title": "Squirrel",
 
   "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "Choose a card to inscrybe.",
   "ANCIENTSAWAKENED-INSCRYBE.description": "Deal {Damage:diff()} damage.\nChoose a card in your [gold]Hand[/gold] to make a copy of.",
-  "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe",
-
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Gain {RitualPower:diff()} [gold]Ritual[/gold].\nAt the start of your turn, deal {LunaticRitualPower:diff()} damage to ALL enemies.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual"
+  "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe"
 }

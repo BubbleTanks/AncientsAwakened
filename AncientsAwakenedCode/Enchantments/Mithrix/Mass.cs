@@ -1,0 +1,24 @@
+﻿using BaseLib.Abstracts;
+using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Enchantments;
+using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+
+namespace AncientsAwakened.AncientsAwakenedCode.Enchantments.Mithrix;
+
+public class Mass : CustomEnchantmentModel
+{
+
+    public override Task OnPlay(PlayerChoiceContext context, CardPlay? cardPlay)
+    {
+        if (Status != EnchantmentStatus.Normal)
+            return Task.CompletedTask;
+        Status = EnchantmentStatus.Disabled;
+        return Task.CompletedTask;
+    }
+
+    protected override void OnEnchant()
+    {
+        Card.EnergyCost.AddUntilPlayed(-1, true);
+    }
+    
+}

@@ -1,5 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -11,21 +11,36 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
+using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
-
-
 [Pool(typeof(EventRelicPool))]
-public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromEulogy
+public class ShippingRequest : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     public override bool HasUponPickupEffect => true;
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<WeighedDown>();
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<WeighedDown>().Concat(HoverTipFactory.FromCardWithCardHoverTips<HeavyCrate>());
+    
+    private int _rewardAmount;
 
-    private int RewardAmount;
+    [SavedProperty]
+    private int RewardAmount
+    {
+        get => _rewardAmount;
+        set
+        {
+            AssertMutable();
+            _rewardAmount = value;
+        }
+    }
+    
+    public ShippingRequest()
+    {
+        this.BlacklistFromEulogy();
+    }
 
     public override async Task AfterObtained()
     {
@@ -36,6 +51,7 @@ public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromE
     
     public override async Task AfterCombatEnd(CombatRoom room)
     {
+        if(RewardAmount >= 1) RewardAmount = 0;
         if (room.RoomType != RoomType.Boss)
             return;
 
@@ -46,13 +62,6 @@ public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromE
             RewardAmount++;
             removeCards.Add(card);
         }
-        
-        /*
-        foreach (CardModel card in Owner.Deck.Cards.Where(c => c is WeighedDown))
-        {
-            removeCards.Add(card);
-        } 
-        */
 
         foreach (CardModel card in removeCards)
         {
@@ -81,7 +90,6 @@ public class ShippingRequest : AncientsAwakenedRelic, EulogyZero.IBlacklistFromE
                 rewards.Add(new CardRemovalReward(player));
                 rewards.Add(new CardRemovalReward(player));
             }
-            RewardAmount = 0;
             return true;
         }
         return false;   

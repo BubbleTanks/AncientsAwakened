@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Logging;
@@ -8,8 +7,7 @@ using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Runs;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics;
-
+namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
 public class PackRat : AncientsAwakenedRelic

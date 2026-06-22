@@ -10,7 +10,6 @@ using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
-
 [Pool(typeof(EventRelicPool))]
 public class SalineInfuser : AncientsAwakenedRelic
 {

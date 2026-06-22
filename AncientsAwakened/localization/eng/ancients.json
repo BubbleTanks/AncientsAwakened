@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.title": "Mithrix",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.firstVisitEver.0-0.ancient": "Greetings, vermin.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.epithet": "King of Nothing",
-  
+
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.0-0r.ancient": "You return? How vile.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.1-0r.ancient": "We meet again. Take my blessing and go, vermin.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.2-0r.ancient": "Tireless, you are. It will not matter.",
@@ -45,7 +45,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-3r.char": "I should smite you where you stand, but I will show you mercy! Offer to me a gift and I will be on my way!",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-3r.next": "Continue",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-4r.ancient": "If it will silence you, then so be it.",
-  
+
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-0r.ancient": "The king of the vermin returns.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-0r.next": "Respond",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-1r.char": "Insolent fool! Have you any idea who I am?",
@@ -86,13 +86,16 @@
 
 
   
-  "ANCIENTSAWAKENED-LESHY_ANCIENT.title": "???",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.title": "Leshy",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.epithet": "Scrybe of Beasts",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.ancient": "Welcome. Please, have a seat.",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.next": "Continue",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-1.ancient": "You are welcome to take one of my relics, but first, how about a round of cards?",
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.0-0r.ancient": "Welcome back. Would you care to play a round?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.1-0r.ancient": "Ahh, you return. I am brewing tea, if you would care for some.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.2-0r.ancient": "Ascender, you return. The deck is shuffled, if you will spare time for a game.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.3-0r.ancient": "Oh, I am not ready today. I am still creating my next map. Please do return soon.",
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Soldier, rest your blade. How about a warm drink?",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.next": "Continue",

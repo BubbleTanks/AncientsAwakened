@@ -1,4 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers;
+﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
@@ -13,7 +13,6 @@ using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
-
 
 [Pool(typeof(EventRelicPool))]
 public class FlashBeacon : AncientsAwakenedRelic

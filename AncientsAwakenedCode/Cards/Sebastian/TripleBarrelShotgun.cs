@@ -1,15 +1,12 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
-
 
 [Pool(typeof(EventCardPool))]
 public class TripleBarrelShotgun() : AncientsAwakenedCard(1, CardType.Attack, CardRarity.Ancient, TargetType.AllEnemies)
