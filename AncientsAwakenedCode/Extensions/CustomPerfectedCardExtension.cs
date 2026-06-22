@@ -1,4 +1,5 @@
-﻿using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Extensions;
@@ -10,6 +11,7 @@ public static class CustomPerfectedCardExtension
     
     /// <summary>
     /// Call this extension in your card constructor (with an Interop for an optional dependency), along with the character ModelId to make custom perfected cards.
+    /// Note that this will not correctly change the visual pool, you will have to do that manually (Currently not possible for optional dependencies).
     /// </summary>
     public static void AddPerfectedCardForCustomCharacters(this CardModel cardModel, CharacterModel characterModel)
     {

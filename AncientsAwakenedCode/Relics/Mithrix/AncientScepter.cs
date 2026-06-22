@@ -75,7 +75,7 @@ public class AncientScepter : AncientsAwakenedRelic
                 {
                     _perfectedDefendUpgrades.Add(kv.Key, kv.Value);
                 }
-                foreach (var kv in CustomPerfectedCardExtension.CustomPerfectedStrikeCards)
+                foreach (var kv in CustomPerfectedCardExtension.CustomPerfectedDefendCards)
                 {
                     _perfectedDefendUpgrades.Add(kv.Key, kv.Value);
                 }
@@ -239,6 +239,11 @@ public class AncientScepter : AncientsAwakenedRelic
         }
     }
 
+    /// <summary>
+    /// Note for Localizers:
+    /// Please keep in mind that the space will be included in the replacement card titles to avoid possible localization issues.
+    /// Reflect this in the Ancient Scepter's description.
+    /// </summary>
     private String GetPrefixString(String title)
     {
         var strikeTitle = new LocString("cards", "STRIKE_IRONCLAD.title").GetFormattedText();

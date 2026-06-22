@@ -23,6 +23,10 @@ public class FlawlessHammer : AncientsAwakenedRelic
     {
         get
         {
+            if (Owner == null || IsCanonical || !IsMutable)
+                return HoverTipFactory.FromCardWithCardHoverTips<BreakBeneathMe>();
+            
+
             if (_extraHoverTips.Count == 0)
             {
                 UpdateHoverTips(Owner);

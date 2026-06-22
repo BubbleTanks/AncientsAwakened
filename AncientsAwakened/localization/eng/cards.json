@@ -66,5 +66,5 @@
 
   "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "Choose a card to inscrybe.",
   "ANCIENTSAWAKENED-INSCRYBE.description": "Deal {Damage:diff()} damage.\nChoose a card in your [gold]Hand[/gold] to make a copy of.",
-  "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe",
+  "ANCIENTSAWAKENED-INSCRYBE.title": "Inscrybe"
 }
