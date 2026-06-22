@@ -89,30 +89,5 @@
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "획득 시, {card.StringValue:cond:[gold]{}[/gold]|[gold]고대의 카드[/gold]}를 얻습니다.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.eventDescription": "{card.StringValue:cond:[gold]{}+[/gold]|[gold]고대의 카드[/gold]}를 얻습니다.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"이 혈청을 추천하진 않아. 결과가 얼마나 만족스럽든 간에, 정말 끔찍할 정도로 고통스럽거든.\"",
-  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "실험용 혈청",
-
-  "ANCIENTSAWAKENED-FILM_ROLL.description": "[gold]덱[/gold]에 [gold]새기기[/gold] [blue]1[/blue]장을 추가합니다.",
-  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "",
-  "ANCIENTSAWAKENED-FILM_ROLL.title": "필름 롤",
-
-  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "[gold]휴식[/gold]에서 [gold]채굴[/gold]을 할 수 있습니다.",
-  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "",
-  "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "탐사용 곡괭이",
-
-  "ANCIENTSAWAKENED-PACK_RAT.description": "보상을 더 많이 줍니다, 멍청아.",
-  "ANCIENTSAWAKENED-PACK_RAT.flavor": "",
-  "ANCIENTSAWAKENED-PACK_RAT.title": "짐꾼 쥐",
-
-  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "복제할 카드를 선택하세요.",
-  "ANCIENTSAWAKENED-GOOBERT.description": "돌리 거울을 3번 사용합니다.",
-  "ANCIENTSAWAKENED-GOOBERT.flavor": "",
-  "ANCIENTSAWAKENED-GOOBERT.title": "구버트",
-
-  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "발광(Luminesce)이랑 비슷한데, 내가 만들어서 더 멋짐.",
-  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "",
-  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "병에 든 다람쥐",
-
-  "ANCIENTSAWAKENED-THE_SMOKE.description": "백년 퍼즐과 같지만, 에너지 [blue]2[/blue]와 카드 [blue]1[/blue]장을 추가로 줍니다. 단, 아이언클래드는 이를 공짜로 발동시킬 수 없습니다.",
-  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "",
-  "ANCIENTSAWAKENED-THE_SMOKE.title": "연기"
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "실험용 혈청"
 }

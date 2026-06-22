@@ -58,14 +58,4 @@
 
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]전기[/gold]를 {Repeat:diff()}번 [gold]영창[/gold]합니다.\n이번 턴에 [gold]밀집[/gold]을 {FocusPower:diff()} 얻습니다.",
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "전기 분해",
-
-  "ANCIENTSAWAKENED-SQUIRREL.description": "카드를 {Cards:diff()}장 뽑습니다.",
-  "ANCIENTSAWAKENED-SQUIRREL.title": "다람쥐",
-
-  "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "새길 카드를 고르세요.",
-  "ANCIENTSAWAKENED-INSCRYBE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]손[/gold]에 있는 카드 중 하나를 골라 복사본을 만듭니다.",
-  "ANCIENTSAWAKENED-INSCRYBE.title": "새기기",
-
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "[gold]의식[/gold]을 {RitualPower:diff()} 얻습니다.\n매 턴 시작 시, 모든 적에게 피해를 {LunaticRitualPower:diff()} 줍니다.",
-  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "광기의 의식"
 }

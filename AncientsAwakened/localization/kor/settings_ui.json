@@ -1,19 +1,6 @@
 ﻿{
   "ANCIENTSAWAKENED-ANCIENT_ENABLER.title": "고대 존재 활성화",
   
-  "ANCIENTSAWAKENED-ENABLE_MITHRIX_ANCIENT.title": "미스릭스 활성화",
-  "ANCIENTSAWAKENED-ENABLE_MITHRIX_ANCIENT.hover.desc": "미스릭스의 출현 여부를 결정합니다.\n(고대 존재가 아직 결정되지 않았다면 진행 중인 게임에도 적용됩니다.)",
-  
-  "ANCIENTSAWAKENED-ENABLE_SEBASTIAN_ANCIENT.title": "세바스찬 활성화",
-  "ANCIENTSAWAKENED-ENABLE_SEBASTIAN_ANCIENT.hover.desc": "세바스찬의 출현 여부를 결정합니다.\n(고대 존재가 아직 결정되지 않았다면 진행 중인 게임에도 적용됩니다.)",
-
-  "ANCIENTSAWAKENED-ANCIENT_FORCER.title": "고대 존재 강제 출현",
-
-  "ANCIENTSAWAKENED-FORCE_MITHRIX_ENABLER.title": "미스릭스 강제",
-  "ANCIENTSAWAKENED-FORCE_MITHRIX_ENABLER.hover.desc": "3막에서 미스릭스를 강제로 출현시킵니다. (충돌이 발생할 수 있음)",
-  "ANCIENTSAWAKENED-FORCE_SEBASTIAN_ENABLER.title": "세바스찬 강제",
-  "ANCIENTSAWAKENED-FORCE_SEBASTIAN_ENABLER.hover.desc": "2막에서 세바스찬을 강제로 출현시킵니다. (충돌이 발생할 수 있음)",
-  
   "ANCIENTSAWAKENED-MITHRIX.title": "미스릭스 유물 설정",
   
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "멀티플레이어에서 무결함의 망치 활성화",
