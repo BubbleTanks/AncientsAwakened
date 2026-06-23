@@ -26,7 +26,7 @@ public class MithrixAncient : CustomAncientModel
                 AncientOption<MonsoonCharm>(2)
             ),
             MakePool(
-                AncientOption<FlawlessHammer>(993, hammer =>
+                AncientOption<FlawlessHammer>(3, hammer =>
                 {
                     if(Owner != null)
                         hammer.SetupForPlayer(Owner);

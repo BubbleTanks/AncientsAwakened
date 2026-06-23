@@ -117,8 +117,6 @@ public class EulogyZero : AncientsAwakenedRelic
             }
         }
         
-        listVar = listVar.Distinct().ToList();
-        
-        return listVar;
+        return listVar.Distinct().ToList();
     }
 }
