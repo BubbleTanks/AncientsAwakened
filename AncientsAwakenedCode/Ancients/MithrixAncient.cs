@@ -33,12 +33,7 @@ public class MithrixAncient : CustomAncientModel
                     return hammer;
                 }),
                 AncientOption<ArtifactOfCommand>(2),
-                AncientOption<EulogyZero>(2, zero =>
-                {
-                    if (Owner != null)
-                        zero.SetupForPlayer(Owner);
-                    return zero;
-                } ),
+                AncientOption<EulogyZero>(2),
                 AncientOption<AncientScepter>(3, relic =>
                 {
                     if (Owner != null)

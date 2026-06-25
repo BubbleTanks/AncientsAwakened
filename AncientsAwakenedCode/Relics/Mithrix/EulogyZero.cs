@@ -39,9 +39,9 @@ public class EulogyZero : AncientsAwakenedRelic
         
         List<RelicModel> relics = ModelDb.RelicPool<EventRelicPool>().GetUnlockedRelics(player.UnlockState).Where(
             r => r.Rarity == RelicRarity.Ancient &&
-                 !(BlacklistedRelics().Any(relic => relic.Id == r.Id)) && 
-                 !(player.Relics.Any(relic => relic.Id == r.Id)) && 
-                 RelicModelExtensions.RelicCanSpawnAtCustomAncient(r, ancient)
+                 !(player.Relics.Any(relic => relic.Id == r.Id)) &&
+                 RelicModelExtensions.RelicCanSpawnAtCustomAncient(r, ancient) &&
+                 !(BlacklistedRelics().Any(relic => relic.Id == r.Id))
         ).ToList();
         
         foreach (RelicModel relicModel in relics)

@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-EGOCENTRISM.description": "턴 종료 시, 이 카드가 [gold]손[/gold]에 있다면 [gold]손[/gold]에 있는 모든 카드를 [gold]자기중심적[/gold]으로 [gold]변화[/gold]시킵니다.",
   "ANCIENTSAWAKENED-EGOCENTRISM.title": "자기중심적",
 
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "피해를 {Damage:diff()} 줍니다.\n{IsMultiplayer:이 턴이 끝난 후, 모든 플레이어가 추가 턴을 얻습니다.|이 턴이 끝난 후, 추가 턴을 얻습니다.}",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "피해를 {Damage:diff()} 줍니다.\n{IsMultiplayer:cond:이 턴이 끝난 후, 추가 턴을 얻습니다.|이 턴이 끝난 후, 모든 플레이어가 추가 턴을 얻습니다.}",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "내 아래로 부서져라",
 
   "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]힘[/gold]을 {StrengthPower:diff()} 얻습니다.\n[gold]취약[/gold]을 {VulnerablePower:diff()} 부여합니다.",
@@ -61,7 +61,7 @@
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "전기 분해",
 
 
-  "ANCIENTSAWAKENED-SQUIRREL.description": "카드를 {Cards:diff()} 뽑습니다.",
+  "ANCIENTSAWAKENED-SQUIRREL.description": "카드를 {Cards:diff()}장 뽑습니다.",
   "ANCIENTSAWAKENED-SQUIRREL.title": "다람쥐",
 
   "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "각인할 카드를 선택하십시오.",

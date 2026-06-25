@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-EGOCENTRISM.description": "At the end of your turn, if this is in your [gold]Hand[/gold], [gold]Transform[/gold] ALL cards in your [gold]Hand[/gold] into [gold]Egocentrism[/gold].",
   "ANCIENTSAWAKENED-EGOCENTRISM.title": "Egocentrism",
 
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\n{IsMultiplayer:ALL players take an extra turn after this one.|Take an extra turn after this one.}",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Deal {Damage:diff()} damage.\n{IsMultiplayer:cond:Take an extra turn after this one.|ALL players take an extra turn after this one.}",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "Break Beneath Me",
 
   "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",

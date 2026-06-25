@@ -13,7 +13,7 @@ public class TheMoon : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageThreshold", 7), new ("DamageMaximum", 1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageThreshold", 7M), new ("DamageMaximum", 1M)];
     
     public override Decimal ModifyHpLostAfterOstyLate(
         Creature target,
@@ -22,7 +22,7 @@ public class TheMoon : AncientsAwakenedRelic
         Creature? dealer,
         CardModel? cardSource)
     {
-        return target != Owner.Creature || !props.IsPoweredAttack() || amount <= DynamicVars["DamageMaximum"].BaseValue || amount > DynamicVars["DamageThreshold"].BaseValue ? amount : DynamicVars["DamageMaximum"].BaseValue;
+        return target != Owner.Creature || !props.IsPoweredAttack() || decimal.Truncate(amount) <= DynamicVars["DamageMaximum"].BaseValue || decimal.Truncate(amount) > DynamicVars["DamageThreshold"].BaseValue ? amount : DynamicVars["DamageMaximum"].BaseValue;
     }
     
     public override Task AfterModifyingHpLostAfterOsty()

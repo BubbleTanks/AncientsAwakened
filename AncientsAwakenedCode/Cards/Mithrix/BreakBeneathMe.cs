@@ -21,13 +21,14 @@ public class BreakBeneathMe() : AncientsAwakenedCard(4, CardType.Attack, CardRar
         get => _isMultiplayer;
         set
         {
-            if(!IsMutable) return;
+            AssertMutable();
             _isMultiplayer = value;
-            ((BoolVar)DynamicVars["IsMultiplayer"]).BoolVal = value; 
-            _energyCost = new CardEnergyCost(this, 5, false);
+            ((BoolVar)DynamicVars["IsMultiplayer"]).BoolVal = value;
+            if(value) 
+                _energyCost = new CardEnergyCost(this, 5, false);
         }
     }
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(36, ValueProp.Move), new PowerVar<BreakBeneathMePower>(1), new BoolVar("IsMultiplayer")];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(36, ValueProp.Move), new PowerVar<BreakBeneathMePower>(1), new BoolVar("IsMultiplayer", false)];
     
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
