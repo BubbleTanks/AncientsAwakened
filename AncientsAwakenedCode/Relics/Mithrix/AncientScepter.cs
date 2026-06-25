@@ -122,9 +122,9 @@ public class AncientScepter : AncientsAwakenedRelic
         var (defendCard, defendCount) = GetPerfectedDefendCard(player);
         if (strikeCount + defendCount >= 3)
         {
-            if (PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedStrikeCard))
+            if (strikeCard != null && PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedStrikeCard))
                 StrikeCard = ModelDb.GetById<CardModel>(perfectedStrikeCard).ToMutable().ToSerializable();
-            if (PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedDefendCard))
+            if (defendCard != null && PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedDefendCard))
                 DefendCard =  ModelDb.GetById<CardModel>(perfectedDefendCard).ToMutable().ToSerializable();
             UpdateHoverTips();
             return true;

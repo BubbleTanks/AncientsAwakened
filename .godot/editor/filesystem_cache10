@@ -1,6 +1,6 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1782369386
-AncientsAwakened.json::JSON::-1::1782369386::0::1::::<><><>0<>0<><>::
+::res://::1782420358
+AncientsAwakened.json::JSON::-1::1782420358::0::1::::<><><>0<>0<><>::
 export_presets.cfg::TextFile::-1::1778355433::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1782174187::0::1::::<><><>0<>0<><>::
 ::res://AncientsAwakened/::1781933523
@@ -255,8 +255,8 @@ ProspectingPick.cs::CSharpScript::3339240254786853869::1782173293::0::1::::<><><
 SquirrelInABottle.cs::CSharpScript::7337939866727023103::1782173293::0::1::::<><><>0<>0<><>::
 TheMoon.cs::CSharpScript::982031524264109102::1782271160::0::1::::<><><>0<>0<><>::
 TheSmoke.cs::CSharpScript::848553791659101917::1782173293::0::1::::<><><>0<>0<><>::
-::res://AncientsAwakenedCode/Relics/Mithrix/::1782332637
-AncientScepter.cs::CSharpScript::7322464146863562606::1782174187::0::1::::<><><>0<>0<><>::
+::res://AncientsAwakenedCode/Relics/Mithrix/::1782420182
+AncientScepter.cs::CSharpScript::7322464146863562606::1782420182::0::1::::<><><>0<>0<><>::
 ArtifactOfCommand.cs::CSharpScript::2828169493844276683::1782173293::0::1::::<><><>0<>0<><>::
 EulogyZero.cs::CSharpScript::1724890064212648227::1782332637::0::1::::<><><>0<>0<><>::
 FlawlessHammer.cs::CSharpScript::4245996440504245472::1782174187::0::1::::<><><>0<>0<><>::
@@ -287,7 +287,7 @@ AncientConfigs.cs::CSharpScript::5894817745094801263::1782174187::0::1::::<><><>
 ::res://bin/::1778368808
 ::res://bin/ExportRelease/::1778368808
 ::res://bin/ExportRelease/net9.0/::1778368808
-::res://bin/ExportRelease/net9.0/publish/::1782369496
+::res://bin/ExportRelease/net9.0/publish/::1782420183
 AncientsAwakened.deps.json::JSON::-1::1782269716::0::1::::<><><>0<>0<><>::
 ::res://images/::1778355433
 ::res://images/enchantments/::1782174187
