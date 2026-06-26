@@ -172,5 +172,13 @@
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-1r.next": "Continue",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.ancient": "Fix you? Fix your friend? Why, for such a cute little robot he should do that! Get out there and beat him up!",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.next": "Reply",
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<energetic beeps!>[/font_size][/i]"
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<energetic beeps!>[/font_size][/i]",
+
+
+  
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.title": "Lunatic Cultist",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.epithet": "Celestial Savant",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.firstVisitEver.0-0.ancient": "You interrupt my studies. Collect a charm and begone from here.",
+
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.ANY.0-0r.ancient": "[i][font_size=22]Gestures towards a table with a few relics upon it, then returns to their studies.[/font_size][/i]"
 }

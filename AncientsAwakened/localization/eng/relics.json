@@ -134,5 +134,52 @@
 
   "ANCIENTSAWAKENED-THE_SMOKE.description": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards} and gain {Energy:energyIcons()} next turn.",
   "ANCIENTSAWAKENED-THE_SMOKE.flavor": "Smoke from an expired candle, preserved in glass. Some of it leaks out, tainting your breath.",
-  "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke"
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke",
+
+  
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Add [blue]1[/blue] [gold]Lunatic Ritual[/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "The hooded figure told you to be careful with these spells. It would be wise to listen.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
+
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.description": "Whenever you play a Power, gain [blue]{RitualPower}[/blue] [gold]Ritual[/gold].",
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.flavor": "The symbols etched into this medallion are unsettling.",
+  "ANCIENTSAWAKENED-CELESTIAL_SIGIL.title": "Celestial Sigil",
+
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, use a random potion.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "",
+  "ANCIENTSAWAKENED-MANA_FLOWER.title": "Mana Flower",
+
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to a random enemy.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "A shard of the heavens that crash landed, now yours to wield.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.title": "Fallen Star",
+
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold] and increase it by [blue]{Scaling}[/blue] permanently.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "The strange metal in your hands seems to pulse and glow, as if growing even as you watch it.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
+
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.description": "The first time you end your turn without [gold]Block[/gold] each combat, gain [blue]{IntangiblePower}[/blue] [gold]Intangible[/gold].",
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.flavor": "You can't tell if the gel inside is created by spirits or is a spirit itself.",
+  "ANCIENTSAWAKENED-BOTTLE_OF_ECTOPLASM.title": "Bottle of Ectoplasm",
+
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "Gain {Energy:energyIcons()} at the start of each turn. The first Attack and Skill you play each turn are [gold]Transformed[/gold].",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "This bottle contains the potential for infinite reforges; unfortunately, there does not seem to be a reforge mechanic in this game.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "Shimmering Bottle",
+
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "The flame roars endlessly, devouring everything you feed into it. The heat is unbearable.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Solar Brazier",
+
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "At the start of your turn, deal [blue]{DamagePercentage}%[/blue] more damage for the rest of combat",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
+
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle [blue]{Status}[/blue] [gold]Cosmic Dusts[/gold] into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
+  "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome",
+
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "[gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Stardust Shackles"
 }
