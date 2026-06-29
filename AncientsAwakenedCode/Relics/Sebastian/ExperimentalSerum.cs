@@ -95,19 +95,13 @@ public class ExperimentalSerum : AncientsAwakenedRelic
         }
     };
     
-    protected override bool RelicAllowedToSpawn(Player owner)
-    {
-        return SetupForPlayer(owner);
-    }
-    
-    public bool SetupForPlayer(Player player)
+    public void SetupForPlayer(Player player)
     {
         if (ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card))
         {
             AncientCard = card;
-            return true;
         }
-        return false;
+        AncientCard = ModelDb.Card<SurpassLimits>().Id;
     }
     
     public override async Task AfterObtained()
@@ -116,5 +110,6 @@ public class ExperimentalSerum : AncientsAwakenedRelic
         if (card == null) return;
         CardCmd.Upgrade(card);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck), 2f);
+        if(!SaveManager.Instance.Progress.DiscoveredCards.Contains(ModelDb.Card<SurpassLimits>().Id)) SaveManager.Instance.MarkCardAsSeen(ModelDb.Card<SurpassLimits>());
     }
 }

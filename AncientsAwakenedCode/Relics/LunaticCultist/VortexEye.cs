@@ -7,6 +7,7 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
@@ -27,5 +28,11 @@ public class VortexEye : AncientsAwakenedRelic
             return;
         Flash();
         await PowerCmd.Apply<VortexPower>(choiceContext, Owner.Creature, DynamicVars["DamagePercentage"].BaseValue, Owner.Creature, null);
+        Grow(Owner.Creature.GetPowerAmount<VortexPower>());
+    }
+
+    private void Grow(int amount)
+    {
+        NCombatRoom.Instance?.GetCreatureNode(Owner.Creature)?.ScaleTo(1.0f + amount * 0.01f, 0.3f);
     }
 }

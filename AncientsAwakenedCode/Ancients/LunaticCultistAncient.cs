@@ -26,8 +26,8 @@ public class LunaticCultistAncient : CustomAncientModel
             ),
             MakePool(
                 AncientOption<MysteriousTablet>(),
-                AncientOption<CelestialSigil>(),
-                AncientOption<BottleOfEctoplasm>()
+                AncientOption<WhisperingTendrils>(),
+                AncientOption<ShimmeringBottle>()
             ));
     
     public override Color ButtonColor => new(0.1f, 0.04f, 0.2f, 0.8f);

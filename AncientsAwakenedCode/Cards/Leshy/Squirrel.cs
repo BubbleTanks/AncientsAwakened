@@ -12,7 +12,7 @@ public class Squirrel() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Retain, CardKeyword.Exhaust];
 

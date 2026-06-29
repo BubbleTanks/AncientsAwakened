@@ -8,7 +8,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Powers;
 
 public class StunNextTurnPower : AncientsAwakenedPower
 {
-    public override PowerType Type => PowerType.Debuff;
+    public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
     public override async Task AfterSideTurnEnd(

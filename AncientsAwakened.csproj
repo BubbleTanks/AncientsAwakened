@@ -75,11 +75,14 @@
     </ItemGroup>
 
     <ItemGroup>
+        <None Include="AncientsAwakenedCode\Nodes\NShackled.cs" />
         <None Condition="Exists('Directory.Build.props')" Include="Directory.Build.props"/>
         <None Include=".gitignore"/>
         <None Include="AncientsAwakened.json"/>
         <None Include="project.godot"/>
         <None Include="AncientsAwakened/**"/>
+        <None Include="scenes/**"/>
+        
     </ItemGroup>
 
     <ItemGroup>

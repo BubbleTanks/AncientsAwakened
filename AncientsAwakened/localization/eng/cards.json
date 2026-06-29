@@ -14,7 +14,7 @@
   "ANCIENTSAWAKENED-DEADLY_STRIKE.description": "Deal {Damage:diff()} damage.\nApply {PoisonPower:diff()} [gold]Poison[/gold].",
   "ANCIENTSAWAKENED-DEADLY_STRIKE.title": "Deadly Strike",
 
-  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Shivs:diff()} [gold]Shivs[/gold] into your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\nAdd {Shivs:diff()} [gold]{Shivs:plural:Shiv|Shivs}[/gold] into your [gold]Hand[/gold].\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-DEADLY_DEFEND.title": "Deadly Defend",
 
   "ANCIENTSAWAKENED-COSMIC_STRIKE.description": "Deal {Damage:diff()} damage.\n[gold]Forge[/gold] {Forge:diff()}.\nGain {Stars:starIcons()}.",
@@ -24,16 +24,22 @@
   "ANCIENTSAWAKENED-COSMIC_DEFEND.title": "Cosmic Defend",
 
   "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]Osty[/gold] deals {OstyDamage:diff()} damage.\nApply {DoomPower:diff()} [gold]Doom[/gold].",
-  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "Eternal Strike",
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "Ruinous Strike",
 
   "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]Summon[/gold] {Summon:diff()}.\nAdd a [gold]{IfUpgraded:show:Soul+|Soul}[/gold] into your draw pile.",
-  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "Eternal Defend",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "Ruinous Defend",
   
-  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage twice.\n[gold]Channel[/gold] 1 [gold]Glass[/gold].\nAdd a [gold]Dazed[/gold] into your hand.",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Channel[/gold] 1 [gold]Glass[/gold].\nAdd a [gold]Dazed[/gold] into your hand.",
   "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "Empowered Strike",
   
-  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Channel[/gold] 2 [gold]Frost[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Channel[/gold] 1 [gold]Frost[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Empowered Defend",
+
+  "ANCIENTSAWAKENED-PERFECT_STRIKE.description": "Deal {Damage:diff()} damage.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-PERFECT_STRIKE.title": "Perfect Strike",
+
+  "ANCIENTSAWAKENED-PERFECT_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\nGain {Energy:energyIcons()}.",
+  "ANCIENTSAWAKENED-PERFECT_DEFEND.title": "Perfect Defend",
   
 
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nDraw {Cards:diff()} cards.",
@@ -59,6 +65,9 @@
 
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "Electrolyze",
+
+  "ANCIENTSAWAKENED-SURPASS_LIMITS.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.\nNext turn, gain {Energy2:energyIcons()} and draw {Cards2:diff()} {Cards2:plural:card|cards}.",
+  "ANCIENTSAWAKENED-SURPASS_LIMITS.title": "Surpass Limits",
   
 
   "ANCIENTSAWAKENED-SQUIRREL.description": "Draw {Cards:diff()} cards.",
@@ -73,5 +82,8 @@
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Lunatic Ritual",
 
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
-  "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust"
+  "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
+
+  "ANCIENTSAWAKENED-LUNACY.description": "Reduce the cost of a random card in your [gold]Hand[/gold] to 0 this combat.",
+  "ANCIENTSAWAKENED-LUNACY.title": "Lunacy"
 }

@@ -9,4 +9,10 @@ public class Shackled : AfflictionModel, ICustomModel
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Unplayable)];
      
+    public override bool CanAfflictUnplayableCards => false;
+    
+    public override void AfterApplied()
+    {
+        AncientsAwakenedMain.Logger.Info(Id.Entry.ToLowerInvariant());
+    }
 }

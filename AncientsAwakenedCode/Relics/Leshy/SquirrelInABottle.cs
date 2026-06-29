@@ -21,7 +21,7 @@ public class SquirrelInABottle : AncientsAwakenedRelic
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<Squirrel>();
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
     public override async Task BeforeHandDraw(
         Player player,
         PlayerChoiceContext choiceContext,
