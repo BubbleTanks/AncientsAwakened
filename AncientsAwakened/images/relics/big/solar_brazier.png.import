@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbhl4hqwh05ek"
-path="res://.godot/imported/mod_image.png-37b8af46e15aab00ddcc7edcc92d1ddf.ctex"
+uid="uid://dsond8gt6on03"
+path="res://.godot/imported/solar_brazier.png-4698288196794624af36d519466b8a41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/mod_image.png"
-dest_files=["res://.godot/imported/mod_image.png-37b8af46e15aab00ddcc7edcc92d1ddf.ctex"]
+source_file="res://AncientsAwakened/images/relics/big/solar_brazier.png"
+dest_files=["res://.godot/imported/solar_brazier.png-4698288196794624af36d519466b8a41.ctex"]
 
 [params]
 

@@ -142,19 +142,19 @@
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
 
   "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, use a random potion.",
-  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "A lush, blue flower grows from the bottle. It's presence invigorates you.",
   "ANCIENTSAWAKENED-MANA_FLOWER.title": "Mana Flower",
 
   "ANCIENTSAWAKENED-FALLEN_STAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to a random enemy.",
   "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "A shard of the heavens that crash landed, now yours to wield.",
   "ANCIENTSAWAKENED-FALLEN_STAR.title": "Fallen Star",
 
-  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold] and increase it by [blue]{Scaling}[/blue] permanently.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold] and permanently increase it by [blue]{Scaling}[/blue].",
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "The strange metal in your hands seems to pulse and glow, as if growing even as you watch it.",
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
 
   "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "Gain {Energy:energyIcons()} at the start of each turn. At the end of your turn, [gold]Transform[/gold] your [gold]Hand[/gold].",
-  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "This bottle contains the potential for infinite reforges; unfortunately, there does not seem to be a reforge mechanic in this game.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "The liquid inside holds prismatic hues. Anything brought too close begins to warp and shift, as if viewed through a kaleidoscope.",
   "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "Shimmering Bottle",
 
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
@@ -162,7 +162,7 @@
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "The flame roars endlessly, devouring everything you feed into it. The heat is unbearable.",
   "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Solar Brazier",
 
-  "ANCIENTSAWAKENED-VORTEX_EYE.description": "At the start of your turn, deal [blue]{DamagePercentage}%[/blue] more damage for the rest of combat",
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "At the start of your turn, deal [blue]{DamagePercentage}%[/blue] more damage for the rest of combat.",
   "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
   "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
 
@@ -172,12 +172,12 @@
 
   "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
   "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "[gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
-  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "The shackles are heavy, gilded with starlight. One can only wonder what they were made to restrain.",
   "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Stardust Shackles",
 
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "Select any number of cards to add to your Deck.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "Upon pickup, add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "Add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "Tendrils perforate your sight, beckoning you with visions of greatness. You can feel your mind growing numb.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "Whispering Tendrils"
 }

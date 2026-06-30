@@ -1,0 +1,11 @@
+{
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "ターン終了時、もう1ターン行動できる。",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "ターン終了時、もう1ターン行動できる。",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "我が足元に砕けよ",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "劣勢状態のクリーチャーは、アタックダメージが[blue]15%[/blue]減少し、アタックから受けるダメージが[blue]30%[/blue]増加する。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "[blue]{Amount}[/blue]{Amount:plural:ターン|ターン}の間、アタックダメージが[blue]15%[/blue]減少し、アタックから受けるダメージが[blue]30%[/blue]増加する。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "劣勢",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "次のターン気絶",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "気絶した対象は行動できない。",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:次のターンに [gold]スタン[/gold]する。|次の [blue]{}[/blue] ターン [gold]スタン[/gold]する。}"
+}

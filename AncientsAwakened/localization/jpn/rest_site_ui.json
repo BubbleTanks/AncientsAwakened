@@ -1,0 +1,9 @@
+{
+  "OPTION_ANCIENTSAWAKENED-VIAL.description": "[gold]デッキ[/gold]内のカードを[blue]1[/blue]枚[gold]変化[/gold]させ、HPを[blue]8[/blue]失う。",
+  "OPTION_ANCIENTSAWAKENED-VIAL.descriptionDisabled": "[red]デッキに変化可能なカードが1枚以上必要です。[/red]",
+  "OPTION_ANCIENTSAWAKENED-VIAL.descriptionHpDisabled": "[red]変化するのに十分なHPがありません。[/red]",
+  "OPTION_ANCIENTSAWAKENED-VIAL.name": "突然変異",
+
+  "OPTION_ANCIENTSAWAKENED-PROSPECT.description": "[gold]ゴールド[/gold]を250〜300得る。",
+  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "採掘"
+}

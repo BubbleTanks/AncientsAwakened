@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbhl4hqwh05ek"
-path="res://.godot/imported/mod_image.png-37b8af46e15aab00ddcc7edcc92d1ddf.ctex"
+uid="uid://j0w0w8dx82me"
+path="res://.godot/imported/mana_flower_outline.png-f062fbc76174c930b2e579a5838fce51.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/mod_image.png"
-dest_files=["res://.godot/imported/mod_image.png-37b8af46e15aab00ddcc7edcc92d1ddf.ctex"]
+source_file="res://AncientsAwakened/images/relics/mana_flower_outline.png"
+dest_files=["res://.godot/imported/mana_flower_outline.png-f062fbc76174c930b2e579a5838fce51.ctex"]
 
 [params]
 
