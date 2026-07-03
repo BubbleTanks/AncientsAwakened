@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
+﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
+using AncientsAwakened.AncientsAwakenedCode.Pools;
 using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
@@ -25,12 +26,7 @@ public class CardPoolPatch
         public static void Postfix(NCardLibrary __instance)
         {
             var miscPoolFilter = __instance._poolFilters[__instance._miscPoolFilter];
-            __instance._poolFilters[__instance._miscPoolFilter] = c =>
-            {
-                if (c.VisualCardPool is PerfectedPool) return false;
-                return miscPoolFilter(c);
-            };
-
+            __instance._poolFilters[__instance._miscPoolFilter] = c => c.VisualCardPool is not PerfectedPool && miscPoolFilter(c);
         }
     }
 }

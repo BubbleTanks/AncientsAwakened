@@ -22,8 +22,8 @@ public class EmpoweredDefend() : AncientsAwakenedCard(1,
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
 
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.Channeling), HoverTipFactory.FromOrb<FrostOrb>(), HoverTipFactory.FromPower<FocusPower>()];
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move), new PowerVar<FocusPower>(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 
@@ -32,7 +32,6 @@ public class EmpoweredDefend() : AncientsAwakenedCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        await OrbCmd.Channel<FrostOrb>(choiceContext, Owner);
         await OrbCmd.Channel<FrostOrb>(choiceContext, Owner);
         await PowerCmd.Apply<EmpoweredDefendPower>(choiceContext, Owner.Creature, DynamicVars.Power<FocusPower>().BaseValue, Owner.Creature, this);
     }

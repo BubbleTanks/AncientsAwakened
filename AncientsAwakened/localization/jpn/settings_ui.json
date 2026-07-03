@@ -1,0 +1,10 @@
+{
+  "ANCIENTSAWAKENED.mod_title": "Ancients Awakened",
+  "ANCIENTSAWAKENED-MITHRIX.title": "ミスリクスのレリック設定",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "マルチプレイで完璧の槌を有効化",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "マルチプレイ用完璧の槌",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "マルチプレイにおいて、コストが+1される代わりにすべての味方に追加ターンを与える特殊な完璧の槌を有効化します。\n（無効にした場合、マルチプレイでもシングルプレイ版が使用されます。）",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "マルチプレイで雨季のお守りを有効化",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "マルチプレイ用雨季のお守り",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "妨害行為の可能性があるため、デフォルトでは無効です。"
+}

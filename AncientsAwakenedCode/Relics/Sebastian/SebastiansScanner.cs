@@ -1,4 +1,5 @@
-﻿using BaseLib.Utils;
+﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Extensions;
@@ -47,6 +48,11 @@ public class SebastiansScanner : AncientsAwakenedRelic
 
   protected override IEnumerable<DynamicVar> CanonicalVars => [new(_combatsKey, 10M)];
 
+  public SebastiansScanner()
+  {
+    this.BlacklistFromEulogy();
+  }
+  
   public override Task AfterObtained()
   {
     SebastiansScannerActIndex = Owner.RunState.CurrentActIndex;

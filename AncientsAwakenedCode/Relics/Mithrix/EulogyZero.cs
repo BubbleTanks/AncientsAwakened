@@ -93,6 +93,7 @@ public class EulogyZero : AncientsAwakenedRelic
             listVar.Add(ModelDb.GetById<RelicModel>(relicModel));
         }
         listVar.Add(ModelDb.Relic<GoldenCompass>());
+        listVar.Add(ModelDb.Relic<FurCoat>());
         
         foreach (EventOption relic in ModelDb.Event<Neow>().AllPossibleOptions)
         {

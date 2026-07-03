@@ -19,8 +19,8 @@
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "완벽한 망치",
 
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "[gold]고대의 지팡이[/gold]에 의해 변화된 카드",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "획득 시, 모든 [gold]타격[/gold]과 [gold]수비[/gold]를 {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]완성된[/blue] }버전으로 [gold]변화[/gold]시킵니다.",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "모든 [gold]타격[/gold]과 [gold]수비[/gold]를 {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]완성된[/blue] }버전으로 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "획득 시, 모든 [gold]타격[/gold]과 [gold]수비[/gold]를 {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]완전한[/blue] }버전으로 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "모든 [gold]타격[/gold]과 [gold]수비[/gold]를 {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]완전한[/blue] }버전으로 [gold]변화[/gold]시킵니다.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "유물을 집어 들자 수정이 강력한 에너지로 진동합니다.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "고대의 지팡이",
 
@@ -132,5 +132,50 @@
 
   "ANCIENTSAWAKENED-THE_SMOKE.description": "전투에서 처음으로 체력을 잃을 때, 다음 턴에 카드를 [blue]{Cards}[/blue]장 뽑고 {Energy:energyIcons()}를 얻습니다.",
   "ANCIENTSAWAKENED-THE_SMOKE.flavor": "꺼진 양초에서 피어오른 연기가 유리 안에 보존되어 있습니다. 연기 일부가 밖으로 새어 나와 숨결을 더럽힙니다.",
-  "ANCIENTSAWAKENED-THE_SMOKE.title": "연기"
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "연기",
+
+  
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "[gold]광기의 의식[/gold] [blue]1[/blue]장을 내 [gold]덱[/gold]에 추가합니다.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "후드를 쓴 자는 이 주문들을 다룰 때 조심하라고 경고했습니다. 그 말을 듣는 편이 현명할 것입니다.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "신비로운 석판",
+
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "내 턴 시작 시, 무작위 포션을 얻고 사용합니다.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "병 속에서 푸르고 싱그러운 꽃 한 송이가 돋아나 있습니다. 그 존재만으로도 기운이 샘솟는 것 같습니다.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.title": "마나 꽃",
+
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "[blue]{DamageTurn}[/blue]턴 종료 시, 체력이 가장 많은 적에게 피해를 [blue]{Damage}[/blue] 줍니다.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "하늘에서 추락한 천체의 파편입니다. 이제는 당신의 것이 되었습니다.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.title": "타락한 별",
+
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "전투 시작 시, [gold]판금[/gold]을 [blue]{PlatingPower}[/blue] 얻고 이 유물의 효과를 영구적으로 [blue]{Scaling}[/blue]만큼 증가시킵니다.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "손에 쥔 기묘한 금속이 마치 보고 있는 이 순간에도 자라나듯, 맥박치며 빛을 발합니다.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "제련된 녹조류",
+
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "내 턴 시작 시 {Energy:energyIcons()}를 얻습니다. 내 턴 종료 시, [gold]손[/gold]의 카드를 전부 [gold]변화[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "병 속의 액체가 영롱한 무지갯빛을 띱니다. 너무 가까이 가져다 댄 것은 무엇이든 마치 만화경을 통해 보는 것처럼 뒤틀리고 변하기 시작합니다.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "미광이 담긴 병",
+
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "획득 시, [gold]덱[/gold]에서 카드를 [blue]{Cards}[/blue]장까지 제거합니다. 내 턴 시작 시 피해를 [blue]{Damage}[/blue] 받습니다.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "[gold]덱[/gold]에서 카드를 [blue]{Cards}[/blue]장까지 제거합니다. 내 턴 시작 시 피해를 [blue]{Damage}[/blue] 받습니다.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "무엇이든 집어삼킬 듯이 불길이 끝없이 포효합니다. 도저히 버텨낼 수 없을 만큼 뜨겁습니다.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "태양의 화로",
+
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "내 턴 시작 시, 이번 전투 동안 주는 피해가 [blue]{DamagePercentage}%[/blue] 증가합니다.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "파편에 손을 대자 눈이 변형되는 것이 느껴지며, 현실을 초월할 정도로 집중력이 날카로워집니다.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.title": "소용돌이의 눈",
+
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "내 턴 시작 시, 무작위 파워 카드 [blue]{Cards}[/blue]장 중 [blue]1[/blue]장을 선택하여 이번 턴 동안 비용이 [blue]0[/blue]인 상태로 [gold]손[/gold]에 추가합니다. 그 후 [gold]뽑을 카드 더미[/gold]에 [gold]성간 잔해[/gold]를 [blue]{Status}[/blue]장 추가합니다.",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "마도서가 당신을 유혹하며 상상조차 못 했던 힘을 약속합니다. 책장을 넘길 때마다 빛나는 먼지가 손에 묻어납니다.",
+  "ANCIENTSAWAKENED-NEBULA_TOME.title": "성운의 마도서",
+
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "획득 시, 카드를 최대 [blue]{Cards}[/blue]장까지 선택합니다. 선택한 카드에 [purple]천체[/purple]를 [gold]인챈트[/gold]합니다. 매 턴마다 첫 번째로 뽑는 카드에 [gold]족쇄[/gold]를 부여합니다",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "카드를 최대 [blue]{Cards}[/blue]장까지 선택합니다. 선택한 카드에 [purple]천체[/purple]를 [gold]인챈트[/gold]합니다. 매 턴마다 첫 번째로 뽑는 카드에 [gold]족쇄[/gold]를 부여합니다.",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "별빛으로 도금된 족쇄가 묵직하게 가라앉습니다. 대체 무엇을 구속하기 위해 만들어진 것인지 의문이 들 뿐입니다.",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "성단의 족쇄",
+
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "덱에 추가할 카드를 원하는 만큼 선택하십시오.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "획득 시, [gold]광기+[/gold]를 내 [gold]덱[/gold]에 [blue]{Cards}[/blue]장까지 추가합니다.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "[gold]광기+[/gold]를 내 [gold]덱[/gold]에 [blue]{Cards}[/blue]장까지 추가합니다.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "덩굴 줄기들이 시야를 꿰뚫으며 위대한 환영으로 당신을 유혹합니다. 정신이 점점 희미해지는 것이 느껴집니다.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "속삭이는 덩굴"
 }

@@ -20,14 +20,14 @@ public class CosmicStrike() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromForge();
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new ForgeVar(8), new StarsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new ForgeVar(6), new StarsVar(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         await ForgeCmd.Forge(DynamicVars.Forge.IntValue, Owner, this);
         await PlayerCmd.GainStars(DynamicVars.Stars.BaseValue, Owner);
     }
@@ -35,6 +35,6 @@ public class CosmicStrike() : AncientsAwakenedCard(1,
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(3M);
-        DynamicVars.Forge.UpgradeValueBy(4M);
+        DynamicVars.Forge.UpgradeValueBy(3M);
     }
 }
