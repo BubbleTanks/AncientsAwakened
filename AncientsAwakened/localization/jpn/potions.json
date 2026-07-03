@@ -1,6 +1,5 @@
 {
-  "ANCIENTSAWAKENED-NELOPREPHINE_VIAL.description": "最大HPの[green]{HealPercent}%[/green]分を回復する。",
+  "ANCIENTSAWAKENED-NELOPREPHINE_VIAL.description": "最大HPの[green]{HealPercent}%[/green]を回復する。",
   "ANCIENTSAWAKENED-NELOPREPHINE_VIAL.title": "ネロプレフィン注射",
-
   "ANCIENTSAWAKENED-SALTY.title": "塩漬け{Potion}"
 }

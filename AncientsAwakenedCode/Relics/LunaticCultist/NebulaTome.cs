@@ -16,6 +16,7 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
@@ -27,6 +28,29 @@ public class NebulaTome : AncientsAwakenedRelic
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new ("Status", 2)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<CosmicDust>();
+    
+    protected override string IconBaseName => !HasBookmark() ? base.IconBaseName + "_2" : base.IconBaseName;
+
+    private bool _bookmark;
+    
+    [SavedProperty]
+    private bool Bookmark
+    {
+        get => _bookmark;
+        set
+        {
+            AssertMutable();
+            _bookmark = value;
+            InvokeDisplayAmountChanged();
+        }
+    }
+
+    public void SetupForPlayer(Player player) => Bookmark = player.RunState.Rng.Niche.NextBool();
+    
+    private bool HasBookmark()
+    {
+        return !IsMutable || Bookmark;
+    }
     
     public override async Task BeforeHandDraw(
         Player player,

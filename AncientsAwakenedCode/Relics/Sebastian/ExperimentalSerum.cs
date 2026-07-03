@@ -95,14 +95,8 @@ public class ExperimentalSerum : AncientsAwakenedRelic
         }
     };
     
-    public void SetupForPlayer(Player player)
-    {
-        if (ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card))
-        {
-            AncientCard = card;
-        }
-        AncientCard = ModelDb.Card<SurpassLimits>().Id;
-    }
+    public void SetupForPlayer(Player player) => AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card) ? card : ModelDb.Card<SurpassLimits>().Id;
+    
     
     public override async Task AfterObtained()
     {

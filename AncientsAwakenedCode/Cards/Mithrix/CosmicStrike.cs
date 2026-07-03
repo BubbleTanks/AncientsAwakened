@@ -27,7 +27,7 @@ public class CosmicStrike() : AncientsAwakenedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         await ForgeCmd.Forge(DynamicVars.Forge.IntValue, Owner, this);
         await PlayerCmd.GainStars(DynamicVars.Stars.BaseValue, Owner);
     }

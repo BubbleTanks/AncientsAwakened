@@ -21,7 +21,12 @@ public class LunaticCultistAncient : CustomAncientModel
             MakePool(
                 AncientOption<SolarBrazier>(),
                 AncientOption<VortexEye>(),
-                AncientOption<NebulaTome>(),
+                AncientOption<NebulaTome>(relicPrep: tome =>
+                {
+                    if(Owner != null)
+                        tome.SetupForPlayer(Owner);
+                    return tome;
+                }),
                 AncientOption<StardustShackles>()
             ),
             MakePool(

@@ -17,6 +17,7 @@ public class PerfectDefend() : AncientsAwakenedCard(1,
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
     
+    public override bool GainsBlock => true;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(8, ValueProp.Move), new EnergyVar(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 

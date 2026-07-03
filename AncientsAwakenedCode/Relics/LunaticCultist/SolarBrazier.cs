@@ -20,10 +20,10 @@ public class SolarBrazier : AncientsAwakenedRelic
     
     protected override bool RelicAllowedToSpawn(Player owner)
     {
-        return owner.Deck.Cards.Count(c => c.IsRemovable) > 6;
+        return owner.Deck.Cards.Count(c => c.IsRemovable) > DynamicVars.Cards.IntValue;
     }
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2M, ValueProp.Unpowered), new CardsVar(6)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(2M, ValueProp.Unpowered), new CardsVar(5)];
 
     public override async Task AfterObtained()
     {
@@ -40,6 +40,6 @@ public class SolarBrazier : AncientsAwakenedRelic
         if (!participants.Contains(Owner.Creature))
             return;
         Flash();
-        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.Damage, Owner.Creature, null);
+        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.Damage, Owner.Creature, null, null);
     }
 }

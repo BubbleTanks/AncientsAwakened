@@ -76,7 +76,8 @@ public class FallenStar : AncientsAwakenedRelic
         if (turnNumber != intValue)
             return;
         TaskHelper.RunSafely(DoActivateVisuals());
-        await CreatureCmd.Damage(choiceContext, Owner.Creature.CombatState.HittableEnemies.TakeRandom(1, Owner.RunState.Rng.CombatTargets), DynamicVars.Damage, Owner.Creature);
+        var hittableEnemies = Owner.Creature.CombatState.HittableEnemies;
+        await CreatureCmd.Damage(choiceContext, hittableEnemies.Where(c => c.CurrentHp == hittableEnemies.Max(c => c.CurrentHp)).TakeRandom(1, Owner.RunState.Rng.CombatTargets), DynamicVars.Damage, Owner.Creature);
         InvokeDisplayAmountChanged();
     }
 

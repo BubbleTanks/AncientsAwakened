@@ -27,7 +27,7 @@ public class LunaticRitualPower : AncientsAwakenedPower
             if (instance != null)
                 instance.CombatVfxContainer.AddChildSafely((Node) child);
         }
-        await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner, null);
+        await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner, null, null);
 
     }
 }

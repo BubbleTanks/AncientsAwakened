@@ -28,11 +28,13 @@ public class VortexEye : AncientsAwakenedRelic
             return;
         Flash();
         await PowerCmd.Apply<VortexPower>(choiceContext, Owner.Creature, DynamicVars["DamagePercentage"].BaseValue, Owner.Creature, null);
-        Grow(Owner.Creature.GetPowerAmount<VortexPower>());
+        Grow();
     }
 
-    private void Grow(int amount)
+    private void Grow()
     {
-        NCombatRoom.Instance?.GetCreatureNode(Owner.Creature)?.ScaleTo(1.0f + amount * 0.01f, 0.3f);
+        var creature = NCombatRoom.Instance?.GetCreatureNode(Owner.Creature);
+        var scale = creature?.Visuals.Scale.X / creature?.Visuals.DefaultScale ?? 1.0f;
+        creature?.ScaleTo(scale + 0.1f, 0.75);
     }
 }

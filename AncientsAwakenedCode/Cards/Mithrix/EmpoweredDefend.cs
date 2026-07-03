@@ -22,8 +22,8 @@ public class EmpoweredDefend() : AncientsAwakenedCard(1,
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
 
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.Channeling), HoverTipFactory.FromOrb<FrostOrb>(), HoverTipFactory.FromPower<FocusPower>()];
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move), new PowerVar<FocusPower>(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 

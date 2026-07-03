@@ -27,7 +27,7 @@ public class ManaFlower : AncientsAwakenedRelic
         if (player != Owner)
             return;
         Flash();
-        var potion = PotionFactory.CreateRandomPotionOutOfCombat(Owner, Owner.RunState.Rng.CombatPotionGeneration).ToMutable();
+        var potion = PotionFactory.CreateRandomPotionInCombat(Owner, Owner.RunState.Rng.CombatPotionGeneration).ToMutable();
         potion.Owner = Owner;
         ManaFlowerPatch.ManaFlowerPotionField.Set(potion, true);
         if (potion.TargetType == TargetType.AnyEnemy)

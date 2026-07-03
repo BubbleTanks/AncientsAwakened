@@ -16,7 +16,7 @@ public class LunaticRitual() : AncientsAwakenedCard(1,
     CardType.Power, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RitualPower>(2), new PowerVar<LunaticRitualPower>(20)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RitualPower>(2), new PowerVar<LunaticRitualPower>(10)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
 

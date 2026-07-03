@@ -17,10 +17,10 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 public class TheSmoke : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
-    
-    public bool _usedThisCombat;
 
-    public bool UsedThisCombat
+    private bool _usedThisCombat;
+
+    private bool UsedThisCombat
     {
         get => _usedThisCombat;
         set
@@ -32,7 +32,7 @@ public class TheSmoke : AncientsAwakenedRelic
         }
     }
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(4), new EnergyVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new EnergyVar(3)];
 
     public override async Task AfterDamageReceived(
         PlayerChoiceContext choiceContext,

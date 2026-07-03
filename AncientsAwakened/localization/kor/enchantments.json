@@ -6,5 +6,9 @@
   "ANCIENTSAWAKENED-DESIGN.title": "설계",
 
   "ANCIENTSAWAKENED-CHARMED.description": "이 카드는 [gold]재사용[/gold] [blue]1[/blue]을 얻습니다.",
-  "ANCIENTSAWAKENED-CHARMED.title": "매혹"
+  "ANCIENTSAWAKENED-CHARMED.title": "매혹",
+  
+  "ANCIENTSAWAKENED-CELESTIAL.description": "{Amount:energyIcons()}를 얻습니다.",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "{Amount:energyIcons()}를 얻습니다.",
+  "ANCIENTSAWAKENED-CELESTIAL.title": "천체"
 }

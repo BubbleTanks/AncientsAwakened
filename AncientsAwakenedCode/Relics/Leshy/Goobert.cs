@@ -22,7 +22,7 @@ public class Goobert : AncientsAwakenedRelic
         return owner.Deck.Cards.Count >= 3;
     }
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
 
     public override async Task AfterObtained()
     {
