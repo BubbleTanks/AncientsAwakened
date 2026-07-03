@@ -38,10 +38,9 @@ Art not listed were either made by us or commissioned specifically for this mod.
 *Leshy Ancient Art* by **skellulite**  
 *Leshy Full-Art Card* by **Nevskaya Alexandra**  
 
-*Lunatic Cultist Ancient Art* by **Bohrokki**  
-*Lunatic Cultist Lunacy Full-Art Card Art* by **Bohrokki**  
-
-*Lunatic Cultist Lunatic Ritual Full-Art Card Art* by **Shork777**
+*Lunatic Cultist Ancient Art* by **Bohrokki**   
+*Lunatic Cultist Lunacy Full-Art Card Art* by **Bohrokki**   
+*Lunatic Cultist Lunatic Ritual Full-Art Card Art* by **Shork777**  
 
 ### Commissions
 
