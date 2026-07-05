@@ -18,6 +18,10 @@
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Lunatic Ritual",
 
   "ANCIENTSAWAKENED-VORTEX_POWER.description": "Attacks deal [blue]10%[/blue] more damage.",
-  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "Attacks deal [blue]{Amount}%[/blue] more damage",
-  "ANCIENTSAWAKENED-VORTEX_POWER.title": "Vortex"
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "Attacks deal [blue]{Amount}%[/blue] more damage.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "Vortex",
+
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.description": "At the end of combat, [gold]Upgrade[/gold] a card in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.smartDescription": "At the end of combat, [gold]Upgrade[/gold] [blue]{Amount}[/blue] {Amount:plural:card|cards} in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "Guidance"
 }

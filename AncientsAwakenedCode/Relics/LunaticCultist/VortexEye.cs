@@ -16,7 +16,7 @@ public class VortexEye : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamagePercentage", 10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamagePercentage", 7)];
 
     public override async Task BeforeSideTurnStart(
         PlayerChoiceContext choiceContext,
@@ -35,6 +35,6 @@ public class VortexEye : AncientsAwakenedRelic
     {
         var creature = NCombatRoom.Instance?.GetCreatureNode(Owner.Creature);
         var scale = creature?.Visuals.Scale.X / creature?.Visuals.DefaultScale ?? 1.0f;
-        creature?.ScaleTo(scale + 0.1f, 0.75);
+        creature?.ScaleTo(scale + 0.07f, 0.75);
     }
 }

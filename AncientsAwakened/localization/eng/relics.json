@@ -141,11 +141,11 @@
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "The hooded figure told you to be careful with these spells. It would be wise to listen.",
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
 
-  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, procure and use a random potion.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, procure and use a random potion. Attacks deal [blue]{DamageDecrease}%[/blue] less damage.",
   "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "A lush, blue flower grows from the bottle. It's presence invigorates you.",
   "ANCIENTSAWAKENED-MANA_FLOWER.title": "Mana Flower",
 
-  "ANCIENTSAWAKENED-FALLEN_STAR.description": "At the end of turn [blue]{DamageTurn}[/blue], deal [blue]{Damage}[/blue] damage to the highest HP enemy.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "You may [gold]Collect[/gold] at [gold]Rest Sites[/gold].",
   "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "A shard of the heavens that crash landed, now yours to wield.",
   "ANCIENTSAWAKENED-FALLEN_STAR.title": "Fallen Star",
 

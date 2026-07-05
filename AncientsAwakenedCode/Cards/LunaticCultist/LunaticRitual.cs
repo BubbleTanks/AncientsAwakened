@@ -16,7 +16,7 @@ public class LunaticRitual() : AncientsAwakenedCard(1,
     CardType.Power, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RitualPower>(2), new PowerVar<LunaticRitualPower>(10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<RitualPower>(1), new PowerVar<LunaticRitualPower>(10)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
 
@@ -26,7 +26,7 @@ public class LunaticRitual() : AncientsAwakenedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
+        await CreatureCmd.TriggerAnim(Owner.Creature, "PowerUp", Owner.Character.PowerUpAnimDelay);
         await PowerCmd.Apply<RitualPower>(choiceContext, Owner.Creature, DynamicVars.Power<RitualPower>().BaseValue, Owner.Creature, this);
         await PowerCmd.Apply<LunaticRitualPower>(choiceContext, Owner.Creature, DynamicVars.Power<LunaticRitualPower>().BaseValue, Owner.Creature, this);
     }

@@ -5,5 +5,8 @@
   "OPTION_ANCIENTSAWAKENED-VIAL.name": "Mutate",
 
   "OPTION_ANCIENTSAWAKENED-PROSPECT.description": "Gain 250-300 [gold]Gold[/gold].",
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "Mine"
+  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "Mine",
+
+  "OPTION_ANCIENTSAWAKENED-COLLECT.description": "Add [blue]1[/blue] [gold]Starshine[/gold] to your [gold]Deck[/gold]",
+  "OPTION_ANCIENTSAWAKENED-COLLECT.name": "Collect"
 }

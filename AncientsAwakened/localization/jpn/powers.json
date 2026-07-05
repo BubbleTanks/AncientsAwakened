@@ -12,6 +12,6 @@
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "ターン開始時、すべての敵に[blue]{Amount}[/blue]ダメージを与える。",
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "狂気の儀式",
   "ANCIENTSAWAKENED-VORTEX_POWER.description": "アタックが与えるダメージが[blue]10%[/blue]増加する。",
-  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "アタックが与えるダメージが[blue]{Amount}%[/blue]増加する",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "アタックが与えるダメージが[blue]{Amount}%[/blue]増加する。",
   "ANCIENTSAWAKENED-VORTEX_POWER.title": "ボルテックス"
 }

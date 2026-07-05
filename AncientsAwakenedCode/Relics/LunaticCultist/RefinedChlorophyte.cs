@@ -16,7 +16,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 [Pool(typeof(EventRelicPool))]
 public class RefinedChlorophyte : AncientsAwakenedRelic
 {
-    private int _platingPower = 2;
+    private int _platingPower = 4;
     
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -33,7 +33,7 @@ public class RefinedChlorophyte : AncientsAwakenedRelic
         }
     }
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PlatingPower>(PlatingPower), new ("Scaling", 2M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<PlatingPower>(PlatingPower), new ("Scaling", 1M)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<PlatingPower>()];
 

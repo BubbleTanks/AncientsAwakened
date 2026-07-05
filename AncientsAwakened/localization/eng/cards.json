@@ -85,5 +85,20 @@
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
 
   "ANCIENTSAWAKENED-LUNACY.description": "Reduce the cost of a random card in your [gold]Hand[/gold] to 0 this combat.",
-  "ANCIENTSAWAKENED-LUNACY.title": "Lunacy"
+  "ANCIENTSAWAKENED-LUNACY.title": "Lunacy",
+
+  "ANCIENTSAWAKENED-INSANITY.description": "Increase the cost of a random card in your [gold]Hand[/gold] by {Energy:energyIcons()} this combat.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-INSANITY.title": "Eldritch Insanity",
+
+  "ANCIENTSAWAKENED-STARSHINE.description": "Choose one:\nGain {StrengthPower:diff()} [gold]Strength[/gold], gain {Energy:energyIcons()} and draw {Cards:diff()} {Cards:plural:card|cards}, or permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
+  "ANCIENTSAWAKENED-STARSHINE.title": "Starshine",
+
+  "ANCIENTSAWAKENED-POWER_CHOICE.description": "Gain {StrengthPower:diff()} [gold]Strength[/gold].",
+  "ANCIENTSAWAKENED-POWER_CHOICE.title": "Power",
+
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "Life",
+
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "Permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "Guidance"
 }
