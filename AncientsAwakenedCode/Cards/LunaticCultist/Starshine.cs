@@ -17,19 +17,18 @@ public class Starshine() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(3), new EnergyVar(2), new CardsVar(2)];
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(PowerChoice.StrengthValue), new EnergyVar(EnergyChoice.EnergyValue), new CardsVar(EnergyChoice.DrawValue)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    
+    //protected override IEnumerable<IHoverTip> ExtraHoverTips => CardOptions.SelectMany(card => card.HoverTips);
+
     private static readonly IEnumerable<CardModel> CardOptions = [ModelDb.Card<PowerChoice>(), ModelDb.Card<EnergyChoice>(), ModelDb.Card<GuidanceChoice>()];
 
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        CardModel cardModel = await CardSelectCmd.FromChooseACardScreen(new BlockingPlayerChoiceContext(),  CardOptions.Select(c =>
+        var cardModel = await CardSelectCmd.FromChooseACardScreen(new BlockingPlayerChoiceContext(),  CardOptions.Select(c =>
         {
             CardModel card = CombatState.CreateCard(c, Owner);
             if(IsUpgraded) CardCmd.Upgrade(card);
@@ -42,8 +41,8 @@ public class Starshine() : AncientsAwakenedCard(0,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<StrengthPower>().UpgradeValueBy(2);
-        DynamicVars.Cards.UpgradeValueBy(1);
+        DynamicVars.Power<StrengthPower>().UpgradeValueBy(PowerChoice.StrengthUpgrade);
+        DynamicVars.Cards.UpgradeValueBy(EnergyChoice.DrawUpgrade);
     }
     
     public interface ICardChoice

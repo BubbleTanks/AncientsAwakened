@@ -15,7 +15,10 @@ namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 [Pool(typeof(EventCardPool))]
 public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(3)];
+    public const int StrengthValue = 4;
+    public const int StrengthUpgrade = 1;
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(StrengthValue)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<StrengthPower>()];
     
@@ -26,7 +29,7 @@ public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRarity
         await OnChosen();
     }
 
-    protected override void OnUpgrade() => DynamicVars.Strength.UpgradeValueBy(2);
+    protected override void OnUpgrade() => DynamicVars.Strength.UpgradeValueBy(StrengthUpgrade);
 
     public async Task OnChosen()
     {

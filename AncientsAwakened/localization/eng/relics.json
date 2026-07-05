@@ -132,7 +132,8 @@
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "A playing card, drawn to appear as if it were a squirrel. You feel uneasy as you stare at it.",
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Squirrel in a Bottle",
 
-  "ANCIENTSAWAKENED-THE_SMOKE.description": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards} and gain {Energy:energyIcons()} next turn.",
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "Upon pickup, [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Candlelit[/purple].",
+  "ANCIENTSAWAKENED-THE_SMOKE.eventDescription": "[gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Candlelit[/purple].",
   "ANCIENTSAWAKENED-THE_SMOKE.flavor": "Smoke from an expired candle, preserved in glass. Some of it leaks out, tainting your breath.",
   "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke",
 
@@ -176,8 +177,8 @@
   "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Stardust Shackles",
 
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "Select any number of cards to add to your Deck.",
-  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "Upon pickup, add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "Add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "Upon pickup, add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold]. Add [blue]1[/blue] [gold]Eldritch Insanity[/gold] to your [gold]Deck[/gold] for every [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Lunacy|Lunacies}[/gold] you add.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "Add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold]. Add [blue]1[/blue] [gold]Eldritch Insanity[/gold] to your [gold]Deck[/gold] for every [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Lunacy|Lunacies}[/gold] you add.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "Tendrils perforate your sight, beckoning you with visions of greatness. You can feel your mind growing numb.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "Whispering Tendrils"
 }

@@ -21,8 +21,6 @@ public class GuidanceChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRar
         await OnChosen();
     }
 
-    protected override void OnUpgrade() => DynamicVars.Strength.UpgradeValueBy(2);
-
     public async Task OnChosen()
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "PowerUp", Owner.Character.PowerUpAnimDelay);

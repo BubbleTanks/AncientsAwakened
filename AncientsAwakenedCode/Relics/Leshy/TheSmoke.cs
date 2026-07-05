@@ -1,13 +1,22 @@
-﻿using BaseLib.Utils;
+﻿using AncientsAwakened.AncientsAwakenedCode.Enchantments.Leshy;
+using BaseLib.Utils;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.Extensions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
+using MegaCrit.Sts2.Core.Helpers;
+using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
+using MegaCrit.Sts2.Core.Nodes;
+using MegaCrit.Sts2.Core.Nodes.Vfx;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -18,41 +27,32 @@ public class TheSmoke : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    private bool _usedThisCombat;
+    public override bool HasUponPickupEffect => true;
 
-    private bool UsedThisCombat
-    {
-        get => _usedThisCombat;
-        set
-        {
-            if (_usedThisCombat == value)
-                return;
-            AssertMutable();
-            _usedThisCombat = value;
-        }
-    }
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new EnergyVar(3)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Smokey>();
 
-    public override async Task AfterDamageReceived(
-        PlayerChoiceContext choiceContext,
-        Creature target,
-        DamageResult result,
-        ValueProp props,
-        Creature? dealer,
-        CardModel? cardSource)
+    protected override bool RelicAllowedToSpawn(Player owner)
     {
-        if (!CombatManager.Instance.IsInProgress || target != Owner.Creature || result.UnblockedDamage <= 0 || UsedThisCombat || props.HasFlag(ValueProp.Unblockable))
-            return;
-        Flash();
-        UsedThisCombat = true;
-        await PowerCmd.Apply<DrawCardsNextTurnPower>(choiceContext, Owner.Creature, DynamicVars.Cards.BaseValue, Owner.Creature, null);
-        await PowerCmd.Apply<EnergyNextTurnPower>(choiceContext, Owner.Creature, DynamicVars.Energy.IntValue, Owner.Creature, null);
+        return owner.Deck.Cards.Any(ModelDb.Enchantment<Smokey>().CanEnchant);
     }
 
-    public override Task AfterCombatEnd(CombatRoom _)
+    public override async Task AfterObtained()
     {
-        UsedThisCombat = false;
-        return Task.CompletedTask;
+        var enchantment = ModelDb.Enchantment<Smokey>();
+        var list = PileType.Deck.GetPile(Owner).Cards.Where(enchantment.CanEnchant).ToList();
+        var prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 1);
+        var card = (await CardSelectCmd.FromDeckForEnchantment(list.UnstableShuffle(Owner.RunState.Rng.Niche).ToList(), enchantment, 1, prefs)).FirstOrDefault();
+        if (card == null)
+            return;
+        CardCmd.Enchant<Smokey>(card, 1M);
+        var child = NCardEnchantVfx.Create(card);
+        if (child == null)
+            return;
+        var instance = NRun.Instance;
+        if (instance == null)
+            return;
+        instance.GlobalUi.CardPreviewContainer.AddChildSafely(child);
     }
 }

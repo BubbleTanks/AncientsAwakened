@@ -19,9 +19,9 @@ public class WhisperingTendrils : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(10), new ("InsanityCount", 2)];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<Lunacy>(true);
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<Lunacy>(true).Concat(HoverTipFactory.FromCardWithCardHoverTips<Insanity>());
     
     public override async Task AfterObtained()
     {
@@ -34,7 +34,7 @@ public class WhisperingTendrils : AncientsAwakenedRelic
         {
             cardSelection.Add(ModelDb.Card<Lunacy>().ToMutable());
         }
-
+        
         List<CardPileAddResult> results = [];
         foreach (CardModel _ in await CardSelectCmd.FromSimpleGrid(new BlockingPlayerChoiceContext(),
                      cardSelection, Owner, prefs))
@@ -43,7 +43,14 @@ public class WhisperingTendrils : AncientsAwakenedRelic
             CardCmd.Upgrade(c.cardAdded, CardPreviewStyle.None);
             results.Add(c);
         }
+        List<CardPileAddResult> curseResults = [];
+        for (var i = 0; i < results.Count / DynamicVars["InsanityCount"].IntValue; i++)
+        {
+            curseResults.Add(await CardPileCmd.Add(Owner.RunState.CreateCard(ModelDb.Card<Insanity>(), Owner), PileType.Deck));
+        }
         CardCmd.PreviewCardPileAdd(results, 2f);
+        await Cmd.Wait(0.75f);
+        CardCmd.PreviewCardPileAdd(curseResults, 2f);
         await Cmd.Wait(0.75f);
     }
 }

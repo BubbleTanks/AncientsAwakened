@@ -31,7 +31,8 @@ public class CollectOption : RestSiteOption, ICustomModel
     
     public override async Task<bool> OnSelect()
     {
-        var result = await CardPileCmd.Add(ModelDb.Card<Starshine>().ToMutable(), PileType.Deck);
+        var card = Owner.RunState.CreateCard<Starshine>(Owner);
+        var result = await CardPileCmd.Add(card, PileType.Deck);
         CardCmd.PreviewCardPileAdd(result);
         return true;
     }

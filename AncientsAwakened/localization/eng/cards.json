@@ -97,7 +97,7 @@
   "ANCIENTSAWAKENED-POWER_CHOICE.title": "Power",
 
   "ANCIENTSAWAKENED-ENERGY_CHOICE.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
-  "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "Life",
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "Inspiration",
 
   "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "Permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
   "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "Guidance"

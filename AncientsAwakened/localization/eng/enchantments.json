@@ -10,6 +10,10 @@
   "ANCIENTSAWAKENED-CHARMED.title": "Charmed",
 
   
+  "ANCIENTSAWAKENED-SMOKEY.description": "This card does not [gold]Exhaust[/gold] the first time you play it.",
+  "ANCIENTSAWAKENED-SMOKEY.title": "Candlelit",
+  
+  
   "ANCIENTSAWAKENED-CELESTIAL.description": "Gain {Amount:energyIcons()}.",
   "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Gain {Amount:energyIcons()}.",
   "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial"
