@@ -12,7 +12,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 [Pool(typeof(EventCardPool))]
 public class EnergyChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
 {
-    public const int EnergyValue = 2;
+    public const int EnergyValue = 1;
     public const int DrawValue = 2;
     public const int DrawUpgrade = 1;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(EnergyValue), new CardsVar(DrawValue)];
@@ -23,14 +23,14 @@ public class EnergyChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarit
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await OnChosen();
+        await OnChosen(choiceContext);
     }
 
     protected override void OnUpgrade() => DynamicVars.Cards.UpgradeValueBy(DrawUpgrade);
 
-    public async Task OnChosen()
+    public async Task OnChosen(PlayerChoiceContext choiceContext)
     {
         await PlayerCmd.GainEnergy(DynamicVars.Energy.BaseValue, Owner);
-        await CardPileCmd.Draw(new HookPlayerChoiceContext(Owner, Owner.NetId, GameActionType.Combat), DynamicVars.Cards.BaseValue, Owner);
+        await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.BaseValue, Owner);
     }
 }

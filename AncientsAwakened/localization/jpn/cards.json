@@ -55,5 +55,15 @@
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "宇宙の塵",
   "ANCIENTSAWAKENED-LUNACY.description": "[gold]手札[/gold]のランダムなカード1枚のコストを、この戦闘中0にする。",
-  "ANCIENTSAWAKENED-LUNACY.title": "狂気"
+  "ANCIENTSAWAKENED-LUNACY.title": "狂気",
+  "ANCIENTSAWAKENED-INSANITY.description": "[gold]手札[/gold]のランダムなカード1枚のコストを、この戦闘中{Energy:energyIcons()}増加させる。\nカードを{Cards:diff()}{Cards:plural:枚|枚}引く。",
+  "ANCIENTSAWAKENED-INSANITY.title": "異形の錯乱",
+  "ANCIENTSAWAKENED-STARSHINE.description": "1つ選択。「[gold]筋力[/gold]を{StrengthPower:diff()}得る」「{Energy:energyIcons()}を得てカードを{Cards:diff()}{Cards:plural:枚|枚}引く」「戦闘後に[gold]デッキ[/gold]のカードを1枚永続的に[gold]アップグレード[/gold]する」",
+  "ANCIENTSAWAKENED-STARSHINE.title": "星明かり",
+  "ANCIENTSAWAKENED-POWER_CHOICE.description": "[gold]筋力[/gold]を{StrengthPower:diff()}得る。",
+  "ANCIENTSAWAKENED-POWER_CHOICE.title": "力",
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.description": "{Energy:energyIcons()}を得る。\nカードを{Cards:diff()}{Cards:plural:枚|枚}引く。",
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "ひらめき",
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "戦闘後に[gold]デッキ[/gold]のカードを1枚永続的に[gold]アップグレード[/gold]する。",
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "導き"
 }

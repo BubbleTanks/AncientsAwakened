@@ -4,5 +4,8 @@
   "OPTION_ANCIENTSAWAKENED-VIAL.descriptionHpDisabled": "[red]変化させるのに十分なHPがありません。[/red]",
   "OPTION_ANCIENTSAWAKENED-VIAL.name": "突然変異",
   "OPTION_ANCIENTSAWAKENED-PROSPECT.description": "[gold]ゴールド[/gold]を250〜300得る。",
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "採掘"
+  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "採掘",
+
+  "OPTION_ANCIENTSAWAKENED-COLLECT.description": "[gold]星明かり[/gold]を[blue]1[/blue]枚[gold]デッキ[/gold]に加える。",
+  "OPTION_ANCIENTSAWAKENED-COLLECT.name": "収集"
 }

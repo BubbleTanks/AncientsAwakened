@@ -3,6 +3,7 @@ using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -17,7 +18,7 @@ public class Starshine() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(PowerChoice.StrengthValue), new EnergyVar(EnergyChoice.EnergyValue), new CardsVar(EnergyChoice.DrawValue)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Exhaust", PowerChoice.ExhaustValue), new EnergyVar(EnergyChoice.EnergyValue), new CardsVar(EnergyChoice.DrawValue)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     //protected override IEnumerable<IHoverTip> ExtraHoverTips => CardOptions.SelectMany(card => card.HoverTips);
@@ -28,7 +29,7 @@ public class Starshine() : AncientsAwakenedCard(0,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        var cardModel = await CardSelectCmd.FromChooseACardScreen(new BlockingPlayerChoiceContext(),  CardOptions.Select(c =>
+        var cardModel = await CardSelectCmd.FromChooseACardScreen(choiceContext,  CardOptions.Select(c =>
         {
             CardModel card = CombatState.CreateCard(c, Owner);
             if(IsUpgraded) CardCmd.Upgrade(card);
@@ -36,17 +37,17 @@ public class Starshine() : AncientsAwakenedCard(0,
         }).ToList(), Owner);
         if (cardModel == null)
             return;
-        await ((ICardChoice) cardModel).OnChosen();
+        await ((ICardChoice) cardModel).OnChosen(choiceContext);
     }
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Power<StrengthPower>().UpgradeValueBy(PowerChoice.StrengthUpgrade);
+        DynamicVars["Exhaust"].UpgradeValueBy(PowerChoice.ExhaustUpgrade);
         DynamicVars.Cards.UpgradeValueBy(EnergyChoice.DrawUpgrade);
     }
     
     public interface ICardChoice
     {
-        Task OnChosen();
+        Task OnChosen(PlayerChoiceContext context);
     }
 }

@@ -1,7 +1,9 @@
 ﻿using BaseLib.Extensions;
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
@@ -13,27 +15,35 @@ using MegaCrit.Sts2.Core.Random;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
 [Pool(typeof(EventCardPool))]
-public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
+public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
 {
-    public const int StrengthValue = 4;
-    public const int StrengthUpgrade = 1;
+    public const int ExhaustValue = 3;
+    public const int ExhaustUpgrade = 1;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<StrengthPower>(StrengthValue)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(ExhaustValue)];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<StrengthPower>()];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await OnChosen();
+        await OnChosen(choiceContext);
     }
 
-    protected override void OnUpgrade() => DynamicVars.Strength.UpgradeValueBy(StrengthUpgrade);
+    protected override void OnUpgrade() => DynamicVars.Cards.UpgradeValueBy(ExhaustUpgrade);
 
-    public async Task OnChosen()
+    public async Task OnChosen(PlayerChoiceContext context)
     {
-        await CreatureCmd.TriggerAnim(Owner.Creature, "PowerUp", Owner.Character.PowerUpAnimDelay);
-        await PowerCmd.Apply<StrengthPower>(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.Power<StrengthPower>().BaseValue, Owner.Creature, this); 
+        var cards = await CardSelectCmd.FromCombatPile(
+            context, PileType.Draw.GetPile(Owner), Owner,
+            new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, DynamicVars.Cards.IntValue)
+            {
+                Cancelable = true
+            });
+        if (cards == null)
+            return;
+        foreach(var card in cards)
+            await CardCmd.Exhaust(context, card);
     }
 }

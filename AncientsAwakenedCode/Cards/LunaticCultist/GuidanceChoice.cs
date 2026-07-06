@@ -18,12 +18,12 @@ public class GuidanceChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRar
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        await OnChosen();
+        await OnChosen(choiceContext);
     }
 
-    public async Task OnChosen()
+    public async Task OnChosen(PlayerChoiceContext choiceContext)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "PowerUp", Owner.Character.PowerUpAnimDelay);
-        await PowerCmd.Apply<GuidancePower>(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.Power<GuidancePower>().BaseValue, Owner.Creature, this); 
+        await PowerCmd.Apply<GuidancePower>(choiceContext, Owner.Creature, DynamicVars.Power<GuidancePower>().BaseValue, Owner.Creature, this); 
     }
 }
