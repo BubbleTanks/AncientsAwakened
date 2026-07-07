@@ -17,8 +17,8 @@ namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 [Pool(typeof(EventCardPool))]
 public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
 {
-    public const int ExhaustValue = 3;
-    public const int ExhaustUpgrade = 1;
+    public const int ExhaustValue = 4;
+    public const int ExhaustUpgrade = 2;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(ExhaustValue)];
     

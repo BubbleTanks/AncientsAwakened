@@ -21,7 +21,7 @@ public class Starshine() : AncientsAwakenedCard(0,
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Exhaust", PowerChoice.ExhaustValue), new EnergyVar(EnergyChoice.EnergyValue), new CardsVar(EnergyChoice.DrawValue)];
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
-    //protected override IEnumerable<IHoverTip> ExtraHoverTips => CardOptions.SelectMany(card => card.HoverTips);
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => CardOptions.SelectMany(card => card.HoverTips);
 
     private static readonly IEnumerable<CardModel> CardOptions = [ModelDb.Card<PowerChoice>(), ModelDb.Card<EnergyChoice>(), ModelDb.Card<GuidanceChoice>()];
 
