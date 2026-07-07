@@ -40,8 +40,12 @@ Art not listed were either made by us or commissioned specifically for this mod.
 
 *Lunatic Cultist Ancient Art* by **Bohrokki**   
 *Lunatic Cultist Lunacy Full-Art Card Art* by **Bohrokki**   
+Lunatic Cultist Eldritch Madness Full-Art Card Art by **TrazhDeath**     
 *Lunatic Cultist Lunatic Ritual Full-Art Card Art* by **Shork777**  
-
+_Lunatic Cultist Starshine Card Full-Art Card Art_ by **Mike Cerveni**    
+_Lunatic Cultist Destruction Card Full-Art Card Art_ **Kristian Tsvetanov**    
+_Lunatic Cultist Inspiration Card Full-Art Card Art_ by **u/LLS86** on Reddit    
+_Lunatic Cultist Guidance Card Full-Art Card Art_ by **PaulaLoomis**    
 ### Commissions
 
 **starstruck\_venus** for Mithrix's, \& Sebastian's Map Icon \& Dialogue Icon
