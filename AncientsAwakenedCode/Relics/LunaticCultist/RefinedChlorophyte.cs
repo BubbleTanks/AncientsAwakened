@@ -16,7 +16,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 [Pool(typeof(EventRelicPool))]
 public class RefinedChlorophyte : AncientsAwakenedRelic
 {
-    private int _platingPower = 4;
+    private int _platingPower = 5;
     
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

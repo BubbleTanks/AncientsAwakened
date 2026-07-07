@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Random;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
-[Pool(typeof(StatusCardPool))]
+[Pool(typeof(EventCardPool))]
 public class Lunacy() : AncientsAwakenedCard(1, CardType.Skill, CardRarity.Ancient, TargetType.None)
 {
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];

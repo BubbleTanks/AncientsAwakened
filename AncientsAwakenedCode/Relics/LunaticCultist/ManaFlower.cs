@@ -21,7 +21,7 @@ public class ManaFlower : AncientsAwakenedRelic
     
     public override bool HasUponPickupEffect => true;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageDecrease", 25M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageDecrease", 15M)];
 
     public override async Task AfterPlayerTurnStart(
         PlayerChoiceContext choiceContext, 
