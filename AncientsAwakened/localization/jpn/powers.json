@@ -2,7 +2,7 @@
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "ターン終了時、もう1ターン行動できる。",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "ターン終了時、もう1ターン行動できる。",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "我が足元に砕けよ",
-  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "劣勢状態のモンスターは、与えるダメージが[blue]15%[/blue]減少し、受けるダメージが[blue]30%[/blue]増加する。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "劣勢状態の敵は、与えるダメージが[blue]15%[/blue]減少し、受けるダメージが[blue]30%[/blue]増加する。",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "[blue]{Amount}[/blue]{Amount:plural:ターン|ターン}の間、与えるダメージが[blue]15%[/blue]減少し、受けるダメージが[blue]30%[/blue]増加する。",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "劣勢",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "スタンした対象は行動できない。",

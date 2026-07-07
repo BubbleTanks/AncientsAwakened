@@ -130,7 +130,8 @@
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "다람쥐처럼 보이도록 그려진 게임용 카드입니다. 가만히 쳐다보고 있으면 마음이 불안해집니다.",
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "병 속의 다람쥐",
 
-  "ANCIENTSAWAKENED-THE_SMOKE.description": "전투에서 처음으로 체력을 잃을 때, 다음 턴에 카드를 [blue]{Cards}[/blue]장 뽑고 {Energy:energyIcons()}를 얻습니다.",
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "획득 시, [gold]소멸[/gold] 효과가 있는 카드 1장에 [purple]촛불[/purple]을 [gold]인챈트[/gold]합니다.",
+  "ANCIENTSAWAKENED-THE_SMOKE.eventDescription": "[gold]소멸[/gold] 효과가 있는 카드 1장에 [purple]촛불[/purple]을 [gold]인챈트[/gold]합니다.",
   "ANCIENTSAWAKENED-THE_SMOKE.flavor": "꺼진 양초에서 피어오른 연기가 유리 안에 보존되어 있습니다. 연기 일부가 밖으로 새어 나와 숨결을 더럽힙니다.",
   "ANCIENTSAWAKENED-THE_SMOKE.title": "연기",
 
@@ -143,7 +144,7 @@
   "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "병 속에서 푸르고 싱그러운 꽃 한 송이가 돋아나 있습니다. 그 존재만으로도 기운이 샘솟는 것 같습니다.",
   "ANCIENTSAWAKENED-MANA_FLOWER.title": "마나 꽃",
 
-  "ANCIENTSAWAKENED-FALLEN_STAR.description": "[blue]{DamageTurn}[/blue]턴 종료 시, 체력이 가장 많은 적에게 피해를 [blue]{Damage}[/blue] 줍니다.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "[gold]휴식 장소[/gold]에서 [gold]수집[/gold]을 할 수 있습니다.",
   "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "하늘에서 추락한 천체의 파편입니다. 이제는 당신의 것이 되었습니다.",
   "ANCIENTSAWAKENED-FALLEN_STAR.title": "타락한 별",
 
@@ -174,8 +175,8 @@
   "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "성단의 족쇄",
 
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "덱에 추가할 카드를 원하는 만큼 선택하십시오.",
-  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "획득 시, [gold]광기+[/gold]를 내 [gold]덱[/gold]에 [blue]{Cards}[/blue]장까지 추가합니다.",
-  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "[gold]광기+[/gold]를 내 [gold]덱[/gold]에 [blue]{Cards}[/blue]장까지 추가합니다.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "획득 시, [gold]덱[/gold]에 [gold]광기+[/gold]를 [blue]{Cards}[/blue]장까지 추가합니다. 추가한 [gold]광기[/gold] 카드 [blue]{InsanityCount}[/blue]장당 [gold]덱[/gold]에 [gold]기괴한 정신이상[/gold] 카드를 [blue]1[/blue]장 추가합니다.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "[gold]덱[/gold]에 [gold]광기+[/gold]를 [blue]{Cards}[/blue]장까지 추가합니다. 추가한 [gold]광기[/gold] 카드 [blue]{InsanityCount}[/blue]장당 [gold]덱[/gold]에 [gold]기괴한 정신이상[/gold] 카드를 [blue]1[/blue]장 추가합니다.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "덩굴 줄기들이 시야를 꿰뚫으며 위대한 환영으로 당신을 유혹합니다. 정신이 점점 희미해지는 것이 느껴집니다.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "속삭이는 덩굴"
 }
