@@ -19,12 +19,12 @@ public class PackRat : AncientsAwakenedRelic
         if (player != Owner || (room != null ? (room.RoomType != RoomType.Elite && room.RoomType != RoomType.Monster ? 1 : 0) : 1) != 0)
             return false;
 
-        int rng = Owner.RunState.Rng.Niche.NextInt(1, 10);
+        int rng = Owner.RunState.Rng.Niche.NextInt(1, 11);
 
         switch (rng)
         {
             case 1 or 2 or 3 or 4:
-                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(10,20), player));
+                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(10,21), player));
                 break;
             case 5 or 6 or 7:
                 rewards.Add(new PotionReward(player));

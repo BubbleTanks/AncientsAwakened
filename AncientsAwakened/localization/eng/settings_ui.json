@@ -9,5 +9,11 @@
   
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "Enable Monsoon Charm in Multiplayer",
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "Multiplayer Monsoon Charm",
-  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "Disabled on default due to griefing potential."
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "Disabled on default due to griefing potential.",
+
+  "ANCIENTSAWAKENED-SEBASTIAN.title": "Sebastian Relic Configs",
+
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.title": "Enable Global Scanner in Multiplayer",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.title": "Global Relics Sebastian's Scanner",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.desc": "Causes Sebastian's Scanner to give relics to all players in multiplayer, regardless of if they have the relic or not."
 }

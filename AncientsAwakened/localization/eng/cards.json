@@ -90,10 +90,10 @@
   "ANCIENTSAWAKENED-INSANITY.description": "Increase the cost of a random card in your [gold]Hand[/gold] by {Energy:energyIcons()} this combat.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-INSANITY.title": "Eldritch Insanity",
 
-  "ANCIENTSAWAKENED-STARSHINE.description": "Choose one:\nExhaust up to {Exhaust:diff()} {Exhaust:plural:card|cards} in your [gold]Draw Pile[/gold], gain {Energy:energyIcons()} and draw {Cards:diff()} {Cards:plural:card|cards}, or permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
+  "ANCIENTSAWAKENED-STARSHINE.description": "Choose one:\n[gold]Exhaust[/gold] up to {Exhaust:diff()} {Exhaust:plural:card|cards} in your [gold]Draw Pile[/gold], gain {Energy:energyIcons()} and draw {Cards:diff()} {Cards:plural:card|cards}, or permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
   "ANCIENTSAWAKENED-STARSHINE.title": "Starshine",
 
-  "ANCIENTSAWAKENED-POWER_CHOICE.description": "Exhaust up to {Cards:diff()} {Cards:plural:card|cards} in your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-POWER_CHOICE.description": "[gold]Exhaust[/gold] up to {Cards:diff()} {Cards:plural:card|cards} in your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-POWER_CHOICE.title": "Destruction",
 
   "ANCIENTSAWAKENED-ENERGY_CHOICE.description": "Gain {Energy:energyIcons()}.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",

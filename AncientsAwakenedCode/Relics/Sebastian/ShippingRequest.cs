@@ -79,7 +79,7 @@ public class ShippingRequest : AncientsAwakenedRelic
         {
             for (int i = 0; i < RewardAmount; i++)
             {
-                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,300), player));
+                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,301), player));
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new RelicReward(RelicRarity.Common, player));

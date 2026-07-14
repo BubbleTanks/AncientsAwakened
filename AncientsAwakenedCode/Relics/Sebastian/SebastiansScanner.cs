@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -128,7 +129,7 @@ public class SebastiansScanner : AncientsAwakenedRelic
   public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
   {
     List<MapCoord> markedCoords = GetMarkedCoords();
-    if (markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord) || player.Relics.All(r => r.Id != Id))
+    if (markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord) || (player.Relics.All(r => r.Id != Id) && !AncientConfigs.MultiplayerOpScanner))
       return false;
     rewards.Add(new RelicReward(player));
     return true;
