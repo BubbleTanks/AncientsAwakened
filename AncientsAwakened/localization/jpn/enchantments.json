@@ -1,5 +1,5 @@
 {
-  "ANCIENTSAWAKENED-MASS.description": "戦闘中1回のみ、このカードのコストは {energyPrefix:energyIcons(1)} 少なくなる。",
+  "ANCIENTSAWAKENED-MASS.description": "戦闘中1回のみ、このカードのコストは{energyPrefix:energyIcons(1)}少なくなる。",
   "ANCIENTSAWAKENED-MASS.title": "質量",
   "ANCIENTSAWAKENED-DESIGN.description": "[gold]リプレイ[/gold][blue]1[/blue]を得る。",
   "ANCIENTSAWAKENED-DESIGN.title": "設計",
