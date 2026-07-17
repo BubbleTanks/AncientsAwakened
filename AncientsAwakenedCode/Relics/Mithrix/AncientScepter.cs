@@ -143,9 +143,9 @@ public class AncientScepter : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        IEnumerable<CardTransformation> transformations = PileType.Deck.GetPile(Owner).Cards.Where(c => c.IsBasicStrikeOrDefend && c.IsRemovable).ToList()
+        var transformations = PileType.Deck.GetPile(Owner).Cards.Where(c => c.IsBasicStrikeOrDefend && c.IsRemovable).ToList()
             .Select(c => new CardTransformation(c, GetPerfectedTransformedCard(c)));
-        List<CardPileAddResult> list = (await CardCmd.Transform(transformations, null, CardPreviewStyle.None)).ToList();
+        var list = (await CardCmd.Transform(transformations, null, CardPreviewStyle.None)).ToList();
         if (list.Count > 0 && LocalContext.IsMe(Owner))
         {
             NSimpleCardsViewScreen.ShowScreen(list, new LocString("relics", "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText"));
@@ -187,7 +187,7 @@ public class AncientScepter : AncientsAwakenedRelic
         }
         if (starterCard.Enchantment != null)
         {
-            EnchantmentModel enchantmentModel = (EnchantmentModel)starterCard.Enchantment.MutableClone();
+            var enchantmentModel = (EnchantmentModel)starterCard.Enchantment.MutableClone();
             CardCmd.Enchant(enchantmentModel, cardModel, enchantmentModel.Amount);
         }
         return cardModel;
@@ -252,14 +252,14 @@ public class AncientScepter : AncientsAwakenedRelic
         _extraHoverTips.Clear();
         if (StrikeCard != null)
         {
-            CardModel card = CardModel.FromSerializable(StrikeCard);
+            var card = CardModel.FromSerializable(StrikeCard);
             _extraHoverTips.AddRange(card.HoverTips);
             _extraHoverTips.Add(HoverTipFactory.FromCard(card));
             ((StringVar)DynamicVars[_perfectedPrefixKey]).StringValue = GetPrefixString(card.Title);
         }
         if (DefendCard != null)
         {
-            CardModel card = CardModel.FromSerializable(DefendCard);
+            var card = CardModel.FromSerializable(DefendCard);
             _extraHoverTips.AddRange(card.HoverTips);
             _extraHoverTips.Add(HoverTipFactory.FromCard(card));
             ((StringVar)DynamicVars[_perfectedPrefixKey]).StringValue = GetPrefixString(card.Title);
@@ -271,7 +271,7 @@ public class AncientScepter : AncientsAwakenedRelic
     /// Please keep in mind that the space will be included in the replacement card titles to avoid possible localization issues.
     /// Reflect this in the Ancient Scepter's description.
     /// </summary>
-    private String GetPrefixString(String title)
+    private static string GetPrefixString(string title)
     {
         var strikeTitle = new LocString("cards", "STRIKE_IRONCLAD.title").GetFormattedText();
         var defendTitle = new LocString("cards", "DEFEND_IRONCLAD.title").GetFormattedText();

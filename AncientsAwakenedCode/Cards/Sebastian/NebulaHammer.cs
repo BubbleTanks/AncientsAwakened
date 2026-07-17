@@ -27,10 +27,12 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
         await ForgeCmd.Forge(DynamicVars.Forge.IntValue, Owner, this);
     }
     
-    protected override (PileType, CardPilePosition) GetResultPileTypeAndPositionForCardPlay()
+    protected override CardLocation GetResultLocationForCardPlay()
     {
-        (PileType pileType, CardPilePosition cardPilePosition) = base.GetResultPileTypeAndPositionForCardPlay();
-        return pileType == PileType.Discard ? (PileType.Hand, CardPilePosition.Bottom) : (pileType, cardPilePosition);
+        var location = base.GetResultLocationForCardPlay();
+        if (location.pileType == PileType.Discard)
+            location.pileType = PileType.Hand;
+        return location;
     }
 
     protected override void OnUpgrade()

@@ -15,6 +15,7 @@ public class Insanity() : AncientsAwakenedCard(0, CardType.Curse, CardRarity.Cur
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(2), new CardsVar(1)];
     public override int MaxUpgradeLevel => 0;
+    public override bool CanBeGeneratedByModifiers => false;
     
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,

@@ -77,8 +77,8 @@ public class SebastiansScanner : AncientsAwakenedRelic
   {
     if (Owner.RunState.CurrentActIndex != SebastiansScannerActIndex)
       return map;
-    List<MapCoord> markedCoords = GetMarkedCoords();
-    bool flag1 = markedCoords == null;
+    var markedCoords = GetMarkedCoords();
+    var flag1 = markedCoords == null;
     if (!flag1)
       flag1 = !markedCoords.TrueForAll(c =>
       {
@@ -88,8 +88,8 @@ public class SebastiansScanner : AncientsAwakenedRelic
       });
     if (flag1)
     {
-      Rng rng = new Rng((uint) ((int) Owner.RunState.Rng.Seed + (int) (uint) Owner.NetId + StringHelper.GetDeterministicHashCode(nameof (SebastiansScanner))));
-      List<MapPoint> list1 = map.GetAllMapPoints().Where((p =>
+      var rng = new Rng(Owner, Id);
+      var list1 = map.GetAllMapPoints().Where(p =>
       {
         bool flag2;
         switch (p.PointType)
@@ -103,24 +103,24 @@ public class SebastiansScanner : AncientsAwakenedRelic
             break;
         }
         return flag2 && !p.Quests.Any(q => q is SebastiansScanner);
-      })).ToList();
+      }).ToList();
       list1.UnstableShuffle(rng);
-      int intValue = DynamicVars[_combatsKey].IntValue;
-      List<MapPoint> list2 = list1.Take(intValue).ToList();
+      var intValue = DynamicVars[_combatsKey].IntValue;
+      var list2 = list1.Take(intValue).ToList();
       SebastiansScannerCoordCols = new int[list2.Count];
       SebastiansScannerCoordRows = new int[list2.Count];
-      for (int index = 0; index < list2.Count; ++index)
+      for (var index = 0; index < list2.Count; ++index)
       {
         SebastiansScannerCoordCols[index] = list2[index].coord.col;
         SebastiansScannerCoordRows[index] = list2[index].coord.row;
       }
       SebastiansScannerCoordsSet = true;
-      foreach (MapPoint mapPoint in list2)
+      foreach (var mapPoint in list2)
         mapPoint.AddQuest(this);
     }
     else
     {
-      foreach (MapCoord coord in markedCoords)
+      foreach (var coord in markedCoords)
         (map.GetPoint(coord) ?? throw new InvalidOperationException($"Loaded a scanner map with coordinate {coord}, but the generated map does not contain that coordinate!")).AddQuest((AbstractModel) this);
     }
     return map;
@@ -128,7 +128,7 @@ public class SebastiansScanner : AncientsAwakenedRelic
 
   public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
   {
-    List<MapCoord> markedCoords = GetMarkedCoords();
+    var markedCoords = GetMarkedCoords();
     if (markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord) || (player.Relics.All(r => r.Id != Id) && !AncientConfigs.MultiplayerOpScanner))
       return false;
     rewards.Add(new RelicReward(player));
