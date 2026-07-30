@@ -27,7 +27,7 @@ public class SolarBrazier : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.RemoveSelectionPrompt, DynamicVars.Cards.IntValue);
+        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.RemoveSelectionPrompt, 0, DynamicVars.Cards.IntValue);
         foreach (CardModel card in await CardSelectCmd.FromDeckForRemoval(Owner, prefs))
             await CardPileCmd.RemoveFromDeck(card);
     }

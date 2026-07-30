@@ -167,7 +167,7 @@
   "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
   "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
 
-  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of your turn, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that's free to play this turn, and shuffle [blue]{Status}[/blue] [gold]Cosmic Dusts[/gold] into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of each combat, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that are free to play this turn, and shuffle [blue]{Status}[/blue] [gold]Cosmic Dusts[/gold] into your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
   "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome",
 

@@ -6,7 +6,7 @@
   "ANCIENTSAWAKENED-DESIGN.title": "Design",
 
   
-  "ANCIENTSAWAKENED-CHARMED.description": "This card gains [gold]Replay[/gold] [blue]1[/blue].",
+  "ANCIENTSAWAKENED-CHARMED.description": "This card gains [gold]Replay[/gold] [blue]1[/blue]. It costs an extra {Energy:energyIcons()}.",
   "ANCIENTSAWAKENED-CHARMED.title": "Charmed",
 
   

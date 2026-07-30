@@ -1,5 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
@@ -39,9 +38,9 @@ public class WhisperingTendrils : AncientsAwakenedRelic
         foreach (CardModel _ in await CardSelectCmd.FromSimpleGrid(new BlockingPlayerChoiceContext(),
                      cardSelection, Owner, prefs))
         {
-            var c = await CardPileCmd.Add(Owner.RunState.CreateCard(ModelDb.Card<Lunacy>(), Owner), PileType.Deck);
-            CardCmd.Upgrade(c.cardAdded, CardPreviewStyle.None);
-            results.Add(c);
+            var c = Owner.RunState.CreateCard(ModelDb.Card<Lunacy>(), Owner);
+            CardCmd.Upgrade(c, CardPreviewStyle.None);
+            results.Add(await CardPileCmd.Add(c, PileType.Deck));
         }
         List<CardPileAddResult> curseResults = [];
         for (var i = 0; i < results.Count / DynamicVars["InsanityCount"].IntValue; i++)

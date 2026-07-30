@@ -57,7 +57,7 @@ public class NebulaTome : AncientsAwakenedRelic
         PlayerChoiceContext choiceContext,
         ICombatState combatState)
     {
-        if (player != Owner)
+        if (player != Owner || Owner.PlayerCombatState.TurnNumber != 1)
             return;
         for (int i = 0; i < DynamicVars["Status"].BaseValue; ++i)
             CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(Owner.Creature.CombatState.CreateCard<CosmicDust>(Owner), PileType.Draw, Owner, CardPilePosition.Random));
