@@ -6,11 +6,14 @@ using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
+using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Afflictions;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
 
@@ -52,5 +55,23 @@ public class StardustShackles : AncientsAwakenedRelic
         if (affliction == null || card.Keywords.Contains(CardKeyword.Unplayable))
             return;
         CardCmd.ApplyKeyword(card, CardKeyword.Unplayable);
+    }
+    
+    public override Task AfterSideTurnEnd(
+        PlayerChoiceContext choiceContext,
+        CombatSide side,
+        IEnumerable<Creature> participants)
+    {
+        if (!participants.Contains(Owner.Creature))
+            return Task.CompletedTask;
+        var cards = Owner.PlayerCombatState?.AllCards ?? [];
+        foreach (var card in cards)
+        {
+            if (card.Affliction is not Shackled) continue;
+            
+            CardCmd.ClearAffliction(card);
+            CardCmd.RemoveKeyword(card, CardKeyword.Unplayable);
+        }
+        return Task.CompletedTask;
     }
 }
