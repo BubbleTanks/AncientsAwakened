@@ -30,7 +30,7 @@ public class EmpoweredStrike() : AncientsAwakenedCard(0,
     {
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, play).Targeting(play.Target).WithHitCount(DynamicVars.Repeat.IntValue).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
         await OrbCmd.Channel<GlassOrb>(choiceContext, Owner);
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(CombatState.CreateCard<Dazed>(Owner), PileType.Hand, Owner));
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(CombatState.CreateCard<Dazed>(Owner), PileType.Draw, Owner));
     }
 
     protected override void OnUpgrade()

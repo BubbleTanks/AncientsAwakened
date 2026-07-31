@@ -47,7 +47,7 @@ public class SebastiansScanner : AncientsAwakenedRelic
   [SavedProperty]
   private bool SebastiansScannerCoordsSet { get; set; }
 
-  protected override IEnumerable<DynamicVar> CanonicalVars => [new(_combatsKey, 10M)];
+  protected override IEnumerable<DynamicVar> CanonicalVars => [new(_combatsKey, 6M)];
 
   public SebastiansScanner()
   {

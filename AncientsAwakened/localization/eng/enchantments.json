@@ -14,7 +14,7 @@
   "ANCIENTSAWAKENED-SMOKEY.title": "Candlelit",
   
   
-  "ANCIENTSAWAKENED-CELESTIAL.description": "Gain {Amount:energyIcons()}.",
-  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Gain {Amount:energyIcons()}.",
+  "ANCIENTSAWAKENED-CELESTIAL.description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial"
 }
