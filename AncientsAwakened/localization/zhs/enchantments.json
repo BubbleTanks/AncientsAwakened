@@ -1,0 +1,13 @@
+{
+  "ANCIENTSAWAKENED-CELESTIAL.description": "抽[blue]{Cards}[/blue]张{Cards:plural:牌|牌}。",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "抽[blue]{Cards}[/blue]张{Cards:plural:牌|牌}。",
+  "ANCIENTSAWAKENED-CELESTIAL.title": "星界",
+  "ANCIENTSAWAKENED-CHARMED.description": "这张牌获得[gold]重放[/gold]1，耗能增加{Energy:energyIcons()}。",
+  "ANCIENTSAWAKENED-CHARMED.title": "迷醉",
+  "ANCIENTSAWAKENED-DESIGN.description": "这张牌获得[gold]重放[/gold]1",
+  "ANCIENTSAWAKENED-DESIGN.title": "设计",
+  "ANCIENTSAWAKENED-MASS.description": "这张卡牌每场战斗耗能可减少{energyPrefix:energyIcons(1)}一次。",
+  "ANCIENTSAWAKENED-MASS.title": "质量",
+  "ANCIENTSAWAKENED-SMOKEY.description": "首次打出这张卡牌时，不会使其[gold]消耗[/gold]。",
+  "ANCIENTSAWAKENED-SMOKEY.title": "烛光"
+}

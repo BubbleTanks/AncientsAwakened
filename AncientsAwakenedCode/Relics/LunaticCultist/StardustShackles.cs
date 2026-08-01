@@ -68,9 +68,9 @@ public class StardustShackles : AncientsAwakenedRelic
         foreach (var card in cards)
         {
             if (card.Affliction is not Shackled) continue;
-            
             CardCmd.ClearAffliction(card);
-            CardCmd.RemoveKeyword(card, CardKeyword.Unplayable);
+            if(!card.CanonicalKeywords.Contains(CardKeyword.Unplayable))
+                CardCmd.RemoveKeyword(card, CardKeyword.Unplayable);
         }
         return Task.CompletedTask;
     }

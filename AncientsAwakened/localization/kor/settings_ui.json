@@ -10,10 +10,4 @@
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "멀티플레이에서 몬순의 부적 활성화",
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "멀티플레이용 몬순의 부적",
   "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "고의 트롤의 소지가 있어 기본적으로 비활성화되어 있습니다."
-
-  "ANCIENTSAWAKENED-SEBASTIAN.title": "세바스찬 유물 설정",
-
-  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.title": "멀티플레이어에서 스캐너 전체 공유 활성화",
-  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.title": "세바스찬의 스캐너 전체 공유",
-  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.desc": "멀티플레이어에서 세바스찬의 스캐너가 작동할 때, 모든 플레이어가 해당 유물의 소지 여부와 관계없이 유물을 획득하도록 합니다."
 }
