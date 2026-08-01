@@ -11,10 +11,12 @@ CrypticAurora \& SoyTheProton (Plus assistance from #sts2-modding)
 ***No generative AI of any sort was used in the making of this mod.***
 
 # Localization
+Translation is handled entirely from volunteers who are willing to work with us to make our mod more accessible for the public. We are not responsible or liable to update, modify, or verify any translated content.
 
-**Korean Localization** from **F\_iS\_ma**
+Korean Localization from F_iS_ma    
+Japanese Localization from Sashimi_knife    
+Simplified Chinese Localization from youyihj    
 
-**Japanese Localization** from **Sashimi\_knife**
 
 # Art Credits
 
