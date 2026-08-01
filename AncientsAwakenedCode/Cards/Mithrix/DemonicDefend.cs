@@ -18,7 +18,7 @@ public class DemonicDefend() : AncientsAwakenedCard(1,
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
     
     public override bool GainsBlock => true;
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(12, ValueProp.Move), new HpLossVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(9, ValueProp.Move), new HpLossVar(1)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 
@@ -33,6 +33,6 @@ public class DemonicDefend() : AncientsAwakenedCard(1,
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Block.UpgradeValueBy(6M);
+        DynamicVars.Block.UpgradeValueBy(3M);
     }
 }

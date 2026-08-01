@@ -1,0 +1,20 @@
+{
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "在你的回合结束时，进行一次额外回合。",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "在你的回合结束时，进行额外一次回合。",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "足下崩裂",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "处于弱势的生物造成的攻击伤害降低[blue]15%[/blue]，且受到的攻击伤害增加[blue]30%[/blue]。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "[blue]{Amount}[/blue]{Amount:plural:回合|回合}内，造成的攻击伤害降低[blue]15%[/blue]，受到的攻击伤害提高[blue]30%[/blue]。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "弱势",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.description": "战斗结束时，[gold]升级[/gold]你[gold]牌组[/gold]中的一张卡牌。",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.smartDescription": "战斗结束时，[gold]升级[/gold]你[gold]牌组[/gold]中的[blue]{Amount}[/blue]张{Amount:plural:牌|牌}。",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "指引",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "在你的回合开始时，对所有敌人造成伤害。",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "在你的回合开始时，对所有敌人造成[blue]{Amount}[/blue]点伤害。",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "疯狂仪式",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "处于击晕状态的生物无法行动。",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:下一回合|下[blue]{}[/blue]回合}，该生物被[gold]击晕[/gold]。",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "下回合击晕",
+  "ANCIENTSAWAKENED-VORTEX_POWER.description": "攻击造成的伤害提高[blue]10%[/blue]。",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "攻击造成的伤害增加[blue]{Amount}%[/blue]。",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "漩涡"
+}

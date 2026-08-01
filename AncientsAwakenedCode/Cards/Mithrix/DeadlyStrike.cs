@@ -21,7 +21,7 @@ public class DeadlyStrike() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<PoisonPower>()];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move),new PowerVar<PoisonPower>(4)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move),new PowerVar<PoisonPower>(2)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Sly];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];
     
@@ -36,6 +36,5 @@ public class DeadlyStrike() : AncientsAwakenedCard(1,
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(3M);
-        DynamicVars.Poison.UpgradeValueBy(2M);
     }
 }

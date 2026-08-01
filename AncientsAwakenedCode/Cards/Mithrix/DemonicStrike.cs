@@ -36,6 +36,5 @@ public class DemonicStrike() : AncientsAwakenedCard(1,
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(3M);
-        DynamicVars.Vulnerable.UpgradeValueBy(1M);
     }
 }

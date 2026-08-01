@@ -37,7 +37,7 @@ public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity
     {
         var cards = await CardSelectCmd.FromCombatPile(
             context, PileType.Draw.GetPile(Owner), Owner,
-            new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, DynamicVars.Cards.IntValue)
+            new CardSelectorPrefs(CardSelectorPrefs.ExhaustSelectionPrompt, 0, DynamicVars.Cards.IntValue)
             {
                 Cancelable = true
             });

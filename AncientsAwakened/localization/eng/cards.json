@@ -29,7 +29,7 @@
   "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]Summon[/gold] {Summon:diff()}.\nAdd a [gold]{IfUpgraded:show:Soul+|Soul}[/gold] into your draw pile.",
   "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "Ruinous Defend",
   
-  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Channel[/gold] 1 [gold]Glass[/gold].\nAdd a [gold]Dazed[/gold] into your hand.",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Deal {Damage:diff()} damage {Repeat:diff()} times.\n[gold]Channel[/gold] 1 [gold]Glass[/gold].\nAdd a [gold]Dazed[/gold] into your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "Empowered Strike",
   
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Gain {Block:diff()} [gold]Block[/gold].\n[gold]Channel[/gold] 1 [gold]Frost[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
