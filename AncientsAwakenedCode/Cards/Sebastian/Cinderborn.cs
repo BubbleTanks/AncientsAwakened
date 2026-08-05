@@ -1,4 +1,5 @@
-﻿using BaseLib.Utils;
+﻿using AncientsAwakened.AncientsAwakenedCode.Utils;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -23,7 +24,7 @@ public class Cinderborn() : AncientsAwakenedCard(2,
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
-            await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, play);
+            await CompatabilityUtils.CreatureCmd_.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, play);
         if(Owner.Creature.CurrentHp > 0) await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
     }
 

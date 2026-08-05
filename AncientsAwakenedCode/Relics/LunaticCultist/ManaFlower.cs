@@ -39,17 +39,16 @@ public class ManaFlower : AncientsAwakenedRelic
             await potion.OnUseWrapper(choiceContext, Owner.Creature);
     }
     
-    public override Decimal ModifyDamageMultiplicative(
+    public override decimal ModifyDamageMultiplicative(
         Creature? target,
         Decimal amount,
         ValueProp props,
         Creature? dealer,
-        CardModel? cardSource,
-        CardPlay? _)
+        CardModel? cardSource)
     {
         if (dealer != Owner.Creature || !props.IsPoweredAttack())
             return 1M;
-        Decimal amount1 = 1.0M - (DynamicVars["DamageDecrease"].BaseValue / 100M);
+        var amount1 = 1.0M - (DynamicVars["DamageDecrease"].BaseValue / 100M);
         return amount1;
     }
 }

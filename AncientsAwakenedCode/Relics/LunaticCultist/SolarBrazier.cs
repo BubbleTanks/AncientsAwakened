@@ -1,4 +1,5 @@
-﻿using BaseLib.Utils;
+﻿using AncientsAwakened.AncientsAwakenedCode.Utils;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -40,6 +41,6 @@ public class SolarBrazier : AncientsAwakenedRelic
         if (!participants.Contains(Owner.Creature))
             return;
         Flash();
-        await CreatureCmd.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.Damage, Owner.Creature, null, null);
+        await CompatabilityUtils.CreatureCmd_.Damage(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.Damage, Owner.Creature, null, null);
     }
 }

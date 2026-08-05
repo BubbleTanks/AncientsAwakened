@@ -16,8 +16,7 @@ public class VortexPower : AncientsAwakenedPower
         Decimal amount,
         ValueProp props,
         Creature? dealer,
-        CardModel? cardSource,
-        CardPlay? _)
+        CardModel? cardSource)
     {
         if (dealer != Owner || !props.IsPoweredAttack())
             return 1M;

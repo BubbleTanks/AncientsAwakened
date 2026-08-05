@@ -1,7 +1,10 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+using AncientsAwakened.AncientsAwakenedCode.Utils;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
+using MegaCrit.Sts2.Core.Commands.Builders;
 using MegaCrit.Sts2.Core.Entities.Cards;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
@@ -26,9 +29,9 @@ public class DemonicDefend() : AncientsAwakenedCard(1,
         PlayerChoiceContext choiceContext,
         CardPlay play)
     {
-        VfxCmd.PlayOnCreatureCenter(Owner.Creature, "vfx/vfx_bloody_impact");
+        VfxCmd.PlayOnCreatureCenter(Owner.Creature, "vfx/vfx_bloody_impact");   
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, play);
+        await CompatabilityUtils.CreatureCmd_.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, play);
     }
 
     protected override void OnUpgrade()

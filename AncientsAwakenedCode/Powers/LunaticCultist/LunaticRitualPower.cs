@@ -1,4 +1,5 @@
-﻿using Godot;
+﻿using AncientsAwakened.AncientsAwakenedCode.Utils;
+using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
@@ -27,7 +28,7 @@ public class LunaticRitualPower : AncientsAwakenedPower
             if (instance != null)
                 instance.CombatVfxContainer.AddChildSafely((Node) child);
         }
-        await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner, null, null);
+        await CompatabilityUtils.CreatureCmd_.Damage(choiceContext, CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner, null, null);
 
     }
 }

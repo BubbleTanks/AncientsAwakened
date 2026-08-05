@@ -22,8 +22,7 @@ public class DisadvantagedPower : AncientsAwakenedPower
         Decimal amount,
         ValueProp props,
         Creature? dealer,
-        CardModel? cardSource,
-        CardPlay? _)
+        CardModel? cardSource)
     {
         Decimal amount1 = 1.0M;
 
