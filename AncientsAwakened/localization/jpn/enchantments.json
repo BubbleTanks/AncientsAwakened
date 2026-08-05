@@ -1,0 +1,13 @@
+{
+  "ANCIENTSAWAKENED-MASS.description": "戦闘中1回のみ、このカードのコストは{energyPrefix:energyIcons(1)}少なくなる。",
+  "ANCIENTSAWAKENED-MASS.title": "質量",
+  "ANCIENTSAWAKENED-DESIGN.description": "[gold]リプレイ[/gold][blue]1[/blue]を得る。",
+  "ANCIENTSAWAKENED-DESIGN.title": "設計",
+  "ANCIENTSAWAKENED-CHARMED.description": "[gold]リプレイ[/gold][blue]1[/blue]を得る。コストが{Energy:energyIcons()}増加する。",
+  "ANCIENTSAWAKENED-CHARMED.title": "魅了",
+  "ANCIENTSAWAKENED-SMOKEY.description": "初めてプレイされた時、[gold]廃棄[/gold]されない。",
+  "ANCIENTSAWAKENED-SMOKEY.title": "灯火",
+  "ANCIENTSAWAKENED-CELESTIAL.description": "カードを[blue]{Cards}[/blue]{Cards:plural:枚|枚}引く。",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "カードを[blue]{Cards}[/blue]{Cards:plural:枚|枚}引く。",
+  "ANCIENTSAWAKENED-CELESTIAL.title": "天界"
+}

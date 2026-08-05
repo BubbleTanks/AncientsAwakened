@@ -19,9 +19,9 @@ public class DeadlyDefend() : AncientsAwakenedCard(1,
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
     
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Shiv>()];
-    
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move), new DynamicVar("Shivs",2), new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new DynamicVar("Shivs",1), new CardsVar(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 
     protected override async Task OnPlay(

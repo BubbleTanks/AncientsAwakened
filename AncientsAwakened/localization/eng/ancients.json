@@ -172,5 +172,48 @@
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-1r.next": "Continue",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.ancient": "Fix you? Fix your friend? Why, for such a cute little robot he should do that! Get out there and beat him up!",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.next": "Reply",
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<energetic beeps!>[/font_size][/i]"
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<energetic beeps!>[/font_size][/i]",
+
+
+  
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.title": "Lunatic Cultist",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.epithet": "Celestial Savant",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.firstVisitEver.0-0.ancient": "You interrupt my studies. Collect a charm and begone from here.",
+
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.ANY.0-0r.ancient": "Leave this temple. My studies must not be interrupted.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.ANY.1-0r.ancient": "I am performing a ritual, heathen. Take a relic and oust yourself.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.ANY.2-0r.ancient": "[i][font_size=22]The Cultist won't even acknowledge your presence. One of his servants guides you to a tray of relics.[/font_size][/i]",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.ANY.3-0r.ancient": "[i][font_size=22]Noticing your approach, the Cultist sighs, gesturing towards a collection of relics.[/font_size][/i]",
+
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Warrior, your kind is not welcome in this temple. State your business or leave.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-1r.char": "[i][font_size=22]The Ironclad gestures towards the sky with their blade.[/font_size][/i]",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-2r.ancient": "Slay the Architect? Unlikely, but I shall grant you a relic regardless.",
+
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-0r.ancient": "What brings you to my temple, wretch.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-1r.char": "[i][font_size=22]The Silent bows their head, holding out a bundle of ritual parchment.[/font_size][/i]",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-2r.ancient": "...how thoughtful. You may find yourself entitled to a blessing.",
+
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-0r.char": "Mighty sorcerer, I come to collect a relic!",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-0r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-1r.ancient": "You interrupt my studies. Begone from here at once.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-1r.next": "Demand",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-2r.char": "Not without my boon, heathen!",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-2r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-3r.ancient": "To your left. Take something and exile yourself, before my patience escapes me.",
+
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-0r.ancient": "Necromancer, I am busy. Leave this place at once.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-0r.next": "Respond",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-1r.char": "I cannot do that. I must continue upward.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Fine, then. If it will rid your presence, claim a relic.",
+  
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-0r.ancient": "Mechanical being, your presence is unwelcome here. For what do you disgrace these halls?",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-0r.next": "Reply",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<angry beeping>[/font_size][/i]",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-1r.next": "Continue",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-2r.ancient": "Fix you? Fix your friend? Laughable. I shouldn't even entertain the thought, but I shall grant you power regardless."
 }

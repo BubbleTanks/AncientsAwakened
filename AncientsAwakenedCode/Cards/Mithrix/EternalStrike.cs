@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+using AncientsAwakened.AncientsAwakenedCode.Utils;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -22,7 +23,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<DoomPower>()];
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(6, ValueProp.Move), new PowerVar<DoomPower>(10)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new OstyDamageVar(6, ValueProp.Move), new PowerVar<DoomPower>(9)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike, CardTag.OstyAttack];
 
     protected override bool ShouldGlowRedInternal => Owner.IsOstyMissing;
@@ -32,7 +33,7 @@ public class EternalStrike() : AncientsAwakenedCard(1,
         CardPlay play)
     {
         if (!Osty.CheckMissingWithAnim(Owner))
-            await DamageCmd.Attack(DynamicVars.OstyDamage.BaseValue).FromOsty(Owner.Osty, this).Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
+            await DamageCmd.Attack(DynamicVars.OstyDamage.BaseValue).FromOstyCompatability(Owner.Osty, this, play).Targeting(play.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
         await PowerCmd.Apply<DoomPower>(choiceContext, play.Target, DynamicVars.Doom.BaseValue, Owner.Creature, this);
     }
 

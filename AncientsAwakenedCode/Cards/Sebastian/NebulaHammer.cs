@@ -29,8 +29,8 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
     
     protected override PileType GetResultPileTypeForCardPlay()
     {
-        PileType resultPileType = base.GetResultPileTypeForCardPlay();
-        return resultPileType != PileType.Discard ? resultPileType : PileType.Hand;
+        PileType pileTypeForCardPlay = base.GetResultPileTypeForCardPlay();
+        return pileTypeForCardPlay != PileType.Discard ? pileTypeForCardPlay : PileType.Hand;
     }
 
     protected override void OnUpgrade()
@@ -38,3 +38,8 @@ public class NebulaHammer() : AncientsAwakenedCard(1,
         DynamicVars.Forge.UpgradeValueBy(2M);
     }
 }
+
+    public class CardLocation
+    {
+        public PileType pileType;
+    }

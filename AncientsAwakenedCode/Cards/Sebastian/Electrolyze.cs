@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(DefectCardPool))]
-public class Electrolyze() : AncientsAwakenedCard(2,
+public class Electrolyze() : AncientsAwakenedCard(3,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {

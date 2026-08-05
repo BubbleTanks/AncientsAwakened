@@ -24,16 +24,22 @@
   "ANCIENTSAWAKENED-COSMIC_DEFEND.title": "천상의 수비",
 
   "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]골골이[/gold]가 피해를 {OstyDamage:diff()} 줍니다.\n[gold]종말[/gold]을 {DoomPower:diff()} 부여합니다.",
-  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "영원의 타격",
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "파멸의 타격",
 
-  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]소환[/gold] {Summon:diff()}.\n[gold]뽑을 카드 더미[/gold]에 [gold]{IfUpgraded:show:영혼+|영혼}[/gold] 1장을 추가합니다.",
-  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "영원의 수비",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]소환[/gold] {Summon:diff()}.\n[gold]뽑을 카드 더미[/gold]에 [gold]{IfUpgraded:show:영혼+|영혼}[/gold]을 1장 추가합니다.",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "파멸의 수비",
   
-  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "피해를 {Damage:diff()}만큼 2번 줍니다.\n[gold]유리[/gold]를 1번 [gold]영창[/gold]합니다.\n[gold]손[/gold]에 [gold]어지러움[/gold] 1장을 추가합니다.",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "피해를 {Damage:diff()}만큼 {Repeat:diff()}번 줍니다.\n[gold]유리[/gold]를 1번 [gold]영창[/gold]합니다.\n[gold]뽑을 카드 더미[/gold]에 [gold]어지러움[/gold]을 1장 추가합니다.",
   "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "강화된 타격",
   
-  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]냉기[/gold]를 2번 [gold]영창[/gold]합니다.\n이번 턴에 [gold]밀집[/gold]을 {FocusPower:diff()} 얻습니다.",
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n[gold]냉기[/gold]를 1번 [gold]영창[/gold]합니다.\n이번 턴에 [gold]밀집[/gold]을 {FocusPower:diff()} 얻습니다.",
   "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "강화된 수비",
+
+  "ANCIENTSAWAKENED-PERFECT_STRIKE.description": "피해를 {Damage:diff()} 줍니다.\n카드를 {Cards:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-PERFECT_STRIKE.title": "완전한 타격",
+
+  "ANCIENTSAWAKENED-PERFECT_DEFEND.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.\n{Energy:energyIcons()}를 얻습니다.",
+  "ANCIENTSAWAKENED-PERFECT_DEFEND.title": "완전한 수비",
 
 
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "모든 적에게 피해를 {Damage:diff()}만큼 {Repeat:diff()}번 줍니다.\n카드를 {Cards:diff()}장 뽑습니다.",
@@ -60,11 +66,39 @@
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]전기[/gold]를 {Repeat:diff()}번 [gold]영창[/gold]합니다.\n이번 턴에 [gold]밀집[/gold]을 {FocusPower:diff()} 얻습니다.",
   "ANCIENTSAWAKENED-ELECTROLYZE.title": "전기 분해",
 
+  "ANCIENTSAWAKENED-SURPASS_LIMITS.description": "{Energy:energyIcons()}를 얻습니다.\n카드를 {Cards:diff()}장 뽑습니다.\n다음 턴에, {Energy2:energyIcons()}를 얻고 카드를 {Cards2:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-SURPASS_LIMITS.title": "한계 돌파",
+
 
   "ANCIENTSAWAKENED-SQUIRREL.description": "카드를 {Cards:diff()}장 뽑습니다.",
   "ANCIENTSAWAKENED-SQUIRREL.title": "다람쥐",
 
   "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "각인할 카드를 선택하십시오.",
   "ANCIENTSAWAKENED-INSCRYBE.description": "피해를 {Damage:diff()} 줍니다.\n[gold]손[/gold]에서 복사할 카드 1장을 선택하여 [gold]각인[/gold]합니다.",
-  "ANCIENTSAWAKENED-INSCRYBE.title": "인스크립션"
+  "ANCIENTSAWAKENED-INSCRYBE.title": "인스크립션",
+
+
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "[gold]의식[/gold]을 {RitualPower:diff()} 얻습니다.\n내 턴 시작 시, 모든 적에게 피해를 {LunaticRitualPower:diff()} 줍니다.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "광기의 의식",
+
+  "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
+  "ANCIENTSAWAKENED-COSMIC_DUST.title": "성간 잔해",
+
+  "ANCIENTSAWAKENED-LUNACY.description": "이번 전투 동안 [gold]손[/gold]에 있는 무작위 카드의 비용을 0으로 만듭니다.",
+  "ANCIENTSAWAKENED-LUNACY.title": "광기",
+
+  "ANCIENTSAWAKENED-INSANITY.description": "이번 전투 동안 [gold]손[/gold]의 무작위 카드 1장의 비용이 {Energy:energyIcons()} 증가합니다.\n카드를 {Cards:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-INSANITY.title": "기괴한 정신이상",
+
+  "ANCIENTSAWAKENED-STARSHINE.description": "세가지 효과 중 하나를 선택합니다:\n[gold]뽑을 카드 더미[/gold]에서 카드를 {Exhaust:diff()}장까지 [gold]소멸[/gold]시키거나, {Energy:energyIcons()}를 얻고 카드를 {Cards:diff()}장 뽑거나, 이번 전투 종료 후 [gold]덱[/gold]의 카드 1장을 영구적으로 [gold]강화[/gold]합니다.",
+  "ANCIENTSAWAKENED-STARSHINE.title": "별빛",
+
+  "ANCIENTSAWAKENED-POWER_CHOICE.description": "[gold]뽑을 카드 더미[/gold]에서 카드를 {Cards:diff()}장까지 [gold]소멸[/gold]시킵니다.",
+  "ANCIENTSAWAKENED-POWER_CHOICE.title": "파괴",
+
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.description": "{Energy:energyIcons()}를 얻습니다.\n카드를 {Cards:diff()}장 뽑습니다.",
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "영감",
+
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "전투 종료 후 [gold]덱[/gold]의 카드 1장을 영구적으로 [gold]강화[/gold]합니다.",
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "인도"
 }

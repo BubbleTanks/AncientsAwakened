@@ -1,0 +1,14 @@
+{
+  "ANCIENTSAWAKENED-MITHRIX.title": "米斯里克斯遗物配置",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "启用多人模式版的无瑕之锤，+1费但给予所有盟友额外回合（禁用则会在多人模式使用单人模式的版本）",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "多人模式版无瑕之锤",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "启用多人模式版无瑕之锤",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "因为潜在的破坏行为，默认禁用",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "多人模式季风之魅",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "在多人模式启用季风之魅",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.desc": "在多人模式，让塞巴斯蒂安的扫描仪给所有玩家遗物，无论他们有没有该遗物。",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.title": "全局塞巴斯蒂安的扫描仪",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.title": "在多人模式启用全局扫描仪",
+  "ANCIENTSAWAKENED-SEBASTIAN.title": "塞巴斯蒂安遗物配置",
+  "ANCIENTSAWAKENED.mod_title": ""
+}

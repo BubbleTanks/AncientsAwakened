@@ -29,7 +29,7 @@ public class SebbyCharm : AncientsAwakenedRelic
 
     protected override bool RelicAllowedToSpawn(Player owner)
     {
-        return owner.Deck.Cards.Any(card => card.Type == CardType.Power);
+        return owner.Deck.Cards.Any(ModelDb.Enchantment<Charmed>().CanEnchant);
     }
 
     public override async Task AfterObtained()

@@ -15,7 +15,7 @@ public class TheMoon : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageThreshold", 7M), new ("DamageMaximum", 1M)];
     
-    public override Decimal ModifyHpLostAfterOstyLate(
+    public override Decimal ModifyHpLostAfterOsty(
         Creature target,
         Decimal amount,
         ValueProp props,

@@ -6,6 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Map;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rewards;
@@ -25,6 +26,8 @@ public class ShippingRequest : AncientsAwakenedRelic
     protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<WeighedDown>().Concat(HoverTipFactory.FromCardWithCardHoverTips<HeavyCrate>());
     
     private int _rewardAmount;
+
+    private bool _gaveReward;
 
     [SavedProperty]
     private int RewardAmount
@@ -76,7 +79,7 @@ public class ShippingRequest : AncientsAwakenedRelic
         {
             for (int i = 0; i < RewardAmount; i++)
             {
-                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,300), player));
+                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,301), player));
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new PotionReward(player));
                 rewards.Add(new RelicReward(RelicRarity.Common, player));
@@ -90,8 +93,15 @@ public class ShippingRequest : AncientsAwakenedRelic
                 rewards.Add(new CardRemovalReward(player));
                 rewards.Add(new CardRemovalReward(player));
             }
+            _gaveReward = true;
             return true;
         }
         return false;   
+    }
+    
+    public override Task AfterMapGenerated(ActMap map, int actIndex)
+    {
+        if(_gaveReward) RewardAmount = 0;
+        return Task.CompletedTask;
     }
 }

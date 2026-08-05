@@ -1,7 +1,6 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Utils;
-using HarmonyLib;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Context;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -10,12 +9,12 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.CommonUi;
 using MegaCrit.Sts2.Core.Nodes.Screens;
+using MegaCrit.Sts2.Core.Saves;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
@@ -118,14 +117,24 @@ public class AncientScepter : AncientsAwakenedRelic
         }
         
         AssertMutable(); 
-        var (strikeCard, strikeCount) = GetPerfectedStrikeCard(player);
-        var (defendCard, defendCount) = GetPerfectedDefendCard(player);
-        if (strikeCount + defendCount >= 3)
+        var basicCount = player.Deck.Cards.Count(c => c.IsBasicStrikeOrDefend);
+        if (basicCount >= 3)
         {
-            if (strikeCard != null && PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedStrikeCard))
-                StrikeCard = ModelDb.GetById<CardModel>(perfectedStrikeCard).ToMutable().ToSerializable();
-            if (defendCard != null && PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedDefendCard))
-                DefendCard =  ModelDb.GetById<CardModel>(perfectedDefendCard).ToMutable().ToSerializable();
+            var strikeCard = GetBasicStrikeCard(player);
+            var defendCard = GetBasicDefendCard(player);
+            if (strikeCard != null)
+            {
+                StrikeCard = PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedCard) ? 
+                    ModelDb.GetById<CardModel>(perfectedCard).ToMutable().ToSerializable() : 
+                    ModelDb.Card<PerfectStrike>().ToMutable().ToSerializable();
+            }
+
+            if (defendCard != null)
+            {
+                DefendCard = PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedCard) ? 
+                    ModelDb.GetById<CardModel>(perfectedCard).ToMutable().ToSerializable() : 
+                    ModelDb.Card<PerfectDefend>().ToMutable().ToSerializable();
+            }
             UpdateHoverTips();
             return true;
         }
@@ -134,36 +143,54 @@ public class AncientScepter : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        IEnumerable<CardTransformation> transformations = PileType.Deck.GetPile(Owner).Cards.Where(c => c.IsBasicStrikeOrDefend && c.IsRemovable).ToList()
+        var transformations = PileType.Deck.GetPile(Owner).Cards.Where(c => c.IsBasicStrikeOrDefend && c.IsRemovable).ToList()
             .Select(c => new CardTransformation(c, GetPerfectedTransformedCard(c)));
-        List<CardPileAddResult> list = (await CardCmd.Transform(transformations, null, CardPreviewStyle.None)).ToList();
+        var list = (await CardCmd.Transform(transformations, null, CardPreviewStyle.None)).ToList();
         if (list.Count > 0 && LocalContext.IsMe(Owner))
         {
             NSimpleCardsViewScreen.ShowScreen(list, new LocString("relics", "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText"));
         }
+        if(!SaveManager.Instance.Progress.DiscoveredCards.Contains(ModelDb.Card<PerfectStrike>().Id)) SaveManager.Instance.MarkCardAsSeen(ModelDb.Card<PerfectStrike>());
+        if(!SaveManager.Instance.Progress.DiscoveredCards.Contains(ModelDb.Card<PerfectDefend>().Id)) SaveManager.Instance.MarkCardAsSeen(ModelDb.Card<PerfectDefend>());
     }
     
-    private static (CardModel?,int) GetPerfectedStrikeCard(Player player) => (player.Deck.Cards.FirstOrDefault(c => PerfectedStrikeUpgrades.ContainsKey(c.Id)), player.Deck.Cards.Count(c => PerfectedStrikeUpgrades.ContainsKey(c.Id)));
-    private static (CardModel?,int) GetPerfectedDefendCard(Player player) => (player.Deck.Cards.FirstOrDefault(c => PerfectedDefendUpgrades.ContainsKey(c.Id)), player.Deck.Cards.Count(c => PerfectedDefendUpgrades.ContainsKey(c.Id)));
+    private static CardModel? GetBasicStrikeCard(Player player) => player.Deck.Cards.FirstOrDefault(c => c.Tags.Contains(CardTag.Strike) && c.IsBasicStrikeOrDefend);
+    private static CardModel? GetBasicDefendCard(Player player) => player.Deck.Cards.FirstOrDefault(c => c.Tags.Contains(CardTag.Defend) && c.IsBasicStrikeOrDefend);
 
     private CardModel GetPerfectedTransformedCard(CardModel starterCard)
     {
-        ModelId replacement = PerfectedStrikeUpgrades.TryGetValue(starterCard.Id, out replacement) ? replacement : PerfectedDefendUpgrades.TryGetValue(starterCard.Id, out replacement) ? replacement : null;
-        if (replacement != null)
+        ModelId? replacement;
+        if (starterCard.Tags.Contains(CardTag.Strike))
         {
-            CardModel cardModel = starterCard.Owner.RunState.CreateCard(ModelDb.GetById<CardModel>(replacement), starterCard.Owner);
-            if (starterCard.IsUpgraded)
-            {
-                CardCmd.Upgrade(cardModel);
-            }
-            if (starterCard.Enchantment != null)
-            {
-                EnchantmentModel enchantmentModel = (EnchantmentModel)starterCard.Enchantment.MutableClone();
-                CardCmd.Enchant(enchantmentModel, cardModel, enchantmentModel.Amount);
-            }
-            return cardModel;
+            replacement = PerfectedStrikeUpgrades.TryGetValue(starterCard.Id, out var perfectedCard)
+                ? perfectedCard
+                : ModelDb.Card<PerfectStrike>().Id;
+        } 
+        else if (starterCard.Tags.Contains(CardTag.Defend))
+        {
+            replacement = PerfectedDefendUpgrades.TryGetValue(starterCard.Id, out var perfectedCard)
+                ? perfectedCard
+                : ModelDb.Card<PerfectDefend>().Id;
         }
-        return Owner.RunState.CreateCard<Doubt>(starterCard.Owner);
+        else
+        {
+            replacement = null;
+            AncientsAwakenedMain.Logger.Warn($"Card that is not Strike or Defend {starterCard.Id} attempted to be transformed by Ancient Scepter.");
+        }
+
+        if (replacement == null) return Owner.RunState.CreateCard<Doubt>(starterCard.Owner);
+        
+        var cardModel = starterCard.Owner.RunState.CreateCard(ModelDb.GetById<CardModel>(replacement), starterCard.Owner);
+        if (starterCard.IsUpgraded)
+        {
+            CardCmd.Upgrade(cardModel);
+        }
+        if (starterCard.Enchantment != null)
+        {
+            var enchantmentModel = (EnchantmentModel)starterCard.Enchantment.MutableClone();
+            CardCmd.Enchant(enchantmentModel, cardModel, enchantmentModel.Amount);
+        }
+        return cardModel;
     }
     
     private static Dictionary<ModelId, ModelId> VanillaPerfectedStrikeUpgrades => new()
@@ -225,14 +252,14 @@ public class AncientScepter : AncientsAwakenedRelic
         _extraHoverTips.Clear();
         if (StrikeCard != null)
         {
-            CardModel card = CardModel.FromSerializable(StrikeCard);
+            var card = CardModel.FromSerializable(StrikeCard);
             _extraHoverTips.AddRange(card.HoverTips);
             _extraHoverTips.Add(HoverTipFactory.FromCard(card));
             ((StringVar)DynamicVars[_perfectedPrefixKey]).StringValue = GetPrefixString(card.Title);
         }
         if (DefendCard != null)
         {
-            CardModel card = CardModel.FromSerializable(DefendCard);
+            var card = CardModel.FromSerializable(DefendCard);
             _extraHoverTips.AddRange(card.HoverTips);
             _extraHoverTips.Add(HoverTipFactory.FromCard(card));
             ((StringVar)DynamicVars[_perfectedPrefixKey]).StringValue = GetPrefixString(card.Title);
@@ -244,7 +271,7 @@ public class AncientScepter : AncientsAwakenedRelic
     /// Please keep in mind that the space will be included in the replacement card titles to avoid possible localization issues.
     /// Reflect this in the Ancient Scepter's description.
     /// </summary>
-    private String GetPrefixString(String title)
+    private static string GetPrefixString(string title)
     {
         var strikeTitle = new LocString("cards", "STRIKE_IRONCLAD.title").GetFormattedText();
         var defendTitle = new LocString("cards", "DEFEND_IRONCLAD.title").GetFormattedText();

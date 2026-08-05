@@ -5,10 +5,9 @@
         <!-- D:\Desktop\megadot\MegaDot_v4.5.1-stable_mono_win64.exe-->
         <!-- C:\Users\offic\Downloads\StS Modding\Megadong\MegaDot_v4.5.1-stable_mono_win64.exe-->
         <GodotPath>D:\Desktop\megadot\MegaDot_v4.5.1-stable_mono_win64.exe</GodotPath>
-
         <!-- If sts2 is not found automatically, uncomment the following and set it manually -->
         <Sts2Path>D:\SteamLibrary\steamapps\common\Slay the Spire 2</Sts2Path>
-        
+
         <!-- mimor thing -->
         <SteamLibraryPath>D:\SteamLibrary\steamapps</SteamLibraryPath>
     </PropertyGroup>

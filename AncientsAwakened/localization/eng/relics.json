@@ -19,8 +19,8 @@
   "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Flawless Hammer",
 
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "Cards transformed by [gold]Ancient Scepter[/gold]",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Upon pickup, [gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfected[/blue] }versions.",
-  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfected[/blue] }versions.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Upon pickup, [gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfect[/blue] }versions.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Transform[/gold] ALL [gold]Strikes[/gold] and [gold]Defends[/gold] into {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfect[/blue] }versions.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "The crystal pulsates with powerful energy as you pick it up.",
   "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "Ancient Scepter",
 
@@ -83,11 +83,11 @@
   "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "\"Hey, be careful with this one now, it's pretty potent. You might feel one or two of your bones breaking. That means it's working!\"",
   "ANCIENTSAWAKENED-GLOWING_VIAL.title": "Glowing Vial",
 
-  "ANCIENTSAWAKENED-SALINE_INFUSER.description": "Potions can be used twice.",
+  "ANCIENTSAWAKENED-SALINE_INFUSER.description": "[gold]Potions[/gold] can be used twice.",
   "ANCIENTSAWAKENED-SALINE_INFUSER.flavor": "\"Ooh, I love this thing! Adds a nice salty taste to anything you drink. Might even be able to bring out a little extra life in those potions you're fond of...\"",
   "ANCIENTSAWAKENED-SALINE_INFUSER.title": "Saline Infuser",
 
-  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "Upon pickup, obtain {card.StringValue:cond:[gold]{}[/gold]|an [gold]Ancient Card[/gold]}.",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "Upon pickup, obtain {card.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.eventDescription": "Obtain {card.StringValue:cond:[gold]{}+[/gold]|an [gold]Ancient Card[/gold]}.",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"Can't say I recommend the serum. It's horribly painful, no matter how rewarding the results may be.\"",
   "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Experimental Serum",
@@ -132,7 +132,53 @@
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "A playing card, drawn to appear as if it were a squirrel. You feel uneasy as you stare at it.",
   "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Squirrel in a Bottle",
 
-  "ANCIENTSAWAKENED-THE_SMOKE.description": "The first time you lose HP each combat, draw [blue]{Cards}[/blue] {Cards:plural:card|cards} and gain {Energy:energyIcons()} next turn.",
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "Upon pickup, [gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Candlelit[/purple].",
+  "ANCIENTSAWAKENED-THE_SMOKE.eventDescription": "[gold]Enchant[/gold] a card that [gold]Exhausts[/gold] with [purple]Candlelit[/purple].",
   "ANCIENTSAWAKENED-THE_SMOKE.flavor": "Smoke from an expired candle, preserved in glass. Some of it leaks out, tainting your breath.",
-  "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke"
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "The Smoke",
+
+  
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Add [blue]1[/blue] [gold]Lunatic Ritual[/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "The hooded figure told you to be careful with these spells. It would be wise to listen.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
+
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, procure and use a random [gold]Potion[/gold]. Attacks deal [blue]{DamageDecrease}%[/blue] less damage.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "A lush, blue flower grows from the bottle. It's presence invigorates you.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.title": "Mana Flower",
+
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "You may [gold]Collect[/gold] at [gold]Rest Sites[/gold].",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "A shard of the heavens that crash landed, now yours to wield.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.title": "Fallen Star",
+
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold] and permanently increase it by [blue]{Scaling}[/blue].",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "The strange metal in your hands seems to pulse and glow, as if growing even as you watch it.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
+
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "Gain {Energy:energyIcons()} at the start of each turn. At the end of your turn, [gold]Transform[/gold] your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "The liquid inside holds prismatic hues. Anything brought too close begins to warp and shift, as if viewed through a kaleidoscope.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "Shimmering Bottle",
+
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Upon pickup, remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remove up to [blue]{Cards}[/blue] {Cards:plural:card|cards} from your [gold]Deck[/gold]. At the start of your turn, take [blue]{Damage}[/blue] damage.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "The flame roars endlessly, devouring everything you feed into it. The heat is unbearable.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Solar Brazier",
+
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "At the start of your turn, deal [blue]{DamagePercentage}%[/blue] more damage for the rest of combat.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
+
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of each combat, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that are free to play this turn, and shuffle [blue]{Status}[/blue] [gold]Cosmic Dusts[/gold] into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
+  "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome",
+
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "[gold]Enchant[/gold] up to [blue]{Cards}[/blue] {Cards:plural:card|cards} with [purple]Celestial[/purple]. The first card drawn each turn is Afflicted with [gold]Shackled[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "The shackles are heavy, gilded with starlight. One can only wonder what they were made to restrain.",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Stardust Shackles",
+
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "Select any number of cards to add to your Deck.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "Upon pickup, add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold]. Add [blue]1[/blue] [gold]Eldritch Insanity[/gold] to your [gold]Deck[/gold] for every [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Lunacy|Lunacies}[/gold] you add.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "Add up to [blue]{Cards}[/blue] [gold]{Cards:plural:Lunacy|Lunacies}+[/gold] to your [gold]Deck[/gold]. Add [blue]1[/blue] [gold]Eldritch Insanity[/gold] to your [gold]Deck[/gold] for every [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Lunacy|Lunacies}[/gold] you add.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "Tendrils perforate your sight, beckoning you with visions of greatness. You can feel your mind growing numb.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "Whispering Tendrils"
 }

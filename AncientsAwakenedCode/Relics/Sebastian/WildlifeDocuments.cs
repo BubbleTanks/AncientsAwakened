@@ -17,7 +17,7 @@ public class WildlifeDocuments : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DisadvantagedPower>(3M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<DisadvantagedPower>(4M)];
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<DisadvantagedPower>()];
 

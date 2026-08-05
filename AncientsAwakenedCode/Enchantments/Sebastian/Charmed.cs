@@ -8,7 +8,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Enchantments.Sebastian;
 
 public class Charmed : CustomEnchantmentModel
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Times", 1M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Times", 1), new EnergyVar(1)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.ReplayDynamic, DynamicVars["Times"])];
     
@@ -17,5 +17,10 @@ public class Charmed : CustomEnchantmentModel
     public override int EnchantPlayCount(int originalPlayCount)
     {
         return originalPlayCount + DynamicVars["Times"].IntValue;
+    }
+    
+    protected override void OnEnchant()
+    {
+        Card.EnergyCost.AddThisCombat(DynamicVars.Energy.IntValue);
     }
 }

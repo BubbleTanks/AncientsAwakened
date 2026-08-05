@@ -1,3 +1,4 @@
+using System.Reflection;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Config;
 using Godot;
@@ -19,6 +20,7 @@ public partial class AncientsAwakenedMain : Node
     
     public static void Initialize()
     {
+        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
         Harmony harmony = new(ModId);
         ModConfigRegistry.Register(ModId, new AncientConfigs());
         harmony.PatchAll();

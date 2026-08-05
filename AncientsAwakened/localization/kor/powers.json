@@ -9,5 +9,17 @@
 
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "기절한 대상는 행동할 수 없습니다.",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:다음 턴에|다음 [blue]{}[/blue]턴 동안} [gold]기절[/gold]합니다.",
-  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "다음 턴 기절"
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "다음 턴 기절",
+
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "내 턴 시작 시, 모든 적에게 피해를 줍니다.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "내 턴 시작 시, 모든 적에게 피해를 [blue]{Amount}[/blue] 줍니다.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "광기의 의식",
+
+  "ANCIENTSAWAKENED-VORTEX_POWER.description": "공격이 피해를 [blue]10%[/blue]만큼 추가로 줍니다.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "공격이 피해를 [blue]{Amount}%[/blue]만큼 추가로 줍니다.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "소용돌이",
+
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.description": "전투 종료 후 [gold]덱[/gold]의 카드 1장을 영구적으로 [gold]강화[/gold]합니다.",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.smartDescription": "전투 종료 후 [gold]덱[/gold]의 카드 [blue]{Amount}[/blue]장을 영구적으로 [gold]강화[/gold]합니다.",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "인도"
 }

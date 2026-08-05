@@ -5,6 +5,16 @@
   "ANCIENTSAWAKENED-DESIGN.description": "This card gains [gold]Replay[/gold] [blue]1[/blue].",
   "ANCIENTSAWAKENED-DESIGN.title": "Design",
 
-  "ANCIENTSAWAKENED-CHARMED.description": "This card gains [gold]Replay[/gold] [blue]1[/blue].",
-  "ANCIENTSAWAKENED-CHARMED.title": "Charmed"
+  
+  "ANCIENTSAWAKENED-CHARMED.description": "This card gains [gold]Replay[/gold] [blue]1[/blue]. It costs an extra {Energy:energyIcons()}.",
+  "ANCIENTSAWAKENED-CHARMED.title": "Charmed",
+
+  
+  "ANCIENTSAWAKENED-SMOKEY.description": "This card does not [gold]Exhaust[/gold] the first time you play it.",
+  "ANCIENTSAWAKENED-SMOKEY.title": "Candlelit",
+  
+  
+  "ANCIENTSAWAKENED-CELESTIAL.description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial"
 }

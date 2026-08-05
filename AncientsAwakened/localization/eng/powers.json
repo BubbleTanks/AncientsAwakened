@@ -7,7 +7,21 @@
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Deal [blue]15%[/blue] less attack damage and receive [blue]30%[/blue] more attack damage for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Disadvantaged",
   
+  
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Stunned creatures cannot act.",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns}, this creature is [gold]Stunned[/gold].",
-  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn"
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn",
+
+  
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "At the start of your turn, deal damage to all enemies.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "At the start of your turn, deal [blue]{Amount}[/blue] damage to all enemies.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Lunatic Ritual",
+
+  "ANCIENTSAWAKENED-VORTEX_POWER.description": "Attacks deal [blue]10%[/blue] more damage.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "Attacks deal [blue]{Amount}%[/blue] more damage.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "Vortex",
+
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.description": "At the end of combat, [gold]Upgrade[/gold] a card in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.smartDescription": "At the end of combat, [gold]Upgrade[/gold] [blue]{Amount}[/blue] {Amount:plural:card|cards} in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "Guidance"
 }

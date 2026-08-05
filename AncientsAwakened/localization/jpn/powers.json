@@ -1,0 +1,20 @@
+{
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "ターン終了時、もう1ターン行動できる。",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "ターン終了時、もう1ターン行動できる。",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "我が足元に砕けよ",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "劣勢状態の敵は、与えるダメージが[blue]15%[/blue]減少し、受けるダメージが[blue]30%[/blue]増加する。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "[blue]{Amount}[/blue]{Amount:plural:ターン|ターン}の間、与えるダメージが[blue]15%[/blue]減少し、受けるダメージが[blue]30%[/blue]増加する。",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "劣勢",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "スタンした対象は行動できない。",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:次のターン、[gold]スタン[/gold]する。|次の [blue]{}[/blue] ターンの間、[gold]スタン[/gold]する。}",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "次ターンスタン",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "ターン開始時、すべての敵にダメージを与える。",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "ターン開始時、すべての敵に[blue]{Amount}[/blue]ダメージを与える。",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "狂気の儀式",
+  "ANCIENTSAWAKENED-VORTEX_POWER.description": "アタックが与えるダメージが[blue]10%[/blue]増加する。",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "アタックが与えるダメージが[blue]{Amount}%[/blue]増加する。",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "ボルテックス",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.description": "戦闘終了時、[gold]デッキ[/gold]のカードを[gold]アップグレード[/gold]する。",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.smartDescription": "戦闘終了時、[gold]デッキ[/gold]のカードを[blue]{Amount}[/blue]{Amount:plural:枚|枚}[gold]アップグレード[/gold]する。",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "導き"
+}

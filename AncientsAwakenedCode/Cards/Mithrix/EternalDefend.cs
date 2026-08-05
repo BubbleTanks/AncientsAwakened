@@ -18,8 +18,8 @@ public class EternalDefend() : AncientsAwakenedCard(1,
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
     
+    public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.Static(StaticHoverTip.SummonDynamic, DynamicVars.Summon), HoverTipFactory.FromCard<Soul>()];
-    
     protected override IEnumerable<DynamicVar> CanonicalVars => [new SummonVar(7M), new CardsVar(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 

@@ -5,5 +5,8 @@
   "OPTION_ANCIENTSAWAKENED-VIAL.name": "변이",
 
   "OPTION_ANCIENTSAWAKENED-PROSPECT.description": "[gold]골드[/gold] 250~300을 얻습니다.",
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "채광"
+  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "채광",
+
+  "OPTION_ANCIENTSAWAKENED-COLLECT.description": "[gold]덱[/gold]에 [gold]별빛[/gold] [blue]1[/blue]장을 추가합니다. ",
+  "OPTION_ANCIENTSAWAKENED-COLLECT.name": "수집"
 }

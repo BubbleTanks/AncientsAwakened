@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1o87po1rpdsl"
-path="res://.godot/imported/egocentrism.png-7e2b276a400ca843e98e0b0d33097106.ctex"
+uid="uid://c50c2gd6rqwtk"
+path="res://.godot/imported/guidance_power.png-6ec52920ba489bcf849138dff210cc73.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/card_portraits/egocentrism.png"
-dest_files=["res://.godot/imported/egocentrism.png-7e2b276a400ca843e98e0b0d33097106.ctex"]
+source_file="res://AncientsAwakened/images/powers/guidance_power.png"
+dest_files=["res://.godot/imported/guidance_power.png-6ec52920ba489bcf849138dff210cc73.ctex"]
 
 [params]
 

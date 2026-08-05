@@ -18,8 +18,8 @@ public class CosmicDefend() : AncientsAwakenedCard(1,
     TargetType.Self)
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<PerfectedPool>();
-    
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(7, ValueProp.Move)];
+    public override bool GainsBlock => true;
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(5, ValueProp.Move)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 
     protected override async Task OnPlay(

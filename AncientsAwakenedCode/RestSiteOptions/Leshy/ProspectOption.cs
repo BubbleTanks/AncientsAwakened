@@ -29,7 +29,7 @@ public class ProspectOption : RestSiteOption, ICustomModel
     
     public override async Task<bool> OnSelect()
     {
-        await PlayerCmd.GainGold(Owner.RunState.Rng.Niche.NextInt(250,300), Owner);
+        await PlayerCmd.GainGold(Owner.RunState.Rng.Niche.NextInt(250,301), Owner);
         return true;
     }
 }
