@@ -1,4 +1,4 @@
 {
-  "ANCIENTSAWAKENED-SHACKLED.description": "该牌被添加[gold]不可被打出[/gold]，在回合结束时清除。",
+  "ANCIENTSAWAKENED-SHACKLED.description": "该牌被添加[gold]不能被打出[/gold]，在回合结束时清除。",
   "ANCIENTSAWAKENED-SHACKLED.title": "枷锁"
 }

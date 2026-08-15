@@ -6,8 +6,8 @@
   "ANCIENTSAWAKENED-CHARMED.title": "迷醉",
   "ANCIENTSAWAKENED-DESIGN.description": "这张牌获得[gold]重放[/gold]1",
   "ANCIENTSAWAKENED-DESIGN.title": "设计",
-  "ANCIENTSAWAKENED-MASS.description": "这张卡牌每场战斗耗能可减少{energyPrefix:energyIcons(1)}一次。",
+  "ANCIENTSAWAKENED-MASS.description": "这张牌每场战斗耗能可减少{energyPrefix:energyIcons(1)}一次。",
   "ANCIENTSAWAKENED-MASS.title": "质量",
-  "ANCIENTSAWAKENED-SMOKEY.description": "首次打出这张卡牌时，不会使其[gold]消耗[/gold]。",
+  "ANCIENTSAWAKENED-SMOKEY.description": "首次打出这张牌时，不会使其[gold]消耗[/gold]。",
   "ANCIENTSAWAKENED-SMOKEY.title": "烛光"
 }
