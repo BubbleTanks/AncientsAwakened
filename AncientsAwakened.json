@@ -3,9 +3,10 @@
   "name": "Ancients Awakened",
   "author": "CrypticAurora & SoytheProton",
   "description": "An Ancient mod by your local crazy moth and protogen.",
-  "version": "v1.4.6",
+  "version": "v1.4.6-1",
+  "min_game_version": "0.111.0",
   "has_pck": true,
   "has_dll": true,
-  "dependencies": [{"id": "BaseLib", "min_version": "3.3.5"}],
+  "dependencies": [{"id": "BaseLib", "min_version": "3.4.5"}],
   "affects_gameplay": true
 }
