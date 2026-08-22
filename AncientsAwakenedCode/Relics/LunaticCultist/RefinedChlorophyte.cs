@@ -55,7 +55,7 @@ public class RefinedChlorophyte : AncientsAwakenedRelic
         IReadOnlyList<Creature> participants,
         ICombatState combatState)
     {
-        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState.TurnNumber > 1)
+        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState?.TurnNumber > 1)
             return;
         Flash();
         await PowerCmd.Apply<PlatingPower>(choiceContext, Owner.Creature, DynamicVars.Power<PlatingPower>().BaseValue, Owner.Creature, null);

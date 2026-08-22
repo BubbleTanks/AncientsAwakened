@@ -3,11 +3,9 @@ using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
@@ -17,7 +15,7 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 public class FlawlessHammer : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
-    private List<IHoverTip> _extraHoverTips = [];
+    private readonly List<IHoverTip> _extraHoverTips = [];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips
     {
@@ -41,11 +39,12 @@ public class FlawlessHammer : AncientsAwakenedRelic
     
     private void UpdateHoverTips(Player player)
     {
-        if (player == null) return;
+        if (player == null) 
+            return;
         _extraHoverTips.Clear();
         if (player.RunState.Players.Count > 1 && (AncientConfigs.MultiplayerFlawlessHammer || MultiplayerHammerInDeck(player)))
         {
-            BreakBeneathMe card = (BreakBeneathMe) ModelDb.Card<BreakBeneathMe>().ToMutable();
+            var card = (BreakBeneathMe) ModelDb.Card<BreakBeneathMe>().ToMutable();
             card.IsMultiplayer = true;
             _extraHoverTips.AddRange(HoverTipFactory.FromCard(card));
             _extraHoverTips.AddRange(card.HoverTips);
@@ -56,7 +55,7 @@ public class FlawlessHammer : AncientsAwakenedRelic
         }
     }
 
-    private bool MultiplayerHammerInDeck(Player player)
+    private static bool MultiplayerHammerInDeck(Player player)
     {
         if (player.Deck.Cards.FirstOrDefault(c => c.Id == ModelDb.Card<BreakBeneathMe>().Id) is { } card)
         {

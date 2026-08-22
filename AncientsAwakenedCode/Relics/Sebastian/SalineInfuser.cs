@@ -1,12 +1,10 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Patches;
-using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
-using MegaCrit.Sts2.Core.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
@@ -19,7 +17,7 @@ public class SalineInfuser : AncientsAwakenedRelic
     {
         if (potion.Owner != Owner || SaltyPatch.SaltyField.Get(potion))
             return;
-        PotionModel potionSalty = (PotionModel)potion.MutableClone();
+        var potionSalty = (PotionModel)potion.MutableClone();
         potionSalty.IsQueued = false;
         SaltyPatch.SaltyField.Set(potionSalty, true);
         await PotionCmd.TryToProcure(potionSalty, Owner);

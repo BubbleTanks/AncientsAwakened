@@ -7,7 +7,6 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -27,8 +26,8 @@ public class SolarBrazier : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.RemoveSelectionPrompt, 0, DynamicVars.Cards.IntValue);
-        foreach (CardModel card in await CardSelectCmd.FromDeckForRemoval(Owner, prefs))
+        var prefs = new CardSelectorPrefs(CardSelectorPrefs.RemoveSelectionPrompt, 0, DynamicVars.Cards.IntValue);
+        foreach (var card in await CardSelectCmd.FromDeckForRemoval(Owner, prefs))
             await CardPileCmd.RemoveFromDeck(card);
     }
     

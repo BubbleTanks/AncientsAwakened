@@ -71,7 +71,7 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
 
-    private static Dictionary<ModelId, ModelId> VanillaExperimentalCards = new()
+    private static readonly Dictionary<ModelId, ModelId> VanillaExperimentalCards = new()
     {
         {
             ModelDb.Character<Ironclad>().Id,
@@ -100,8 +100,9 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     public override async Task AfterObtained()
     {
-        CardModel card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
-        if (card == null) return;
+        if(AncientCard == null)
+            return;
+        var card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
         CardCmd.Upgrade(card);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck), 2f);
         if(!SaveManager.Instance.Progress.DiscoveredCards.Contains(ModelDb.Card<SurpassLimits>().Id)) SaveManager.Instance.MarkCardAsSeen(ModelDb.Card<SurpassLimits>());

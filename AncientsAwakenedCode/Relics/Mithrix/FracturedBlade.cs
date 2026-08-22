@@ -14,7 +14,7 @@ public class FracturedBlade : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    private bool isFirstTurn = false;
+    private bool isFirstTurn;
 
     public override bool ShouldTakeExtraTurn(Player player)
     {
@@ -31,11 +31,12 @@ public class FracturedBlade : AncientsAwakenedRelic
         return false;
     }
     
-    public override async Task AfterRoomEntered(AbstractRoom room)
+    public override Task AfterRoomEntered(AbstractRoom room)
     {
-        if (!(room is CombatRoom))
-            return;
+        if (room is not CombatRoom)
+            return Task.CompletedTask;
         isFirstTurn = true;
+        return Task.CompletedTask;
     }
 
     public override async Task AfterCardPlayed(PlayerChoiceContext context, CardPlay cardPlay)

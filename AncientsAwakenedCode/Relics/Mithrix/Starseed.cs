@@ -24,10 +24,10 @@ public class Starseed : AncientsAwakenedRelic
     
     public override async Task AfterObtained()
     {
-        List<Reward> list = new List<Reward>();
-        CardCreationOptions options = CardCreationOptions.ForNonCombatWithUniformOdds([Owner.Character.CardPool], c => c.Rarity == CardRarity.Rare).WithFlags(CardCreationFlags.NoRarityModification);
+        var list = new List<Reward>();
+        var options = CardCreationOptions.ForNonCombatWithUniformOdds([Owner.Character.CardPool], c => c.Rarity == CardRarity.Rare).WithFlags(CardCreationFlags.NoRarityModification);
             
-        for (int i = 0; i < DynamicVars.Cards.IntValue; i++)
+        for (var i = 0; i < DynamicVars.Cards.IntValue; i++)
         {
             list.Add(new CardReward(options, 3, Owner));
         }

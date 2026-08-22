@@ -19,7 +19,7 @@ public class PackRat : AncientsAwakenedRelic
         if (player != Owner || (room != null ? (room.RoomType != RoomType.Elite && room.RoomType != RoomType.Monster ? 1 : 0) : 1) != 0)
             return false;
 
-        int rng = Owner.RunState.Rng.Niche.NextInt(1, 11);
+        var rng = Owner.RunState.Rng.Niche.NextInt(1, 11);
 
         switch (rng)
         {

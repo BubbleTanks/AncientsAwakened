@@ -48,7 +48,7 @@ public class ShippingRequest : AncientsAwakenedRelic
     public override async Task AfterObtained()
     {
         CardCmd.PreviewCardPileAdd([await CardPileCmd.Add(Owner.RunState.CreateCard<HeavyCrate>(Owner), PileType.Deck)], 2F);
-        WeighedDown c = (WeighedDown) await CardPileCmd.AddCurseToDeck<WeighedDown>(Owner);
+        var c = (WeighedDown) await CardPileCmd.AddCurseToDeck<WeighedDown>(Owner);
         c.FindTreasureCoords();
     }
     
@@ -58,15 +58,15 @@ public class ShippingRequest : AncientsAwakenedRelic
         if (room.RoomType != RoomType.Boss)
             return;
 
-        List<CardModel> removeCards = new List<CardModel>();
+        var removeCards = new List<CardModel>();
         
-        foreach (CardModel card in Owner.Deck.Cards.Where(c => c is HeavyCrate))
+        foreach (var card in Owner.Deck.Cards.Where(c => c is HeavyCrate))
         {
             RewardAmount++;
             removeCards.Add(card);
         }
 
-        foreach (CardModel card in removeCards)
+        foreach (var card in removeCards)
         {
             await CardPileCmd.RemoveFromDeck(card);
             Flash();
@@ -75,28 +75,27 @@ public class ShippingRequest : AncientsAwakenedRelic
     
     public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
     {
-        if (RewardAmount > 0 && player == Owner)
+        if (RewardAmount <= 0 || player != Owner)
+            return false;
+        
+        for (var i = 0; i < RewardAmount; i++)
         {
-            for (int i = 0; i < RewardAmount; i++)
-            {
-                rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,301), player));
-                rewards.Add(new PotionReward(player));
-                rewards.Add(new PotionReward(player));
-                rewards.Add(new RelicReward(RelicRarity.Common, player));
-                rewards.Add(new RelicReward(RelicRarity.Uncommon, player));
-                rewards.Add(new RelicReward(RelicRarity.Rare, player));
-                rewards.Add(new CardReward(CardCreationOptions.ForNonCombatWithUniformOdds([Owner.Character.CardPool], c => c.Rarity == CardRarity.Rare).WithFlags(CardCreationFlags.NoRarityModification), 3, player));
-                rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
-                rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
-                rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
-                rewards.Add(new CardRemovalReward(player));
-                rewards.Add(new CardRemovalReward(player));
-                rewards.Add(new CardRemovalReward(player));
-            }
-            _gaveReward = true;
-            return true;
+            rewards.Add(new GoldReward(Owner.RunState.Rng.Niche.NextInt(250,301), player));
+            rewards.Add(new PotionReward(player));
+            rewards.Add(new PotionReward(player));
+            rewards.Add(new RelicReward(RelicRarity.Common, player));
+            rewards.Add(new RelicReward(RelicRarity.Uncommon, player));
+            rewards.Add(new RelicReward(RelicRarity.Rare, player));
+            rewards.Add(new CardReward(CardCreationOptions.ForNonCombatWithUniformOdds([Owner.Character.CardPool], c => c.Rarity == CardRarity.Rare).WithFlags(CardCreationFlags.NoRarityModification), 3, player));
+            rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
+            rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
+            rewards.Add(new CardReward(new CardCreationOptions([Owner.Character.CardPool], CardCreationSource.Other, CardRarityOddsType.RegularEncounter), 3, player));
+            rewards.Add(new CardRemovalReward(player));
+            rewards.Add(new CardRemovalReward(player));
+            rewards.Add(new CardRemovalReward(player));
         }
-        return false;   
+        _gaveReward = true;
+        return true;
     }
     
     public override Task AfterMapGenerated(ActMap map, int actIndex)

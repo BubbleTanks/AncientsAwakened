@@ -24,18 +24,18 @@ public class WhisperingTendrils : AncientsAwakenedRelic
     
     public override async Task AfterObtained()
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1, DynamicVars.Cards.IntValue)
+        var prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1, DynamicVars.Cards.IntValue)
         {
             RequireManualConfirmation = true,
         };
         List<CardModel> cardSelection = [];
-        for (int i = 0; i < DynamicVars.Cards.IntValue; i++)
+        for (var i = 0; i < DynamicVars.Cards.IntValue; i++)
         {
             cardSelection.Add(ModelDb.Card<Lunacy>().ToMutable());
         }
         
         List<CardPileAddResult> results = [];
-        foreach (CardModel _ in await CardSelectCmd.FromSimpleGrid(new BlockingPlayerChoiceContext(),
+        foreach (var _ in await CardSelectCmd.FromSimpleGrid(new BlockingPlayerChoiceContext(),
                      cardSelection, Owner, prefs))
         {
             var c = Owner.RunState.CreateCard(ModelDb.Card<Lunacy>(), Owner);

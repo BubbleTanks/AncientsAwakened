@@ -1,6 +1,5 @@
 ﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
@@ -17,12 +16,12 @@ public class BoneLordBoon : AncientsAwakenedRelic
     
     public override async Task BeforeCombatStart()
     {
-        if(Owner.RunState.CurrentRoom.RoomType == RoomType.Boss)
+        if(Owner.RunState.CurrentRoom?.RoomType == RoomType.Boss)
             return;
         Flash();
-        IReadOnlyList<Creature> hittableEnemies = Owner.Creature.CombatState.HittableEnemies;
+        var hittableEnemies = Owner.Creature.CombatState.HittableEnemies;
         VfxCmd.PlayOnCreatureCenters(hittableEnemies, "vfx/vfx_bite");
-        foreach (Creature creature in hittableEnemies)
-            await CreatureCmd.SetCurrentHp(creature, creature.CurrentHp - creature.MaxHp * (DynamicVars["HpPercentage"].BaseValue / 100M));
+        foreach (var creature in hittableEnemies)
+            await CreatureCmd.SetCurrentHp(creature, Math.Max(creature.CurrentHp - creature.MaxHp * (DynamicVars["HpPercentage"].BaseValue / 100M), 1));
     }
 }

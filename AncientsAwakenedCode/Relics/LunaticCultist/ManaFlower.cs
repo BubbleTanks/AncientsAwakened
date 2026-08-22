@@ -8,7 +8,6 @@ using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Powers;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.ValueProps;
 
@@ -34,14 +33,19 @@ public class ManaFlower : AncientsAwakenedRelic
         potion.Owner = Owner;
         ManaFlowerPatch.ManaFlowerPotionField.Set(potion, true);
         if (potion.TargetType == TargetType.AnyEnemy)
-            await potion.OnUseWrapper(choiceContext,Owner.RunState.Rng.CombatTargets.NextItem(player.Creature.CombatState.HittableEnemies));
+        {
+            if(player.Creature.CombatState?.HittableEnemies.Count == 0)
+                return;
+            await potion.OnUseWrapper(choiceContext,
+                Owner.RunState.Rng.CombatTargets.NextItem(player.Creature.CombatState.HittableEnemies));
+        }
         else
             await potion.OnUseWrapper(choiceContext, Owner.Creature);
     }
     
-    public override Decimal ModifyDamageMultiplicative(
+    public override decimal ModifyDamageMultiplicative(
         Creature? target,
-        Decimal amount,
+        decimal amount,
         ValueProp props,
         Creature? dealer,
         CardModel? cardSource,
@@ -49,7 +53,7 @@ public class ManaFlower : AncientsAwakenedRelic
     {
         if (dealer != Owner.Creature || !props.IsPoweredAttack())
             return 1M;
-        Decimal amount1 = 1.0M - (DynamicVars["DamageDecrease"].BaseValue / 100M);
+        var amount1 = 1.0M - (DynamicVars["DamageDecrease"].BaseValue / 100M);
         return amount1;
     }
 }

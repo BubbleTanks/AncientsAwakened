@@ -26,11 +26,8 @@ public class FlashBeacon : AncientsAwakenedRelic
 
     public override bool ShowCounter => true;
 
-    public override int DisplayAmount
-    {
-        get => !IsActivating ? TurnsSeen : DynamicVars[_turnsKey].IntValue;
-    }
-    
+    public override int DisplayAmount => !IsActivating ? TurnsSeen : DynamicVars[_turnsKey].IntValue;
+
     [SavedProperty]
     private int TurnsSeen
     {
@@ -68,7 +65,7 @@ public class FlashBeacon : AncientsAwakenedRelic
         Status = TurnsSeen == DynamicVars["Turns"].IntValue - 1 ? RelicStatus.Active : RelicStatus.Normal;
         if (TurnsSeen != 0)
             return;
-        TaskHelper.RunSafely(DoActivateVisuals());
+        await TaskHelper.RunSafely(DoActivateVisuals());
         await PowerCmd.Apply<FlashBeaconPower>(new ThrowingPlayerChoiceContext(), combatState.HittableEnemies, DynamicVars.Power<FlashBeaconPower>().BaseValue, Owner.Creature, null);
     }
     

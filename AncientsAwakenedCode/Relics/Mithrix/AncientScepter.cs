@@ -118,32 +118,32 @@ public class AncientScepter : AncientsAwakenedRelic
         
         AssertMutable(); 
         var basicCount = player.Deck.Cards.Count(c => c.IsBasicStrikeOrDefend);
-        if (basicCount >= 3)
+        if (basicCount < 3)
+            return false;
+        
+        var strikeCard = GetBasicStrikeCard(player);
+        var defendCard = GetBasicDefendCard(player);
+        if (strikeCard != null)
         {
-            var strikeCard = GetBasicStrikeCard(player);
-            var defendCard = GetBasicDefendCard(player);
-            if (strikeCard != null)
-            {
-                StrikeCard = PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedCard) ? 
-                    ModelDb.GetById<CardModel>(perfectedCard).ToMutable().ToSerializable() : 
-                    ModelDb.Card<PerfectStrike>().ToMutable().ToSerializable();
-            }
-
-            if (defendCard != null)
-            {
-                DefendCard = PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedCard) ? 
-                    ModelDb.GetById<CardModel>(perfectedCard).ToMutable().ToSerializable() : 
-                    ModelDb.Card<PerfectDefend>().ToMutable().ToSerializable();
-            }
-            UpdateHoverTips();
-            return true;
+            StrikeCard = PerfectedStrikeUpgrades.TryGetValue(strikeCard.Id, out var perfectedCard) ? 
+                ModelDb.GetById<CardModel>(perfectedCard).ToMutable().ToSerializable() : 
+                ModelDb.Card<PerfectStrike>().ToMutable().ToSerializable();
         }
-        return false;
+
+        if (defendCard != null)
+        {
+            DefendCard = PerfectedDefendUpgrades.TryGetValue(defendCard.Id, out var perfectedCard) ? 
+                ModelDb.GetById<CardModel>(perfectedCard).ToMutable().ToSerializable() : 
+                ModelDb.Card<PerfectDefend>().ToMutable().ToSerializable();
+        }
+        
+        UpdateHoverTips();
+        return true;
     }
 
     public override async Task AfterObtained()
     {
-        var transformations = PileType.Deck.GetPile(Owner).Cards.Where(c => c.IsBasicStrikeOrDefend && c.IsRemovable).ToList()
+        var transformations = PileType.Deck.GetPile(Owner).Cards.Where(c => c is { IsBasicStrikeOrDefend: true, IsRemovable: true }).ToList()
             .Select(c => new CardTransformation(c, GetPerfectedTransformedCard(c)));
         var list = (await CardCmd.Transform(transformations, null, CardPreviewStyle.None)).ToList();
         if (list.Count > 0 && LocalContext.IsMe(Owner))

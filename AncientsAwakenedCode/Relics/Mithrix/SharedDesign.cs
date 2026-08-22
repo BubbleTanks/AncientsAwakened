@@ -21,17 +21,17 @@ public class SharedDesign : AncientsAwakenedRelic
     [SavedProperty]
     private bool TookDamageThisCombat
     {
-        get => this._tookDamageThisCombat;
+        get => _tookDamageThisCombat;
         set
         {
-            this.AssertMutable();
-            this._tookDamageThisCombat = value;
+            AssertMutable();
+            _tookDamageThisCombat = value;
         }
     }
 
     public override Task AfterRoomEntered(AbstractRoom room)
     {
-        this.TookDamageThisCombat = false;
+        TookDamageThisCombat = false;
         return Task.CompletedTask;
     }
 
@@ -43,9 +43,9 @@ public class SharedDesign : AncientsAwakenedRelic
         Creature? dealer,
         CardModel? cardSource)
     {
-        if (!(this.Owner.RunState.CurrentRoom is CombatRoom) || target != this.Owner.Creature || result.UnblockedDamage <= 0 || props.HasFlag((Enum) ValueProp.Unblockable))
+        if (Owner.RunState.CurrentRoom is not CombatRoom || target != Owner.Creature || result.UnblockedDamage <= 0 || props.HasFlag(ValueProp.Unblockable))
             return Task.CompletedTask;
-        this.TookDamageThisCombat = true;
+        TookDamageThisCombat = true;
         return Task.CompletedTask;
     }
     

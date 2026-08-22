@@ -31,27 +31,24 @@ public class GlowingVial : AncientsAwakenedRelic
     
     public override bool ShouldDisableRemainingRestSiteOptions(Player player)
     {
-        if (Owner.Creature.CurrentHp >= GlowingVialOption.HpCost(player))
+        if (Owner.Creature.CurrentHp < GlowingVialOption.HpCost(player) || _options == null) 
+            return true;
+        
+        foreach (var option in _options)
         {
-            if (_options == null)
-            {
+            if (option is not GlowingVialOption) 
+                continue;
+            if (option.IsEnabled) 
                 return true;
-            }
-            foreach (var option in _options)
+            if (NRestSiteRoom.Instance == null) 
+                continue;
+            
+            var button = NRestSiteRoom.Instance.GetButtonForOption(option);
+            
+            if (button != null)
             {
-                if (option is GlowingVialOption)
-                {
-                    if (option.IsEnabled) return true;
-                    if (NRestSiteRoom.Instance != null)
-                    {
-                        var button = NRestSiteRoom.Instance.GetButtonForOption(option);
-                        if (button != null)
-                        {
-                            button._isUnclickable = false;
-                            button.Reload();
-                        }
-                    }
-                }
+                button._isUnclickable = false;
+                button.Reload();
             }
         }
         return true;

@@ -26,7 +26,7 @@ public class EulogyZero : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    private bool IsPopulated(Player player) => player.RelicGrabBag._deques.ContainsKey(RelicRarity.Ancient);
+    private static bool IsPopulated(Player player) => player.RelicGrabBag._deques.ContainsKey(RelicRarity.Ancient);
     
 
     public void SetupForPlayer(Player player)
@@ -46,7 +46,7 @@ public class EulogyZero : AncientsAwakenedRelic
         
         foreach (RelicModel relicModel in relics)
         {
-            if (!player.RelicGrabBag._deques.TryGetValue(RelicRarity.Ancient, out List<RelicModel> relicModelList))
+            if (!player.RelicGrabBag._deques.TryGetValue(RelicRarity.Ancient, out List<RelicModel>? relicModelList))
             {
                 relicModelList = new List<RelicModel>();
                 player.RelicGrabBag._deques[RelicRarity.Ancient] = relicModelList;
@@ -84,7 +84,7 @@ public class EulogyZero : AncientsAwakenedRelic
     /// <summary>
     /// If you wish to add your mod to this list, add the BlacklistFromEulogyRelicExtension in your relic constructor with a Mod Interop.
     /// </summary>
-    private List<RelicModel> BlacklistedRelics()
+    private static List<RelicModel> BlacklistedRelics()
     {
         var listVar = new List<RelicModel>();
 
