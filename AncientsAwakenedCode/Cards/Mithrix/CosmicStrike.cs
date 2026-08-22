@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(RegentCardPool))]
-public class CosmicStrike() : AncientsAwakenedCard(1,
+public sealed class CosmicStrike() : AncientsAwakenedCard(1,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {

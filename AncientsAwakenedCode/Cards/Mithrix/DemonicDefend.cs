@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(IroncladCardPool))]
-public class DemonicDefend() : AncientsAwakenedCard(1,
+public sealed class DemonicDefend() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {

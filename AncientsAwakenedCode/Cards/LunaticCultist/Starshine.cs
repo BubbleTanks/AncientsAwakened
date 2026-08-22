@@ -1,20 +1,16 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist;
-using BaseLib.Extensions;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
-using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
 [Pool(typeof(EventCardPool))]
-public class Starshine() : AncientsAwakenedCard(0,
+public sealed class Starshine() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
@@ -31,7 +27,7 @@ public class Starshine() : AncientsAwakenedCard(0,
     {
         var cardModel = await CardSelectCmd.FromChooseACardScreen(choiceContext,  CardOptions.Select(c =>
         {
-            CardModel card = CombatState.CreateCard(c, Owner);
+            var card = CombatState.CreateCard(c, Owner);
             if(IsUpgraded) CardCmd.Upgrade(card);
             return card;
         }).ToList(), Owner);

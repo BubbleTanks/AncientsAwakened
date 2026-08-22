@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(NecrobinderCardPool))]
-public class EternalStrike() : AncientsAwakenedCard(1,
+public sealed class EternalStrike() : AncientsAwakenedCard(1,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {

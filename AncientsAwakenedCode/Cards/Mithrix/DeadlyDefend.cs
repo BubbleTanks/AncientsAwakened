@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(SilentCardPool))]
-public class DeadlyDefend() : AncientsAwakenedCard(1,
+public sealed class DeadlyDefend() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {
@@ -21,7 +21,7 @@ public class DeadlyDefend() : AncientsAwakenedCard(1,
     
     public override bool GainsBlock => true;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromCard<Shiv>()];
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new DynamicVar("Shivs",1), new CardsVar(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new BlockVar(6, ValueProp.Move), new("Shivs",1), new CardsVar(1)];
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Defend];
 
     protected override async Task OnPlay(
@@ -29,8 +29,8 @@ public class DeadlyDefend() : AncientsAwakenedCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        IEnumerable<CardModel> inHand = await Shiv.CreateInHand(Owner, DynamicVars["Shivs"].IntValue, CombatState);
-        foreach (CardModel card in inHand)
+        var inHand = await Shiv.CreateInHand(Owner, DynamicVars["Shivs"].IntValue, CombatState);
+        foreach (var card in inHand)
             CardCmd.Upgrade(card);
         await CardPileCmd.Draw(choiceContext, DynamicVars.Cards.IntValue, Owner);
     }

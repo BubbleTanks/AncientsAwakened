@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 [Pool(typeof(EventCardPool))]
-public class BreakBeneathMe() : AncientsAwakenedCard(4, CardType.Attack, CardRarity.Ancient, TargetType.AnyEnemy)
+public sealed class BreakBeneathMe() : AncientsAwakenedCard(4, CardType.Attack, CardRarity.Ancient, TargetType.AnyEnemy)
 {
     private bool _isMultiplayer;
     
@@ -35,7 +35,7 @@ public class BreakBeneathMe() : AncientsAwakenedCard(4, CardType.Attack, CardRar
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, cardPlay).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
         if (((BoolVar)DynamicVars["IsMultiplayer"]).BoolVal)
         {
-            foreach(var creature in CombatState.GetTeammatesOf(Owner.Creature).Where(c => c != null && c.IsAlive && c.IsPlayer))
+            foreach(var creature in CombatState.GetTeammatesOf(Owner.Creature).Where(c => c is { IsAlive: true, IsPlayer: true }))
             {
                 await PowerCmd.Apply<BreakBeneathMePower>(choiceContext, creature,
                     DynamicVars.Power<BreakBeneathMePower>().BaseValue, Owner.Creature, this);

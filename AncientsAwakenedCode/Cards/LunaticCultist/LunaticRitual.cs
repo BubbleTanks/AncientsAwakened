@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
 [Pool(typeof(EventCardPool))]
-public class LunaticRitual() : AncientsAwakenedCard(1,
+public sealed class LunaticRitual() : AncientsAwakenedCard(1,
     CardType.Power, CardRarity.Ancient,
     TargetType.Self)
 {

@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(QuestCardPool))]
-public class HeavyCrate() : AncientsAwakenedCard(-1, CardType.Quest, CardRarity.Quest, TargetType.None)
+public sealed class HeavyCrate() : AncientsAwakenedCard(-1, CardType.Quest, CardRarity.Quest, TargetType.None)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [];
     

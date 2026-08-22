@@ -16,7 +16,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(DefectCardPool))]
-public class EmpoweredDefend() : AncientsAwakenedCard(1,
+public sealed class EmpoweredDefend() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {

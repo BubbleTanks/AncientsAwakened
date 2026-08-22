@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Leshy;
 
 [Pool(typeof(TokenCardPool))]
-public class Squirrel() : AncientsAwakenedCard(0,
+public sealed class Squirrel() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {

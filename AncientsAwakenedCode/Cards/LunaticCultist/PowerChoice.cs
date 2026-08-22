@@ -1,21 +1,16 @@
-﻿using BaseLib.Extensions;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Multiplayer;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.CardPools;
-using MegaCrit.Sts2.Core.Models.Powers;
-using MegaCrit.Sts2.Core.Random;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
 [Pool(typeof(EventCardPool))]
-public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
+public sealed class PowerChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
 {
     public const int ExhaustValue = 4;
     public const int ExhaustUpgrade = 2;
@@ -41,8 +36,6 @@ public class PowerChoice() : AncientsAwakenedCard(-1, CardType.Skill, CardRarity
             {
                 Cancelable = true
             });
-        if (cards == null)
-            return;
         foreach(var card in cards)
             await CardCmd.Exhaust(context, card);
     }
