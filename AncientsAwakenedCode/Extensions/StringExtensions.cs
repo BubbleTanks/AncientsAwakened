@@ -37,4 +37,9 @@ public static class StringExtensions
     {
         return Path.Join(AncientsAwakenedMain.ResPath, "images", "relics", "big", path);
     }
+    
+    public static string RestSiteImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "rest_site", path);
+    }
 }

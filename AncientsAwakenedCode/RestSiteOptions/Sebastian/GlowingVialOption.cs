@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Sebastian;
 
-public class GlowingVialOption(Player owner) : RestSiteOption(owner), ICustomModel
+public class GlowingVialOption(Player owner) : AncientsAwakenedRestSiteOption(owner)
 {
     private const decimal HP_LOSS = 8M;
 
@@ -31,18 +31,17 @@ public class GlowingVialOption(Player owner) : RestSiteOption(owner), ICustomMod
         return PileType.Deck.GetPile(player).Cards.Count(c => c.IsRemovable);
     }
     
-    public override string OptionId => "ANCIENTSAWAKENED-VIAL";
-    
     public override LocString Description
     {
         get
         {
             if (!IsEnabled)
             {
-                if(Owner.Creature.CurrentHp <= HP_LOSS) return new LocString("rest_site_ui", $"OPTION_{OptionId}.descriptionHpDisabled");
-                return new LocString("rest_site_ui", $"OPTION_{OptionId}.descriptionDisabled");
+                if(Owner.Creature.CurrentHp <= HP_LOSS) 
+                    return new LocString("rest_site_ui", $"{OptionId}.descriptionHpDisabled");
+                return new LocString("rest_site_ui", $"{OptionId}.descriptionDisabled");
             }
-            LocString description = new LocString("rest_site_ui", $"OPTION_{OptionId}.description");
+            var description = new LocString("rest_site_ui", $"{OptionId}.description");
             return description;
         }
     }
@@ -53,7 +52,7 @@ public class GlowingVialOption(Player owner) : RestSiteOption(owner), ICustomMod
         {
             Cancelable = true, RequireManualConfirmation = true
         };
-        CardModel original = (await CardSelectCmd.FromDeckForTransformation(Owner, prefs)).FirstOrDefault();
+        var original = (await CardSelectCmd.FromDeckForTransformation(Owner, prefs)).FirstOrDefault();
         if (original != null)
         {
             await CardCmd.TransformToRandom(original, Owner.RunState.Rng.Niche, CardPreviewStyle.EventLayout);
@@ -62,7 +61,7 @@ public class GlowingVialOption(Player owner) : RestSiteOption(owner), ICustomMod
 
         if (!IsEnabled)
         {
-            var button = NRestSiteRoom.Instance.GetButtonForOption(this);
+            var button = NRestSiteRoom.Instance?.GetButtonForOption(this);
             if (button != null)
             {
                 button.Reload();

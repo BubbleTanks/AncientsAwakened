@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wtqbx7j85l32"
-path="res://.godot/imported/option_ancientsawakened-vial.png-b7b4357c8d27ec26bd266d2786d3ca44.ctex"
+uid="uid://dentg5va1scxc"
+path="res://.godot/imported/glowing_vial_option.png-eb06c72c32faf6cd945accbfae8e2090.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/ui/rest_site/option_ancientsawakened-vial.png"
-dest_files=["res://.godot/imported/option_ancientsawakened-vial.png-b7b4357c8d27ec26bd266d2786d3ca44.ctex"]
+source_file="res://AncientsAwakened/images/rest_site/glowing_vial_option.png"
+dest_files=["res://.godot/imported/glowing_vial_option.png-eb06c72c32faf6cd945accbfae8e2090.ctex"]
 
 [params]
 
