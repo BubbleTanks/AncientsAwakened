@@ -34,6 +34,5 @@ public sealed class LunaticRitual() : AncientsAwakenedCard(1,
     protected override void OnUpgrade()
     {
         DynamicVars.Power<RitualPower>().UpgradeValueBy(1);
-        DynamicVars.Power<LunaticRitualPower>().UpgradeValueBy(5);
     }
 }

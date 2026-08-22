@@ -84,7 +84,7 @@
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "Cosmic Dust",
 
-  "ANCIENTSAWAKENED-LUNACY.description": "Reduce the cost of a random card in your [gold]Hand[/gold] to 0 this combat.",
+  "ANCIENTSAWAKENED-LUNACY.description": "Make a random card in your [gold]Hand[/gold] free to play this combat.",
   "ANCIENTSAWAKENED-LUNACY.title": "Lunacy",
 
   "ANCIENTSAWAKENED-INSANITY.description": "Increase the cost of a random card in your [gold]Hand[/gold] by {Energy:energyIcons()} this combat.\nDraw {Cards:diff()} {Cards:plural:card|cards}.",
