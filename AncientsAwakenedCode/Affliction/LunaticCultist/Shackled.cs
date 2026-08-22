@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.HoverTips;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Affliction.LunaticCultist;
 
-public class Shackled : AncientsAwakenedAffliction
+public sealed class Shackled : AncientsAwakenedAffliction
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Unplayable)];
      

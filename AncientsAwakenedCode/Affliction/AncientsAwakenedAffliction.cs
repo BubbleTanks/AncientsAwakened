@@ -7,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Affliction;
 
-public class AncientsAwakenedAffliction : AfflictionModel, ICustomModel
+public abstract class AncientsAwakenedAffliction : AfflictionModel, ICustomModel
 {
     private string? CustomOverlayPath     
     {
