@@ -1,12 +1,11 @@
-﻿using BaseLib.Abstracts;
-using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Enchantments.Sebastian;
 
-public class Charmed : CustomEnchantmentModel
+public sealed class Charmed : AncientsAwakenedEnchantment
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Times", 1), new EnergyVar(1)];
     

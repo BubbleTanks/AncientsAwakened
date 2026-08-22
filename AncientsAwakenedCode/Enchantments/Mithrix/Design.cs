@@ -1,10 +1,9 @@
-﻿using BaseLib.Abstracts;
-using MegaCrit.Sts2.Core.HoverTips;
+﻿using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Enchantments.Mithrix;
 
-public class Design : CustomEnchantmentModel
+public sealed class Design : AncientsAwakenedEnchantment
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new IntVar("Times", 1M)];
     
