@@ -4,9 +4,9 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Powers;
+namespace AncientsAwakened.AncientsAwakenedCode.Powers.Leshy;
 
-public class StunNextTurnPower : AncientsAwakenedPower
+public sealed class StunNextTurnPower : AncientsAwakenedPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;

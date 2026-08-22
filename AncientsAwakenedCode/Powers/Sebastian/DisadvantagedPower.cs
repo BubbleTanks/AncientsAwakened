@@ -10,22 +10,22 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
 
-public class DisadvantagedPower : AncientsAwakenedPower
+public sealed class DisadvantagedPower : AncientsAwakenedPower
 {
     public override PowerType Type => PowerType.Debuff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DynamicVar("DamageDecrease", 0.85M), new DynamicVar("DamageIncrease", 1.3M)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new("DamageDecrease", 0.85M), new("DamageIncrease", 1.3M)];
 
-    public override Decimal ModifyDamageMultiplicative(
+    public override decimal ModifyDamageMultiplicative(
         Creature? target,
-        Decimal amount,
+        decimal amount,
         ValueProp props,
         Creature? dealer,
         CardModel? cardSource,
         CardPlay? _)
     {
-        Decimal amount1 = 1.0M;
+        decimal amount1;
 
         if (!props.IsPoweredAttack())
         {

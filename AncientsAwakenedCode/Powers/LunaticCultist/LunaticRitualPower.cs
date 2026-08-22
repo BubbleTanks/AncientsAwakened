@@ -1,6 +1,4 @@
-﻿using Godot;
-using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Creatures;
+﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Powers;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -11,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist;
 
-public class LunaticRitualPower : AncientsAwakenedPower
+public sealed class LunaticRitualPower : AncientsAwakenedPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
@@ -20,12 +18,11 @@ public class LunaticRitualPower : AncientsAwakenedPower
     {
         if (player != Owner.Player)
             return;
-        foreach (Creature hittableEnemy in CombatState.HittableEnemies)
+        foreach (var hittableEnemy in CombatState.HittableEnemies)
         {
-            NFireBurstVfx child = NFireBurstVfx.Create(hittableEnemy, 0.75f);
-            NCombatRoom instance = NCombatRoom.Instance;
-            if (instance != null)
-                instance.CombatVfxContainer.AddChildSafely((Node) child);
+            var child = NFireBurstVfx.Create(hittableEnemy, 0.75f);
+            var instance = NCombatRoom.Instance;
+            instance?.CombatVfxContainer.AddChildSafely(child);
         }
         await CreatureCmd.Damage(choiceContext, CombatState.HittableEnemies, Amount, ValueProp.Unpowered, Owner, null, null);
 

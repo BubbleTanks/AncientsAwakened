@@ -8,7 +8,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Powers.Sebastian;
 
-public class FlashBeaconPower : TemporaryStrengthPower, ICustomPower
+public sealed class FlashBeaconPower : TemporaryStrengthPower, ICustomPower
 {
     public override AbstractModel OriginModel => ModelDb.Relic<FlashBeacon>();
     
