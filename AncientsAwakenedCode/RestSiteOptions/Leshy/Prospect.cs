@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Entities.Players;
 
 namespace AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Leshy;
 
-public class ProspectOption(Player owner) : AncientsAwakenedRestSiteOption(owner)
+public sealed class Prospect(Player owner) : AncientsAwakenedRestSiteOption(owner)
 {
     public override async Task<bool> OnSelect()
     {

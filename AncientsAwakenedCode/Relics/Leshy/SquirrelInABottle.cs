@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class SquirrelInABottle : AncientsAwakenedRelic
+public sealed class SquirrelInABottle : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class FishHook : AncientsAwakenedRelic
+public sealed class FishHook : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

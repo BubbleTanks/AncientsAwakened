@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class ManaFlower : AncientsAwakenedRelic
+public sealed class ManaFlower : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

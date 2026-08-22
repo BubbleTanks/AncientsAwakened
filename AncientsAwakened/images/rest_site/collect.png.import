@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clq5lt1jhnrqu"
-path="res://.godot/imported/collect_option.png-d8c0758fbbbc5bc8e917662a5ceac37f.ctex"
+uid="uid://bpr35t414sf3u"
+path="res://.godot/imported/collect.png-700a6ce8543d07b12533e4038f53da90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/rest_site/collect_option.png"
-dest_files=["res://.godot/imported/collect_option.png-d8c0758fbbbc5bc8e917662a5ceac37f.ctex"]
+source_file="res://AncientsAwakened/images/rest_site/collect.png"
+dest_files=["res://.godot/imported/collect.png-700a6ce8543d07b12533e4038f53da90.ctex"]
 
 [params]
 

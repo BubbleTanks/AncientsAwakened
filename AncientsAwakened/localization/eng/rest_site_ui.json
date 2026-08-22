@@ -1,12 +1,12 @@
 ﻿{
-  "ANCIENTSAWAKENED-GLOWING_VIAL_OPTION.description": "[gold]Transform[/gold] [blue]1[/blue] card in your [gold]Deck[/gold] and lose [blue]8[/blue] HP.",
-  "ANCIENTSAWAKENED-GLOWING_VIAL_OPTION.descriptionDisabled": "[red]You need at least 1 transformable card in your Deck.[/red]",
-  "ANCIENTSAWAKENED-GLOWING_VIAL_OPTION.descriptionHpDisabled": "[red]You do not have enough HP to Transform.[/red]",
-  "ANCIENTSAWAKENED-GLOWING_VIAL_OPTION.name": "Mutate",
+  "ANCIENTSAWAKENED-MUTATE.description": "[gold]Transform[/gold] [blue]1[/blue] card in your [gold]Deck[/gold] and lose [blue]8[/blue] HP.",
+  "ANCIENTSAWAKENED-MUTATE.descriptionDisabled": "[red]You need at least 1 transformable card in your Deck.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.descriptionHpDisabled": "[red]You do not have enough HP to Transform.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.name": "Mutate",
 
-  "ANCIENTSAWAKENED-PROSPECT_OPTION.description": "Gain 250-300 [gold]Gold[/gold].",
-  "ANCIENTSAWAKENED-PROSPECT_OPTION.name": "Mine",
+  "ANCIENTSAWAKENED-PROSPECT.description": "Gain [blue]250-300[/blue] [gold]Gold[/gold].",
+  "ANCIENTSAWAKENED-PROSPECT.name": "Mine",
 
-  "ANCIENTSAWAKENED-COLLECT_OPTION.description": "Add [blue]1[/blue] [gold]Starshine[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-COLLECT_OPTION.name": "Collect"
+  "ANCIENTSAWAKENED-COLLECT.description": "Add [blue]1[/blue] [gold]Starshine[/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-COLLECT.name": "Collect"
 }

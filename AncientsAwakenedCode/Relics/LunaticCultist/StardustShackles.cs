@@ -20,7 +20,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class StardustShackles : AncientsAwakenedRelic
+public sealed class StardustShackles : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

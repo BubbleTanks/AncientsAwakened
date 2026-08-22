@@ -16,7 +16,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class ExperimentalSerum : AncientsAwakenedRelic
+public sealed class ExperimentalSerum : AncientsAwakenedRelic
 {
     private static Dictionary<ModelId, ModelId>? _experimentalCards;
 

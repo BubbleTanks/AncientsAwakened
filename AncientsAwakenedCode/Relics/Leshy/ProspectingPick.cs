@@ -10,17 +10,17 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class ProspectingPick : AncientsAwakenedRelic
+public sealed class ProspectingPick : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-PROSPECT.name"), new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-PROSPECT.description"))];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "ANCIENTSAWAKENED-PROSPECT.name"), new LocString("rest_site_ui", "ANCIENTSAWAKENED-PROSPECT.description"))];
 
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
     {
         if (player != Owner)
             return false;
-        options.Add(new ProspectOption(player));
+        options.Add(new Prospect(player));
         return true;
     }
     

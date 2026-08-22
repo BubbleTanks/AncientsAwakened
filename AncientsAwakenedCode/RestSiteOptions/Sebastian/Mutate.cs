@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Sebastian;
 
-public class GlowingVialOption(Player owner) : AncientsAwakenedRestSiteOption(owner)
+public sealed class Mutate(Player owner) : AncientsAwakenedRestSiteOption(owner)
 {
     private const decimal HP_LOSS = 8M;
 

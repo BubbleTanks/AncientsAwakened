@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class MedicalKit : AncientsAwakenedRelic
+public sealed class MedicalKit : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

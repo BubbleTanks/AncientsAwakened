@@ -7,11 +7,14 @@ namespace AncientsAwakened.AncientsAwakenedCode.Potions;
 
 public abstract class AncientsAwakenedPotion : CustomPotionModel
 {
-    public override string? CustomLargeImagePath
+    
+    public override string? CustomPackedImagePath
     {
         get
         {
+            AncientsAwakenedMain.Logger.Info(Id.Entry);
             var path = $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".PotionImagePath();
+            AncientsAwakenedMain.Logger.Info(path);
             return ResourceLoader.Exists(path) ? path : null;
         }
     }

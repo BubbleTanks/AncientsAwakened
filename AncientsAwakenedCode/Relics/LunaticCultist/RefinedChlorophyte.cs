@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class RefinedChlorophyte : AncientsAwakenedRelic
+public sealed class RefinedChlorophyte : AncientsAwakenedRelic
 {
     private int _platingPower = 5;
     

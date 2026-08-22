@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
-public class Starseed : AncientsAwakenedRelic
+public sealed class Starseed : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

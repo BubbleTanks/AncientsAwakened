@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://di6wyn86peewc"
-path="res://.godot/imported/prospect_option.png-fde35d7c2d9f098a0c81e70fb4065884.ctex"
+uid="uid://cea1v4ndtsktw"
+path="res://.godot/imported/charmed.png-1333e2518e23bb2a6fe94a819d4c11c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AncientsAwakened/images/rest_site/prospect_option.png"
-dest_files=["res://.godot/imported/prospect_option.png-fde35d7c2d9f098a0c81e70fb4065884.ctex"]
+source_file="res://AncientsAwakened/images/enchantments/charmed.png"
+dest_files=["res://.godot/imported/charmed.png-1333e2518e23bb2a6fe94a819d4c11c1.ctex"]
 
 [params]
 

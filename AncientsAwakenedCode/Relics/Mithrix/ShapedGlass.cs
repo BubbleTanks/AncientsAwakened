@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
-public class ShapedGlass : AncientsAwakenedRelic
+public sealed class ShapedGlass : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class ShimmeringBottle : AncientsAwakenedRelic
+public sealed class ShimmeringBottle : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];

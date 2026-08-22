@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Nodes.CommonUi;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class WhisperingTendrils : AncientsAwakenedRelic
+public sealed class WhisperingTendrils : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

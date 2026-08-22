@@ -17,7 +17,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class TheSmoke : AncientsAwakenedRelic
+public sealed class TheSmoke : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 

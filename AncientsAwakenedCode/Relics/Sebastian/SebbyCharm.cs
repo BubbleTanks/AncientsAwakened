@@ -17,7 +17,7 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class SebbyCharm : AncientsAwakenedRelic
+public sealed class SebbyCharm : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
