@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Potions.Sebastian;
 
 [Pool(typeof(EventPotionPool))]
-public class NeloprephineVial : CustomPotionModel
+public sealed class NeloprephineVial : CustomPotionModel
 {
     public override PotionRarity Rarity => PotionRarity.Event;
     public override PotionUsage Usage => PotionUsage.AnyTime;

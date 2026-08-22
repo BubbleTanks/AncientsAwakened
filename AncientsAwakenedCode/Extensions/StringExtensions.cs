@@ -47,4 +47,9 @@ public static class StringExtensions
     {
         return Path.Join(AncientsAwakenedMain.ResPath, "images", "enchantments", path);
     }
+    
+    public static string PotionImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "potions", path);
+    }
 }
