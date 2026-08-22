@@ -87,6 +87,7 @@ public sealed class EulogyZero : AncientsAwakenedRelic
 
         listVar.Add(ModelDb.Relic<GoldenCompass>());
         listVar.Add(ModelDb.Relic<FurCoat>());
+        listVar.Add(ModelDb.Relic<DustyTome>());
 
         listVar.AddRange(ModelDb.Event<Neow>().AllPossibleOptions.Select(relic => relic.Relic));
 

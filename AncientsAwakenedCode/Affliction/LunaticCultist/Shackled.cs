@@ -1,11 +1,9 @@
-﻿using BaseLib.Abstracts;
-using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.HoverTips;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Affliction.LunaticCultist;
 
-public class Shackled : AfflictionModel, ICustomModel
+public class Shackled : AncientsAwakenedAffliction
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Unplayable)];
      

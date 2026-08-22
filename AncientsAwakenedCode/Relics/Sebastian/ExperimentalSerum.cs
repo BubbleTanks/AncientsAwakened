@@ -19,57 +19,14 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 public sealed class ExperimentalSerum : AncientsAwakenedRelic
 {
     private static Dictionary<ModelId, ModelId>? _experimentalCards;
-
-    private static Dictionary<ModelId, ModelId> ExperimentalCards
-    {
-        get
-        {
-            if (_experimentalCards == null)
-            {
-                _experimentalCards = new Dictionary<ModelId, ModelId>();
-                foreach (var kv in VanillaExperimentalCards)
-                {
-                    _experimentalCards.Add(kv.Key, kv.Value);
-                }
-                foreach (var kv in CustomExperimentalCardExtension.CustomExperimentalCards)
-                {
-                    _experimentalCards.Add(kv.Key, kv.Value);
-                }
-            }
-            return _experimentalCards;
-        }
-    }
+    
+    private ModelId? _ancientCard;
+    
+    private IEnumerable<IHoverTip> _extraHoverTips = [];
     
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     public override bool HasUponPickupEffect => true;    
-
-    private ModelId? _ancientCard;
-    
-    private IEnumerable<IHoverTip> _extraHoverTips = Array.Empty<IHoverTip>();
-
-    [SavedProperty]
-    private ModelId? AncientCard
-    {
-        get => _ancientCard;
-        set
-        {
-            AssertMutable();
-            _ancientCard = value;
-            if (_ancientCard != null)
-            {
-                var savecard = SaveUtil.CardOrDeprecated(_ancientCard);
-                
-                _extraHoverTips = savecard.HoverTips.Concat([HoverTipFactory.FromCard(savecard, true)]);
-
-                ((StringVar)DynamicVars["card"]).StringValue = savecard.Title;
-            }
-        }
-    }
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => _extraHoverTips;
-    
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
 
     private static readonly Dictionary<ModelId, ModelId> VanillaExperimentalCards = new()
     {
@@ -95,8 +52,55 @@ public sealed class ExperimentalSerum : AncientsAwakenedRelic
         }
     };
     
-    public void SetupForPlayer(Player player) => AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card) ? card : ModelDb.Card<SurpassLimits>().Id;
+    private static Dictionary<ModelId, ModelId> ExperimentalCards
+    {
+        get
+        {
+            if (_experimentalCards == null)
+            {
+                _experimentalCards = new Dictionary<ModelId, ModelId>();
+                foreach (var kv in VanillaExperimentalCards)
+                {
+                    _experimentalCards.Add(kv.Key, kv.Value);
+                }
+                foreach (var kv in CustomExperimentalCardExtension.CustomExperimentalCards)
+                {
+                    _experimentalCards.Add(kv.Key, kv.Value);
+                }
+            }
+            return _experimentalCards;
+        }
+    }
+
+    [SavedProperty]
+    private ModelId? AncientCard
+    {
+        get => _ancientCard;
+        set
+        {
+            AssertMutable();
+            _ancientCard = value;
+            if (_ancientCard != null)
+            {
+                var savecard = SaveUtil.CardOrDeprecated(_ancientCard);
+                
+                _extraHoverTips = savecard.HoverTips.Concat([HoverTipFactory.FromCard(savecard, true)]);
+
+                ((StringVar)DynamicVars["card"]).StringValue = savecard.Title;
+            }
+        }
+    }
     
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => _extraHoverTips;
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
+
+    public ExperimentalSerum()
+    {
+        this.BlacklistFromEulogy();
+    }
+    
+    public void SetupForPlayer(Player player) => AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card) ? card : ModelDb.Card<SurpassLimits>().Id;
     
     public override async Task AfterObtained()
     {

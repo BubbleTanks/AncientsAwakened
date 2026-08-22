@@ -30,7 +30,7 @@ public sealed class StardustShackles : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        var prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 0, DynamicVars.Cards.IntValue)
+        var prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 1, DynamicVars.Cards.IntValue)
         {
             Cancelable = false,
             RequireManualConfirmation = true

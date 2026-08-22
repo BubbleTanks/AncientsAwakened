@@ -52,4 +52,9 @@ public static class StringExtensions
     {
         return Path.Join(AncientsAwakenedMain.ResPath, "images", "potions", path);
     }
+    
+    public static string AfflictionScenePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "scenes", "afflictions", path);
+    }
 }

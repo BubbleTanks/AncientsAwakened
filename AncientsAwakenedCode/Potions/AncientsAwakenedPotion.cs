@@ -12,9 +12,7 @@ public abstract class AncientsAwakenedPotion : CustomPotionModel
     {
         get
         {
-            AncientsAwakenedMain.Logger.Info(Id.Entry);
             var path = $"{Id.Entry.RemovePrefix().ToLowerInvariant()}.png".PotionImagePath();
-            AncientsAwakenedMain.Logger.Info(path);
             return ResourceLoader.Exists(path) ? path : null;
         }
     }
