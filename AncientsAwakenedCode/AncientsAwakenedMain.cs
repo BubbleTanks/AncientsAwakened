@@ -23,6 +23,6 @@ public partial class AncientsAwakenedMain : Node
         Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
         Harmony harmony = new(ModId);
         ModConfigRegistry.Register(ModId, new AncientConfigs());
-        harmony.PatchAll();
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 }
