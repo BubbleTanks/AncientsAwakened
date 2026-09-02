@@ -1,0 +1,72 @@
+NOTE:
+This is for translators as well as for future reference with GitHub. This file is not used anywhere in-game.
+
+[h1] IMPORTANT NOTICE [/h1]
+The disabling and forcing configs have been removed and moved to [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3747493112]Ancient Configs Plus[/url]! It's recommended to download this for more control over your ancients.
+
+If you're running into softlocks in game, make sure that you're on the right version number (you may have to unsubscribe and resubscribe). If you are Latest/Main Branch, the version number should have "-LATEST" on it.
+
+[h2] [u] Localization [/u] [/h2]
+Translation is handled entirely from volunteers who are willing to work with us to make our mod more accessible for the public. We are not responsible or liable to update, modify, or verify any translated content.
+
+Korean Localization from F_iS_ma
+Japanese Localization from Sashimi_knife
+Simplified Chinese Localization from youyihj
+Brazilian Portuguese Localization from floca
+Russian Localization from Chris Rosenfeld
+
+[h1] Welcome to Ancients Awakened! [/h1]
+This is a mod that'll add a bunch of new Ancients from various sources. Currently this mod adds 4 new Ancients, but more will come in the future after we finish up some other projects we're working on. Please direct any bug reports and balance feedback to the forum in the STS Discord server, we are much more likely to see it there.
+Contributors: CrypticAurora & SoyTheProton (Plus assistance from #sts2-modding)
+[u] No generative AI of any sort was used in the making of this mod. [/u]
+
+[b] Please use StS2's Discord Modding Forum when reporting issues. [/b]
+You may use the GitHub, but it will be much less likely for us to see it there.
+https://github.com/BubbleTanks/AncientsAwakened
+
+[h1] Wiki: [/h1]
+[h1] https://github.com/BubbleTanks/AncientsAwakened/wiki [/h1]
+[hr][/hr]
+[h2] Current Ancient List: [/h2]
+[b] [u] ACT 2 [/u] [/b]
+Sebastian, Disgraced Handyman
+Leshy, Scrybe of Beasts
+
+[b] [u] ACT 3 [/u] [/b]
+Mithrix, King of Nothing
+Lunatic Cultist, Celestial Savant
+[hr][/hr]
+
+If you want to provide localization, please contact soytheproton on discord!
+
+[u] Art Credit [/u] 
+Credits for the art found in this mod.
+Art not listed were either made by us or commissioned specifically for this mod.
+If your art is in this mod and you would like it removed, contact either of us on discord or create an issue on GitHub (with proof of ownership) and we will remove it.
+
+[b]Art[/b]
+Mithrix Ancient Art by alm4nditte
+Mithrix Full-Art Card by u/egeees on Reddit
+
+Sebastian Ancient Art by unknown artist
+Sebastian Full-Art Card by mothulhu
+
+Ironclad Ancient Skill traced from u/CutCosplay on Reddit
+Silent Ancient Skill traced from Jason Wang
+Regent Ancient Skill traced from u/Trashochist on Reddit
+Defect Ancient Skill traced from Jason Wang
+
+Leshy Ancient Art by skellulite
+Leshy Full-Art Card by Nevskaya Alexandra
+
+Lunatic Cultist Ancient Art by Bohrokki  
+Lunatic Cultist Lunacy Full-Art Card Art by Bohrokki
+Lunatic Cultist Eldritch Madness Full-Art Card Art by TrazhDeath
+Lunatic Cultist Lunatic Ritual Full-Art Card Art by Shork777
+Lunatic Cultist Starshine Card Full-Art Card Art by Mike Cerveni
+Lunatic Cultist Destruction Card Full-Art Card Art Kristian Tsvetanov
+Lunatic Cultist Inspiration Card Full-Art Card Art by u/LLS86 on Reddit
+Lunatic Cultist Guidance Card Full-Art Card Art by PaulaLoomis
+
+Commissions
+starstruck_venus for Mithrix, Sebastian, and Leshy's Map Icon & Dialogue Icon
