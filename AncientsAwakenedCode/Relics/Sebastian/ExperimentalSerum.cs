@@ -95,17 +95,17 @@ public sealed class ExperimentalSerum : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
 
-    public ExperimentalSerum()
+    public void SetupForPlayer(Player player)
     {
-        this.BlacklistFromEulogy();
+        AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out var card)
+            ? card
+            : ModelDb.Card<SurpassLimits>().Id;
     }
-    
-    public void SetupForPlayer(Player player) => AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card) ? card : ModelDb.Card<SurpassLimits>().Id;
-    
+
     public override async Task AfterObtained()
     {
         if(AncientCard == null)
-            return;
+            SetupForPlayer(Owner);
         var card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
         CardCmd.Upgrade(card);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck), 2f);

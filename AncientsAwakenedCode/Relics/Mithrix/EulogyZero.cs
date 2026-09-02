@@ -28,17 +28,19 @@ public sealed class EulogyZero : AncientsAwakenedRelic
     private static bool IsPopulated(Player player) => player.RelicGrabBag._deques.ContainsKey(RelicRarity.Ancient);
 
 
-    private void SetupForPlayer(Player player)
+    private static void SetupForPlayer(Player player)
     {
         if (IsPopulated(player))
             return;
         
-        var ancient = ModelDb.AncientEvent<Tanx>(); // Just using any Ancient they shouldn't be able to encounter.
+        var ancient = (AncientEventModel) ModelDb.AncientEvent<Tanx>().ToMutable(); // Just using any Ancient they shouldn't be able to encounter.
         ancient.Owner = player;
         
         var relics = ModelDb.RelicPool<EventRelicPool>().GetUnlockedRelics(player.UnlockState).Where(
-            r => r.Rarity == RelicRarity.Ancient && player.Relics.All(relic => relic.Id != r.Id) &&
-                 r.RelicCanSpawnAtCustomAncient(ancient) && BlacklistedRelics().All(relic => relic.Id != r.Id)).ToList();
+            r => r.Rarity == RelicRarity.Ancient &&
+                 player.Relics.All(relic => relic.Id != r.Id) &&
+                 r.RelicCanSpawnAtCustomAncient(ancient) &&
+                 BlacklistedRelics().All(relic => relic.Id != r.Id)).ToList();
         
         foreach (var relicModel in relics)
         {
@@ -89,7 +91,7 @@ public sealed class EulogyZero : AncientsAwakenedRelic
         listVar.Add(ModelDb.Relic<FurCoat>());
         listVar.Add(ModelDb.Relic<DustyTome>());
 
-        listVar.AddRange(ModelDb.Event<Neow>().AllPossibleOptions.Select(relic => relic.Relic));
+        listVar.AddRange(ModelDb.Event<Neow>().AllPossibleOptions.Select(relic => relic.Relic)!);
 
         if (AncientConfigsPlusInterop.EnabledAct1 != null)
         {
@@ -105,6 +107,6 @@ public sealed class EulogyZero : AncientsAwakenedRelic
             }
         }
         
-        return listVar.Distinct().ToList();
+        return [.. listVar.Distinct()];
     }
 }

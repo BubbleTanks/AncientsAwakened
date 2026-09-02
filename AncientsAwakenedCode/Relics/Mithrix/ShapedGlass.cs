@@ -21,7 +21,7 @@ public sealed class ShapedGlass : AncientsAwakenedRelic
     
     protected override bool RelicAllowedToSpawn(Player owner)
     {
-        return Owner.Deck.Cards.Any(c => c.Type == CardType.Attack);
+        return owner.Deck.Cards.Any(c => c.Type == CardType.Attack);
     }
 
     public override bool HasUponPickupEffect => true;
@@ -30,7 +30,7 @@ public sealed class ShapedGlass : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        foreach (var card in (IEnumerable<CardModel>) PileType.Deck.GetPile(Owner).Cards.ToList())
+        foreach (var card in (IEnumerable<CardModel>)[.. PileType.Deck.GetPile(Owner).Cards])
         {
             if (card.Type != CardType.Attack || !ModelDb.Enchantment<Design>().CanEnchant(card)) 
                 continue;
