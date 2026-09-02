@@ -33,9 +33,8 @@ public abstract class AncientsAwakenedRestSiteOption(Player owner) : RestSiteOpt
         public static bool UseAltTexture(RestSiteOption __instance, ref string __result)
         {
             if (__instance is not AncientsAwakenedRestSiteOption customRestSiteOption)
-                return true;
-            if (customRestSiteOption.CustomIconPath != null)
-                __result = customRestSiteOption.CustomIconPath;
+                return true; 
+            __result = customRestSiteOption.CustomIconPath;
             return false;
         }
     }
@@ -48,8 +47,7 @@ public abstract class AncientsAwakenedRestSiteOption(Player owner) : RestSiteOpt
         {
             if (__instance is not AncientsAwakenedRestSiteOption customRestSiteOption)
                 return true;
-            if (customRestSiteOption.CustomTitle != null)
-                __result = customRestSiteOption.CustomTitle;
+            __result = customRestSiteOption.CustomTitle;
             return false;
         }
     }
