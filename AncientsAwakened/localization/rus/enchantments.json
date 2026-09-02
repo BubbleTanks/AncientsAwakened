@@ -1,0 +1,20 @@
+﻿{
+  "ANCIENTSAWAKENED-MASS.description": "Эта карта стоит на {energyPrefix:energyIcons(1)} меньше за бой.",
+  "ANCIENTSAWAKENED-MASS.title": "Масса",
+
+  "ANCIENTSAWAKENED-DESIGN.description": "Эта карта получает [gold]Replay[/gold] [blue]1[/blue].",
+  "ANCIENTSAWAKENED-DESIGN.title": "Замысел",
+
+  
+  "ANCIENTSAWAKENED-CHARMED.description": "Эта карта получает [gold]повтор[/gold] [blue]1[/blue]. Она стоит дополнительную {Energy:energyIcons()}.",
+  "ANCIENTSAWAKENED-CHARMED.title": "Очарование",
+
+  
+  "ANCIENTSAWAKENED-SMOKEY.description": "Эта карта не [gold]сжигается[/gold] после первого проигрывания.",
+  "ANCIENTSAWAKENED-SMOKEY.title": "Огонёк",
+  
+  
+  "ANCIENTSAWAKENED-CELESTIAL.description": "Вы добираете [blue]{Cards}[/blue] {Cards:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Вы добираете [blue]{Cards}[/blue] {Cards:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-CELESTIAL.title": "Небесное Благословение"
+}

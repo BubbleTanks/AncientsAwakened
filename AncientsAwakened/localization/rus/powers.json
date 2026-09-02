@@ -1,0 +1,27 @@
+{
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "В конце хода вы получаете дополнительный ход.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "В конце хода вы получаете дополнительный ход.",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Сломись Подо Мной",
+
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "Враги с неудобством наносят на [blue]15%[/blue] меньше урона и получают на [blue]30%[/blue] больше урона от Атак.",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Наносит на [blue]15%[/blue] меньше урона и получает на [blue]30%[/blue] больше урона от атак на [blue]{Amount}[/blue] {Amount:plural:ход|ходов}.",
+  "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Неудобство",
+  
+  
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Оглушенные существа не могут совершить ход.",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:На следующий ход|На [blue]{}[/blue] следующих ходов} это существо будет [gold]оглушено[/gold].",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Оглушить на следующий ход",
+
+  
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "В начале вашего хода наносит урон всем врагам.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "В начале вашего хода наносит [blue]{Amount}[/blue] урона всем врагам.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.title": "Лунный Ритуал",
+
+  "ANCIENTSAWAKENED-VORTEX_POWER.description": "Атаки наносят на [blue]10%[/blue] больше урона.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.smartDescription": "Атаки наносят на [blue]{Amount}%[/blue] больше урона.",
+  "ANCIENTSAWAKENED-VORTEX_POWER.title": "Вихрь",
+
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.description": "В конце боя [gold]улучшает[/gold] карту в вашей [gold]колоде[/gold].",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.smartDescription": "В конце боя [gold]улучшает[/gold] [blue]{Amount}[/blue] {Amount:plural:карту|карт} в вашей [gold]колоде[/gold].",
+  "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "Руководство"
+}

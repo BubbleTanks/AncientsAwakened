@@ -1,0 +1,184 @@
+ {
+  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "При получении [gold]Зачаровывает[/gold] все Атаки в вашей [gold]колоде[/gold] [purple]Замыслом[/purple] и вы теряете половину максимального ОЗ.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]Зачаровывает[/gold] все Атаки в вашей [gold]колоде[/gold] [purple]Замыслом[/purple] и вы теряете половину максимального ОЗ.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "Острота лезвия не только движет тобой, но и делает тебя хрупким.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.title": "Формованное Стекло",
+  
+  "ANCIENTSAWAKENED-STARSEED.description": "При получении добавляет [blue]{Cards}[/blue] [gold]Редких[/gold] карт. Добавляет [blue]1[/blue] [red]Эгоцентризм[/red] в вашу [gold]Колоду[/gold].",
+  "ANCIENTSAWAKENED-STARSEED.eventDescription": "Добавляет [blue]{Cards}[/blue] [gold]Редких[/gold] карт. Добавляет [blue]1[/blue] [red]Эгоцентризм[/red] в вашу [gold]Колоду[/gold].",
+  "ANCIENTSAWAKENED-STARSEED.flavor": "Если прислушаться, то можно услышать как два брата гонятся за стеклянными лягушками под солнцем.",
+  "ANCIENTSAWAKENED-STARSEED.title": "Звёздное Семя",
+
+  "ANCIENTSAWAKENED-SHARED_DESIGN.description": "В конце боя позволяет вам удалить [blue]2[/blue] карты из вашей колоды если вы не получали урон по ОЗ.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.flavor": "Благодаря безупречному дизайну вы можете стремиться к совершенству.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.title": "Общий Замысел",
+
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "При получении добавляет [blue]1[/blue] [color=#2596be]Сломись Подо Мной[/color] в вашу [gold]Колоду[/gold].",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.eventDescription": "Добавляет [blue]1[/blue] [color=#2596be]Сломись Подо Мной[/color] в вашу [gold]Колоду[/gold].",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.flavor": "Безупречный облик. Тяжелая масса. Капля крови. Да, это будет прекрасно.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Безупречный Молот",
+
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "Карты, преобразованные [gold]Древним Скипетром[/gold]",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "При получении, [gold]Преобразует[/gold] ВСЕ [gold]Удары[/gold] и [gold]Защиты[/gold] в {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Превосходные[/blue] }версии.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Преобразует[/gold] ВСЕ [gold]Удары[/gold] и [gold]Защиты[/gold] в {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Превосходные[/blue] }версии.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "Кристалл скипетра пульсирует невероятной энергией, стоит вам взять его в руку.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "Древний Скипетр",
+
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.description": "Получите дополнительный ход после первого. Каждый раз когда вы разыгрываете карту на первом ходу вы теряете [blue]1[/blue] максимальное ОЗ.",
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.flavor": "Огромная трещина тянется по длине всего клинка.",
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.title": "Треснувший Клинок",
+
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "[gold]Зачаровывает[/gold] все карты в наградном наборе [purple]Массой[/purple].",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.flavor": "Масса проста. Она является основанием для всех форм, сформированных и слепленных. Возьми её, и воссоздай свои идеи.",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.title": "Колонна Массы",
+
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.selectionScreenPrompt": "Каков твой приказ?",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "При получении, выберите [blue]1[/blue] не специальную карту и добавьте её в [gold]Колоду[/gold].",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.eventDescription": "Выберите [blue]1[/blue] не специальную карту и добавьте её в [gold]Колоду[/gold].",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"Сделай глоток, и разум станет податливым....и мир вокруг тебя последует твоему примеру.\" - Сигибонд Пьяница",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Артефакт Управления",
+
+  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "После каждой битвы получите дополнительную реликвию. [gold]Лагеря[/gold] заменяются на [gold]Элитных врагов[/gold].",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "Капли дождя падают вам на голову. Вас не отпускает чувство ужаса, пока вы держите его в руке.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.title": "Амулет Ливня",
+
+  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Реликвии после боя заменяются на случайные [gold]Древние[/gold] реликвии, за исключением реликвий Ньяу.",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Архитектор...Твоя смерть неизбежна. Когда ты умрёшь - а ты умрёшь непременно - я буду наготове. Моего терпения хватило на тысячи лет. Этот шпиль...принадлежит мне.\"",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Нулевой Панегирик",
+
+  
+  "ANCIENTSAWAKENED-FLASH_BEACON.description": "Каждые [blue]{Turns}[/blue] ходов ВСЕ враги теряют [blue]{FlashBeaconPower}[/blue] [gold]силы[/gold] на [blue]1[/blue] ход.",
+  "ANCIENTSAWAKENED-FLASH_BEACON.flavor": "\"Честно говоря, Я ненавижу эту штуковину. Чёртово изделие выжигает мои глаза. Просто... не наводи её на меня, хорошо?\"",
+  "ANCIENTSAWAKENED-FLASH_BEACON.title": "Фонарь-вспышка",
+
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.description": "При получении, отмечает [blue]{Combats}[/blue] случайных боёв. Награды в этих боях будут содержать дополнительную реликвию.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.eventDescription": "Отмечает [blue]{Combats}[/blue] случайных боёв. Награды в этих боях будут содержать дополнительную реликвию.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"Хочешь сканер? Разве меня не достаточно для поиска всяких всячин?~ Хорошо, хорошо, уговорил. Но учти - если сломаешь, я оторву тебе голову. Усёк?\"",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "Сканер Себастьяна",
+
+  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "Каждый раз, когда вы посещаете [gold]Лагерь[/gold], заполняет [blue]{PotionSlots}[/blue] слотов для зелий [gold]Нелопрефиновым Шприцом[/gold].",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.flavor": "\"Это не такой уж и необычный предмет. В нём немного бинтов, марля, чуток инструментов и медицинских принадлежностей, а еще добрая часть этого чудесного вещества что я нашёл.\"",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.title": "Медицинский Набор",
+
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "В начале боя накладывает [blue]{DisadvantagedPower}[/blue] [gold]неудобства[/gold] ВСЕМ врагам.",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"Здесь должно быть записано всё, что тебе нужно знать о существах Шпиля. Написано вашим верной слугой, конечно же~\"",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Записи о Местной Фауне",
+
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "При подборе [gold]зачаровывает[/gold] Талант [purple]Очарованием[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]Зачаровывает[/gold] Талант [purple]Очарованием[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Ладно, ладно, если я тебе так нравлюсь, как насчёт небольшого амулетика? Сделал настолько хорошо, насколько смог. Прошу прощения~\"",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Амулет Себби",
+
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "При получении добавляет [blue]1[/blue] [gold]Трёхствольный Дробовик[/gold] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.eventDescription": "добавляет [blue]1[/blue] [gold]Трёхствольный Дробовик[/gold] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.flavor": "\"Ах, это одна из моих любимых разработок, созданная умельцами из отдела исследований и разработки. Только, пожалуйста, верни её в целости и сохранности как закончишь, м?\"",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title": "Гильзы Дробовика",
+
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "При получении добавляет [blue]1[/blue] [gold]Тяжелый Ящик[/gold] и [blue]1[/blue] [red]Перегруз[/red] в вашу [gold]колоду[/gold]. Ящик откроется после победы над боссом.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Добавляет [blue]1[/blue] [gold]Тяжелый Ящик[/gold] и [blue]1[/blue] [red]Перегруз[/red] в вашу [gold]колоду[/gold]. Ящик откроется после победы над боссом.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"Этот большой ящик? Да, забирай, если хочешь. И то, что в нём тоже твоё. Только вот, за ключём тебе придётся подниматься выше. Я его где-то обронил, и я уверен что он где-то у того крупного существа на вершине слоя.\"",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "Форма Отправки",
+  
+  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "Вы можете [gold]Мутировать[/gold] любое количество раз в [gold]Лагерях[/gold].",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "\"Будь поосторожнее с этой штуковиной, она довольно сильная. Если почувствуешь что у тебя ломается кость-другая, то эта штука точно работает!\"",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.title": "Светящийся Флакон",
+
+  "ANCIENTSAWAKENED-SALINE_INFUSER.description": "[gold]Зелья[/gold] можно использовать дважды.",
+  "ANCIENTSAWAKENED-SALINE_INFUSER.flavor": "\"Ооо, я обожаю эту штуку! Она придаёт приятный солоноватый привкус ко всему, что можно выпить. Может быть, она даже сможет придать твоим любимым зельям вторую жизнь...\"",
+  "ANCIENTSAWAKENED-SALINE_INFUSER.title": "Инфузор Раствора",
+
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "При получении добавляет {card.StringValue:cond:[gold]{}+[/gold]|an [gold]древнюю карту[/gold]}.",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.eventDescription": "Добавляет {card.StringValue:cond:[gold]{}+[/gold]|an [gold]древнюю карту[/gold]}.",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"Често, не советую тебе эту сыворотку. Она приносит ужасные страдания, и неважно насколько хорошим будет результат.\"",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Экспериментальная Сыворотка",
+
+
+  "ANCIENTSAWAKENED-FILM_ROLL.description": "При получении добавляет [blue]1[/blue] [gold]Надписать[/gold] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-FILM_ROLL.eventDescription": "Добавляет [blue]1[/blue] [gold]Надписать[/gold] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "Пыльная фотоплёнка. На ней подрисованы странные символы.",
+  "ANCIENTSAWAKENED-FILM_ROLL.title": "Фотоплёнка",
+
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "Вы можете [gold]Копать[/gold] в [gold]Лагерях[/gold].",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "Тяжелая кирка, проржавевшая со временем. Любой камень, который ударяет эта кирка, волшебным образом оказывается заполнена золотом.",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Геологическая Кирка",
+
+  "ANCIENTSAWAKENED-PACK_RAT.description": "После боёв вы получаете дополнительную случайную награду.",
+  "ANCIENTSAWAKENED-PACK_RAT.flavor": "Небольшая крыса с сумкой в несколько раз больше её самой. Время от времени она предлагает вам предметы, однако вы без понятия откуда она их берёт.",
+  "ANCIENTSAWAKENED-PACK_RAT.title": "Крыса-барахольщица",
+
+  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "Вы выбирате карту и создаёте её [gold]копию[/gold]",
+  "ANCIENTSAWAKENED-GOOBERT.description": "При получении добавляет копию [blue]{Cards}[/blue] карт в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-GOOBERT.eventDescription": "Добавляет дополнительные копии карт до [blue]{Cards}[/blue] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-GOOBERT.flavor": "Вы без понятия что это такое.",
+  "ANCIENTSAWAKENED-GOOBERT.title": "Губерт",
+
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.description": "Все враги в битвах теряют [blue]{HpPercentage}%[/blue] ОЗ, за исключением боссов.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.flavor": "Жетон из слоновой кости с костяной меткой на нем. Вы чувствуете благословение пока держите его.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.title": "Амулет Костаного Лорда",
+
+  "ANCIENTSAWAKENED-CARVING_KNIFE.description": "В каждой первой [gold]руке[/gold] в каждом бою карты стоят на [blue]1[/blue] энергию меньше {energyPrefix:energyIcons(1)} на первом ходу.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.flavor": "Безупречный нож, выкованный для резьбы по дереву. Из вырезанных вами тотемов вы слышите шёпот.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.title": "Нож по Дереву",
+
+  "ANCIENTSAWAKENED-FISH_HOOK.description": "В начале каждого боя с [gold]Элитным врагом[/gold], [gold]оглушает[/gold] ВСЕХ врагов.",
+  "ANCIENTSAWAKENED-FISH_HOOK.flavor": "Стальной рыболовный крючок. Ничем не примечателен.",
+  "ANCIENTSAWAKENED-FISH_HOOK.title": "Рыболовный Крючок",
+
+  "ANCIENTSAWAKENED-THE_MOON.description": "Каждый раз, когда вы получаете [blue]{DamageThreshold}[/blue] незаблокированного урона, снижает получаемый урон на [blue]{DamageMaximum}[/blue].",
+  "ANCIENTSAWAKENED-THE_MOON.flavor": "Миниатюрная реплика небесного тела. Судя по всему, она сделана из настоящих лунных камней.",
+  "ANCIENTSAWAKENED-THE_MOON.title": "Миниатюрная Луна",
+  
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "В начале каждого боя добавляет [blue]{Cards}[/blue] [gold]{Cards:plural:Белочку|Белочек}[/gold] в вашу [gold]руку[/gold].",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "Игральная карта, на которой изображена белочка. По неизвестной причине вам тяжело долго смотреть на неё.",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Белочка в Бутылке",
+
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "При получении [gold]зачаровывает[/gold] [gold]сжигаемую[/gold] карту [purple]огоньком[/purple].",
+  "ANCIENTSAWAKENED-THE_SMOKE.eventDescription": "[gold]Зачаровывает[/gold] [gold]сжигаемую[/gold] карту [purple]огоньком[/purple].",
+  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "Дым прогоревшей свечки, заключенный в бутыль. Небольшая часть дыма просачивается через трещины, иногда затрудняя дыхание.",
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "Дымок",
+
+  
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Добавляет [blue]1[/blue] [gold]Лунный Ритуал[/gold] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "Человек в капюшоне сказал быть поосторожнее с этими заклинаниями. Стоит прислушаться.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Загадочная Табличка",
+
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "В начале вашего хода добавляет [gold]зелье[/gold]. Атаки наносят на [blue]{DamageDecrease}%[/blue] урона меньше.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "Красивый и пушистый синий цветок растёт в бутылке. Он бодрит вас.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.title": "Цветок Маны",
+
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "Позволяет вам [gold]собирать[/gold] в [gold]Лагерях[/gold].",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "Упавший осколок небес теперь принадлежит вам.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.title": "Упавшая Звезда",
+
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "В начале каждого боя даёт [blue]{PlatingPower}[/blue] [gold]панциря[/gold] и навсегда увеличивает его значение на [blue]{Scaling}[/blue].",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "Странный металл в вашей руке пульсирует и растёт невероятно быстро.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Обработанный Хлорофит",
+
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "Даёт {Energy:energyIcons()} в начале каждого хода. В конце вашего хода, [gold]преобразует[/gold] вашу [gold]руку[/gold].",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "Жидкость в бутылке переливается множеством оттенков. Всё, что её касается преображается и изменяется, словно вы смотрите на предмет через калейдоскоп.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "Мерцание в Бутылке",
+
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "При получении вы удаляете до [blue]{Cards}[/blue] {Cards:plural:карт|карт} из вашей [gold]колоды[/gold]. В начале вашего хода вы получете [blue]{Damage}[/blue] урона.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Вы удаляете до [blue]{Cards}[/blue] {Cards:plural:карт|карт} из вашей [gold]колоды[/gold]. В начале вашего хода вы получаете [blue]{Damage}[/blue] урона.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "Пламя горит бесконечно, поглощая всё, что вы ему скармливаете. Жар невыносим.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Солнечная Жаровня",
+
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "В начале вашего хода вы наносите на [blue]{DamagePercentage}%[/blue] больше урона на весь бой.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "Как только вы дотрагиваетесь до фрагмента ваш глаз преображается в нечто иное, усиливая вашу концентрацию до невообразимых пределов.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.title": "Вихревой Глаз",
+
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "В начале каждого боя выберите [blue]1[/blue] из [blue]{Cards}[/blue] случайных Талантов и добавьте его в вашу [gold]руку[/gold]. Вы можете разыграть его бесплатно. Добавляет [blue]{Status}[/blue] [gold]Космическая пыль[/gold] в  [gold]стопку добора[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "Том манит вас, обещая наградить вас силой, о который вы даже не могли мечтать. Ваши руки покрываются светящейся пылью с каждой прочитанной страницей.",
+  "ANCIENTSAWAKENED-NEBULA_TOME.title": "Том Туманности",
+
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "При получении [gold]зачаровывает[/gold] до [blue]{Cards}[/blue] {Cards:plural:карт|карт} [purple]Небесным Благословением[/purple]. Первая карта в руке каждый ход получает [gold]Оковы[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "[gold]Зачаровывает[/gold] до [blue]{Cards}[/blue] {Cards:plural:карт|карт} [purple]Небесным Благословением[/purple]. Первая карта в руке каждый ход получает [gold]Оковы[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "Тяжелые наручи сверкают звёздным светом. Вам остаётся только гадать, для кого они создавались.",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Наручи Звёздной Пыли",
+
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "Выберите любое количество карт и добавьте их в колоду.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "При получении добавляет до [blue]{Cards}[/blue] [gold]{Cards:plural:Лунности|Лунностей}+[/gold] в вашу [gold]колоду[/gold]. Добавляет [blue]1[/blue] [gold]Древнее Безумие[/gold] в вашу [gold]колоду[/gold] за каждую карту [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Лунность|Лунность}[/gold], которую вы добавляете.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "Добавляет до [blue]{Cards}[/blue] [gold]{Cards:plural:Лунности|Лунностей}+[/gold] в вашу [gold]колоду[/gold]. Добавляет [blue]1[/blue] [gold]Древнее Безумие[/gold] в вашу [gold]колоду[/gold] за каждую карту [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Лунность|Лунность}[/gold], которую вы добавляете.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "Усики проникают в ваш разум, обращая ваш взор на видения величия. Вы чувствуете, как ваш разум цепенеет.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "Шепчущие Усики"
+}
