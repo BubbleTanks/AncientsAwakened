@@ -1,12 +1,12 @@
 ﻿{
-  "OPTION_ANCIENTSAWAKENED-VIAL.description": "[gold]덱[/gold]에 있는 카드 [blue]1[/blue]장을 [gold]변화[/gold]시키고 [blue]8[/blue]의 [red]체력[/red]을 잃습니다.",
-  "OPTION_ANCIENTSAWAKENED-VIAL.descriptionDisabled": "[red]덱에 변환할 수 있는 카드가 최소 1장 필요합니다.[/red]",
-  "OPTION_ANCIENTSAWAKENED-VIAL.descriptionHpDisabled": "[red]변환할 체력이 부족합니다.[/red]",
-  "OPTION_ANCIENTSAWAKENED-VIAL.name": "변이",
+  "ANCIENTSAWAKENED-MUTATE.description": "[gold]덱[/gold]에 있는 카드 [blue]1[/blue]장을 [gold]변화[/gold]시키고 [blue]8[/blue]의 [red]체력[/red]을 잃습니다.",
+  "ANCIENTSAWAKENED-MUTATE.descriptionDisabled": "[red]덱에 변환할 수 있는 카드가 최소 1장 필요합니다.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.descriptionHpDisabled": "[red]변환할 체력이 부족합니다.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.name": "변이",
 
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.description": "[gold]골드[/gold] 250~300을 얻습니다.",
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "채광",
+  "ANCIENTSAWAKENED-PROSPECT.description": "[gold]골드[/gold] 250~300을 얻습니다.",
+  "ANCIENTSAWAKENED-PROSPECT.name": "채광",
 
-  "OPTION_ANCIENTSAWAKENED-COLLECT.description": "[gold]덱[/gold]에 [gold]별빛[/gold] [blue]1[/blue]장을 추가합니다. ",
-  "OPTION_ANCIENTSAWAKENED-COLLECT.name": "수집"
+  "ANCIENTSAWAKENED-COLLECT.description": "[gold]덱[/gold]에 [gold]별빛[/gold] [blue]1[/blue]장을 추가합니다. ",
+  "ANCIENTSAWAKENED-COLLECT.name": "수집"
 }

@@ -84,13 +84,13 @@
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "Космическая Пыль",
 
-  "ANCIENTSAWAKENED-LUNACY.description": "Снижает стоимость случайной карты в [gold]руке[/gold] до 0 в этом бою.",
+  "ANCIENTSAWAKENED-LUNACY.description": "Делает случайную карту в [gold]руке[/gold] бесплатной до конца боя.",
   "ANCIENTSAWAKENED-LUNACY.title": "Лунность",
 
   "ANCIENTSAWAKENED-INSANITY.description": "Увеличивает стоимость случайной карты в [gold]руке[/gold] на {Energy:energyIcons()} в этом бою.\nВы добираете {Cards:diff()} {Cards:plural:карту|карт}.",
   "ANCIENTSAWAKENED-INSANITY.title": "Древнее Безумие",
 
-  "ANCIENTSAWAKENED-STARSHINE.description": "Выберите одно:\n[gold]Сжигает[/gold] до {Exhaust:diff()} {Exhaust:plural:карт|карт} в [gold]стопке добора[/gold], даёт {Energy:energyIcons()} и вы добираете {Cards:diff()} {Cards:plural:карту|карт}, или навсегда [gold]улучшает[/gold] карту в вашей [gold]колоде[/gold] после боя.",
+  "ANCIENTSAWAKENED-STARSHINE.description": "Выберите одно:\n[gold]Сжигает[/gold] до {Exhaust:diff()} {Exhaust:plural:карт|карт} в [gold]стопке добора[/gold]ИЛИ даёт {Energy:energyIcons()} и вы добираете {Cards:diff()} {Cards:plural:карту|карт} ИЛИ навсегда [gold]улучшает[/gold] карту в вашей [gold]колоде[/gold] после боя.",
   "ANCIENTSAWAKENED-STARSHINE.title": "Звёздный Свет",
 
   "ANCIENTSAWAKENED-POWER_CHOICE.description": "[gold]Сжигает[/gold] до {Cards:diff()} {Cards:plural:карт|карт} в [gold]стопке добора[/gold].",

@@ -39,11 +39,11 @@
   "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Артефакт Управления",
 
   "ANCIENTSAWAKENED-MONSOON_CHARM.description": "После каждой битвы получите дополнительную реликвию. [gold]Лагеря[/gold] заменяются на [gold]Элитных врагов[/gold].",
-  "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "Капли дождя падают вам на голову. Вас не отпускает чувство ужаса, пока вы держите его в руке.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "Капли дождя падают вам на голову. Вас не отпускает чувство ужаса, пока вы его носите.",
   "ANCIENTSAWAKENED-MONSOON_CHARM.title": "Амулет Ливня",
 
-  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Реликвии после боя заменяются на случайные [gold]Древние[/gold] реликвии, за исключением реликвий Ньяу.",
-  "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Архитектор...Твоя смерть неизбежна. Когда ты умрёшь - а ты умрёшь непременно - я буду наготове. Моего терпения хватило на тысячи лет. Этот шпиль...принадлежит мне.\"",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Наградные реликвии заменяются на случайные [gold]Древние[/gold] реликвии. Реликвии Ньяу не появляются в наградных наборах.",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Архитектор... Твоя смерть неизбежна. Когда ты умрёшь - а ты умрёшь непременно - я буду наготове. Моего терпения хватило на тысячи лет. Этот шпиль... принадлежит мне.\"",
   "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Нулевой Панегирик",
 
   

@@ -54,7 +54,7 @@
   "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "狂気の儀式",
   "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
   "ANCIENTSAWAKENED-COSMIC_DUST.title": "宇宙の塵",
-  "ANCIENTSAWAKENED-LUNACY.description": "[gold]手札[/gold]のランダムなカード1枚のコストを、この戦闘中0にする。",
+  "ANCIENTSAWAKENED-LUNACY.description": "[gold]手札[/gold]のランダムなカード1枚を、この戦闘中コストを支払わずにプレイできる。",
   "ANCIENTSAWAKENED-LUNACY.title": "狂気",
   "ANCIENTSAWAKENED-INSANITY.description": "[gold]手札[/gold]のランダムなカード1枚のコストを、この戦闘中{Energy:energyIcons()}増加させる。\nカードを{Cards:diff()}{Cards:plural:枚|枚}引く。",
   "ANCIENTSAWAKENED-INSANITY.title": "異形の錯乱",

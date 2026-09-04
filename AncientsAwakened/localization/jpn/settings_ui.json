@@ -1,5 +1,7 @@
 {
   "ANCIENTSAWAKENED.mod_title": "Ancients Awakened",
+  "ANCIENTSAWAKENED-INFO.title": "エンシェント無効化設定",
+  "ANCIENTSAWAKENED-INFO.description": "エンシェントの有効化・無効化設定は、私たちの別MOD「Ancient Configs Plus」に移動しました。\nバニラ・MOD問わずエンシェントを無効化したり出現ウェイトを調整したりしたい場合は、ぜひそちらをご覧ください！",
   "ANCIENTSAWAKENED-MITHRIX.title": "ミスリクスのレリック設定",
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "マルチプレイ用「完璧の槌」を有効化",
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "マルチプレイ用：完璧の槌",

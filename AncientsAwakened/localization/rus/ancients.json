@@ -9,8 +9,8 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.3-0r.ancient": "Хм, очередной паразит пришел за сокровищем.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.4-0r.ancient": "Возьми что-нибудь, ничтожество, и узри замысел.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.5-0r.ancient": "Ещё одно ничтожество? Бери безделушку и уходи с глаз долой.",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.6-0r.ancient": "Однажды твой дух будет сломлен. Пока это не произошло поживись безделушкой, ничтожество.",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.7-0r.ancient": "Гляжу, ты всё еще яростно пробиваешь свой путь. Возможно мне просто стоит уничтожить тебя самому. Это было бы милосердием с моей стороны.",
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.6-0r.ancient": "Однажды твой дух будет сломлен. Пока этого не произошло можешь поживиться безделушкой, ничтожество.",
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.ANY.7-0r.ancient": "Гляжу, ты всё еще яростно сражаешься и продолжаешь свой путь. Возможно, мне стоило бы уничтожить тебя самому. Это было бы милосердием с моей стороны.",
 
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Приветствую, дьявольское отродье.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.IRONCLAD.0-0r.next": "Продолжить",
@@ -34,7 +34,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.SILENT.1-0r.next": "Промолчать",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.SILENT.1-1r.char": "...",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.SILENT.1-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.SILENT.1-2r.ancient": "Забирай свои побрекушки, ничтожество. Рано или поздно тебя сокрушат.",
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.SILENT.1-2r.ancient": "Забирай свои побрекушки, ничтожество. Рано или поздно тебя ждёт провал.",
 
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-0r.ancient": "Какие красочные одеяния для простого ничтожества.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-0r.next": "Выругаться",
@@ -44,7 +44,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-2r.next": "Говорить",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-3r.char": "Я бы уничтожил тебя прямо на месте, но я проявлю милосердие! Предложи мне подарок и я отправлюсь дальше!",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-3r.next": "Продолжить",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-4r.ancient": "Если это заставит тебя молчать то так тому и быть.",
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.0-4r.ancient": "Если это заставит тебя молчать, то так тому и быть.",
 
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-0r.ancient": "Король паразитов вновь вернулся.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-0r.next": "Ответить",
@@ -52,7 +52,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-1r.next": "Продолжить",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-2r.ancient": "С высокомерным паразитом, который не знает своего места.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-2r.next": "Бросить вызов",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-3r.char": "Если я всего лишь паразит для тебя, тогда сразись со мной!",
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-3r.char": "Если для тебя я всего лишь паразит, тогда сразись со мной!",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-3r.next": "Продолжить",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.REGENT.1-4r.ancient": "Ты не стоишь и секунды моего времени, ничтожество. Забирай награду и уходи.",
 
@@ -60,7 +60,7 @@
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.0-0r.next": "Ответить",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.0-1r.char": "Тебя это не касается.",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Так тому и быть.",
+  "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Какая жалость.",
 
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.1-0r.ancient": "Кто же тянет тебя за твои ниточки, фокусница?",
   "ANCIENTSAWAKENED-MITHRIX_ANCIENT.talk.NECROBINDER.1-0r.next": "Говорить",
@@ -90,11 +90,11 @@
   "ANCIENTSAWAKENED-LESHY_ANCIENT.epithet": "Звериный Рукописец",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.ancient": "Приветствую. Присаживайся, пожалуйста.",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-0.next": "Продолжить",
-  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-1.ancient": "Конечно, бери любую реликвию. Но для начала, не желаесь сыграть партейку в карты?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.firstVisitEver.0-1.ancient": "Конечно, бери любую реликвию. Но для начала, не желаешь сыграть партейку в карты?",
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.0-0r.ancient": "Снова здравствуй. Не желаешь сыграть партию?",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.1-0r.ancient": "Ах, снова ты. Если желаешь, я заварил чаю. Угощайся.",
-  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.2-0r.ancient": "Возвышенец, ты вернулся. Я перемешал колоду, так что если у тебя есть минутка, можем сыграть.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.2-0r.ancient": "Возвышенец, ты вернулся. Я перемешал колоду, так что если у тебя есть лишняя минутка, можем сыграть.",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.ANY.3-0r.ancient": "Ох, сегодня я не готов. Я всё еще делаю новую карту. Пожалуйста, вернись немного позже.",
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Солдат, сложи своё оружие и передохни немного. Не желаешь ли горячего чаю?",
@@ -113,15 +113,15 @@
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-0r.ancient": "Добрый вечер. Не желаешь ли сыграть со мной?",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-0r.next": "Говорить",
-  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.char": "Прошу прощения, но мне сейчас не до этого. Возможно, в другой раз?",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.char": "Прошу прощения, но мне сейчас не до этого. Может быть, в другой раз?",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Хорошо. Я подожду. У меня ничего и нет, кроме времени.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Хорошо. Я подожду. Кроме времени, так то, у меня ничего больше и нет.",
 
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-0r.ancient": "Ты одно из его созданий?",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-0r.next": "Ответить",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<Озадаченный гудок>[/font_size][/i]",
   "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-2r.ancient": "Хмм... нет, ты чрезчур вежлив. Пожалуйста, выбирай реликвию, и продолжай свой путь.",
+  "ANCIENTSAWAKENED-LESHY_ANCIENT.talk.DEFECT.0-2r.ancient": "Хмм... нет, ты чрезчур вежлив. Пожалуйста, выбирай реликвию, и я не смею тебя больше задерживать.",
   
   
 
@@ -134,19 +134,19 @@
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.0-1r.ancient": "Не стоит переживать, Я их тебе верну... За определенную цену~",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.1-0r.ancient": "Приятно видеть тебя вновь. Не желаешь приобрести реликвию?~",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.2-0r.ancient": "Ахх, добро пожаловть.",
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.3-0r.ancient": "Можем решить наши вопросы побыстрее? У меня скоро встреча.",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.3-0r.ancient": "Не мог бы ты принять решение побыстрее? У меня скоро встреча.",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.4-0r.ancient": "Снова ты? Хорошо, выбирай что хочешь.",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.5-0r.ancient": "Зашел отовариться? Я уверен, ты найдешь себе что-нибудь по душе~",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.6-0r.ancient": "Да, да, просто возьми себе что хочешь. И веди себя потише, ладно?..",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.ANY.7-0r.ancient": "Хм? О, приветсвую. Товары вон там, бери что приглянулось.",
 
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Такая броня, вероятно, очень тяжела. Ты её вообще хоть раз снимал?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-0r.ancient": "Нелёгкий труд разгуливать в такой броне. Ты её вообще хоть раз снимал?",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-0r.next": "Продолжить",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-1r.char": "[i][font_size=22]Латоносец трясёт головой.[/font_size][/i]",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-1r.next": "Продолжить",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.IRONCLAD.0-2r.ancient": "Жаль тебя. Возможно, тебе стоило бы отдохнуть разок.",
 
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-0r.ancient": "Скажи мне, что такая охотница как ты забыла здесь?",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-0r.ancient": "Скажи мне, что ты забыла здесь? Должно быть, таким охотницам как ты подъём по шпилю даётся нелегко.",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-0r.next": "Промолчать.",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-1r.char": "...",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.SILENT.0-1r.next": "Продолжить",
@@ -170,7 +170,7 @@
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-0r.next": "Ответить",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<бип буп?>[/font_size][/i]",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.ancient": "Починить тебя? Починить твоего друга? К сожалению, я не могу помочь такому крохотному милому роботу! Давай, соберись иди и наваляй этому негодяю!",
+  "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.ancient": "Починить тебя? Починить твоего друга? К сожалению, я не могу помочь такому крохотному милому роботу! Давай как-нибудь сам. Соберись и иди наваляй этому негодяю!",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-2r.next": "Ответить",
   "ANCIENTSAWAKENED-SEBASTIAN_ANCIENT.talk.DEFECT.0-3r.char": "[i][font_size=22]<Энергичные гудки!>[/font_size][/i]",
 
@@ -189,13 +189,13 @@
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-0r.next": "Продолжить",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-1r.char": "[i][font_size=22]Латоносец указывает своим мечом на небо.[/font_size][/i]",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-2r.ancient": "Убить Архитектора? Маловероятный исход, но в любом случае, я выдам тебе твою реликвию.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.IRONCLAD.0-2r.ancient": "Убить Архитектора? Маловероятный исход. Но в любом случае, я выдам тебе твою реликвию.",
 
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-0r.ancient": "Что привело тебя в мой храм, негодница?",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-0r.next": "Продолжить",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-1r.char": "[i][font_size=22]Безмолвная опускает свою голову, протягивая подношения для ритуала.[/font_size][/i]",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-2r.ancient": "...Какая учтивость. Считай, что ты заслужила моё благословение.",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.SILENT.0-2r.ancient": "...Интересно. Считай, что ты заслужила моё благословение.",
 
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-0r.char": "Могучий волшебник, Я пришел за реликвией!",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.REGENT.0-0r.next": "Продолжить",
@@ -211,9 +211,9 @@
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-1r.next": "Продолжить",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.NECROBINDER.0-2r.ancient": "Так уж и быть, ты можешь взять реликвию. А затем выметайся.",
   
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-0r.ancient": "Твоему прибытию здесь не рады, механическое создание. Ради чего ты оскверняешь эти залы?",
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-0r.ancient": "Твоему прибытию здесь не рады, механическое создание. С какой целью ты оскверняешь эти залы?",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-0r.next": "Ответить",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-1r.char": "[i][font_size=22]<Злые гудки>[/font_size][/i]",
   "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-1r.next": "Продолжить",
-  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-2r.ancient": "Починить тебя? Починить твоего друга? Забавно, но мне не стоит даже допускать такую мысль. В любом случае, я всё-таки дарую тебе силу."
+  "ANCIENTSAWAKENED-LUNATIC_CULTIST_ANCIENT.talk.DEFECT.0-2r.ancient": "Починить тебя? Починить твоего друга? Забавно, конечно, но мне не стоит даже допускать такую мысль. В любом случае, я всё-таки дарую тебе силу."
 }
