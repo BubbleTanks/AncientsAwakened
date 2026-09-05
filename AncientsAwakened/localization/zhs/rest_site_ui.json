@@ -1,10 +1,10 @@
 {
-  "OPTION_ANCIENTSAWAKENED-COLLECT.description": "将[blue]1[/blue]张[gold]星光[/gold]加入你的[gold]牌组[/gold]。",
-  "OPTION_ANCIENTSAWAKENED-COLLECT.name": "收集",
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.description": "获得250-300[gold]金币[/gold]。",
-  "OPTION_ANCIENTSAWAKENED-PROSPECT.name": "挖矿",
-  "OPTION_ANCIENTSAWAKENED-VIAL.description": "[gold]变化[/gold]牌组中的[blue]1[/blue]张牌，失去[blue]8[/blue]点生命。",
-  "OPTION_ANCIENTSAWAKENED-VIAL.descriptionDisabled": "[red]你的牌组中必须至少有一张可变化卡。[/red]",
-  "OPTION_ANCIENTSAWAKENED-VIAL.descriptionHpDisabled": "[red]你的HP不足，无法变化。[/red]",
-  "OPTION_ANCIENTSAWAKENED-VIAL.name": "变异"
+  "ANCIENTSAWAKENED-COLLECT.description": "将[blue]1[/blue]张[gold]星光[/gold]加入你的[gold]牌组[/gold]。",
+  "ANCIENTSAWAKENED-COLLECT.name": "收集",
+  "ANCIENTSAWAKENED-PROSPECT.description": "获得[blue]250-300[/blue][gold]金币[/gold]。",
+  "ANCIENTSAWAKENED-PROSPECT.name": "挖矿",
+  "ANCIENTSAWAKENED-MUTATE.description": "[gold]变化[/gold]牌组中的[blue]1[/blue]张牌，失去[blue]8[/blue]点生命。",
+  "ANCIENTSAWAKENED-MUTATE.descriptionDisabled": "[red]你的牌组中必须至少有一张可变化卡。[/red]",
+  "ANCIENTSAWAKENED-MUTATE.descriptionHpDisabled": "[red]你的HP不足，无法变化。[/red]",
+  "ANCIENTSAWAKENED-MUTATE.name": "变异"
 }

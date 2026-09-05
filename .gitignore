@@ -6,3 +6,4 @@ riderModule.iml
 .godot/
 .idea/
 AncientsAwakened.sln.DotSettings.user
+*.uid

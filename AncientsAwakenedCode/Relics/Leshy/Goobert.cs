@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class Goobert : AncientsAwakenedRelic
+public sealed class Goobert : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -26,13 +26,13 @@ public class Goobert : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(SelectionScreenPrompt, 0, DynamicVars.Cards.IntValue)
+        var prefs = new CardSelectorPrefs(SelectionScreenPrompt, 0, DynamicVars.Cards.IntValue)
         {
             Cancelable = false,
             RequireManualConfirmation = true
         };
 
-        foreach (CardModel card in await CardSelectCmd.FromDeckGeneric(Owner, prefs))
+        foreach (var card in await CardSelectCmd.FromDeckGeneric(Owner, prefs))
         {
             CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CloneCard(card), PileType.Deck));
         }

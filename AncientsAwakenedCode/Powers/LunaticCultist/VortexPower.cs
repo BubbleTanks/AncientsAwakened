@@ -6,14 +6,14 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Powers.LunaticCultist;
 
-public class VortexPower : AncientsAwakenedPower
+public sealed class VortexPower : AncientsAwakenedPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    public override Decimal ModifyDamageMultiplicative(
+    public override decimal ModifyDamageMultiplicative(
         Creature? target,
-        Decimal amount,
+        decimal amount,
         ValueProp props,
         Creature? dealer,
         CardModel? cardSource,
@@ -21,7 +21,7 @@ public class VortexPower : AncientsAwakenedPower
     {
         if (dealer != Owner || !props.IsPoweredAttack())
             return 1M;
-        Decimal amount1 = 1M + (Amount / 100M);
+        var amount1 = 1M + Amount / 100M;
         return amount1;
     }
 }

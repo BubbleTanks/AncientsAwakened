@@ -1,5 +1,4 @@
-﻿using BaseLib.Abstracts;
-using BaseLib.Utils;
+﻿using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -13,7 +12,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Potions.Sebastian;
 
 [Pool(typeof(EventPotionPool))]
-public class NeloprephineVial : CustomPotionModel
+public sealed class NeloprephineVial : AncientsAwakenedPotion
 {
     public override PotionRarity Rarity => PotionRarity.Event;
     public override PotionUsage Usage => PotionUsage.AnyTime;

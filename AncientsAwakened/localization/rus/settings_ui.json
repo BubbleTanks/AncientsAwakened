@@ -1,0 +1,22 @@
+﻿{
+  "ANCIENTSAWAKENED.mod_title": "Ancients Awakened",
+
+  "ANCIENTSAWAKENED-INFO.title": "Настройки Ancient Disabler",
+  "ANCIENTSAWAKENED-INFO.description": "Для включения и отключения древних установите Ancient Configs Plus.\nОбязательно попробуйте, если вы хотите отключить или изменить приоритет древних, базовых или добавленных модами!",
+  
+  "ANCIENTSAWAKENED-MITHRIX.title": "Настройки Реликвий Митрикса",
+  
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "Заменить Безупречный Молот в совместной игре",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "Сетевой Безупречный Молот",
+  "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "Заменяет Безупречный молот на особую версию для совместной игры. Стоимость увеличивается на 1, но даёт дополнительный ход ВСЕМ игрокам.\n(Если не отмечено, в совместной игре используется обычный Безупречный Молот.)",
+  
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.title": "Разрешить Амулет Ливня в совместной игре",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.title": "Сетевой Амулет Ливня",
+  "ANCIENTSAWAKENED-MULTIPLAYER_MONSOON_CHARM.hover.desc": "Выключен по умолчанию из-за потенциала испортить игру другим игрокам.",
+
+  "ANCIENTSAWAKENED-SEBASTIAN.title": "Настройки реликвий Себастьяна",
+
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.title": "Разрешает Глобальный Сканер в совместной игре",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.title": "Общие реликвии при использовании Сканера Себастьяна",
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.desc": "Сканер Себастьяна даёт реликвию всем игрокам, в независимости от того есть ли Сканер у игроков или нет."
+}

@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(IroncladCardPool))]
-public class Cinderborn() : AncientsAwakenedCard(2,
+public sealed class Cinderborn() : AncientsAwakenedCard(2,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
@@ -22,7 +22,7 @@ public class Cinderborn() : AncientsAwakenedCard(2,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
+        for (var i = 0; i < DynamicVars.Repeat.IntValue; ++i)
             await CreatureCmd.Damage(choiceContext, Owner.Creature, DynamicVars.HpLoss.BaseValue, ValueProp.Unblockable | ValueProp.Unpowered | ValueProp.Move, this, play);
         if(Owner.Creature.CurrentHp > 0) await CreatureCmd.Heal(Owner.Creature, DynamicVars.Heal.BaseValue);
     }

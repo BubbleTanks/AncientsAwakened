@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class MysteriousTablet : AncientsAwakenedRelic
+public sealed class MysteriousTablet : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.LunaticCultist;
 
 [Pool(typeof(EventCardPool))]
-public class GuidanceChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
+public sealed class GuidanceChoice() : AncientsAwakenedCard(-1, CardType.Power, CardRarity.Ancient, TargetType.None), Starshine.ICardChoice
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<GuidancePower>(1)];
     

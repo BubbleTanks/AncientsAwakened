@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(RegentCardPool))]
-public class NebulaHammer() : AncientsAwakenedCard(1,
+public sealed class NebulaHammer() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {

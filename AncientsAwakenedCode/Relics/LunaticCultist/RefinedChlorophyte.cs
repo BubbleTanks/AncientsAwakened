@@ -14,9 +14,9 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class RefinedChlorophyte : AncientsAwakenedRelic
+public sealed class RefinedChlorophyte : AncientsAwakenedRelic
 {
-    private int _platingPower = 5;
+    private int _platingPower = 4;
     
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -55,7 +55,7 @@ public class RefinedChlorophyte : AncientsAwakenedRelic
         IReadOnlyList<Creature> participants,
         ICombatState combatState)
     {
-        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState.TurnNumber > 1)
+        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState?.TurnNumber > 1)
             return;
         Flash();
         await PowerCmd.Apply<PlatingPower>(choiceContext, Owner.Creature, DynamicVars.Power<PlatingPower>().BaseValue, Owner.Creature, null);

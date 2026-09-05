@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class MedicalKit : AncientsAwakenedRelic
+public sealed class MedicalKit : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -20,9 +20,9 @@ public class MedicalKit : AncientsAwakenedRelic
 
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
-        if (!(room is RestSiteRoom))
+        if (room is not RestSiteRoom)
             return;
-        int originalSlotCount = Owner.MaxPotionCount;
+        var originalSlotCount = Owner.MaxPotionCount;
         Flash();
         await PlayerCmd.GainMaxPotionCount(DynamicVars["PotionSlots"].IntValue, Owner);
         await PotionCmd.TryToProcure(ModelDb.Potion<NeloprephineVial>().ToMutable(), Owner, originalSlotCount);

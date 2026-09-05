@@ -4,10 +4,8 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Extensions;
-using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Map;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Random;
 using MegaCrit.Sts2.Core.Rewards;
@@ -18,7 +16,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class SebastiansScanner : AncientsAwakenedRelic
+public sealed class SebastiansScanner : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
@@ -91,17 +89,11 @@ public class SebastiansScanner : AncientsAwakenedRelic
       var rng = new Rng(Owner, Id);
       var list1 = map.GetAllMapPoints().Where(p =>
       {
-        bool flag2;
-        switch (p.PointType)
+        var flag2 = p.PointType switch
         {
-          case MapPointType.Monster:
-          case MapPointType.Elite:
-            flag2 = true;
-            break;
-          default:
-            flag2 = false;
-            break;
-        }
+          MapPointType.Monster or MapPointType.Elite => true,
+          _ => false
+        };
         return flag2 && !p.Quests.Any(q => q is SebastiansScanner);
       }).ToList();
       list1.UnstableShuffle(rng);
@@ -121,7 +113,7 @@ public class SebastiansScanner : AncientsAwakenedRelic
     else
     {
       foreach (var coord in markedCoords)
-        (map.GetPoint(coord) ?? throw new InvalidOperationException($"Loaded a scanner map with coordinate {coord}, but the generated map does not contain that coordinate!")).AddQuest((AbstractModel) this);
+        (map.GetPoint(coord) ?? throw new InvalidOperationException($"Loaded a scanner map with coordinate {coord}, but the generated map does not contain that coordinate!")).AddQuest(this);
     }
     return map;
   }
@@ -139,9 +131,9 @@ public class SebastiansScanner : AncientsAwakenedRelic
   {
     if (!SebastiansScannerCoordsSet)
       return null;
-    List<MapCoord> markedCoords = new List<MapCoord>();
-    for (int index = 0; index < SebastiansScannerCoordCols.Length; ++index)
-      markedCoords.Add(new MapCoord()
+    var markedCoords = new List<MapCoord>();
+    for (var index = 0; index < SebastiansScannerCoordCols.Length; ++index)
+      markedCoords.Add(new MapCoord
       {
         col = SebastiansScannerCoordCols[index],
         row = SebastiansScannerCoordRows[index]

@@ -4,7 +4,7 @@
   "ANCIENTSAWAKENED-CELESTIAL.title": "星界",
   "ANCIENTSAWAKENED-CHARMED.description": "这张牌获得[gold]重放[/gold]1，耗能增加{Energy:energyIcons()}。",
   "ANCIENTSAWAKENED-CHARMED.title": "迷醉",
-  "ANCIENTSAWAKENED-DESIGN.description": "这张牌获得[gold]重放[/gold]1",
+  "ANCIENTSAWAKENED-DESIGN.description": "这张牌获得[gold]重放[/gold]1。",
   "ANCIENTSAWAKENED-DESIGN.title": "设计",
   "ANCIENTSAWAKENED-MASS.description": "这张牌每场战斗耗能可减少{energyPrefix:energyIcons(1)}一次。",
   "ANCIENTSAWAKENED-MASS.title": "质量",

@@ -37,4 +37,39 @@ public static class StringExtensions
     {
         return Path.Join(AncientsAwakenedMain.ResPath, "images", "relics", "big", path);
     }
+    
+    public static string RestSiteImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "rest_site", path);
+    }
+    
+    public static string EnchantmentImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "enchantments", path);
+    }
+    
+    public static string PotionImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "potions", path);
+    }
+    
+    public static string AfflictionScenePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "scenes", "afflictions", path);
+    }
+    
+    public static string AncientScenePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "scenes", "ancients", path);
+    }
+    
+    public static string AncientMapIconImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "ancients", "map_icons", path);
+    }
+    
+    public static string AncientRunHistoryIconImagePath(this string path)
+    {
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "ancients", "run_history_icons", path);
+    }
 }

@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(SilentCardPool))]
-public class SleightOfHand() : AncientsAwakenedCard(1,
+public sealed class SleightOfHand() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Ancient,
     TargetType.AnyEnemy)
 {
@@ -31,7 +31,7 @@ public class SleightOfHand() : AncientsAwakenedCard(1,
 
     public override async Task AfterCardDiscarded(PlayerChoiceContext choiceContext, CardModel card)
     {
-        if (card.Owner != Owner || Owner.Creature.Side != Owner.Creature.CombatState.CurrentSide || Pile.Type == PileType.Hand)
+        if (card.Owner != Owner || Owner.Creature.Side != Owner.Creature.CombatState?.CurrentSide || Pile?.Type == PileType.Hand)
             return;
         if (card != this)
         {

@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Nodes.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class VortexEye : AncientsAwakenedRelic
+public sealed class VortexEye : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

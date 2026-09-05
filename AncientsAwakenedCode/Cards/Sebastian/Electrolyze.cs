@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(DefectCardPool))]
-public class Electrolyze() : AncientsAwakenedCard(3,
+public sealed class Electrolyze() : AncientsAwakenedCard(3,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
@@ -26,7 +26,7 @@ public class Electrolyze() : AncientsAwakenedCard(3,
         CardPlay play)
     {
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
-        for (int i = 0; i < DynamicVars.Repeat.IntValue; ++i)
+        for (var i = 0; i < DynamicVars.Repeat.IntValue; ++i)
             await OrbCmd.Channel<LightningOrb>(choiceContext, Owner);
         await PowerCmd.Apply<ElectrolyzePower>(choiceContext, Owner.Creature, DynamicVars.Power<FocusPower>().BaseValue, Owner.Creature, this);
     }

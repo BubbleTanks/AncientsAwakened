@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(NecrobinderCardPool))]
-public class NecroticBurst() : AncientsAwakenedCard(0,
+public sealed class NecroticBurst() : AncientsAwakenedCard(0,
     CardType.Skill, CardRarity.Ancient,
     TargetType.Self)
 {
@@ -25,14 +25,9 @@ public class NecroticBurst() : AncientsAwakenedCard(0,
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await OstyCmd.Summon(choiceContext, Owner, DynamicVars.Summon.BaseValue, this);
         
-        List<CardModel> list = PileType.Hand.GetPile(Owner).Cards.ToList();
-
-        List<CardModel> list2 = list.Where(delegate(CardModel c)
-        {
-            return !(c is NecroticBurst);
-        }).ToList();
+        var list = PileType.Hand.GetPile(Owner).Cards.Where(c => c is not NecroticBurst).ToList();
         
-        foreach (CardModel card in list2)
+        foreach (var card in list)
         {
             CardModel ego = CombatState.CreateCard<NecroticBurst>(Owner);
             if (IsUpgraded)

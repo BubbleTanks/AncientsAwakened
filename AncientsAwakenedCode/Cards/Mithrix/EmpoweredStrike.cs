@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(DefectCardPool))]
-public class EmpoweredStrike() : AncientsAwakenedCard(0,
+public sealed class EmpoweredStrike() : AncientsAwakenedCard(0,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {

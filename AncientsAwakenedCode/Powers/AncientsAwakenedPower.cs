@@ -7,7 +7,6 @@ namespace AncientsAwakened.AncientsAwakenedCode.Powers;
 
 public abstract class AncientsAwakenedPower : CustomPowerModel
 {
-    //Loads from AncientsAwakened/images/powers/your_power.png
     public override string CustomPackedIconPath
     {
         get

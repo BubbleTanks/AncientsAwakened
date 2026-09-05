@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(CurseCardPool))]
-public class WeighedDown : AncientsAwakenedCard
+public sealed class WeighedDown() : AncientsAwakenedCard(-1, CardType.Curse, CardRarity.Curse, TargetType.None)
 {
     [SavedProperty]
     private int[] TreasureCoordCols { get; set; } = Array.Empty<int>();
@@ -22,11 +22,6 @@ public class WeighedDown : AncientsAwakenedCard
     [SavedProperty]
     private bool TreasureCoordsSet { get; set; }
 
-    public WeighedDown()
-        : base(-1, CardType.Curse, CardRarity.Curse, TargetType.None)
-    {
-    }
-    
     public override bool CanBeGeneratedByModifiers => false;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new ("ActNumber", 2)];
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Unplayable, CardKeyword.Innate, CardKeyword.Retain];
@@ -34,7 +29,7 @@ public class WeighedDown : AncientsAwakenedCard
     
     public override async Task AfterRoomEntered(AbstractRoom room)
     {
-        List<MapCoord> markedCoords = GetMarkedCoords();
+        var markedCoords = GetMarkedCoords();
         if (markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord))
             return;
         await CardPileCmd.RemoveFromDeck(this);
@@ -45,7 +40,7 @@ public class WeighedDown : AncientsAwakenedCard
         if (TreasureCoordsSet) return;
         if (IsMutable && Owner != null)
         {
-            List<MapPoint> list = Owner.RunState.Map.GetAllMapPoints().Where(p =>
+            var list = Owner.RunState.Map.GetAllMapPoints().Where(p =>
             {
                 bool flag;
                 switch (p.PointType)
@@ -62,7 +57,7 @@ public class WeighedDown : AncientsAwakenedCard
             
             TreasureCoordCols = new int[list.Count];
             TreasureCoordRows = new int[list.Count];
-            for (int index = 0; index < list.Count; ++index)
+            for (var index = 0; index < list.Count; ++index)
             {
                 TreasureCoordCols[index] = list[index].coord.col;
                 TreasureCoordRows[index] = list[index].coord.row;
@@ -76,9 +71,9 @@ public class WeighedDown : AncientsAwakenedCard
     {
         if (!TreasureCoordsSet)
             FindTreasureCoords();
-        List<MapCoord> markedCoords = new List<MapCoord>();
-        for (int index = 0; index < TreasureCoordCols.Length; ++index)
-            markedCoords.Add(new MapCoord()
+        var markedCoords = new List<MapCoord>();
+        for (var index = 0; index < TreasureCoordCols.Length; ++index)
+            markedCoords.Add(new MapCoord
             {
                 col = TreasureCoordCols[index],
                 row = TreasureCoordRows[index]

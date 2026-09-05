@@ -1,0 +1,12 @@
+﻿{
+  "ANCIENTSAWAKENED-MUTATE.description": "[gold]Преобразует[/gold] [blue]1[/blue] карту в вашей [gold]колоде[/gold] и вы теряете [blue]8[/blue] ОЗ.",
+  "ANCIENTSAWAKENED-MUTATE.descriptionDisabled": "[red]Вам нужна хотя бы 1 карта, которую можно преобразовать.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.descriptionHpDisabled": "[red]У вас недостаточно ОЗ для преобразования.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.name": "Мутировать",
+
+  "ANCIENTSAWAKENED-PROSPECT.description": "Получите 250-300 [gold]Золота[/gold].",
+  "ANCIENTSAWAKENED-PROSPECT.name": "Копать",
+
+  "ANCIENTSAWAKENED-COLLECT.description": "Добавляет [blue]1[/blue] [gold]Звёздный Свет[/gold] в вашу [gold]колоду[/gold].",
+  "ANCIENTSAWAKENED-COLLECT.name": "Собирать"
+}

@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
-public class MonsoonCharm : AncientsAwakenedRelic
+public sealed class MonsoonCharm : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
@@ -23,18 +23,19 @@ public class MonsoonCharm : AncientsAwakenedRelic
         this.BlacklistFromEulogy();
     }
     
-    public override async Task AfterObtained()
+    public override Task AfterObtained()
     {
+        var map = RunManager.Instance.State.Map.GetAllMapPoints();
 
-        IEnumerable<MapPoint> map = RunManager.Instance.State.Map.GetAllMapPoints();
-
-        foreach (MapPoint point in map)
+        foreach (var point in map)
         {
             if (point.PointType == MapPointType.RestSite)
             {
                 point.PointType = MapPointType.Elite; 
             }
         }
+
+        return Task.CompletedTask;
     }
     
     public override bool IsAllowed(IRunState runState)

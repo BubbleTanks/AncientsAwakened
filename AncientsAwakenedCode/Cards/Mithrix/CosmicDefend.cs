@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(RegentCardPool))]
-public class CosmicDefend() : AncientsAwakenedCard(1,
+public sealed class CosmicDefend() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {
@@ -27,12 +27,17 @@ public class CosmicDefend() : AncientsAwakenedCard(1,
         CardPlay play)
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, play);
-        
-       CardModel card = Owner.Creature.CombatState.CreateCard(ModelDb.CardPool<TokenCardPool>().GetUnlockedCards(Owner.UnlockState, Owner.RunState.CardMultiplayerConstraint).Where(c => c.Tags.Contains(CardTag.Minion)).TakeRandom(1, Owner.RunState.Rng.CombatCardGeneration).FirstOrDefault(), Owner);
-           
-        if (card == null) {
+        var canonicalCard = ModelDb.CardPool<TokenCardPool>()
+            .GetUnlockedCards(Owner.UnlockState, Owner.RunState.CardMultiplayerConstraint)
+            .Where(c => c.Tags.Contains(CardTag.Minion)).TakeRandom(1, Owner.RunState.Rng.CombatCardGeneration)
+            .FirstOrDefault();
+        if (canonicalCard == null) {
             Log.Info("Minions don't exist, lol, lmao.");
-            return; }
+            return;
+        }
+        var card = Owner.Creature.CombatState?.CreateCard(canonicalCard, Owner);
+        if(card == null)
+            return;
         await CardPileCmd.AddGeneratedCardToCombat(card, PileType.Hand, Owner);
     }
 

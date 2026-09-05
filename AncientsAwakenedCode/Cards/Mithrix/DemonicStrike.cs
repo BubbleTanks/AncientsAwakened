@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(IroncladCardPool))]
-public class DemonicStrike() : AncientsAwakenedCard(1,
+public sealed class DemonicStrike() : AncientsAwakenedCard(1,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {

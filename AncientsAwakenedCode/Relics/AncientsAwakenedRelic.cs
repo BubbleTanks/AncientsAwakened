@@ -1,6 +1,6 @@
-﻿using BaseLib.Abstracts;
+﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using BaseLib.Abstracts;
 using BaseLib.Extensions;
-using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Players;
 
@@ -8,7 +8,6 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics;
 
 public abstract class AncientsAwakenedRelic : CustomRelicModel
 {
-    //AncientsAwakened/images/relics
     public override string PackedIconPath
     {
         get

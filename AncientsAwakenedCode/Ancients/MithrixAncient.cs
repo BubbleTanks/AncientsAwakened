@@ -1,7 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Relics;
-using AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
-using AncientsAwakened.AncientsAwakenedCode.UI;
-using BaseLib.Abstracts;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
@@ -10,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
 
-public class MithrixAncient : CustomAncientModel
+public sealed class MithrixAncient : AncientsAwakenedAncient
 {
     protected override OptionPools MakeOptionPools =>
 

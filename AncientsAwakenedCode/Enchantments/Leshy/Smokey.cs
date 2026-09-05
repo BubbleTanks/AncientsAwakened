@@ -1,5 +1,4 @@
-﻿using BaseLib.Abstracts;
-using MegaCrit.Sts2.Core.Commands;
+﻿using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Enchantments;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -8,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Enchantments.Leshy;
 
-public class Smokey : CustomEnchantmentModel
+public sealed class Smokey : AncientsAwakenedEnchantment
 {
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromKeyword(CardKeyword.Exhaust)];
     

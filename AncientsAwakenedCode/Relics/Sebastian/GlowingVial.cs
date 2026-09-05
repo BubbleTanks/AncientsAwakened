@@ -1,57 +1,52 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions;
-using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Sebastian;
+﻿using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Sebastian;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Entities.RestSite;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes.Rooms;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class GlowingVial : AncientsAwakenedRelic
+public sealed class GlowingVial : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     private ICollection<RestSiteOption> _options;
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-VIAL.name"), new LocString("rest_site_ui", "OPTION_ANCIENTSAWAKENED-VIAL.description"))];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "ANCIENTSAWAKENED-MUTATE.name"), new LocString("rest_site_ui", "ANCIENTSAWAKENED-MUTATE.description"))];
 
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
     {
         if (player != Owner)
             return false;
         _options = options;
-        options.Add(new GlowingVialOption(player));
+        options.Add(new Mutate(player));
         return true;
     }
     
     public override bool ShouldDisableRemainingRestSiteOptions(Player player)
     {
-        if (Owner.Creature.CurrentHp >= GlowingVialOption.HpCost(player))
+        if (Owner.Creature.CurrentHp < Mutate.HpCost(player) || _options == null) 
+            return true;
+        
+        foreach (var option in _options)
         {
-            if (_options == null)
-            {
+            if (option is not Mutate) 
+                continue;
+            if (option.IsEnabled) 
                 return true;
-            }
-            foreach (var option in _options)
+            if (NRestSiteRoom.Instance == null) 
+                continue;
+            
+            var button = NRestSiteRoom.Instance.GetButtonForOption(option);
+            
+            if (button != null)
             {
-                if (option is GlowingVialOption)
-                {
-                    if (option.IsEnabled) return true;
-                    if (NRestSiteRoom.Instance != null)
-                    {
-                        var button = NRestSiteRoom.Instance.GetButtonForOption(option);
-                        if (button != null)
-                        {
-                            button._isUnclickable = false;
-                            button.Reload();
-                        }
-                    }
-                }
+                button._isUnclickable = false;
+                button.Reload();
             }
         }
         return true;

@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class FilmRoll : AncientsAwakenedRelic
+public sealed class FilmRoll : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

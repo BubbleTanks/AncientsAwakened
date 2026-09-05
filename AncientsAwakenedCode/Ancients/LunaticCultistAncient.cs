@@ -1,5 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
-using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
@@ -8,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
-public class LunaticCultistAncient : CustomAncientModel
+public sealed class LunaticCultistAncient : AncientsAwakenedAncient
 {
     protected override OptionPools MakeOptionPools =>
 

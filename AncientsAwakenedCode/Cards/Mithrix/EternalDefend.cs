@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.Cards;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(NecrobinderCardPool))]
-public class EternalDefend() : AncientsAwakenedCard(1,
+public sealed class EternalDefend() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {
@@ -30,13 +30,14 @@ public class EternalDefend() : AncientsAwakenedCard(1,
         await CreatureCmd.TriggerAnim(Owner.Creature, "Cast", Owner.Character.CastAnimDelay);
         await OstyCmd.Summon(choiceContext, Owner, DynamicVars.Summon.BaseValue, this);
         
-        IEnumerable<Soul> cards = Soul.Create(Owner, DynamicVars.Cards.IntValue, CombatState);
+        var cards = Soul.Create(Owner, DynamicVars.Cards.IntValue, CombatState);
+        var cardModels = cards.ToList();
         if (IsUpgraded)
         {
-            foreach (CardModel card in cards)
+            foreach (var card in cardModels)
                 CardCmd.Upgrade(card);
         }
-        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Draw, Owner, CardPilePosition.Random));
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardsToCombat(cardModels, PileType.Draw, Owner, CardPilePosition.Random));
     }
 
     protected override void OnUpgrade()

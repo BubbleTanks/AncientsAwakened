@@ -16,10 +16,42 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
 
 [Pool(typeof(EventRelicPool))]
-public class ExperimentalSerum : AncientsAwakenedRelic
+public sealed class ExperimentalSerum : AncientsAwakenedRelic
 {
     private static Dictionary<ModelId, ModelId>? _experimentalCards;
+    
+    private ModelId? _ancientCard;
+    
+    private IEnumerable<IHoverTip> _extraHoverTips = [];
+    
+    public override RelicRarity Rarity => RelicRarity.Ancient;
+    
+    public override bool HasUponPickupEffect => true;    
 
+    private static readonly Dictionary<ModelId, ModelId> VanillaExperimentalCards = new()
+    {
+        {
+            ModelDb.Character<Ironclad>().Id,
+            ModelDb.Card<Cinderborn>().Id
+        },
+        {
+            ModelDb.Character<Silent>().Id,
+            ModelDb.Card<SleightOfHand>().Id
+        },
+        {
+            ModelDb.Character<Regent>().Id,
+            ModelDb.Card<NebulaHammer>().Id
+        },
+        {
+            ModelDb.Character<Necrobinder>().Id,
+            ModelDb.Card<NecroticBurst>().Id
+        },
+        {
+            ModelDb.Character<Defect>().Id,
+            ModelDb.Card<Electrolyze>().Id
+        }
+    };
+    
     private static Dictionary<ModelId, ModelId> ExperimentalCards
     {
         get
@@ -39,14 +71,6 @@ public class ExperimentalSerum : AncientsAwakenedRelic
             return _experimentalCards;
         }
     }
-    
-    public override RelicRarity Rarity => RelicRarity.Ancient;
-    
-    public override bool HasUponPickupEffect => true;    
-
-    private ModelId? _ancientCard;
-    
-    private IEnumerable<IHoverTip> _extraHoverTips = Array.Empty<IHoverTip>();
 
     [SavedProperty]
     private ModelId? AncientCard
@@ -71,37 +95,18 @@ public class ExperimentalSerum : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("card")];
 
-    private static Dictionary<ModelId, ModelId> VanillaExperimentalCards = new()
+    public void SetupForPlayer(Player player)
     {
-        {
-            ModelDb.Character<Ironclad>().Id,
-            ModelDb.Card<Cinderborn>().Id
-        },
-        {
-            ModelDb.Character<Silent>().Id,
-            ModelDb.Card<SleightOfHand>().Id
-        },
-        {
-            ModelDb.Character<Regent>().Id,
-            ModelDb.Card<NebulaHammer>().Id
-        },
-        {
-            ModelDb.Character<Necrobinder>().Id,
-            ModelDb.Card<NecroticBurst>().Id
-        },
-        {
-            ModelDb.Character<Defect>().Id,
-            ModelDb.Card<Electrolyze>().Id
-        }
-    };
-    
-    public void SetupForPlayer(Player player) => AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out ModelId card) ? card : ModelDb.Card<SurpassLimits>().Id;
-    
-    
+        AncientCard = ExperimentalCards.TryGetValue(player.Character.Id, out var card)
+            ? card
+            : ModelDb.Card<SurpassLimits>().Id;
+    }
+
     public override async Task AfterObtained()
     {
-        CardModel card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
-        if (card == null) return;
+        if(AncientCard == null)
+            SetupForPlayer(Owner);
+        var card = Owner.RunState.CreateCard(SaveUtil.CardOrDeprecated(AncientCard), Owner);
         CardCmd.Upgrade(card);
         CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(card, PileType.Deck), 2f);
         if(!SaveManager.Instance.Progress.DiscoveredCards.Contains(ModelDb.Card<SurpassLimits>().Id)) SaveManager.Instance.MarkCardAsSeen(ModelDb.Card<SurpassLimits>());

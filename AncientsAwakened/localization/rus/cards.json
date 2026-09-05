@@ -1,0 +1,104 @@
+{
+  "ANCIENTSAWAKENED-EGOCENTRISM.description": "Если эта карта находится в [gold]Руке[/gold] в конце хода, [gold]Преобразует[/gold] ВСЕ ваши карты в [gold]Руке[/gold] в [gold]Эгоцентризм[/gold].",
+  "ANCIENTSAWAKENED-EGOCENTRISM.title": "Эгоцентризм",
+
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.description": "Наносит {Damage:diff()} урона.\n{IsMultiplayer:cond:Получите дополнительный ход.|ВСЕ игроки получают дополнительный ход.}",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME.title": "Сломись Подо Мной",
+
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.description": "Наносит {Damage:diff()} урона.\nДаёт {StrengthPower:diff()} [gold]Силы[/gold].\nНакладывает {VulnerablePower:diff()} [gold]уязвимости[/gold].",
+  "ANCIENTSAWAKENED-DEMONIC_STRIKE.title": "Дьявольский удар",
+
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.description": "Даёт {Block:diff()} [gold]защиты[/gold].\nВы теряете {HpLoss:diff()} ОЗ.",
+  "ANCIENTSAWAKENED-DEMONIC_DEFEND.title": "Дьявольская защита",
+
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.description": "Наносит {Damage:diff()} урона.\nНакладывает {PoisonPower:diff()} [gold]яда[/gold].",
+  "ANCIENTSAWAKENED-DEADLY_STRIKE.title": "Смертельный удар",
+
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.description": "Даёт {Block:diff()} [gold]защиты[/gold].\nДобавляет {Shivs:diff()} [gold]{Shivs:plural:Заточку|Заточек}[/gold] в [gold]Руку[/gold].\nВы добираете {Cards:diff()} {Cards:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-DEADLY_DEFEND.title": "Смертельная защита",
+
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.description": "Наносит {Damage:diff()} урона.\n[gold]Закаляет[/gold] {Forge:diff()}.\nПолучите {Stars:starIcons()}.",
+  "ANCIENTSAWAKENED-COSMIC_STRIKE.title": "Космический удар",
+
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.description": "Даёт {Block:diff()} [gold]защиты[/gold].\nДобавляет одну случайную карту Слуги в [gold]руку[/gold].",
+  "ANCIENTSAWAKENED-COSMIC_DEFEND.title": "Космическая защита",
+
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.description": "[gold]Костя[/gold] наносит {OstyDamage:diff()} урона.\nНакладывает {DoomPower:diff()} [gold]злого рока[/gold].",
+  "ANCIENTSAWAKENED-ETERNAL_STRIKE.title": "Разрушительный удар",
+
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.description": "[gold]Призывает[/gold] {Summon:diff()}.\nДобавляет [gold]{IfUpgraded:show:Душа+|Душа}[/gold] в [gold]стопку добора[/gold].",
+  "ANCIENTSAWAKENED-ETERNAL_DEFEND.title": "Разрушительная защита",
+  
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.description": "Наносит {Damage:diff()} урона {Repeat:diff()} раз.\n[gold]Заряжает[/gold] 1 [gold]сферу стекла[/gold].\nДобавляет [gold]Головокружение[/gold] в [gold]стопку добора[/gold].",
+  "ANCIENTSAWAKENED-EMPOWERED_STRIKE.title": "Усиленный удар",
+  
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.description": "Даёт {Block:diff()} [gold]защиты[/gold].\n[gold]Заряжает[/gold] 1 [gold]сферу льда[/gold].\nДаёт {FocusPower:diff()} [gold]фокуса[/gold] на этот ход.",
+  "ANCIENTSAWAKENED-EMPOWERED_DEFEND.title": "Усиленная защита",
+
+  "ANCIENTSAWAKENED-PERFECT_STRIKE.description": "Наносит {Damage:diff()} урона.\nВы добираете {Cards:diff()} {Cards:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-PERFECT_STRIKE.title": "Превосходный удар",
+
+  "ANCIENTSAWAKENED-PERFECT_DEFEND.description": "Даёт {Block:diff()} [gold]защиты[/gold].\nПолучите {Energy:energyIcons()}.",
+  "ANCIENTSAWAKENED-PERFECT_DEFEND.title": "Превосходная защита",
+  
+
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Наносит {Damage:diff()} урона ВСЕМ врагам {Repeat:diff()} раз.\nВы добираете {Cards:diff()} карт.",
+  "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Трёхствольный Дробовик",
+
+  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Откроется после убийства босса.",
+  "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Тяжелый Ящик",
+
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "Удаляется из [gold]колоды[/gold] после посещения [gold]сокровищницы[/gold] в Акте {ActNumber:diff()}.",
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Перегруз",
+
+  "ANCIENTSAWAKENED-CINDERBORN.description": "Вы теряете {HpLoss:diff()} ОЗ {Repeat:diff()} раз.\nИсцеляет {Heal:diff()} ОЗ.",
+  "ANCIENTSAWAKENED-CINDERBORN.title": "Пеплорождённый",
+
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Накладывает {PoisonPower:diff()} [gold]яда[/gold].\nКогда вы сбрасываете другую карту, добавляет эту карту в [gold]руку[/gold].",
+  "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.title": "Смертельная Отрава",
+
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "[gold]Закаляет[/gold] {Forge:diff()}.\nВозвращает эту карту в [gold]руку[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "Падшая Звезда",
+
+  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Призывает[/gold] {Summon:diff()}.\n[gold]Преобразует[/gold] вашу [gold]руку[/gold] в [gold]{IfUpgraded:show:Некротический Взрыв+|Некротический Взрыв}[/gold].",
+  "ANCIENTSAWAKENED-NECROTIC_BURST.title": "Некротический Взрыв",
+
+  "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Заряжает[/gold] {Repeat:diff()} [gold]сферу молнии[/gold].\nДаёт {FocusPower:diff()} [gold]фокуса[/gold] на этот ход.",
+  "ANCIENTSAWAKENED-ELECTROLYZE.title": "Электролизовать",
+
+  "ANCIENTSAWAKENED-SURPASS_LIMITS.description": "Даёт {Energy:energyIcons()}.\nВы добираете {Cards:diff()} {Cards:plural:карту|карт}.\nНа следующем ходу вы получите {Energy2:energyIcons()} и доберёте {Cards2:diff()} {Cards2:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-SURPASS_LIMITS.title": "Превзойти Лимит",
+  
+
+  "ANCIENTSAWAKENED-SQUIRREL.description": "Вы добираете {Cards:diff()} карт.",
+  "ANCIENTSAWAKENED-SQUIRREL.title": "Белочка",
+
+  "ANCIENTSAWAKENED-INSCRYBE.selectionScreenPrompt": "Выберите карту для надписания.",
+  "ANCIENTSAWAKENED-INSCRYBE.description": "Наносит {Damage:diff()} урона.\nВыберите карту в [gold]руке[/gold], копию которой вы хотите получить.",
+  "ANCIENTSAWAKENED-INSCRYBE.title": "Надписать",
+
+  
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.description": "Получите {RitualPower:diff()} [gold]ритуала[/gold].\nВ начале вашего хода наносит {LunaticRitualPower:diff()} урона ВСЕМ врагам.",
+  "ANCIENTSAWAKENED-LUNATIC_RITUAL.title": "Лунный Ритуал",
+
+  "ANCIENTSAWAKENED-COSMIC_DUST.description": "",
+  "ANCIENTSAWAKENED-COSMIC_DUST.title": "Космическая Пыль",
+
+  "ANCIENTSAWAKENED-LUNACY.description": "Делает случайную карту в [gold]руке[/gold] бесплатной до конца боя.",
+  "ANCIENTSAWAKENED-LUNACY.title": "Лунность",
+
+  "ANCIENTSAWAKENED-INSANITY.description": "Увеличивает стоимость случайной карты в [gold]руке[/gold] на {Energy:energyIcons()} в этом бою.\nВы добираете {Cards:diff()} {Cards:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-INSANITY.title": "Древнее Безумие",
+
+  "ANCIENTSAWAKENED-STARSHINE.description": "Выберите одно:\n[gold]Сжигает[/gold] до {Exhaust:diff()} {Exhaust:plural:карт|карт} в [gold]стопке добора[/gold]ИЛИ даёт {Energy:energyIcons()} и вы добираете {Cards:diff()} {Cards:plural:карту|карт} ИЛИ навсегда [gold]улучшает[/gold] карту в вашей [gold]колоде[/gold] после боя.",
+  "ANCIENTSAWAKENED-STARSHINE.title": "Звёздный Свет",
+
+  "ANCIENTSAWAKENED-POWER_CHOICE.description": "[gold]Сжигает[/gold] до {Cards:diff()} {Cards:plural:карт|карт} в [gold]стопке добора[/gold].",
+  "ANCIENTSAWAKENED-POWER_CHOICE.title": "Разрушение",
+
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.description": "Даёт {Energy:energyIcons()}.\nВы добираете {Cards:diff()} {Cards:plural:карту|карт}.",
+  "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "Вдохновение",
+
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "Навсегда [gold]улучшает[/gold] карту в вашей [gold]колоде[/gold] после боя.",
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "Руководство"
+}

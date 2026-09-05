@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
 
 [Pool(typeof(EventCardPool))]
-public class TripleBarrelShotgun() : AncientsAwakenedCard(1, CardType.Attack, CardRarity.Ancient, TargetType.AllEnemies)
+public sealed class TripleBarrelShotgun() : AncientsAwakenedCard(1, CardType.Attack, CardRarity.Ancient, TargetType.AllEnemies)
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(6, ValueProp.Move), new CardsVar(2), new RepeatVar(3)];
 

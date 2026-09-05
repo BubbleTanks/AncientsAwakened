@@ -1,11 +1,10 @@
-﻿using BaseLib.Abstracts;
-using MegaCrit.Sts2.Core.Entities.Cards;
+﻿using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Enchantments;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Enchantments.Mithrix;
 
-public class Mass : CustomEnchantmentModel
+public sealed class Mass : AncientsAwakenedEnchantment
 {
 
     public override Task OnPlay(PlayerChoiceContext context, CardPlay? cardPlay)

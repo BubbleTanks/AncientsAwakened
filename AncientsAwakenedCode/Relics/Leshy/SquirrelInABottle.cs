@@ -1,5 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Leshy;
-using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -15,7 +14,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
 
 [Pool(typeof(EventRelicPool))]
-public class SquirrelInABottle : AncientsAwakenedRelic
+public sealed class SquirrelInABottle : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -27,10 +26,10 @@ public class SquirrelInABottle : AncientsAwakenedRelic
         PlayerChoiceContext choiceContext,
         ICombatState combatState)
     {
-        if (player != Owner || Owner.PlayerCombatState.TurnNumber != 1)
+        if (player != Owner || Owner.PlayerCombatState?.TurnNumber != 1)
             return;
-        List<CardModel> cards = new List<CardModel>();
-        for (int index = 0; index < DynamicVars.Cards.IntValue; ++index)
+        var cards = new List<CardModel>();
+        for (var index = 0; index < DynamicVars.Cards.IntValue; ++index)
             cards.Add(Owner.Creature.CombatState.CreateCard<Squirrel>(Owner));
         await CardPileCmd.AddGeneratedCardsToCombat(cards, PileType.Hand, Owner);
     }

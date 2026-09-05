@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
 [Pool(typeof(ColorlessCardPool))]
-public class PerfectStrike() : AncientsAwakenedCard(1,
+public sealed class PerfectStrike() : AncientsAwakenedCard(1,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {

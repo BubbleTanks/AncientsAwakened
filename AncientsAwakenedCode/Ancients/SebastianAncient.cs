@@ -1,6 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Sebastian;
-using AncientsAwakened.AncientsAwakenedCode.UI;
-using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
@@ -9,7 +7,7 @@ using MegaCrit.Sts2.Core.Models;
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
 
-public class SebastianAncient : CustomAncientModel
+public class SebastianAncient : AncientsAwakenedAncient
 {
     protected override OptionPools MakeOptionPools =>
 

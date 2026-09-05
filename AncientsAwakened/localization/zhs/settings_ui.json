@@ -1,5 +1,7 @@
 {
   "ANCIENTSAWAKENED-MITHRIX.title": "米斯里克斯遗物配置",
+  "ANCIENTSAWAKENED-INFO.title": "先古之民禁用配置",
+  "ANCIENTSAWAKENED-INFO.description": "启用或禁用先古之民的配置已经迁移到我们的另一个模组 Ancient Configs Plus。它可以禁用或调整任何先古之民的出现权重，无论是原版还是模组的！",
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.desc": "启用多人模式版的无瑕之锤，+1费但给予所有盟友额外回合（禁用则会在多人模式使用单人模式的版本）",
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.hover.title": "多人模式版无瑕之锤",
   "ANCIENTSAWAKENED-MULTIPLAYER_FLAWLESS_HAMMER.title": "启用多人模式版无瑕之锤",
@@ -10,5 +12,5 @@
   "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.title": "全局塞巴斯蒂安的扫描仪",
   "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.title": "在多人模式启用全局扫描仪",
   "ANCIENTSAWAKENED-SEBASTIAN.title": "塞巴斯蒂安遗物配置",
-  "ANCIENTSAWAKENED.mod_title": ""
+  "ANCIENTSAWAKENED.mod_title": "Ancients Awakened"
 }

@@ -14,12 +14,12 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
 [Pool(typeof(EventRelicPool))]
-public class ShimmeringBottle : AncientsAwakenedRelic
+public sealed class ShimmeringBottle : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.ForEnergy(this)];
-    public override Decimal ModifyMaxEnergy(Player player, Decimal amount) => player != Owner ? amount : amount + DynamicVars.Energy.IntValue;
+    public override decimal ModifyMaxEnergy(Player player, decimal amount) => player != Owner ? amount : amount + DynamicVars.Energy.IntValue;
     
     public override async Task BeforeSideTurnEndEarly(
         PlayerChoiceContext choiceContext,
@@ -28,7 +28,7 @@ public class ShimmeringBottle : AncientsAwakenedRelic
     {
         if (!participants.Contains(Owner.Creature))
             return;
-        foreach (CardModel card in CardPile.GetCards(Owner, PileType.Hand).ToList())
+        foreach (var card in CardPile.GetCards(Owner, PileType.Hand).ToList())
             await CardCmd.TransformToRandom(card, Owner.RunState.Rng.CombatCardGeneration);
     }
 }

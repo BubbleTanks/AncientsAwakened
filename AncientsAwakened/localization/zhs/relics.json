@@ -45,8 +45,8 @@
   "ANCIENTSAWAKENED-GLOWING_VIAL.description": "你可以在[gold]休息处[/gold]免费进行任意次数的[gold]变异[/gold]。",
   "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "“嘿，用这个的时候可得小心点，效果可不小。你可能会感觉有一两根骨头断了。那说明它起作用了！”",
   "ANCIENTSAWAKENED-GLOWING_VIAL.title": "发光药瓶",
-  "ANCIENTSAWAKENED-GOOBERT.description": "拾起时，从你的[gold]牌组[/gold]中获得最多[blue]{Cards}[/blue]张卡牌的复制品。",
-  "ANCIENTSAWAKENED-GOOBERT.eventDescription": "从你的[gold]牌组[/gold]中获得最多[blue]{Cards}[/blue]张卡牌的复制品。",
+  "ANCIENTSAWAKENED-GOOBERT.description": "拾起时，从你的[gold]牌组[/gold]中选择最多[blue]{Cards}[/blue]张牌进行复制。",
+  "ANCIENTSAWAKENED-GOOBERT.eventDescription": "从你的[gold]牌组[/gold]中选择最多[blue]{Cards}[/blue]张牌进行复制。",
   "ANCIENTSAWAKENED-GOOBERT.flavor": "你根本不知道这是什么。",
   "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "选择要[gold]复制[/gold]的卡片",
   "ANCIENTSAWAKENED-GOOBERT.title": "古伯特",
@@ -136,7 +136,7 @@
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "藤蔓穿透你的视线，用宏伟的幻象向你招手。你能感觉到自己的思维正在变得麻木。",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "选择任意数量的卡牌加入你的牌组。",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "低语藤蔓",
-  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "战斗开始时，对所有敌人施加[blue]{DisadvantagedPower}[/blue]层[gold]弱势[/gold]。",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "战斗开始时，对所有敌人给予[blue]{DisadvantagedPower}[/blue]层[gold]弱势[/gold]。",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "“这本档案应该包含了关于你在尖塔中可能遇到的所有怪物和怪胎的一切信息。当然，作者就是我本人啦~”",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "野生动物档案"
 }

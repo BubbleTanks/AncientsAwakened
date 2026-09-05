@@ -1,6 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Leshy;
-using AncientsAwakened.AncientsAwakenedCode.UI;
-using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
@@ -8,8 +6,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
-
-public class LeshyAncient : CustomAncientModel
+public sealed class LeshyAncient : AncientsAwakenedAncient
 {
     protected override OptionPools MakeOptionPools =>
 

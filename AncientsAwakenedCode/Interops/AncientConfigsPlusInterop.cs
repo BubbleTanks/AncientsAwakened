@@ -1,6 +1,4 @@
-﻿using System.Reflection;
-using BaseLib.Utils.ModInterop;
-using MegaCrit.Sts2.Core.Models;
+﻿using BaseLib.Utils.ModInterop;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Interops;
 

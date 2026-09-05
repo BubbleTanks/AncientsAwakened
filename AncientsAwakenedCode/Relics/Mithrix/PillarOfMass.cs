@@ -12,14 +12,11 @@ using MegaCrit.Sts2.Core.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
-public class PillarOfMass : AncientsAwakenedRelic
+public sealed class PillarOfMass : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    protected override IEnumerable<IHoverTip> ExtraHoverTips
-    {
-        get => HoverTipFactory.FromEnchantment<Mass>();
-    }
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Mass>();
 
     public override bool TryModifyCardRewardOptionsLate(
         Player player,
@@ -28,13 +25,13 @@ public class PillarOfMass : AncientsAwakenedRelic
     {
         if (player != Owner)
             return false;
-        Mass mass = ModelDb.Enchantment<Mass>();
-        foreach (CardCreationResult cardReward in cardRewards)
+        var mass = ModelDb.Enchantment<Mass>();
+        foreach (var cardReward in cardRewards)
         {
-            CardModel card1 = cardReward.Card;
+            var card1 = cardReward.Card;
             if (mass.CanEnchant(card1))
             {
-                CardModel card2 = Owner.RunState.CloneCard(card1);
+                var card2 = Owner.RunState.CloneCard(card1);
                 CardCmd.Enchant<Mass>(card2, 1M);
                 cardReward.ModifyCard(card2, this);
             }

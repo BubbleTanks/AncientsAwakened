@@ -8,12 +8,8 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
 
   [Pool(typeof(CurseCardPool))]
-public class Egocentrism : AncientsAwakenedCard
+public sealed class Egocentrism() : AncientsAwakenedCard(2, CardType.Curse, CardRarity.Curse, TargetType.None)
 {
-    public Egocentrism()
-        : base(2, CardType.Curse, CardRarity.Curse, TargetType.None)
-    {}
-    
     public override bool CanBeGeneratedByModifiers => false;
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Eternal];
     public override bool HasTurnEndInHandEffect => true;
@@ -21,14 +17,9 @@ public class Egocentrism : AncientsAwakenedCard
 
     protected override async Task OnTurnEndInHand(PlayerChoiceContext choiceContext)
     {
-        List<CardModel> list = PileType.Hand.GetPile(Owner).Cards.ToList();
-
-        List<CardModel> list2 = list.Where(delegate(CardModel c)
-        {
-            return !(c is Egocentrism);
-        }).ToList();
+        var list = PileType.Hand.GetPile(Owner).Cards.Where(c => c is not Egocentrism).ToList();
         
-        foreach (CardModel card in list2)
+        foreach (var card in list)
         {
             CardModel ego = CombatState.CreateCard<Egocentrism>(Owner);
             await CardCmd.Transform(card, ego);

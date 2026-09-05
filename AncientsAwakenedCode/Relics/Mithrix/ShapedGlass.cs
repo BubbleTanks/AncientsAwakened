@@ -15,54 +15,35 @@ using MegaCrit.Sts2.Core.Nodes.Vfx;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mithrix;
 
 [Pool(typeof(EventRelicPool))]
-public class ShapedGlass : AncientsAwakenedRelic
+public sealed class ShapedGlass : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
-
-    // OLD CODE IGNORE THIS
     
-    /*public override decimal ModifyDamageMultiplicative(Creature? target, decimal amount, ValueProp props, Creature? dealer,
-        CardModel? cardSource)
+    protected override bool RelicAllowedToSpawn(Player owner)
     {
-        if (target == Owner.Creature)
-            return 2M;
-        
-        if (!props.IsPoweredAttack() || cardSource == null || dealer != Owner.Creature && dealer != Owner.Osty)
-            return 1M;
-        
-        return 2M;
-    }*/
-
-    protected override bool RelicAllowedToSpawn(Player Owner)
-    {
-        return Owner.Deck.Cards.Any(c => c.Type == CardType.Attack);
+        return owner.Deck.Cards.Any(c => c.Type == CardType.Attack);
     }
 
     public override bool HasUponPickupEffect => true;
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips
-    {
-        get => HoverTipFactory.FromEnchantment<Design>();
-    }
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromEnchantment<Design>();
 
     public override async Task AfterObtained()
     {
-        foreach (CardModel card in (IEnumerable<CardModel>) PileType.Deck.GetPile(Owner).Cards.ToList())
+        foreach (var card in (IEnumerable<CardModel>)[.. PileType.Deck.GetPile(Owner).Cards])
         {
-            if (card.Type == CardType.Attack && ModelDb.Enchantment<Design>().CanEnchant(card))
+            if (card.Type != CardType.Attack || !ModelDb.Enchantment<Design>().CanEnchant(card)) 
+                continue;
+            
+            CardCmd.Enchant<Design>(card, 1M);
+            var child = NCardEnchantVfx.Create(card);
+            if (child != null)
             {
-                CardCmd.Enchant<Design>(card, 1M);
-                NCardEnchantVfx child = NCardEnchantVfx.Create(card);
-                if (child != null)
-                {
-                    NRun instance = NRun.Instance;
-                    if (instance != null)
-                        instance.GlobalUi.CardPreviewContainer.AddChildSafely(child);
-                }
+                NRun.Instance?.GlobalUi.CardPreviewContainer.AddChildSafely(child);
             }
         }
 
-        int amount = Owner.Creature.MaxHp / 2;
+        var amount = Owner.Creature.MaxHp / 2;
         await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner.Creature, amount, false);
     }
 }
