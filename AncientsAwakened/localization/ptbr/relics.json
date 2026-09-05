@@ -1,0 +1,184 @@
+{
+  "ANCIENTSAWAKENED-SHAPED_GLASS.description": "Ao coletar, [gold]Encante[/gold] todos os Ataques em seu [gold]Baralho[/gold] com [purple]Design[/purple] e perca metade de sua Vida Máxima.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.eventDescription": "[gold]Encante[/gold] todos os Ataques em seu [gold]Baralho[/gold] com [purple]Design[/purple] e perca metade de sua Vida Máxima.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.flavor": "Enquanto a afiação da lâmina o impulsiona, ela também o torna frágil.",
+  "ANCIENTSAWAKENED-SHAPED_GLASS.title": "Vidro Moldado",
+  
+  "ANCIENTSAWAKENED-STARSEED.description": "Ao coletar, obtenha [blue]{Cards}[/blue] recompensas de cartas [gold]Raras[/gold]. Adiciona [blue]1[/blue] [red]Egocentrismo[/red] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-STARSEED.eventDescription": "Obtenha [blue]{Cards}[/blue] recompensas de cartas [gold]Raras[/gold]. Adiciona [blue]1[/blue] [red]Egocentrismo[/red] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-STARSEED.flavor": "Soa como dois irmãos, perseguindo sapos de vidro sob o sol.",
+  "ANCIENTSAWAKENED-STARSEED.title": "Semente Estelar",
+
+  "ANCIENTSAWAKENED-SHARED_DESIGN.description": "No final do combate, você pode remover [blue]2[/blue] cartas do seu baralho se não tiver sofrido dano de ataque não bloqueado.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.flavor": "Através de um design impecável, você pode buscar a perfeição.",
+  "ANCIENTSAWAKENED-SHARED_DESIGN.title": "Design Compartilhado",
+
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.description": "Ao coletar, adiciona [blue]1[/blue] [color=#2596be]Quebre Sob Mim[/color] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.eventDescription": "Adiciona [blue]1[/blue] [color=#2596be]Quebre Sob Mim[/color] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.flavor": "Design elegante. Massa pesada. Uma gota de sangue. Sim, isto servirá perfeitamente.",
+  "ANCIENTSAWAKENED-FLAWLESS_HAMMER.title": "Martelo Impecável",
+
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.infoText": "Cartas transformadas por [gold]Sceptro Ancestral[/gold]",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.description": "Ao coletar, [gold]Transforme[/gold] TODOS os [gold]Golpes[/gold] e [gold]Defesas[/gold] em versões {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfeitas[/blue] }.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.eventDescription": "[gold]Transforme[/gold] TODOS os [gold]Golpes[/gold] e [gold]Defesas[/gold] em versões {PerfectedPrefixKey.StringValue:cond:[blue]{}[/blue]|[blue]Perfeitas[/blue] }.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.flavor": "O cristal pulsa com energia poderosa enquanto você o pega.",
+  "ANCIENTSAWAKENED-ANCIENT_SCEPTER.title": "Sceptro Ancestral",
+
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.description": "Após o seu primeiro turno, tome um turno extra. Sempre que jogar uma carta no seu primeiro turno, perca [blue]1[/blue] de Vida Máxima.",
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.flavor": "Uma enorme rachadura se estende ao longo da lâmina.",
+  "ANCIENTSAWAKENED-FRACTURED_BLADE.title": "Lâmina Fraturada",
+
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.description": "[gold]Encante[/gold] todas as recompensas de cartas com [purple]Massa[/purple].",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.flavor": "Massa é algo simples. A base de todas as formas, moldada e esculpida. Pegue isto e crie sua própria visão.",
+  "ANCIENTSAWAKENED-PILLAR_OF_MASS.title": "Pilar de Massa",
+
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.selectionScreenPrompt": "Qual é a sua ordem?",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.description": "Ao coletar, escolha qualquer [blue]1[/blue] carta não-especial para adicionar ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.eventDescription": "Escolha qualquer [blue]1[/blue] carta não-especial para adicionar ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.flavor": "\"Tome um gole da bebida e a mente se torna moldável... e o mundo ao seu redor segue o seu exemplo.\" - Sigibold, o Bêbado",
+  "ANCIENTSAWAKENED-ARTIFACT_OF_COMMAND.title": "Artefato do Comando",
+
+  "ANCIENTSAWAKENED-MONSOON_CHARM.description": "Todos os combates soltam uma relíquia adicional. [gold]Locais de Descanso[/gold] são substituídos por [gold]Elites[/gold].",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.flavor": "A chuva desaba sobre sua cabeça. Você sente um pressentimento terrível ao segurá-lo.",
+  "ANCIENTSAWAKENED-MONSOON_CHARM.title": "Aulete da Monção",
+
+  "ANCIENTSAWAKENED-EULOGY_ZERO.description": "Recompensas de relíquias em combate são substituídas por relíquias [gold]Ancestrais[/gold] aleatórias (exceto as de Neow).",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.flavor": "\"Arquiteto... sua morte é certa. Quando você morrer — e você VAI morrer — estarei pronto. Fui paciente por milênios. Este Pináculo... é meu.\"",
+  "ANCIENTSAWAKENED-EULOGY_ZERO.title": "Elogio Zero",
+
+  
+  "ANCIENTSAWAKENED-FLASH_BEACON.description": "A cada [blue]{Turns}[/blue] turnos, TODOS os inimigos perdem [blue]{FlashBeaconPower}[/blue] de [gold]Força[/gold] por [blue]1[/blue] turno.",
+  "ANCIENTSAWAKENED-FLASH_BEACON.flavor": "\"Para ser sincero, eu odeio este aqui. Essa droga dói meus olhos. Só... mantenha virado para lá, quer?\"",
+  "ANCIENTSAWAKENED-FLASH_BEACON.title": "Sinalizador do Flash",
+
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.description": "Ao coletar, marque [blue]{Combats}[/blue] combates aleatórios. As recompensas nessas salas incluem uma relíquia adicional.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.eventDescription": "Marque [blue]{Combats}[/blue] combates aleatórios. As recompensas nessas salas incluem uma relíquia adicional.",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.flavor": "\"Você quer o scanner? O quê, eu não sou bom o suficiente para achar as coisas para você?~ Tudo bem, tudo bem, mas se você quebrar, eu arranco sua cabeça, entendeu?\"",
+  "ANCIENTSAWAKENED-SEBASTIANS_SCANNER.title": "Scanner do Sebastian",
+
+  "ANCIENTSAWAKENED-MEDICAL_KIT.description": "Sempre que entrar em um [gold]Local de Descanso[/gold], ganhe [blue]{PotionSlots}[/blue] espaço de poção com uma [gold]Injeção de Neloprefina[/gold].",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.flavor": "\"Este não tem nada de muito especial. Contém apenas uma coleção de ataduras, gazes, algumas ferramentas e utensílios, além de uma boa quantidade deste soro milagroso que encontrei.\"",
+  "ANCIENTSAWAKENED-MEDICAL_KIT.title": "Kit Médico",
+
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.description": "No início do combate, aplica [blue]{DisadvantagedPower}[/blue] de [gold]Desvantagem[/gold] a TODOS os inimigos.",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"Isso deve conter tudo o que você precisa saber sobre todos os monstros e esquisitos que você pode encontrar no Pináculo. Escrito por mim mesmo, é claro~\"",
+  "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Documentos da Fauna",
+
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Ao coletar, [gold]Encante[/gold] um Poder com [purple]Encantada[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]Encante[/gold] um Poder com [purple]Encantada[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Tudo bem, tudo bem. Já que você gosta tanto de mim por algum motivo, que tal um pequeno amuleto? É o melhor que posso fazer, sinto muito~\"",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Amuleto do Sebby",
+
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.description": "Ao coletar, adiciona [blue]1[/blue] [gold]Espingarda de Cano Triplo[/gold] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.eventDescription": "Adiciona [blue]1[/blue] [gold]Espingarda de Cano Triplo[/gold] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.flavor": "\"Aahh, com certeza uma das minhas invenções favoritas dos criadores de geringonças do R&D. Apenas certifique-se de trazê-la de volta inteira, sim?\"",
+  "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title": "Cartuchos de Espingarda",
+
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Ao coletar, adiciona [blue]1[/blue] [gold]Caixote Pesado[/gold] e [blue]1[/blue] [red]Sobrecarregado[/red] ao seu [gold]Baralho[/gold]. O caixote será aberto após derrotar o chefe.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Adiciona [blue]1[/blue] [gold]Caixote Pesado[/gold] e [blue]1[/blue] [red]Sobrecarregado[/red] ao seu [gold]Baralho[/gold]. O caixote será aberto após derrotar o chefe.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"O caixote grande? É, você pode ficar com ele e com o que tiver dentro. Mas você terá que subir para pegar a chave, deixei a droga da chave cair e tenho certeza de que o grandalhão no topo desta camada a pegou.\"",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "Pedido de Envio",
+  
+  "ANCIENTSAWAKENED-GLOWING_VIAL.description": "Você pode [gold]Mutar[/gold] qualquer número de vezes em [gold]Locais de Descanso[/gold] como uma ação gratuita.",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.flavor": "\"Ei, tome cuidado com isso aqui, é bem potente. Você pode sentir um ou dois dos seus ossos quebrando. Significa que está funcionando!\"",
+  "ANCIENTSAWAKENED-GLOWING_VIAL.title": "Frasco Brilhante",
+
+  "ANCIENTSAWAKENED-SALINE_INFUSER.description": "[gold]Poções[/gold] podem ser usadas duas vezes.",
+  "ANCIENTSAWAKENED-SALINE_INFUSER.flavor": "\"Ooh, eu amo essa coisa! Adiciona um gosto salgadinho agradável a qualquer coisa que você beber. Pode até trazer um pouco mais de vida àquelas poções que você tanto gosta...\"",
+  "ANCIENTSAWAKENED-SALINE_INFUSER.title": "Infusor Salino",
+
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.description": "Ao coletar, obtenha {card.StringValue:cond:[gold]{}+[/gold]|uma [gold]Carta Ancestral[/gold]}.",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.eventDescription": "Obtenha {card.StringValue:cond:[gold]{}+[/gold]|uma [gold]Carta Ancestral[/gold]}.",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.flavor": "\"Não posso dizer que recomendo o soro. É horrivelmente doloroso, não importa o quão compensadores sejam os resultados.\"",
+  "ANCIENTSAWAKENED-EXPERIMENTAL_SERUM.title": "Soro Experimental",
+
+
+  "ANCIENTSAWAKENED-FILM_ROLL.description": "Ao coletar, adiciona [blue]1[/blue] [gold]Inscrever[/gold] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-FILM_ROLL.eventDescription": "Adiciona [blue]1[/blue] [gold]Inscrever[/gold] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-FILM_ROLL.flavor": "Um rolo de filme fotográfico empoeirado. Símbolos estranhos estão inscritos nele.",
+  "ANCIENTSAWAKENED-FILM_ROLL.title": "Rolo de Filme",
+
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.description": "Você pode [gold]Minerar[/gold] em [gold]Locais de Descanso[/gold].",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.flavor": "Uma picareta pesada, enferrujada pelo tempo. Qualquer rocha atingida por ela parece misteriosamente se encher de ouro.",
+  "ANCIENTSAWAKENED-PROSPECTING_PICK.title": "Picareta de Prospecção",
+
+  "ANCIENTSAWAKENED-PACK_RAT.description": "Inimigos soltam uma recompensa aleatória adicional.",
+  "ANCIENTSAWAKENED-PACK_RAT.flavor": "Rato pequeno carregando uma mochila grande demais para ele. De vez em quando, oferece itens variados, embora você não saiba onde ele os consegue.",
+  "ANCIENTSAWAKENED-PACK_RAT.title": "Rato de Carga",
+
+  "ANCIENTSAWAKENED-GOOBERT.selectionScreenPrompt": "Selecione cartas para [gold]Copiar[/gold]",
+  "ANCIENTSAWAKENED-GOOBERT.description": "Ao coletar, obtenha uma cópia adicional de até [blue]{Cards}[/blue] cartas do seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-GOOBERT.eventDescription": "Obtenha uma cópia adicional de até [blue]{Cards}[/blue] cartas do seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-GOOBERT.flavor": "Você não tem ideia do que seja isto.",
+  "ANCIENTSAWAKENED-GOOBERT.title": "Goobert",
+
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.description": "Inimigos em combates que não sejam de Chefe têm [blue]{HpPercentage}%[/blue] a menos de Vida.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.flavor": "Um amuleto de marfim com o desenho de um osso. Você se sente abençoado enquanto o carrega.",
+  "ANCIENTSAWAKENED-BONE_LORD_BOON.title": "Bênção do Senhor dos Ossos",
+
+  "ANCIENTSAWAKENED-CARVING_KNIFE.description": "A primeira [gold]Mão[/gold] que você comprar a cada combate custa [blue]1[/blue] a menos de {energyPrefix:energyIcons(1)} naquele turno.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.flavor": "Uma faca impecável, feita para entalhar madeira. Você pode ouvir sussurros vindo dos tótens que entalha com ela.",
+  "ANCIENTSAWAKENED-CARVING_KNIFE.title": "Faca de Entalhar",
+
+  "ANCIENTSAWAKENED-FISH_HOOK.description": "No início de cada combate de [gold]Elite[/gold], [gold]Atordoe[/gold] TODOS os inimigos.",
+  "ANCIENTSAWAKENED-FISH_HOOK.flavor": "Um anzol de aço. Nada de notável se apresenta nele.",
+  "ANCIENTSAWAKENED-FISH_HOOK.title": "Anzol de Pesca",
+
+  "ANCIENTSAWAKENED-THE_MOON.description": "Sempre que for receber [blue]{DamageThreshold}[/blue] ou menos de dano de ataque não bloqueado, reduza-o para [blue]{DamageMaximum}[/blue].",
+  "ANCIENTSAWAKENED-THE_MOON.flavor": "Uma réplica em miniatura de um corpo celeste. Parece ser feita de rochas lunares de verdade.",
+  "ANCIENTSAWAKENED-THE_MOON.title": "Lua em Miniatura",
+  
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.description": "No início de cada combate, adiciona [blue]{Cards}[/blue] [gold]{Cards:plural:Esquilo|Esquilos}[/gold] em sua [gold]Mão[/gold].",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.flavor": "Uma carta desenhada para parecer um esquilo. Você se sente desconfortável enquanto olha para ela.",
+  "ANCIENTSAWAKENED-SQUIRREL_IN_A_BOTTLE.title": "Esquilo na Garrafa",
+
+  "ANCIENTSAWAKENED-THE_SMOKE.description": "Ao coletar, [gold]Encante[/gold] uma carta que [gold]Esgota[/gold] com [purple]À Luz de Velas[/purple].",
+  "ANCIENTSAWAKENED-THE_SMOKE.eventDescription": "[gold]Encante[/gold] uma carta que [gold]Esgota[/gold] com [purple]À Luz de Velas[/purple].",
+  "ANCIENTSAWAKENED-THE_SMOKE.flavor": "Fumaça de uma vela apagada, preservada em vidro. Parte dela vaza, contaminando sua respiração.",
+  "ANCIENTSAWAKENED-THE_SMOKE.title": "A Fumaça",
+
+  
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.description": "Adiciona [blue]1[/blue] [gold]Ritual Lunático[/gold] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "A figura encapuzada lhe disse para ter cuidado com esses feitiços. Seria sábio escutar.",
+  "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Tábula Misteriosa",
+
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "No início do seu turno, obtenha e use uma [gold]Poção[/gold] aleatória. Ataques causam [blue]{DamageDecrease}%[/blue] a menos de dano.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "Uma flor azul e frondosa cresce da garrafa. A presença dela revigora você.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.title": "Flor de Mana",
+
+  "ANCIENTSAWAKENED-FALLEN_STAR.description": "Você pode [gold]Coletar[/gold] em [gold]Locais de Descanso[/gold].",
+  "ANCIENTSAWAKENED-FALLEN_STAR.flavor": "Um fragmento dos céus que caiu na terra, agora seu para empunhar.",
+  "ANCIENTSAWAKENED-FALLEN_STAR.title": "Estrela Cadente",
+
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.description": "No início de cada combate, ganha [blue]{PlatingPower}[/blue] de [gold]Blindagem[/gold] e aumenta-a permanentemente em [blue]{Scaling}[/blue].",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "O metal estranho em suas mãos parece pulsar e brilhar, como se estivesse crescendo enquanto você olha.",
+  "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Clorofita Refinada",
+
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "Ganha {Energy:energyIcons()} no início de cada turno. No final do seu turno, [gold]Transforme[/gold] sua [gold]Mão[/gold].",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "O líquido em seu interior possui tons prismáticos. Qualquer coisa aproximada começa a se deformar e mudar, como se vista através de um caleidoscópio.",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "Garrafa Reluzente",
+
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.description": "Ao coletar, remova até [blue]{Cards}[/blue] {Cards:plural:carta|cartas} do seu [gold]Baralho[/gold]. No início do seu turno, tome [blue]{Damage}[/blue] de dano.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.eventDescription": "Remova até [blue]{Cards}[/blue] {Cards:plural:carta|cartas} do seu [gold]Baralho[/gold]. No início do seu turno, tome [blue]{Damage}[/blue] de dano.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.flavor": "A chama ruge sem parar, devorando tudo o que você joga nela. O calor é insuportável.",
+  "ANCIENTSAWAKENED-SOLAR_BRAZIER.title": "Braseiro Solar",
+
+  "ANCIENTSAWAKENED-VORTEX_EYE.description": "No início do seu turno, causa [blue]{DamagePercentage}%[/blue] a mais de dano pelo resto do combate.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "Ao tocar no fragmento, você sente seu olho se transformar e sua atenção se aguçar além da realidade.",
+  "ANCIENTSAWAKENED-VORTEX_EYE.title": "Olho do Vórtice",
+
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "No início de cada combate, escolha [blue]1[/blue] de [blue]{Cards}[/blue] Poderes aleatórios para adicionar à sua [gold]Mão[/gold] que custam 0 para jogar neste turno, e embaralhe [blue]{Status}[/blue] [gold]Poeira Cósmica[/gold] em seu [gold]Monte de Compra[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "O tomo o atrai, prometendo poder além dos seus sonhos mais loucos. Poeira brilhante cobre suas mãos enquanto acena as páginas.",
+  "ANCIENTSAWAKENED-NEBULA_TOME.title": "Tomo da Nebulosa",
+
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.description": "Ao coletar, [gold]Encante[/gold] até [blue]{Cards}[/blue] {Cards:plural:carta|cartas} com [purple]Celestial[/purple]. A primeira carta comprada a cada turno fica Afligida com [gold]Acorrentada[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.eventDescription": "[gold]Encante[/gold] até [blue]{Cards}[/blue] {Cards:plural:carta|cartas} com [purple]Celestial[/purple]. A primeira carta comprada a cada turno fica Afligida com [gold]Acorrentada[/gold].",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.flavor": "As algemas são pesadas, banhadas com a luz das estrelas. Só resta imaginar o que foram feitas para conter.",
+  "ANCIENTSAWAKENED-STARDUST_SHACKLES.title": "Algemas de Poeira Estelar",
+
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.selectionScreenPrompt": "Selecione qualquer número de cartas para adicionar ao seu Baralho.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.description": "Ao coletar, adiciona até [blue]{Cards}[/blue] [gold]{Cards:plural:Lunatismo|Lunatismos}+[/gold] ao seu [gold]Baralho[/gold]. Adiciona [blue]1[/blue] [gold]Insanidade Ancestral[/gold] ao seu [gold]Baralho[/gold] para cada [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Lunatismo|Lunatismos}[/gold] adicionados.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.eventDescription": "Adiciona até [blue]{Cards}[/blue] [gold]{Cards:plural:Lunatismo|Lunatismos}+[/gold] ao seu [gold]Baralho[/gold]. Adiciona [blue]1[/blue] [gold]Insanidade Ancestral[/gold] ao seu [gold]Baralho[/gold] para cada [blue]{InsanityCount}[/blue] [gold]{InsanityCount:plural:Lunatismo|Lunatismos}[/gold] adicionados.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "Gavinhas perfuram sua visão, acenando com visões de grandeza. Você pode sentir sua mente ficando dormente.",
+  "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "Gavinhas Susurrantes"
+}

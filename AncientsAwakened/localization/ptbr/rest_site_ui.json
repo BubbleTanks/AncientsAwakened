@@ -1,0 +1,10 @@
+{
+  "ANCIENTSAWAKENED-MUTATE.description": "[gold]Transforme[/gold] [blue]1[/blue] carta em seu [gold]Baralho[/gold] e perca [blue]8[/blue] de PV.",
+  "ANCIENTSAWAKENED-MUTATE.descriptionDisabled": "[red]Você precisa de pelo menos 1 carta transformável em seu Baralho.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.descriptionHpDisabled": "[red]Você não tem PV suficiente para Transformar.[/red]",
+  "ANCIENTSAWAKENED-MUTATE.name": "Mutar",
+  "ANCIENTSAWAKENED-PROSPECT.description": "Ganha [blue]250-300[/blue] de [gold]Ouro[/gold].",
+  "ANCIENTSAWAKENED-PROSPECT.name": "Minerar",
+  "ANCIENTSAWAKENED-COLLECT.description": "Adiciona [blue]1[/blue] [gold]Brilho Estelar[/gold] ao seu [gold]Baralho[/gold].",
+  "ANCIENTSAWAKENED-COLLECT.name": "Coletar"
+}
