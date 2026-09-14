@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Rewards;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class ExemplarTrophy : AncientsAwakenedRelic
+public sealed class ExemplarTrophy : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

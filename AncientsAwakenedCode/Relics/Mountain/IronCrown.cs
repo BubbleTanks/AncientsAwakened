@@ -14,7 +14,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class IronCrown : AncientsAwakenedRelic, IHealAmountModifier
+public sealed class IronCrown : AncientsAwakenedRelic, IHealAmountModifier
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

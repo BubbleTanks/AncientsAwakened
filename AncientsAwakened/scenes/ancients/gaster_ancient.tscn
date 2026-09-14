@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://n8d0oa28skkw"]
+
+[ext_resource type="Texture2D" uid="uid://dl4di6mu2g3l7" path="res://AncientsAwakened/images/ancients/scenes/Gaster/TheManWhoSpeaksInHands.jpg" id="1_mtvb5"]
+
+[node name="Gaster" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -240.0
+offset_top = -120.0
+offset_right = 2198.0
+offset_bottom = 1361.0
+texture = ExtResource("1_mtvb5")
+expand_mode = 1
+stretch_mode = 4

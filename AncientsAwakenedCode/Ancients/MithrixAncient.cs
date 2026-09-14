@@ -6,7 +6,6 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
-
 public sealed class MithrixAncient : AncientsAwakenedAncient
 {
     protected override OptionPools MakeOptionPools =>

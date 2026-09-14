@@ -11,7 +11,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mountain;
 
 [Pool(typeof(CurseCardPool))]
-public class Stress() : AncientsAwakenedCard(
+public sealed class Stress() : AncientsAwakenedCard(
     -1, CardType.Curse, CardRarity.Curse, 
     TargetType.None)
 {

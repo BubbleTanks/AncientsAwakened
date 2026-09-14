@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class CursedCache : AncientsAwakenedRelic
+public sealed class CursedCache : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

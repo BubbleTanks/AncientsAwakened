@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class CardinalStar : AncientsAwakenedRelic
+public sealed class CardinalStar : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -24,13 +24,13 @@ public class CardinalStar : AncientsAwakenedRelic
     {
         await CardPileCmd.AddCurseToDeck<Stress>(Owner);
         await Cmd.Wait(0.75f);
-        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 0, DynamicVars.Cards.IntValue)
+        var prefs = new CardSelectorPrefs(CardSelectorPrefs.EnchantSelectionPrompt, 0, DynamicVars.Cards.IntValue)
         {
             Cancelable = false,
             RequireManualConfirmation = true
         };
-        Ordained canonicalEnchantment = ModelDb.Enchantment<Ordained>();
-        foreach (CardModel card in await CardSelectCmd.FromDeckForEnchantment(Owner,  canonicalEnchantment, 1, prefs))
+        var canonicalEnchantment = ModelDb.Enchantment<Ordained>();
+        foreach (var card in await CardSelectCmd.FromDeckForEnchantment(Owner,  canonicalEnchantment, 1, prefs))
         {
             CardCmd.Enchant(canonicalEnchantment.ToMutable(), card, 1);
             CardCmd.Preview(card);

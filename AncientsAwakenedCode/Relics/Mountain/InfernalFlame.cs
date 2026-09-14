@@ -10,11 +10,11 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class InfernalFlame : AncientsAwakenedRelic
+public sealed class InfernalFlame : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
-    public override Decimal ModifyRestSiteHealAmount(Creature creature, Decimal amount)
+    public override decimal ModifyRestSiteHealAmount(Creature creature, decimal amount)
     {
         return creature.Player != Owner && creature.PetOwner != Owner ? amount : creature.MaxHp;
     }
@@ -34,10 +34,9 @@ public class InfernalFlame : AncientsAwakenedRelic
     {
         if (!LocalContext.IsMe(Owner))
             return currentExtraText;
-        IReadOnlyList<LocString> locStringList = currentExtraText;
-        int index = 0;
-        LocString[] items = new LocString[1 + locStringList.Count];
-        foreach (LocString locString in locStringList)
+        var index = 0;
+        var items = new LocString[1 + currentExtraText.Count];
+        foreach (var locString in currentExtraText)
         {
             items[index] = locString;
             ++index;
@@ -48,7 +47,7 @@ public class InfernalFlame : AncientsAwakenedRelic
 
     public override Task AfterRoomEntered(AbstractRoom room)
     {
-        this.Status = room is RestSiteRoom ? RelicStatus.Active : RelicStatus.Normal;
+        Status = room is RestSiteRoom ? RelicStatus.Active : RelicStatus.Normal;
         return Task.CompletedTask;
     }
 }

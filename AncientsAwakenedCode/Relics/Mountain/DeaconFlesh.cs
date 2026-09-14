@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Rewards;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class DeaconFlesh : AncientsAwakenedRelic
+public sealed class DeaconFlesh : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
@@ -22,7 +22,7 @@ public class DeaconFlesh : AncientsAwakenedRelic
     public override async Task AfterObtained()
     {
         List<CardPileAddResult> stressResults = [];
-        for (int i = 0; i < DynamicVars.Cards.IntValue; ++i)
+        for (var i = 0; i < DynamicVars.Cards.IntValue; ++i)
             stressResults.Add(await CardPileCmd.Add(Owner.RunState.CreateCard(ModelDb.Card<Stress>(), Owner), PileType.Deck));
         CardCmd.PreviewCardPileAdd(stressResults, 2f);
         await Cmd.Wait(0.75f);

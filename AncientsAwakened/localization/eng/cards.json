@@ -100,5 +100,12 @@
   "ANCIENTSAWAKENED-ENERGY_CHOICE.title": "Inspiration",
 
   "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "Permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
-  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "Guidance"
+  "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "Guidance",
+
+  
+  "ANCIENTSAWAKENED-STRESS.description": "Whenever you draw this card, you receive {StressPower:diff()} additional damage for the rest of combat.",
+  "ANCIENTSAWAKENED-STRESS.title": "Stress",
+
+  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.description": "Gain 1 [gold]Buffer[/gold].\nYour next Attack deals triple damage.",
+  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commune"
 }

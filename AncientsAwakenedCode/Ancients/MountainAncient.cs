@@ -1,6 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
-using AncientsAwakened.AncientsAwakenedCode.UI;
-using BaseLib.Abstracts;
 using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
@@ -8,7 +6,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
-public class MountainAncient : CustomAncientModel
+public sealed class MountainAncient : AncientsAwakenedAncient
 {
     protected override OptionPools MakeOptionPools =>
 

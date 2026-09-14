@@ -13,7 +13,7 @@ using MegaCrit.Sts2.Core.Rewards;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class BloodstainedSnow : AncientsAwakenedRelic
+public sealed class BloodstainedSnow : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

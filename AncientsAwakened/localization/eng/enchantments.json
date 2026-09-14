@@ -16,5 +16,10 @@
   
   "ANCIENTSAWAKENED-CELESTIAL.description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
-  "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial"
+  "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial",
+
+
+  "ANCIENTSAWAKENED-ORDAINED.description": "When you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+  "ANCIENTSAWAKENED-ORDAINED.extraCardText": "Whenever you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
+  "ANCIENTSAWAKENED-ORDAINED.title": "Ordained"
 }

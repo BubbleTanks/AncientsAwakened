@@ -9,7 +9,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class EyeOfObsession : AncientsAwakenedRelic
+public sealed class EyeOfObsession : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     

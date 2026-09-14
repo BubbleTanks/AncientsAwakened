@@ -1,5 +1,4 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Powers.Mountain;
-using BaseLib.Extensions;
+﻿using BaseLib.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -12,11 +11,11 @@ using MegaCrit.Sts2.Core.Models.Powers;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Mountain;
 
 [Pool(typeof(EventCardPool))]
-public class NocturneCommute() : AncientsAwakenedCard(
+public sealed class NocturneCommute() : AncientsAwakenedCard(
     2, CardType.Power, CardRarity.Ancient, 
     TargetType.Self)
 {
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<BufferPower>(1), new PowerVar<TripleDamagePower>(1)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new PowerVar<BufferPower>(1), new PowerVar<DoubleDamagePower>(1)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<BufferPower>()];
     
     protected override async Task OnPlay(
@@ -24,7 +23,7 @@ public class NocturneCommute() : AncientsAwakenedCard(
         CardPlay cardPlay)
     {
         await PowerCmd.Apply<BufferPower>(choiceContext, Owner.Creature, DynamicVars.Power<BufferPower>().BaseValue, Owner.Creature, this);
-        await PowerCmd.Apply<TripleDamagePower>(choiceContext, Owner.Creature, DynamicVars.Power<TripleDamagePower>().BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<DoubleDamagePower>(choiceContext, Owner.Creature, DynamicVars.Power<DoubleDamagePower>().BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

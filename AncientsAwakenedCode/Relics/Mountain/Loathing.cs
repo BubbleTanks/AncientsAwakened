@@ -2,10 +2,8 @@
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Extensions;
-using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Map;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Random;
 using MegaCrit.Sts2.Core.Rooms;
@@ -15,7 +13,7 @@ using MegaCrit.Sts2.Core.Saves.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Mountain;
 
 [Pool(typeof(EventRelicPool))]
-public class Loathing : AncientsAwakenedRelic
+public sealed class Loathing : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
 
@@ -69,8 +67,8 @@ public class Loathing : AncientsAwakenedRelic
   {
     if (Owner.RunState.CurrentActIndex != ActIndex)
       return map;
-    List<MapCoord> markedCoords = GetMarkedCoords();
-    bool flag1 = markedCoords == null;
+    var markedCoords = GetMarkedCoords();
+    var flag1 = markedCoords == null;
     if (!flag1)
       flag1 = !markedCoords.TrueForAll(c =>
       {
@@ -80,47 +78,41 @@ public class Loathing : AncientsAwakenedRelic
       });
     if (flag1)
     {
-      Rng rng = new Rng((uint) ((int) Owner.RunState.Rng.Seed + (int) (uint) Owner.NetId + StringHelper.GetDeterministicHashCode(nameof(Loathing))));
-      List<MapPoint> list1 = map.GetAllMapPoints().Where((p =>
+      var rng = new Rng(Owner, Id);
+      var list1 = map.GetAllMapPoints().Where(p =>
       {
-        bool flag2;
-        switch (p.PointType)
+        var flag2 = p.PointType switch
         {
-          case MapPointType.Monster:
-          case MapPointType.Elite:
-            flag2 = true;
-            break;
-          default:
-            flag2 = false;
-            break;
-        }
+          MapPointType.Monster or MapPointType.Elite => true,
+          _ => false
+        };
         return flag2 && !p.Quests.Any(q => q is Loathing);
-      })).ToList();
+      }).ToList();
       list1.UnstableShuffle(rng);
-      int intValue = DynamicVars[_combatsKey].IntValue;
-      List<MapPoint> list2 = list1.Take(intValue).ToList();
+      var intValue = DynamicVars[_combatsKey].IntValue;
+      var list2 = list1.Take(intValue).ToList();
       CoordCols = new int[list2.Count];
       CoordRows = new int[list2.Count];
-      for (int index = 0; index < list2.Count; ++index)
+      for (var index = 0; index < list2.Count; ++index)
       {
         CoordCols[index] = list2[index].coord.col;
         CoordRows[index] = list2[index].coord.row;
       }
       CoordsSet = true;
-      foreach (MapPoint mapPoint in list2)
+      foreach (var mapPoint in list2)
         mapPoint.AddQuest(this);
     }
     else
     {
-      foreach (MapCoord coord in markedCoords)
-        (map.GetPoint(coord) ?? throw new InvalidOperationException($"Loaded a scanner map with coordinate {coord}, but the generated map does not contain that coordinate!")).AddQuest((AbstractModel) this);
+      foreach (var coord in markedCoords)
+        (map.GetPoint(coord) ?? throw new InvalidOperationException($"Loaded a loathing map with coordinate {coord}, but the generated map does not contain that coordinate!")).AddQuest(this);
     }
     return map;
   }
   
   public override async Task AfterCombatEnd(CombatRoom room)
   {
-    List<MapCoord> markedCoords = GetMarkedCoords();
+    var markedCoords = GetMarkedCoords();
     if (markedCoords == null || !markedCoords.Contains(Owner.RunState.CurrentMapPoint.coord))
       return;
     Flash();
@@ -130,9 +122,9 @@ public class Loathing : AncientsAwakenedRelic
   {
     if (!CoordsSet)
       return null;
-    List<MapCoord> markedCoords = new List<MapCoord>();
-    for (int index = 0; index < CoordCols.Length; ++index)
-      markedCoords.Add(new MapCoord()
+    var markedCoords = new List<MapCoord>();
+    for (var index = 0; index < CoordCols.Length; ++index)
+      markedCoords.Add(new MapCoord
       {
         col = CoordCols[index],
         row = CoordRows[index]
