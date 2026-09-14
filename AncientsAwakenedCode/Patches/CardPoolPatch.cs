@@ -1,13 +1,11 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
-using AncientsAwakened.AncientsAwakenedCode.Pools;
-using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public class CardPoolPatch
+public static class CardPoolPatch
 {
     [HarmonyPatch(typeof(ModelDb), "get_AllSharedCardPools")]
     public class GetAllSharedCardPools

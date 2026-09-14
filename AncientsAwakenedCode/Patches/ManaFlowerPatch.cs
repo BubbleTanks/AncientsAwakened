@@ -4,9 +4,8 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public class ManaFlowerPatch
+public static class ManaFlowerPatch
 {
-    
     public static readonly SpireField<PotionModel, bool> ManaFlowerPotionField = new(() => false);
     
     /*[HarmonyPatch(typeof(UsePotionAction), MethodType.Constructor, typeof(PotionModel), typeof(Creature), typeof(bool))]

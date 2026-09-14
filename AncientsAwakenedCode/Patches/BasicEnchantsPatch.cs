@@ -1,18 +1,15 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Pools;
-using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.Enchantments;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public class BasicEnchantsPatch
+public static class BasicEnchantsPatch
 {
-
     [HarmonyPatch(typeof(Spiral), "CanEnchant")]
     public class PatchSpiral
     {
-
         public static bool Prefix(ref bool __result, CardModel c)
         {
             if (c.VisualCardPool is PerfectedPool && c.Enchantment == null)
@@ -27,7 +24,6 @@ public class BasicEnchantsPatch
     [HarmonyPatch(typeof(Goopy), "CanEnchant")]
     public class PatchGoopy
     {
-
         public static bool Prefix(ref bool __result, CardModel card)
         {
             if (card.VisualCardPool is PerfectedPool && card.Enchantment == null)

@@ -6,7 +6,7 @@ using MegaCrit.Sts2.Core.Models.Characters;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public class TomeBanPatch
+public static class TomeBanPatch
 {
     [HarmonyPatch(typeof(DustyTomePatch), nameof(DustyTomePatch.CustomTome), MethodType.Getter)]
     public static class TomeBanPatchCustomTome

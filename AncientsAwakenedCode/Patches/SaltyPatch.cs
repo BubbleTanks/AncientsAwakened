@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public class SaltyPatch
+public static class SaltyPatch
 {
     
     public static readonly SavedSpireField<PotionModel, bool> SaltyField = new(() => false, "ancientsawakened-salty");
