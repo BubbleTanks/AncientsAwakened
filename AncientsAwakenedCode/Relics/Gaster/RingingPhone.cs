@@ -20,6 +20,8 @@ public class RingingPhone() : AncientsAwakenedRelic
 
     protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(100), new DynamicVar("Potions", 1M)];
 
+    public override bool HasUponPickupEffect => true;
+    
     public override async Task AfterObtained()
     {
         await PlayerCmd.GainGold(DynamicVars.Gold.BaseValue, Owner);

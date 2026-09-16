@@ -28,5 +28,11 @@
 
   "ANCIENTSAWAKENED-STRESS_POWER.description": "Stressed creatures take additional damage from Attacks.",
   "ANCIENTSAWAKENED-STRESS_POWER.smartDescription": "Receive [blue]{Amount}[/blue] additional damage from Attacks.",
-  "ANCIENTSAWAKENED-STRESS_POWER.title": "Stress"
+  "ANCIENTSAWAKENED-STRESS_POWER.title": "Stress",
+
+
+
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.description": "",
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.title": "Entry Seventeen"
 }

@@ -232,15 +232,33 @@
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Bloodstained Snow",
 
 
-  "ANCIENTSAWAKENED-RINGING_PHONE.description": "",
+  "ANCIENTSAWAKENED-RINGING_PHONE.description": "Gain 100 gold. Procure a potion.",
   "ANCIENTSAWAKENED-RINGING_PHONE.flavor": "",
   "ANCIENTSAWAKENED-RINGING_PHONE.title": "Ringing Phone",
 
-  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.description": "",
+  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.description": "When enter elite combat, procure a potion",
   "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.flavor": "",
   "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.title": "Broken Raincatcher",
 
-  "ANCIENTSAWAKENED-CORE_TABLET.description": "",
+  "ANCIENTSAWAKENED-CORE_TABLET.description": "Choose 1 of 2 powers to add",
   "ANCIENTSAWAKENED-CORE_TABLET.flavor": "",
-  "ANCIENTSAWAKENED-CORE_TABLET.title": "Core Tablet"
+  "ANCIENTSAWAKENED-CORE_TABLET.title": "Core Tablet",
+
+  "ANCIENTSAWAKENED-ERODED_ONYX.description": "Enchant a card in your deck with Steady",
+  "ANCIENTSAWAKENED-ERODED_ONYX.selectionScreenPrompt": "Select a card to enchant.",
+  "ANCIENTSAWAKENED-ERODED_ONYX.flavor": "",
+  "ANCIENTSAWAKENED-ERODED_ONYX.title": "Eroded Onyx",
+
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.description": "Choose a card in your deck to add 2 copies of",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.selectionScreenPrompt": "Select a card to add 2 copies of.",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.flavor": "",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.title": "Fragmented Mind",
+  
+  "ANCIENTSAWAKENED-SHATTERED_HAND.description": "Obtain [font=res://AncientsAwakened/fonts/wingding.ttf]ENTRY SEVENTEEN[/font]",
+  "ANCIENTSAWAKENED-SHATTERED_HAND.flavor": "",
+  "ANCIENTSAWAKENED-SHATTERED_HAND.title": "Shattered Hand",
+
+  "ANCIENTSAWAKENED-TWISTED_COIN.description": "",
+  "ANCIENTSAWAKENED-TWISTED_COIN.flavor": "",
+  "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin"
 }

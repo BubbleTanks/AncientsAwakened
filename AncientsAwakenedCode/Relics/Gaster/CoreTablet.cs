@@ -22,6 +22,8 @@ public class CoreTablet() : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
+    
+    public override bool HasUponPickupEffect => true;
 
     public override async Task AfterObtained()
     {
