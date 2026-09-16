@@ -229,5 +229,18 @@
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.eventDescription": "[gold]Transform[/gold] any number of cards into random [red]Curses[/red] and, for every [red]Curse[/red] in your [gold]Deck[/gold], raise your Max HP by [blue]{MaxHp}[/blue] and obtain [blue]{Relics}[/blue] [gold]{Relics:plural:Relic|Relics}[/gold].",
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.selectionScreenPrompt": "Select cards to [gold]Transform[/gold] into [red]Curses[/red].",
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.flavor": "",
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Bloodstained Snow"
+  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Bloodstained Snow",
+
+
+  "ANCIENTSAWAKENED-RINGING_PHONE.description": "",
+  "ANCIENTSAWAKENED-RINGING_PHONE.flavor": "",
+  "ANCIENTSAWAKENED-RINGING_PHONE.title": "Ringing Phone",
+
+  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.description": "",
+  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.flavor": "",
+  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.title": "Broken Raincatcher",
+
+  "ANCIENTSAWAKENED-CORE_TABLET.description": "",
+  "ANCIENTSAWAKENED-CORE_TABLET.flavor": "",
+  "ANCIENTSAWAKENED-CORE_TABLET.title": "Core Tablet"
 }

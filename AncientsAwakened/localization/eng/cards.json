@@ -107,5 +107,24 @@
   "ANCIENTSAWAKENED-STRESS.title": "Stress",
 
   "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.description": "Gain 1 [gold]Buffer[/gold].\nYour next Attack deals triple damage.",
-  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commune"
+  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commune",
+
+
+  "ANCIENTSAWAKENED-PULVERIZE.description": "Deal {Damage:diff()} damage.\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "ANCIENTSAWAKENED-PULVERIZE.title": "Pulverize",
+
+  "ANCIENTSAWAKENED-VESTIGE.description": "Gain {Block:diff()} [gold]Block[/gold].\nDiscard 1 card.",
+  "ANCIENTSAWAKENED-VESTIGE.title": "Vestige",
+
+  "ANCIENTSAWAKENED-REVERE.description": "Gain {Stars:starIcons()}.",
+  "ANCIENTSAWAKENED-REVERE.title": "Revere",
+
+  "ANCIENTSAWAKENED-GUARDIAN.description": "[gold]Summon[/gold] {Summon:diff()}.",
+  "ANCIENTSAWAKENED-GUARDIAN.title": "Guardian",
+
+  "ANCIENTSAWAKENED-LUCID.description": "[gold]Channel[/gold] 1 [gold]Glass[/gold].",
+  "ANCIENTSAWAKENED-LUCID.title": "Lucid",
+
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.description": "Receive an additional card reward after combat.\nRemoved from your Deck after 5 combats.",
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.title": "[font=res://AncientsAwakened/fonts/wingding.ttf][font_size=16]ENTRY SEVENTEEN[/font_size][/font]"
 }
