@@ -23,7 +23,7 @@ public class TwistedCoin() : AncientsAwakenedRelic
     
     public bool _hasTriggered;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(100)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(333)];
     
     [SavedProperty]
     public bool HasTriggered

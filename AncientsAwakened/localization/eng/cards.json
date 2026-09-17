@@ -125,6 +125,6 @@
   "ANCIENTSAWAKENED-LUCID.description": "[gold]Channel[/gold] 1 [gold]Glass[/gold].",
   "ANCIENTSAWAKENED-LUCID.title": "Lucid",
 
-  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.description": "Receive an additional card reward after combat.\nRemoved from your Deck after 5 combats.",
-  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.title": "[font=res://AncientsAwakened/fonts/wingding.ttf]ENTRY SEVENTEEN[/font]"
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.description": "Receive an additional card reward after combat.\nRemoved from your Deck after {Combats:diff()} {Combats:plural:combat|combats}.",
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.title": "[font=res://AncientsAwakened/fonts/wingding.ttf][font_size=16]ENTRY SEVENTEEN[/font_size][/font]"
 }

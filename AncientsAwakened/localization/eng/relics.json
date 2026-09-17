@@ -254,11 +254,12 @@
   "ANCIENTSAWAKENED-FRAGMENTED_MIND.flavor": "",
   "ANCIENTSAWAKENED-FRAGMENTED_MIND.title": "Fragmented Mind",
   
-  "ANCIENTSAWAKENED-SHATTERED_HAND.description": "Obtain [font=res://AncientsAwakened/fonts/wingding.ttf]ENTRY SEVENTEEN[/font]",
+  "ANCIENTSAWAKENED-SHATTERED_HAND.description": "Upon pickup, add [blue]1[/blue] [gold][font=res://AncientsAwakened/fonts/wingding.ttf]ENTRY SEVENTEEN[/font][/gold] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-SHATTERED_HAND.eventDescription": "Add [blue]1[/blue] [gold][font=res://AncientsAwakened/fonts/wingding.ttf]ENTRY SEVENTEEN[/font][/gold] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-SHATTERED_HAND.flavor": "",
   "ANCIENTSAWAKENED-SHATTERED_HAND.title": "Shattered Hand",
 
-  "ANCIENTSAWAKENED-TWISTED_COIN.description": "",
+  "ANCIENTSAWAKENED-TWISTED_COIN.description": "act 1 boss drops 333 gold",
   "ANCIENTSAWAKENED-TWISTED_COIN.flavor": "",
   "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin"
 }

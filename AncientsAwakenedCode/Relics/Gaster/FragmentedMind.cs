@@ -17,8 +17,6 @@ public sealed class FragmentedMind : AncientsAwakenedRelic
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     public override bool HasUponPickupEffect => true;
-    
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<EntrySeventeen>();
 
     public override async Task AfterObtained()
     {

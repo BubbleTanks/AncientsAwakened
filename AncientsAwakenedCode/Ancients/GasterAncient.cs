@@ -1,4 +1,5 @@
-﻿using BaseLib.Extensions;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
+using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Models;
@@ -12,13 +13,17 @@ public class GasterAncient : AncientsAwakenedAncient
 
         new(
             MakePool(
-                AncientOption<Anchor>()
+                AncientOption<BrokenRaincatcher>(),
+                AncientOption<CoreTablet>()
             ),
             MakePool(
-                AncientOption<Anchor>()
+                AncientOption<ErodedOnyx>(),
+                AncientOption<FragmentedMind>()
             ),
             MakePool(
-                AncientOption<Anchor>()
+                AncientOption<RingingPhone>(),
+                AncientOption<ShatteredHand>(),
+                AncientOption<TwistedCoin>()
             ));
 
     public override Color ButtonColor => new("16161D");
