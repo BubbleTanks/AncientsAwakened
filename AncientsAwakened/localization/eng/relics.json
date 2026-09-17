@@ -261,5 +261,9 @@
 
   "ANCIENTSAWAKENED-TWISTED_COIN.description": "act 1 boss drops 333 gold",
   "ANCIENTSAWAKENED-TWISTED_COIN.flavor": "",
-  "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin"
+  "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin",
+
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "",
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.flavor": "",
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.title": "Shadow Crystal"
 }
