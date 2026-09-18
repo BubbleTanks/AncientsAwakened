@@ -18,7 +18,8 @@ public class GasterAncient : AncientsAwakenedAncient
             ),
             MakePool(
                 AncientOption<ErodedOnyx>(),
-                AncientOption<FragmentedMind>()
+                AncientOption<FragmentedMind>(),
+                AncientOption<SpikedCirclet>()
             ),
             MakePool(
                 AncientOption<RingingPhone>(),
