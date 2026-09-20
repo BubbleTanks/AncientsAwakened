@@ -1,4 +1,3 @@
-using AncientsAwakened.AncientsAwakenedCode.Cards;
 using AncientsAwakened.AncientsAwakenedCode.Pools.Gaster;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.CardPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
 
 [Pool(typeof(RegentCardPool))]
-public class Revere() : AncientsAwakenedCard(1,
+public sealed class Revere() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {

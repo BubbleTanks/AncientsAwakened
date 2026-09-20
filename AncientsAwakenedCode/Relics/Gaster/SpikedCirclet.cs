@@ -1,4 +1,5 @@
-using AncientsAwakened.AncientsAwakenedCode.Relics;
+using AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
+using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using AncientsAwakened.AncientsAwakenedCode.Relics.Gaster.CircletRelics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -7,145 +8,168 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Models.Relics;
-using MegaCrit.Sts2.Core.Saves;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
 
 [Pool(typeof(EventRelicPool))]
-public class SpikedCirclet() : AncientsAwakenedRelic
+public sealed class SpikedCirclet : AncientsAwakenedRelic
 {
-  public const string _starterRelicKey = "StarterRelic";
-  public const string _upgradedRelicKey = "UpgradedRelic";
-  public ModelId? _starterRelic;
-  public ModelId? _upgradedRelic;
-  public List<IHoverTip> _extraHoverTips = new List<IHoverTip>();
+    public override RelicRarity Rarity => RelicRarity.Ancient;
 
-  public override RelicRarity Rarity => RelicRarity.Ancient;
+    private const string StarterRelicKey = "StarterCard";
+    private const string AncientRelicKey = "AncientCard";
 
-  public static Dictionary<ModelId, RelicModel> RefinementUpgrades
-  {
-    get
+    private List<IHoverTip> _extraHoverTips = [];
+
+    private ModelId? _starterRelic;
+    private ModelId? _ancientRelic;
+
+    private static Dictionary<ModelId, ModelId>? _thornRelics;
+    
+    private static Dictionary<ModelId, ModelId> VanillaThornRelics => new()
     {
-      return new Dictionary<ModelId, RelicModel>()
-      {
         {
-          ModelDb.Relic<BurningBlood>().Id,
-          (RelicModel) ModelDb.Relic<BlackBlood>()
+            ModelDb.Relic<BurningBlood>().Id,
+            ModelDb.Relic<Anchor>().Id
         },
         {
-          ModelDb.Relic<RingOfTheSnake>().Id,
-          (RelicModel) ModelDb.Relic<RingOfTheDrake>()
+            ModelDb.Relic<RingOfTheSnake>().Id,
+            ModelDb.Relic<Anchor>().Id
         },
         {
-          ModelDb.Relic<DivineRight>().Id,
-          (RelicModel) ModelDb.Relic<DivineDestiny>()
+            ModelDb.Relic<DivineRight>().Id,
+            ModelDb.Relic<Anchor>().Id
         },
         {
-          ModelDb.Relic<BoundPhylactery>().Id,
-          (RelicModel) ModelDb.Relic<PhylacteryUnbound>()
+            ModelDb.Relic<BoundPhylactery>().Id,
+            ModelDb.Relic<Anchor>().Id
         },
         {
-          ModelDb.Relic<CrackedCore>().Id,
-          (RelicModel) ModelDb.Relic<FrigidCore>()
+            ModelDb.Relic<CrackedCore>().Id,
+            ModelDb.Relic<FrigidCore>().Id
         }
-      };
-    }
-  }
-
-  [SavedProperty]
-  public ModelId? StarterRelic
-  {
-    get => this._starterRelic;
-    set
+    };
+    
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => _extraHoverTips;
+    
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar(StarterRelicKey), new StringVar(AncientRelicKey)];
+    
+    protected override bool RelicAllowedToSpawn(Player owner)
     {
-      this.AssertMutable();
-      this._starterRelic = !(this._starterRelic != (ModelId) null) ? value : throw new InvalidOperationException("Recursive Core setup called twice!");
-      if (!(this._starterRelic != (ModelId) null))
-        return;
-      RelicModel relicModel = SaveUtil.RelicOrDeprecated(this._starterRelic);
-      this._extraHoverTips.AddRange(relicModel.HoverTips);
-      ((StringVar) this.DynamicVars[nameof (StarterRelic)]).StringValue = relicModel.Title.GetFormattedText();
+        return SetupForPlayer(owner);
     }
-  }
 
-  [SavedProperty]
-  public ModelId? UpgradedRelic
-  {
-    get => this._upgradedRelic;
-    set
+    private static Dictionary<ModelId, ModelId> ThornRelics
     {
-      this.AssertMutable();
-      this._upgradedRelic = !(this._upgradedRelic != (ModelId) null) ? value : throw new InvalidOperationException("Recursive Core setup called twice!");
-      if (!(this._upgradedRelic != (ModelId) null))
-        return;
-      RelicModel relicModel = SaveUtil.RelicOrDeprecated(this._upgradedRelic);
-      this._extraHoverTips.AddRange(relicModel.HoverTips);
-      ((StringVar) this.DynamicVars[nameof (UpgradedRelic)]).StringValue = relicModel.Title.GetFormattedText();
+        get
+        {
+            if (_thornRelics == null)
+            {
+                _thornRelics = new Dictionary<ModelId, ModelId>();
+                foreach (var kv in VanillaThornRelics)
+                {
+                    _thornRelics.Add(kv.Key, kv.Value);
+                }
+                foreach (var kv in CustomThornRingCardExtension.CustomThornRingRelics)
+                {
+                    _thornRelics.Add(kv.Key, kv.Value);
+                }
+            }
+            return _thornRelics;
+        }
     }
-  }
 
-  protected override IEnumerable<IHoverTip> ExtraHoverTips
-  {
-    get => (IEnumerable<IHoverTip>) this._extraHoverTips;
-  }
+    public override bool HasUponPickupEffect => true;
 
-  protected override IEnumerable<DynamicVar> CanonicalVars => [new StringVar("StarterRelic"), new StringVar("UpgradedRelic")];
+    [SavedProperty]
+    private ModelId? StarterRelic
+    {
+        get => _starterRelic;
+        set
+        {
+            AssertMutable();
+            _starterRelic = value;
+            UpdateHoverTips();
+        }
+    }
 
-  protected override void AfterCloned()
-  {
-    base.AfterCloned();
-    this._extraHoverTips = new List<IHoverTip>();
-  }
+    [SavedProperty]
+    private ModelId? AncientRelic
+    {
+        get => _ancientRelic;
+        set
+        {
+            AssertMutable();
+            _ancientRelic = value;
+            UpdateHoverTips();
+        }
+    }
 
-  public RelicModel? GetStarterRelic(Player p)
-  {
-    return p.Relics.FirstOrDefault<RelicModel>((Func<RelicModel, bool>) (r => r.Rarity == RelicRarity.Starter));
-  }
+    public bool SetupForPlayer(Player player)
+    {
+        if (player == null)
+            return false;
+        
+        AssertMutable();
+        
+        var starter = GetStarterRelic(player);
+        if (starter == null)
+            return false;
+            
+        StarterRelic = starter.Id;
+        AncientRelic = GetThornRelic(starter);
+        
+        UpdateHoverTips();
+        return true;
+    }
 
-  public RelicModel GetUpgradedStarterRelic(RelicModel starterRelic)
-  {
-    RelicModel relicModel;
-    return SpikedCirclet.RefinementUpgrades.TryGetValue(starterRelic.Id, out relicModel) ? relicModel : ModelDb.Relic<Circlet>().ToMutable();
-  }
+    public override async Task AfterObtained()
+    {
+        var starterCard = GetStarterRelic(Owner);
+        if(starterCard == null)
+            return;
+        await RelicCmd.Replace(starterCard, ModelDb.GetById<RelicModel>(GetThornRelic(starterCard)).ToMutable());
+    }
 
-  /// <summary>
-  /// Sets up the upgraded starter relic based off of the player.
-  /// </summary>
-  /// <param name="player">The player who we are upgrading the starter relic for</param>
-  /// <returns>Returns false if player doesn't have the original starter relic.</returns>
-  public bool SetupForPlayer(Player player)
-  {
-    this.AssertMutable();
-    RelicModel starterRelic = this.GetStarterRelic(player);
-    if (starterRelic == null)
-      return false;
-    this.StarterRelic = starterRelic.Id;
-    this.UpgradedRelic = this.GetUpgradedStarterRelic(starterRelic).Id;
-    return true;
-  }
+    private static RelicModel? GetStarterRelic(Player player) => player.Relics.FirstOrDefault(c => ThornRelics.ContainsKey(c.Id));
+    
+    private static ModelId GetThornRelic(RelicModel starterRelic)
+    {
+        ModelId? replacement = null;
+        if (ThornRelics.TryGetValue(starterRelic.Id, out var thornRelic))
+        {
+            replacement = thornRelic;
+        }
 
-  public void SetupForTests(ModelId starterRelic, ModelId upgradedRelic)
-  {
-    this.AssertMutable();
-    this.StarterRelic = starterRelic;
-    this.UpgradedRelic = upgradedRelic;
-  }
+        return replacement == null ? ModelDb.Relic<Circlet>().Id : replacement;
+    }
+    
+    protected override void AfterCloned()
+    {
+        base.AfterCloned();
+        _extraHoverTips = [];
+    }
 
-  public override async Task AfterObtained()
-  {
-    SpikedCirclet spikedCirclet = this;
-    ModelId modelId = spikedCirclet.StarterRelic;
-    if ((object) modelId == null)
-      modelId = spikedCirclet.Owner.Relics.First<RelicModel>((Func<RelicModel, bool>) (r => r.Rarity == RelicRarity.Starter)).Id;
-    ModelId id1 = modelId;
-    RelicModel relicById = spikedCirclet.Owner.GetRelicById(id1);
-    ModelId id2 = spikedCirclet.UpgradedRelic;
-    if ((object) id2 == null)
-      id2 = spikedCirclet.GetUpgradedStarterRelic(relicById).Id;
-    RelicModel mutable = ModelDb.GetById<RelicModel>(id2).ToMutable();
-    RelicModel relicModel = await RelicCmd.Replace(relicById, mutable);
-  }
+    private void UpdateHoverTips()
+    {
+        _extraHoverTips.Clear();
+        if (StarterRelic != null)
+        {
+            var relic = ModelDb.GetById<RelicModel>(StarterRelic);
+            _extraHoverTips.AddRange(relic.HoverTips);
+            _extraHoverTips.AddRange(HoverTipFactory.FromRelic(relic));
+            ((StringVar)DynamicVars[AncientRelicKey]).StringValue = relic.Title.GetFormattedText();
+        }
+        if (AncientRelic != null)
+        {
+            var relic = ModelDb.GetById<RelicModel>(AncientRelic);
+            _extraHoverTips.AddRange(relic.HoverTips);
+            _extraHoverTips.AddRange(HoverTipFactory.FromRelic(relic));
+            ((StringVar)DynamicVars[AncientRelicKey]).StringValue = relic.Title.GetFormattedText();
+        }
+    }
 }

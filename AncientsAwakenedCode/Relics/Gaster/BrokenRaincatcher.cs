@@ -1,4 +1,3 @@
-using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,7 +10,7 @@ using MegaCrit.Sts2.Core.Rooms;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
 
 [Pool(typeof(EventRelicPool))]
-public class BrokenRaincatcher() : AncientsAwakenedRelic
+public sealed class BrokenRaincatcher : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
@@ -23,7 +22,7 @@ public class BrokenRaincatcher() : AncientsAwakenedRelic
     {
         if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState.TurnNumber > 1)
             return;
-        AbstractRoom currentRoom = combatState.RunState.CurrentRoom;
+        var currentRoom = combatState.RunState.CurrentRoom;
         if ((currentRoom != null ? (currentRoom.RoomType != RoomType.Elite ? 1 : 0) : 1) != 0)
             return;
         Flash();

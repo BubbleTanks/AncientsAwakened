@@ -2,18 +2,27 @@
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=1BE313041F989B4185D2966033C031C3/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=1BE313041F989B4185D2966033C031C3/EntryName/@EntryValue">Custom Card</s:String>
-	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=1BE313041F989B4185D2966033C031C3/Position/@EntryValue">11</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=1BE313041F989B4185D2966033C031C3/Position/@EntryValue">8</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=2CBD6971A7955044AD2624B84FB49E38/Position/@EntryValue">11</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=567DCF4B487C244A9F6BB46E4E9F3B84/Position/@EntryValue">6</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=7F2A1BE8D0078241A9AE7802038BAD3C/Position/@EntryValue">7</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=8D5E5BC8B5A67D449C9515EBBBE5C762/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=8D5E5BC8B5A67D449C9515EBBBE5C762/EntryName/@EntryValue">Custom Relic</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=8D5E5BC8B5A67D449C9515EBBBE5C762/Position/@EntryValue">12</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=B4D0CA86CBDACD42AD544A77CAE9FDEC/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=B4D0CA86CBDACD42AD544A77CAE9FDEC/EntryName/@EntryValue">Custom Relic</s:String>
-	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Position/@EntryValue">12</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Position/@EntryValue">10</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=C4795E57DDEC1C4F97BBC8C7173EBBCA/Position/@EntryValue">9</s:Int64>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=CLASS/Expression/@EntryValue">getAlphaNumericFileNameWithoutExtension()</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=COST/Expression/@EntryValue">guessExpectedType("")</s:String>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=RARITY/Expression/@EntryValue">list("Basic,Common,Uncommon,Rare,Ancient,Event,Token,Status,Curse,Quest")</s:String>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TARGET/Expression/@EntryValue">list("Self,AnyEnemy,AllEnemies,RandomEnemy,AnyPlayer,AnyAlly,AllAllies,Osty")</s:String>
-	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TYPE/Expression/@EntryValue">list("Attack,Skill,Power,Status,Curse,Quest")</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=RARITY/Expression/@EntryValue">list("")</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TARGET/Expression/@EntryValue">list("")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TARGET/Order/@EntryValue">5</s:Int64>
+	
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TYPE/Expression/@EntryValue">list("")</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
@@ -30,7 +39,7 @@
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=RARITY/@KeyIndexDefined">True</s:Boolean>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=RARITY/Order/@EntryValue">4</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TARGET/@KeyIndexDefined">True</s:Boolean>
-	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TARGET/Order/@EntryValue">5</s:Int64>
+	
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TYPE/@KeyIndexDefined">True</s:Boolean>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Field/=TYPE/Order/@EntryValue">3</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Reformat/@EntryValue">True</s:Boolean>
@@ -39,17 +48,50 @@
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=1BE313041F989B4185D2966033C031C3/Text/@EntryValue">namespace $NAMESPACE$;
 
-public class $CLASS$() : AncientsAwakened.AncientsAwakenedCode.Cards.AncientsAwakenedCard($COST$, MegaCrit.Sts2.Core.Entities.Cards.CardType.$TYPE$, MegaCrit.Sts2.Core.Entities.Cards.CardRarity.$RARITY$, MegaCrit.Sts2.Core.Entities.Cards.TargetType.$TARGET$) {
+public sealed class $CLASS$() : AncientsAwakened.AncientsAwakenedCode.Cards.AncientsAwakenedCard($COST$, MegaCrit.Sts2.Core.Entities.Cards.CardType.$TYPE$, MegaCrit.Sts2.Core.Entities.Cards.CardRarity.$RARITY$, TargetType.$TARGET$) {
     protected override IEnumerable&lt;MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar&gt; CanonicalVars =&gt; [];
+	
+	protected override IEnumerable&lt;MegaCrit.Sts2.Core.HoverTips.IHoverTip&gt; ExtraHoverTips =&gt; [];
 	
 	protected override async System.Threading.Tasks.Task OnPlay(MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext choiceContext, MegaCrit.Sts2.Core.Entities.Cards.CardPlay play)
     {
         $END$
     }
 
-    protected override void OnUpgrade() {
+    protected override void OnUpgrade()
+    {
         
     }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/CustomProperties/=FileName/@EntryIndexedValue">Power</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Description/@EntryValue">Custom Power</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=CLASS/Expression/@EntryValue">getAlphaNumericFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=CLASS/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=NAMESPACE/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=POWERTYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=POWERTYPE/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=STACKTYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Field/=STACKTYPE/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D5E5BC8B5A67D449C9515EBBBE5C762/Text/@EntryValue">namespace $NAMESPACE$;
+
+public sealed class $CLASS$ : AncientsAwakened.AncientsAwakenedCode.Powers.AncientsAwakenedPower {
+    public override MegaCrit.Sts2.Core.Entities.Powers.PowerType Type =&gt; MegaCrit.Sts2.Core.Entities.Powers.PowerType.$POWERTYPE$;
+    public override MegaCrit.Sts2.Core.Entities.Powers.PowerStackType StackType =&gt; MegaCrit.Sts2.Core.Entities.Powers.PowerStackType.$STACKTYPE$;
+    
+    $END$
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/@KeyIndexDefined">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
@@ -77,7 +119,7 @@ public class $CLASS$() : AncientsAwakened.AncientsAwakenedCode.Cards.AncientsAwa
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Text/@EntryValue">namespace $NAMESPACE$;
 
-public class $CLASS$() : AncientsAwakened.AncientsAwakenedCode.Relics.AncientsAwakenedRelic {
+public sealed class $CLASS$ : AncientsAwakened.AncientsAwakenedCode.Relics.AncientsAwakenedRelic {
     public override MegaCrit.Sts2.Core.Entities.Relics.RelicRarity Rarity =&gt; MegaCrit.Sts2.Core.Entities.Relics.RelicRarity.$RARITY$;
     
     $END$

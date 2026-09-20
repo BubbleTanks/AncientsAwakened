@@ -1,4 +1,3 @@
-using AncientsAwakened.AncientsAwakenedCode.Cards;
 using AncientsAwakened.AncientsAwakenedCode.Pools.Gaster;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -13,7 +12,7 @@ using MegaCrit.Sts2.Core.Models.Characters;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
 
 [Pool(typeof(NecrobinderCardPool))]
-public class Guardian() : AncientsAwakenedCard(1,
+public sealed class Guardian() : AncientsAwakenedCard(1,
     CardType.Skill, CardRarity.Token,
     TargetType.Self)
 {

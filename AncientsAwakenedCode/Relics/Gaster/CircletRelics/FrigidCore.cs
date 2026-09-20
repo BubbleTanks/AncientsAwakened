@@ -1,4 +1,3 @@
-using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Combat;
 using MegaCrit.Sts2.Core.Commands;
@@ -11,7 +10,7 @@ using MegaCrit.Sts2.Core.Models.RelicPools;
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster.CircletRelics;
 
 [Pool(typeof(DefectRelicPool))]
-public class FrigidCore() : AncientsAwakenedRelic
+public sealed class FrigidCore : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity =>
         RelicRarity.Starter;

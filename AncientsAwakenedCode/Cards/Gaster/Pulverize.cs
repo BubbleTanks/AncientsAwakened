@@ -1,4 +1,3 @@
-using AncientsAwakened.AncientsAwakenedCode.Cards;
 using AncientsAwakened.AncientsAwakenedCode.Pools.Gaster;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -14,7 +13,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
 
 [Pool(typeof(IroncladCardPool))]
-public class Pulverize() : AncientsAwakenedCard(2,
+public sealed class Pulverize() : AncientsAwakenedCard(2,
     CardType.Attack, CardRarity.Token,
     TargetType.AnyEnemy)
 {
@@ -30,7 +29,7 @@ public class Pulverize() : AncientsAwakenedCard(2,
 
     protected override void OnUpgrade()
     {
-        this.DynamicVars.Damage.UpgradeValueBy(2M);
-        this.DynamicVars.Vulnerable.UpgradeValueBy(1M);
+        DynamicVars.Damage.UpgradeValueBy(2M);
+        DynamicVars.Vulnerable.UpgradeValueBy(1M);
     }
 }

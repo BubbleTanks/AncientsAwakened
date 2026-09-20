@@ -10,7 +10,7 @@ public static class CustomPerfectedCardExtension
     
     /// <summary>
     /// Call this extension in your card constructor (with an Interop for an optional dependency), along with the character ModelId to make custom perfected cards.
-    /// Note that this will not correctly change the visual pool, you will have to do that manually (Currently not possible for optional dependencies).
+    /// Note that this will not correctly change the visual pool, you will have to do that manually (Currently not easily done through interops).
     /// </summary>
     public static void AddPerfectedCardForCustomCharacters(this CardModel cardModel, CharacterModel characterModel)
     {
