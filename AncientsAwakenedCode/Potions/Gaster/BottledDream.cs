@@ -6,7 +6,8 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Potions.Gaster;
 
-public sealed class BottledDream : AncientsAwakenedPotion
+[Pool(typeof(EventPotionPool))]
+public class BottledDream : AncientsAwakenedPotion
 {
     public override PotionRarity Rarity => PotionRarity.Event;
     public override PotionUsage Usage => PotionUsage.AnyTime;
