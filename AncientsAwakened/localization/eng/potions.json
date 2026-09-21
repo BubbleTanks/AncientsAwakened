@@ -2,5 +2,11 @@
   "ANCIENTSAWAKENED-NELOPREPHINE_VIAL.description": "Heal for [green]{HealPercent}%[/green] of your Max HP.",
   "ANCIENTSAWAKENED-NELOPREPHINE_VIAL.title": "Neloprephine Shot",
   
-  "ANCIENTSAWAKENED-SALTY.title": "Salty {Potion}"
+  "ANCIENTSAWAKENED-SALTY.title": "Salty {Potion}",
+
+  "ANCIENTSAWAKENED-BOTTLED_DREAM.description": "",
+  "ANCIENTSAWAKENED-BOTTLED_DREAM.title": "Bottled Dream",
+
+  "ANCIENTSAWAKENED-HOT_WAX.description": "",
+  "ANCIENTSAWAKENED-HOT_WAX.title": "Hot Wax"
 }
