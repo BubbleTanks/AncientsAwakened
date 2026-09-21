@@ -1,5 +1,6 @@
 using AncientsAwakened.AncientsAwakenedCode.Potions.Gaster;
 using AncientsAwakened.AncientsAwakenedCode.Relics;
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -7,9 +8,11 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
 
+[Pool(typeof(EventRelicPool))]
 public sealed class MeltingCandle : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity =>

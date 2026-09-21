@@ -1,12 +1,15 @@
+using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Potions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.PotionPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Potions.Gaster;
 
+[Pool(typeof(EventPotionPool))]
 public class BottledDream : AncientsAwakenedPotion
 {
     public override PotionRarity Rarity => PotionRarity.Event;
