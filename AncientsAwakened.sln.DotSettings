@@ -91,6 +91,10 @@ public sealed class $CLASS$ : AncientsAwakened.AncientsAwakenedCode.Powers.Ancie
     public override MegaCrit.Sts2.Core.Entities.Powers.PowerType Type =&gt; MegaCrit.Sts2.Core.Entities.Powers.PowerType.$POWERTYPE$;
     public override MegaCrit.Sts2.Core.Entities.Powers.PowerStackType StackType =&gt; MegaCrit.Sts2.Core.Entities.Powers.PowerStackType.$STACKTYPE$;
     
+    protected override IEnumerable&lt;MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar&gt; CanonicalVars =&gt; [];
+	
+	protected override IEnumerable&lt;MegaCrit.Sts2.Core.HoverTips.IHoverTip&gt; ExtraHoverTips =&gt; [];
+    
     $END$
 }</s:String>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/@KeyIndexDefined">True</s:Boolean>
@@ -110,7 +114,7 @@ public sealed class $CLASS$ : AncientsAwakened.AncientsAwakenedCode.Powers.Ancie
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=POOL/@KeyIndexDefined">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=POOL/Expression/@EntryValue">constant("RelicPool")</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=POOL/Order/@EntryValue">2</s:Int64>
-	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=RARITY/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=RARITY/@KeyIndexDefined">False</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=RARITY/Expression/@EntryValue">list("Starter,Common,Uncommon,Rare,Shop,Event,Ancient")</s:String>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Field/=RARITY/Order/@EntryValue">3</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Reformat/@EntryValue">True</s:Boolean>
@@ -119,8 +123,13 @@ public sealed class $CLASS$ : AncientsAwakened.AncientsAwakenedCode.Powers.Ancie
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B4D0CA86CBDACD42AD544A77CAE9FDEC/Text/@EntryValue">namespace $NAMESPACE$;
 
+[BaseLib.Utils.PoolAttribute(typeof(MegaCrit.Sts2.Core.Models.RelicPools.EventRelicPool))]
 public sealed class $CLASS$ : AncientsAwakened.AncientsAwakenedCode.Relics.AncientsAwakenedRelic {
-    public override MegaCrit.Sts2.Core.Entities.Relics.RelicRarity Rarity =&gt; MegaCrit.Sts2.Core.Entities.Relics.RelicRarity.$RARITY$;
+    public override MegaCrit.Sts2.Core.Entities.Relics.RelicRarity Rarity =&gt; MegaCrit.Sts2.Core.Entities.Relics.RelicRarity.Ancient;
+    
+    protected override IEnumerable&lt;MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar&gt; CanonicalVars =&gt; [];
+	
+	protected override IEnumerable&lt;MegaCrit.Sts2.Core.HoverTips.IHoverTip&gt; ExtraHoverTips =&gt; [];
     
     $END$
 }</s:String></wpf:ResourceDictionary>
