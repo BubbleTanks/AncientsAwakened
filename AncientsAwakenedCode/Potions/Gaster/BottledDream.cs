@@ -3,11 +3,10 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Potions;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.Models;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Potions.Gaster;
 
-public class BottledDream : AncientsAwakenedPotion
+public sealed class BottledDream : AncientsAwakenedPotion
 {
     public override PotionRarity Rarity => PotionRarity.Event;
     public override PotionUsage Usage => PotionUsage.AnyTime;
@@ -17,7 +16,7 @@ public class BottledDream : AncientsAwakenedPotion
     {
         AssertValidForTargetedPotion(target);
         
-        CardModel card = await CardSelectCmd.FromHandForUpgrade(choiceContext, Owner, this);
+        var card = await CardSelectCmd.FromHandForUpgrade(choiceContext, Owner, this);
         if (card == null)
             return;
         CardCmd.Upgrade(card);
