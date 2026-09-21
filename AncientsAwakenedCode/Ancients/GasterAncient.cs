@@ -3,7 +3,6 @@ using BaseLib.Extensions;
 using BaseLib.Utils;
 using Godot;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Relics;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Ancients;
 
@@ -24,7 +23,8 @@ public class GasterAncient : AncientsAwakenedAncient
             MakePool(
                 AncientOption<RingingPhone>(),
                 AncientOption<ShatteredHand>(),
-                AncientOption<TwistedCoin>()
+                AncientOption<TwistedCoin>(),
+                AncientOption<StrangeKey>()
             ));
 
     public override Color ButtonColor => new("16161D");
