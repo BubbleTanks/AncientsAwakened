@@ -13,18 +13,28 @@ public class GasterAncient : AncientsAwakenedAncient
         new(
             MakePool(
                 AncientOption<BrokenRaincatcher>(),
-                AncientOption<CoreTablet>()
+                AncientOption<CoreTablet>(),
+                AncientOption<ShadowCrystal>(3, relic =>
+                {
+                    if (Owner != null)
+                        relic.SetupForPlayer(Owner);
+                    return relic;
+                })
             ),
             MakePool(
                 AncientOption<ErodedOnyx>(),
                 AncientOption<FragmentedMind>(),
-                AncientOption<SpikedCirclet>()
-            ),
+                AncientOption<SpikedCirclet>(3, relic =>
+                {
+                    if (Owner != null)
+                        relic.SetupForPlayer(Owner);
+                    return relic;
+                }))
+            ,
             MakePool(
                 AncientOption<RingingPhone>(),
                 AncientOption<ShatteredHand>(),
-                AncientOption<TwistedCoin>(),
-                AncientOption<StrangeKey>()
+                AncientOption<TwistedCoin>()
             ));
 
     public override Color ButtonColor => new("16161D");
