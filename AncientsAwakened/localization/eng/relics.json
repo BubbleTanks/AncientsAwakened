@@ -263,27 +263,27 @@
   "ANCIENTSAWAKENED-TWISTED_COIN.flavor": "",
   "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin",
 
-  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "",
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "Replace a basic card with a new one.",
   "ANCIENTSAWAKENED-SHADOW_CRYSTAL.flavor": "",
   "ANCIENTSAWAKENED-SHADOW_CRYSTAL.title": "Shadow Crystal",
 
-  "ANCIENTSAWAKENED-SPIKED_CIRCLET.description": "",
+  "ANCIENTSAWAKENED-SPIKED_CIRCLET.description": "Replace your starter relic with a new one.",
   "ANCIENTSAWAKENED-SPIKED_CIRCLET.flavor": "",
   "ANCIENTSAWAKENED-SPIKED_CIRCLET.title": "Spiked Circlet",
 
-  "ANCIENTSAWAKENED-FRIGID_CORE.description": "",
+  "ANCIENTSAWAKENED-FRIGID_CORE.description": "At the start of combat, channel 1 Frost.",
   "ANCIENTSAWAKENED-FRIGID_CORE.flavor": "",
   "ANCIENTSAWAKENED-FRIGID_CORE.title": "Frigid Core",
 
-  "ANCIENTSAWAKENED-RECLAIMED_QUICHE.description": "",
+  "ANCIENTSAWAKENED-RECLAIMED_QUICHE.description": "Procure 2 Bottled Dreams. Add a Guilty to your Deck.",
   "ANCIENTSAWAKENED-RECLAIMED_QUICHE.flavor": "",
-  "ANCIENTSAWAKENED-RECLAIMED_QUICHE.title": "Melted Candle",
+  "ANCIENTSAWAKENED-RECLAIMED_QUICHE.title": "Reclaimed Quiche",
 
-  "ANCIENTSAWAKENED-MELTING_CANDLE.description": "",
+  "ANCIENTSAWAKENED-MELTING_CANDLE.description": "Transform and Upgrade 2 cards. Procure 2 Hot Wax.",
   "ANCIENTSAWAKENED-MELTING_CANDLE.flavor": "",
   "ANCIENTSAWAKENED-MELTING_CANDLE.title": "Melting Candle",
 
-  "ANCIENTSAWAKENED-STRANGE_KEY.description": "",
+  "ANCIENTSAWAKENED-STRANGE_KEY.description": "Obtain 1 of 3 Rare relics. Lose 15 Max HP.",
   "ANCIENTSAWAKENED-STRANGE_KEY.flavor": "",
   "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key"
 }

@@ -1,4 +1,5 @@
 using AncientsAwakened.AncientsAwakenedCode.Patches;
+using BaseLib.Common.Rewards.LinkedRewardSet;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
@@ -26,10 +27,8 @@ public sealed class StrangeKey : AncientsAwakenedRelic
         List<Reward> rewards = [];
         for (var i = 0; i < DynamicVars.Repeat.BaseValue; i++)
         {
-            var reward = new RelicReward(RelicRarity.Rare, Owner);
-            rewards.Add(reward);
+            rewards.Add(new RelicReward(RelicRarity.Rare, Owner));
         }
-
-        await RewardsCmd.OfferCustom(Owner, [new LinkedRewardSet(rewards, Owner)]);
+        await RewardsCmd.OfferCustom(Owner, [new CustomLinkedRewardSet(rewards, Owner)]);
     }
 }
