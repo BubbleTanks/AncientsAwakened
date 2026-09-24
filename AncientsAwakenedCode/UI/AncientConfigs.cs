@@ -14,6 +14,9 @@ internal class AncientConfigs : SimpleModConfig
     [ConfigSection("Sebastian")]
     public static bool MultiplayerOpScanner { get; set; } = false;
     
+    [ConfigSection("Gaster")]
+    public static bool UncapDarkSpark { get; set; } = false;
+    
     public override void SetupConfigUI(Control optionContainer)
     {
         var collapsibleSection = CreateCollapsibleSection(

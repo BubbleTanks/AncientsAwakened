@@ -285,5 +285,14 @@
 
   "ANCIENTSAWAKENED-STRANGE_KEY.description": "Obtain 1 of 3 Rare relics. Lose 15 Max HP.",
   "ANCIENTSAWAKENED-STRANGE_KEY.flavor": "",
-  "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key"
+  "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key",
+
+  "ANCIENTSAWAKENED-BLACK_KNIFE.description": "Kill the first elite.",
+  "ANCIENTSAWAKENED-BLACK_KNIFE.flavor": "",
+  "ANCIENTSAWAKENED-BLACK_KNIFE.title": "Black Knife",
+
+  "ANCIENTSAWAKENED-DARK_SPARK.description": "Add 3 floors to every Act. Reroll the current Act.",
+  "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Add 3 floors to every Act. Reroll the current Act.{FourPlusMP:cond:\n(Maximum additional floors is 9. Can be changed in config.)|}",
+  "ANCIENTSAWAKENED-DARK_SPARK.flavor": "",
+  "ANCIENTSAWAKENED-DARK_SPARK.title": "DarkSpark"
 }
