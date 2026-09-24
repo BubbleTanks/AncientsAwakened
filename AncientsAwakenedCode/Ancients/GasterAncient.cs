@@ -18,18 +18,19 @@ public class GasterAncient : AncientsAwakenedAncient
                 AncientOption<ShatteredHand>(),
                 AncientOption<TwistedCoin>(),
                 AncientOption<ErodedOnyx>(),
-                AncientOption<FragmentedMind>()
+                AncientOption<FragmentedMind>(),
+                AncientOption<ThoughtFibers>()
             ),
             MakePool(
                 AncientOption<ReclaimedQuiche>(),
                 AncientOption<StrangeKey>(),
-                AncientOption<MeltingCandle>(),
+                AncientOption<MeltingCandle>()/*,
                 AncientOption<SpikedCirclet>(3, relic =>
                 {
                     if (Owner != null)
                         relic.SetupForPlayer(Owner);
                     return relic;
-                }),
+                })*/,
                 AncientOption<ShadowCrystal>(3, relic =>
                 {
                     if (Owner != null)

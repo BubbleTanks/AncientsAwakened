@@ -285,5 +285,9 @@
 
   "ANCIENTSAWAKENED-STRANGE_KEY.description": "Obtain 1 of 3 Rare relics. Lose 15 Max HP.",
   "ANCIENTSAWAKENED-STRANGE_KEY.flavor": "",
-  "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key"
+  "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key",
+
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.description": "",
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.flavor": "",
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.title": "Thought Fibers"
 }
