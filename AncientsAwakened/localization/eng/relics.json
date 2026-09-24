@@ -294,5 +294,9 @@
   "ANCIENTSAWAKENED-DARK_SPARK.description": "Add 3 floors to every Act. Reroll the current Act.",
   "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Add 3 floors to every Act. Reroll the current Act.{FourPlusMP:cond:\n(Maximum additional floors is 9. Can be changed in config.)|}",
   "ANCIENTSAWAKENED-DARK_SPARK.flavor": "",
-  "ANCIENTSAWAKENED-DARK_SPARK.title": "DarkSpark"
+  "ANCIENTSAWAKENED-DARK_SPARK.title": "DarkSpark",
+
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.description": "",
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.flavor": "",
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.title": "Thought Fibers"
 }
