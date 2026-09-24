@@ -18,5 +18,11 @@
 
   "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.title": "Enable Global Scanner in Multiplayer",
   "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.title": "Global Relics Sebastian's Scanner",
-  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.desc": "Causes Sebastian's Scanner to give relics to all players in multiplayer, regardless of if they have the relic or not."
+  "ANCIENTSAWAKENED-MULTIPLAYER_OP_SCANNER.hover.desc": "Causes Sebastian's Scanner to give relics to all players in multiplayer, regardless of if they have the relic or not.",
+
+  "ANCIENTSAWAKENED-GASTER.title": "Gaster Relic Configs",
+
+  "ANCIENTSAWAKENED-UNCAP_DARK_SPARK.title": "Uncap Dark Spark",
+  "ANCIENTSAWAKENED-UNCAP_DARK_SPARK.hover.title": "Dark Spark Floor Cap",
+  "ANCIENTSAWAKENED-UNCAP_DARK_SPARK.hover.desc": "Removes Dark Spark's hard 9 additional floor cap. WARNING: THIS WILL CAUSE LAG AT 9+ FLOORS. BE WARY OF THIS."
 }
