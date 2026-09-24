@@ -24,6 +24,7 @@ public class GasterAncient : AncientsAwakenedAncient
                 AncientOption<ReclaimedQuiche>(),
                 AncientOption<StrangeKey>(),
                 AncientOption<MeltingCandle>(),
+                AncientOption<SnowFeather>(),
                 AncientOption<SpikedCirclet>(3, relic =>
                 {
                     if (Owner != null)
