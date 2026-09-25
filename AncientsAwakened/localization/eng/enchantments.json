@@ -21,5 +21,8 @@
 
   "ANCIENTSAWAKENED-ORDAINED.description": "When you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
   "ANCIENTSAWAKENED-ORDAINED.extraCardText": "Whenever you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
-  "ANCIENTSAWAKENED-ORDAINED.title": "Ordained"
+  "ANCIENTSAWAKENED-ORDAINED.title": "Ordained",
+
+  "ANCIENTSAWAKENED-STRONGER.description": "Increase Damage and [gold]Block[/gold] gained from this card by {Amount}",
+  "ANCIENTSAWAKENED-STRONGER.title": "Stronger"
 }

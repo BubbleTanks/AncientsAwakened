@@ -26,6 +26,8 @@ public class GasterAncient : AncientsAwakenedAncient
             MakePool(
                 AncientOption<ReclaimedQuiche>(),
                 AncientOption<StrangeKey>(),
+                AncientOption<MeltingCandle>(),
+                AncientOption<SnowFeather>(),
                 AncientOption<MeltingCandle>()/*,
                 AncientOption<SpikedCirclet>(3, relic =>
                 {
