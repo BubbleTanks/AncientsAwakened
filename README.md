@@ -17,6 +17,8 @@ Korean Localization from F_iS_ma
 Japanese Localization from Sashimi_knife    
 Simplified Chinese Localization from youyihj    
 
+# Additional Credits
+Thank you to BlackHero20 and Fulgur for the **Snow Feather** and its art. Very cool (pun intended).
 
 # Art Credits
 
@@ -48,6 +50,9 @@ _Lunatic Cultist Starshine Card Full-Art Card Art_ by **Mike Cerveni**
 _Lunatic Cultist Destruction Card Full-Art Card Art_ **Kristian Tsvetanov**    
 _Lunatic Cultist Inspiration Card Full-Art Card Art_ by **u/LLS86** on Reddit    
 _Lunatic Cultist Guidance Card Full-Art Card Art_ by **PaulaLoomis**    
+
+_Gaster Ancient Art_ by unknown artist
+
 ### Commissions
 
 **starstruck\_venus** for Mithrix's, \& Sebastian's Map Icon \& Dialogue Icon
