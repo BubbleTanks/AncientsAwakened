@@ -1,4 +1,6 @@
-﻿namespace AncientsAwakened.AncientsAwakenedCode.Extensions;
+﻿using Godot;
+
+namespace AncientsAwakened.AncientsAwakenedCode.Extensions;
 
 //Mostly utilities to get asset paths.
 public static class StringExtensions
@@ -10,22 +12,38 @@ public static class StringExtensions
 
     public static string CardImagePath(this string path)
     {
-        return Path.Join(AncientsAwakenedMain.ResPath, "images", "card_portraits", path);
+        path = Path.Join(AncientsAwakenedMain.ResPath, "images", "card_portraits", path);
+        if (ResourceLoader.Exists(path)) return path;
+
+        AncientsAwakenedMain.Logger.Info("Could not find card image path: " + path);
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "card_portraits", "card.png");
     }
 
     public static string BigCardImagePath(this string path)
     {
-        return Path.Join(AncientsAwakenedMain.ResPath, "images", "card_portraits", "big", path);
+        path = Path.Join(AncientsAwakenedMain.ResPath, "images", "card_portraits", "big", path);
+        if (ResourceLoader.Exists(path)) return path;
+
+        AncientsAwakenedMain.Logger.Info("Could not find big card image path: " + path);
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "card_portraits", "big", "card.png");
     }
 
     public static string PowerImagePath(this string path)
     {
-        return Path.Join(AncientsAwakenedMain.ResPath, "images", "powers", path);
+        path = Path.Join(AncientsAwakenedMain.ResPath, "images", "powers", path);
+        if (ResourceLoader.Exists(path)) return path;
+
+        AncientsAwakenedMain.Logger.Info("Could not find power image path: " + path);
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "powers", "power.png");
     }
 
     public static string BigPowerImagePath(this string path)
     {
-        return Path.Join(AncientsAwakenedMain.ResPath, "images", "powers", "big", path);
+        path = Path.Join(AncientsAwakenedMain.ResPath, "images", "powers", "big", path);
+        if (ResourceLoader.Exists(path)) return path;
+
+        AncientsAwakenedMain.Logger.Info("Could not find big power image path: " + path);
+        return Path.Join(AncientsAwakenedMain.ResPath, "images", "powers", "big", "power.png");
     }
 
     public static string RelicImagePath(this string path)
