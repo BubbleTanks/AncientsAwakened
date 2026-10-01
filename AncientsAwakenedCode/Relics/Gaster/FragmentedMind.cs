@@ -24,8 +24,9 @@ public sealed class FragmentedMind : AncientsAwakenedRelic
 
         foreach (var card in await CardSelectCmd.FromDeckGeneric(Owner, prefs))
         {
-            CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CloneCard(card), PileType.Deck));
-            CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CloneCard(card), PileType.Deck));
+            var clonedCard = Owner.RunState.CloneCard(card);
+            CardCmd.Upgrade(clonedCard);
+            CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(clonedCard, PileType.Deck));
         }
     }
 }

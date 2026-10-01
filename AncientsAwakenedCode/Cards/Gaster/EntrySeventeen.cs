@@ -12,7 +12,7 @@ using MegaCrit.Sts2.Core.Runs;
 namespace AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
 
 [Pool(typeof(EventCardPool))]
-public sealed class EntrySeventeen() : AncientsAwakenedCard(2,
+public sealed class EntrySeventeen() : AncientsAwakenedCard(1,
     CardType.Power, CardRarity.Ancient,
     TargetType.Self)
 {

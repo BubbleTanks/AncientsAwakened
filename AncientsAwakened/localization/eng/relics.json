@@ -249,8 +249,8 @@
   "ANCIENTSAWAKENED-ERODED_ONYX.flavor": "",
   "ANCIENTSAWAKENED-ERODED_ONYX.title": "Eroded Onyx",
 
-  "ANCIENTSAWAKENED-FRAGMENTED_MIND.description": "Choose a card in your deck to add 2 copies of",
-  "ANCIENTSAWAKENED-FRAGMENTED_MIND.selectionScreenPrompt": "Select a card to add 2 copies of.",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.description": "Choose a card in your deck to add an upgraded copy of",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.selectionScreenPrompt": "Select a card to add an upgraded copy of.",
   "ANCIENTSAWAKENED-FRAGMENTED_MIND.flavor": "",
   "ANCIENTSAWAKENED-FRAGMENTED_MIND.title": "Fragmented Mind",
   
@@ -298,7 +298,7 @@
   "ANCIENTSAWAKENED-DARK_SPARK.description": "Add 3 floors to every Act. Reroll the current Act.",
   "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Add 3 floors to every Act. Reroll the current Act.{FourPlusMP:cond:\n(Maximum additional floors is 9. Can be changed in config.)|}",
   "ANCIENTSAWAKENED-DARK_SPARK.flavor": "",
-  "ANCIENTSAWAKENED-DARK_SPARK.title": "DarkSpark",
+  "ANCIENTSAWAKENED-DARK_SPARK.title": "Dark Spark",
 
   "ANCIENTSAWAKENED-THOUGHT_FIBERS.description": "",
   "ANCIENTSAWAKENED-THOUGHT_FIBERS.flavor": "",
