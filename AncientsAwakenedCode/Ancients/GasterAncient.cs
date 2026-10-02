@@ -35,7 +35,7 @@ public class GasterAncient : AncientsAwakenedAncient
                         relic.SetupForPlayer(Owner);
                     return relic;
                 })*/,
-                AncientOption<ShadowCrystal>(3, relic =>
+                AncientOption<ShadowCrystal>(1, relic =>
                 {
                     if (Owner != null)
                         relic.SetupForPlayer(Owner);
