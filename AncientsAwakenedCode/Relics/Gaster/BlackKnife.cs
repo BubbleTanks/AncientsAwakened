@@ -37,7 +37,7 @@ public sealed class BlackKnife : AncientsAwakenedRelic
         if(Owner.RunState.CurrentRoom?.RoomType != RoomType.Elite || HasRelicBeenUsed)
             return;
         Flash();
-        var enemies = Owner.Creature.CombatState.Enemies;
+        var enemies = Owner.Creature.CombatState.Enemies.ToList();
         VfxCmd.PlayOnCreatureCenters(enemies, "vfx/vfx_bite");
         foreach (var creature in enemies)
             await CreatureCmd.Kill(creature);
