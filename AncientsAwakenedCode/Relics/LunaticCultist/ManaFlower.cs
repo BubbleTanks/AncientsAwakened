@@ -3,6 +3,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Entities.Potions;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
@@ -20,7 +21,7 @@ public sealed class ManaFlower : AncientsAwakenedRelic
     
     public override bool HasUponPickupEffect => true;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageDecrease", 15M)];
+    // protected override IEnumerable<DynamicVar> CanonicalVars => [new ("DamageDecrease", 15M)];
 
     public override async Task AfterPlayerTurnStart(
         PlayerChoiceContext choiceContext, 
@@ -29,7 +30,7 @@ public sealed class ManaFlower : AncientsAwakenedRelic
         if (player != Owner)
             return;
         Flash();
-        var potion = PotionFactory.CreateRandomPotionInCombat(Owner, Owner.RunState.Rng.CombatPotionGeneration).ToMutable();
+        var potion = PotionFactory.CreateRandomPotions(PotionFactory.GetPotionOptions(Owner).Where(p => p is { CanBeGeneratedInCombat: true, Rarity: PotionRarity.Common }), 1, Owner.RunState.Rng.CombatPotionGeneration).First().ToMutable();
         potion.Owner = Owner;
         ManaFlowerPatch.ManaFlowerPotionField.Set(potion, true);
         if (potion.TargetType == TargetType.AnyEnemy)
@@ -43,7 +44,7 @@ public sealed class ManaFlower : AncientsAwakenedRelic
             await potion.OnUseWrapper(choiceContext, Owner.Creature);
     }
     
-    public override decimal ModifyDamageMultiplicative(
+    /*public override decimal ModifyDamageMultiplicative(
         Creature? target,
         decimal amount,
         ValueProp props,
@@ -55,5 +56,5 @@ public sealed class ManaFlower : AncientsAwakenedRelic
             return 1M;
         var amount1 = 1.0M - (DynamicVars["DamageDecrease"].BaseValue / 100M);
         return amount1;
-    }
+    }*/
 }

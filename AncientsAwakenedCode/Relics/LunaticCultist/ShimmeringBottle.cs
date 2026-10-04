@@ -6,9 +6,7 @@ using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
-using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
@@ -17,9 +15,11 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 public sealed class ShimmeringBottle : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new EnergyVar(1)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.ForEnergy(this)];
-    public override decimal ModifyMaxEnergy(Player player, decimal amount) => player != Owner ? amount : amount + DynamicVars.Energy.IntValue;
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(1)];
+    public override decimal ModifyHandDraw(Player player, decimal count)
+    {
+        return player != Owner ? count : count + DynamicVars.Cards.IntValue;
+    }
     
     public override async Task BeforeSideTurnEndEarly(
         PlayerChoiceContext choiceContext,

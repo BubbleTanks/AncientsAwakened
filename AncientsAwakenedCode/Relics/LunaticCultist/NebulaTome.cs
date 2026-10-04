@@ -22,7 +22,7 @@ public sealed class NebulaTome : AncientsAwakenedRelic
     
     protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3), new ("Status", 2)];
     
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<CosmicDust>();
+    // protected override IEnumerable<IHoverTip> ExtraHoverTips => HoverTipFactory.FromCardWithCardHoverTips<CosmicDust>();
     
     protected override string IconBaseName => !HasBookmark() ? base.IconBaseName + "_2" : base.IconBaseName;
 
@@ -54,8 +54,9 @@ public sealed class NebulaTome : AncientsAwakenedRelic
     {
         if (player != Owner || Owner.PlayerCombatState?.TurnNumber != 1)
             return;
-        for (var i = 0; i < DynamicVars["Status"].BaseValue; ++i)
+        /*for (var i = 0; i < DynamicVars["Status"].BaseValue; ++i)
             CardCmd.PreviewCardPileAdd(await CardPileCmd.AddGeneratedCardToCombat(Owner.Creature.CombatState.CreateCard<CosmicDust>(Owner), PileType.Draw, Owner, CardPilePosition.Random));
+            */
         Flash();
         await Cmd.Wait(1f);
         var card = await CardSelectCmd.FromChooseACardScreen(choiceContext, CardFactory.GetDistinctForCombat(Owner, Owner.Character.CardPool.GetUnlockedCards(Owner.UnlockState, Owner.RunState.CardMultiplayerConstraint).Where(c => c.Type == CardType.Power), DynamicVars.Cards.IntValue, Owner.RunState.Rng.CombatCardGeneration).ToList(), Owner, true);

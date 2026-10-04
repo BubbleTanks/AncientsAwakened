@@ -142,7 +142,7 @@
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.flavor": "The hooded figure told you to be careful with these spells. It would be wise to listen.",
   "ANCIENTSAWAKENED-MYSTERIOUS_TABLET.title": "Mysterious Tablet",
 
-  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, procure and use a random [gold]Potion[/gold]. Attacks deal [blue]{DamageDecrease}%[/blue] less damage.",
+  "ANCIENTSAWAKENED-MANA_FLOWER.description": "At the start of your turn, procure and use a random Common [gold]Potion[/gold].",
   "ANCIENTSAWAKENED-MANA_FLOWER.flavor": "A lush, blue flower grows from the bottle. It's presence invigorates you.",
   "ANCIENTSAWAKENED-MANA_FLOWER.title": "Mana Flower",
 
@@ -154,7 +154,7 @@
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.flavor": "The strange metal in your hands seems to pulse and glow, as if growing even as you watch it.",
   "ANCIENTSAWAKENED-REFINED_CHLOROPHYTE.title": "Refined Chlorophyte",
 
-  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "Gain {Energy:energyIcons()} at the start of each turn. At the end of your turn, [gold]Transform[/gold] your [gold]Hand[/gold].",
+  "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.description": "At the start of each turn, draw [blue]{Cards}[/blue] additional {Cards:plural:card|cards}. At the end of your turn, [gold]Transform[/gold] your [gold]Hand[/gold].",
   "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.flavor": "The liquid inside holds prismatic hues. Anything brought too close begins to warp and shift, as if viewed through a kaleidoscope.",
   "ANCIENTSAWAKENED-SHIMMERING_BOTTLE.title": "Shimmering Bottle",
 
@@ -167,7 +167,7 @@
   "ANCIENTSAWAKENED-VORTEX_EYE.flavor": "As you touch the fragment, you feel your eye transform, and your focus is sharpened beyond reality.",
   "ANCIENTSAWAKENED-VORTEX_EYE.title": "Vortex Eye",
 
-  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of each combat, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold] that are free to play this turn, and shuffle [blue]{Status}[/blue] [gold]Cosmic Dusts[/gold] into your [gold]Draw Pile[/gold].",
+  "ANCIENTSAWAKENED-NEBULA_TOME.description": "At the start of each combat, choose [blue]1[/blue] of [blue]{Cards}[/blue] random Powers to add into your [gold]Hand[/gold]. It is free to play this turn.",
   "ANCIENTSAWAKENED-NEBULA_TOME.flavor": "The tome beckons you, promising power beyond your wildest dreams. Glowing dust coats your hands as you turn the pages.",
   "ANCIENTSAWAKENED-NEBULA_TOME.title": "Nebula Tome",
 
@@ -277,8 +277,8 @@
   "ANCIENTSAWAKENED-MELTING_CANDLE.flavor": "",
   "ANCIENTSAWAKENED-MELTING_CANDLE.title": "Melting Candle",
 
-  "ANCIENTSAWAKENED-STRANGE_KEY.description": "Upon pickup, obtain [blue]1[/blue] of [blue]{Repeat}[/blue] [gold]Rare Relics[/gold]. Lose [blue]{MaxHp}[/blue] Max HP.",
-  "ANCIENTSAWAKENED-STRANGE_KEY.eventDescription": "Obtain [blue]1[/blue] of [blue]{Repeat}[/blue] [gold]Rare Relics[/gold]. Lose [blue]{MaxHp}[/blue] Max HP.",
+  "ANCIENTSAWAKENED-STRANGE_KEY.description": "Upon pickup, obtain [blue]1[/blue] of [blue]{Repeat}[/blue] [gold]Rare Relics[/gold] and lose [blue]{MaxHp}[/blue] Max HP.",
+  "ANCIENTSAWAKENED-STRANGE_KEY.eventDescription": "Obtain [blue]1[/blue] of [blue]{Repeat}[/blue] [gold]Rare Relics[/gold] and lose [blue]{MaxHp}[/blue] Max HP.",
   "ANCIENTSAWAKENED-STRANGE_KEY.flavor": "",
   "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key",
 
