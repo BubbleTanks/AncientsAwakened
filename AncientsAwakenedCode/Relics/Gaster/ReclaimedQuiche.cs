@@ -4,6 +4,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 
@@ -15,12 +16,15 @@ public sealed class ReclaimedQuiche : AncientsAwakenedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
 
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new ("Potions", 2M)];
+    
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPotion<BottledDream>(), HoverTipFactory.FromCard<Guilty>()];
     
     public override async Task AfterObtained()
     {
-        await PotionCmd.TryToProcure<BottledDream>(Owner);
-        await PotionCmd.TryToProcure<BottledDream>(Owner);
+        
+        for(var i = 0; i < DynamicVars["Potions"].IntValue; i++)
+            await PotionCmd.TryToProcure<BottledDream>(Owner);
         await CardPileCmd.AddCurseToDeck<Guilty>(Owner);
     }
 }

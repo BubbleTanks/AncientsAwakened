@@ -13,10 +13,8 @@ public static class CardFactoryPatch
     {
         public static IEnumerable<CardModel> Postfix(IEnumerable<CardModel> __result)
         {
-            
-            IEnumerable<CardModel> card = __result.Where(c => c.VisualCardPool is not PerfectedPool);
+            var card = __result.Where(c => !CardPoolPatch.SpecialTokenPools.Contains(c.VisualCardPool));
             return card;
-
         }
     }
     

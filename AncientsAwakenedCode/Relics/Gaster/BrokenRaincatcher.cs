@@ -20,10 +20,10 @@ public sealed class BrokenRaincatcher : AncientsAwakenedRelic
         IReadOnlyList<Creature> participants,
         ICombatState combatState)
     {
-        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState.TurnNumber > 1)
+        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState?.TurnNumber > 1)
             return;
         var currentRoom = combatState.RunState.CurrentRoom;
-        if ((currentRoom != null ? (currentRoom.RoomType != RoomType.Elite ? 1 : 0) : 1) != 0)
+        if ((currentRoom != null ? currentRoom.RoomType != RoomType.Elite ? 1 : 0 : 1) != 0)
             return;
         Flash();
         await PotionCmd.TryToProcure(PotionFactory.CreateRandomPotionInCombat(Owner, Owner.RunState.Rng.CombatPotionGeneration).ToMutable(), Owner);

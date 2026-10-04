@@ -4,9 +4,10 @@
   
   "ANCIENTSAWAKENED-SALTY.title": "Salty {Potion}",
 
-  "ANCIENTSAWAKENED-BOTTLED_DREAM.description": "",
+  "ANCIENTSAWAKENED-BOTTLED_DREAM.description": "Choose a card in your [gold]Hand[/gold] to [gold]Upgrade[/gold] permanently.",
+  "ANCIENTSAWAKENED-BOTTLED_DREAM.selectionScreenPrompt": "Choose a card to permanently Upgrade.",
   "ANCIENTSAWAKENED-BOTTLED_DREAM.title": "Bottled Dream",
 
-  "ANCIENTSAWAKENED-HOT_WAX.description": "",
+  "ANCIENTSAWAKENED-HOT_WAX.description": "Take [blue]{Damage}[/blue] damage. [red]Cannot be discarded.[/red]",
   "ANCIENTSAWAKENED-HOT_WAX.title": "Hot Wax"
 }

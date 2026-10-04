@@ -21,7 +21,7 @@ public sealed class FrigidCore : AncientsAwakenedRelic
         IReadOnlyList<Creature> participants,
         ICombatState combatState)
     {
-        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState.TurnNumber > 1)
+        if (!participants.Contains(Owner.Creature) || Owner.PlayerCombatState?.TurnNumber > 1)
             return;
         await OrbCmd.Channel<FrostOrb>(new BlockingPlayerChoiceContext(), Owner);
     }

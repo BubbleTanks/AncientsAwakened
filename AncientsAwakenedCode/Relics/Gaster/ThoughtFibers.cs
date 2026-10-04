@@ -25,9 +25,9 @@ public sealed class ThoughtFibers : AncientsAwakenedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [];
-
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [];
+    protected override bool RelicAllowedToSpawn(Player owner) => IsAllowed(owner.RunState);
+    
+    public override bool IsAllowed(IRunState runState) => runState.Players.Count > 1;
 
     public override async Task AfterObtained()
     {

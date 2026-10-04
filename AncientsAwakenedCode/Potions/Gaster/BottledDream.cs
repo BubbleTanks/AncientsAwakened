@@ -1,4 +1,5 @@
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.CardSelection;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Creatures;
@@ -18,7 +19,8 @@ public sealed class BottledDream : AncientsAwakenedPotion
     protected override async Task OnUse(PlayerChoiceContext choiceContext, Creature? target)
     {
         AssertValidForTargetedPotion(target);
-        var card = await CardSelectCmd.FromHandForUpgrade(choiceContext, Owner, this);
+        var prefs = new CardSelectorPrefs(SelectionScreenPrompt, 1);
+        var card = (await CardSelectCmd.FromHand(choiceContext,Owner, prefs, c => c.IsUpgradable, this)).FirstOrDefault();
         if (card == null)
             return;
         CardCmd.Upgrade(card);

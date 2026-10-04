@@ -1,5 +1,5 @@
-﻿using HarmonyLib;
-using MegaCrit.Sts2.Core.Logging;
+﻿using BaseLib.Audio;
+using HarmonyLib;
 using MegaCrit.Sts2.Core.Rewards;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
@@ -8,11 +8,15 @@ namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
 [HarmonyPatch(typeof(CardReward), nameof(CardReward.OnSkipped))]
 public static class SnowFeatherPatch
 {
+    private static readonly ModSound CancelSound = new("res://AncientsAwakened/audio/weird-route-cancel.mp3");
+    
     public static void Postfix(CardReward __instance)
     {
-        SnowFeather? feather = __instance.Player.GetRelic<SnowFeather>();
+        var feather = __instance.Player.GetRelic<SnowFeather>();
         if (feather == null || feather.WasDisabled)
             return;
         feather.WasDisabled = true;
+        // audio has to be played here so that it doesn't replay when loading the run.
+        ModAudio.PlaySoundInRun(CancelSound);
     }
 }

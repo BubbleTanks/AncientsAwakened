@@ -22,13 +22,13 @@ public sealed class SnowFeather : AncientsAwakenedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
     
-    private static readonly ModSound _pickupSound = new("res://AncientsAwakened/audio/weird-route-jingle.mp3");
+    private static readonly ModSound PickupSound = new("res://AncientsAwakened/audio/weird-route-jingle.mp3");
     
     private bool _wasDisabled;
     
     protected override IEnumerable<DynamicVar> CanonicalVars => 
     [
-        new DynamicVar("Stronger", 2M)
+        new("Stronger", 2M)
     ];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips =>
@@ -40,8 +40,8 @@ public sealed class SnowFeather : AncientsAwakenedRelic
         get => _wasDisabled;
         set
         {
-            this.AssertMutable();
-            this._wasDisabled = value;
+            AssertMutable();
+            _wasDisabled = value;
             
             if (value)
             {
@@ -55,30 +55,31 @@ public sealed class SnowFeather : AncientsAwakenedRelic
         List<CardCreationResult> cardRewards,
         CardCreationOptions options)
     {
-        if (player != this.Owner || !options.Flags.HasFlag((Enum) CardCreationFlags.IsCardReward) || this.WasDisabled)
+        if (player != Owner || !options.Flags.HasFlag(CardCreationFlags.IsCardReward) || WasDisabled)
             return false;
         
-        Stronger stronger = ModelDb.Enchantment<Stronger>();
+        var stronger = ModelDb.Enchantment<Stronger>();
         
-        foreach (CardCreationResult cardReward in cardRewards)
+        foreach (var cardReward in cardRewards)
         {
-            CardModel card1 = cardReward.Card;
-            if (stronger.CanEnchant(card1))
-            {
-                CardModel card2 = this.Owner.RunState.CloneCard(card1);
-                CardCmd.Enchant<Stronger>(card2, this.DynamicVars["Stronger"].BaseValue);
-                cardReward.ModifyCard(card2, (RelicModel) this);
-            }
-            
+            var card1 = cardReward.Card;
+            if (!stronger.CanEnchant(card1)) 
+                continue;
+            var card2 = Owner.RunState.CloneCard(card1);
+            CardCmd.Enchant<Stronger>(card2, DynamicVars["Stronger"].BaseValue);
+            cardReward.ModifyCard(card2, this);
         }
         
         return true;
     }
     
-    //this is the function that controls the weird route jingle sound incase you wanna make it a config option.
+    // this is the function that controls the weird route jingle sound incase you wanna make it a config option.
     public override Task AfterCardChangedPiles(CardModel card, PileType oldPileType, AbstractModel? clonedBy)
     {
-        if (card.Owner != this.Owner || !LocalContext.IsMe(this.Owner))
+        if (WasDisabled)
+            return Task.CompletedTask;
+        
+        if (card.Owner != Owner || !LocalContext.IsMe(Owner))
             return Task.CompletedTask;
         
         if (oldPileType != PileType.None || card.Pile?.Type != PileType.Deck)
@@ -87,7 +88,7 @@ public sealed class SnowFeather : AncientsAwakenedRelic
         if (card.Enchantment is not Stronger)
             return Task.CompletedTask;
         
-        ModAudio.PlaySoundInRun(_pickupSound);
+        ModAudio.PlaySoundInRun(PickupSound);
         return Task.CompletedTask;
     }
 }

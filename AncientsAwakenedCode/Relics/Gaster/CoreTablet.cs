@@ -2,6 +2,7 @@ using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Entities.Relics;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Runs;
@@ -14,13 +15,15 @@ public sealed class CoreTablet : AncientsAwakenedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
     
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
+    
     public override bool HasUponPickupEffect => true;
 
     public override async Task AfterObtained()
     {
         var list = new List<Reward>();
         var options = CardCreationOptions.ForNonCombatWithDefaultOdds([Owner.Character.CardPool], c => c.Type == CardType.Power);
-        list.Add(new CardReward(options, 2, Owner));
+        list.Add(new CardReward(options, DynamicVars.Cards.IntValue, Owner));
         await RewardsCmd.OfferCustom(Owner, list);
     }
 }

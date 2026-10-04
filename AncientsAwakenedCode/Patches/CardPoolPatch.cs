@@ -1,4 +1,5 @@
-﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
+﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Gaster;
+using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
@@ -7,14 +8,24 @@ namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
 public static class CardPoolPatch
 {
+    internal static readonly List<CardPoolModel> SpecialTokenPools = 
+    [
+        ModelDb.CardPool<PerfectedPool>(), 
+        ModelDb.CardPool<ShadowPool>()
+    ];
+    
+    
     [HarmonyPatch(typeof(ModelDb), "get_AllSharedCardPools")]
     public class GetAllSharedCardPools
     {
-        public static void Postfix(IEnumerable<CardPoolModel> __result)
+        public static IEnumerable<CardPoolModel> Postfix(IEnumerable<CardPoolModel> __result)
         {
-
-            __result.AddItem(ModelDb.CardPool<PerfectedPool>());
-
+            var cardPoolModels = __result.ToList();
+            foreach (var cardPoolModel in SpecialTokenPools)
+            {
+                cardPoolModels.AddItem(cardPoolModel);
+            }
+            return cardPoolModels;
         }
     }
     
@@ -24,7 +35,7 @@ public static class CardPoolPatch
         public static void Postfix(NCardLibrary __instance)
         {
             var miscPoolFilter = __instance._poolFilters[__instance._miscPoolFilter];
-            __instance._poolFilters[__instance._miscPoolFilter] = c => c.VisualCardPool is not PerfectedPool && miscPoolFilter(c);
+            __instance._poolFilters[__instance._miscPoolFilter] = c => !SpecialTokenPools.Contains(c.VisualCardPool) && miscPoolFilter(c);
         }
     }
 }

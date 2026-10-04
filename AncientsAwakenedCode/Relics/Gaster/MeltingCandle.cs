@@ -20,21 +20,21 @@ public sealed class MeltingCandle : AncientsAwakenedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2), new ("Potions", 2M)];
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPotion<HotWax>()];
     
     public override async Task AfterObtained()
     {
-        CardSelectorPrefs prefs = new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, DynamicVars.Cards.IntValue);
-        foreach (CardModel original in (await CardSelectCmd.FromDeckForTransformation(Owner, prefs)).ToList())
+        var prefs = new CardSelectorPrefs(CardSelectorPrefs.TransformSelectionPrompt, DynamicVars.Cards.IntValue);
+        foreach (var original in (await CardSelectCmd.FromDeckForTransformation(Owner, prefs)).ToList())
         {
-            CardModel cardForTransform = CardFactory.CreateRandomCardForTransform(original, false, Owner.RunState.Rng.Niche);
+            var cardForTransform = CardFactory.CreateRandomCardForTransform(original, false, Owner.RunState.Rng.Niche);
             CardCmd.Upgrade(cardForTransform);
             await CardCmd.Transform(original, cardForTransform);
         }
         
-        await PotionCmd.TryToProcure<HotWax>(Owner);
-        await PotionCmd.TryToProcure<HotWax>(Owner);
+        for(var i = 0; i < DynamicVars["Potions"].IntValue; i++)
+            await PotionCmd.TryToProcure<HotWax>(Owner);
     }
 }

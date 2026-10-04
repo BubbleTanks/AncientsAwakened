@@ -232,25 +232,27 @@
   "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Bloodstained Snow",
 
 
-  "ANCIENTSAWAKENED-RINGING_PHONE.description": "Gain 100 gold. Procure a potion.",
+  "ANCIENTSAWAKENED-RINGING_PHONE.description": "Upon pickup, gain [blue]{Gold}[/blue] [gold]Gold[/gold] and procure [blue]{Potions}[/blue] random [gold]Potion[/gold].",
+  "ANCIENTSAWAKENED-RINGING_PHONE.eventDescription": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold] and procure [blue]{Potions}[/blue] random [gold]Potion[/gold].",
   "ANCIENTSAWAKENED-RINGING_PHONE.flavor": "",
   "ANCIENTSAWAKENED-RINGING_PHONE.title": "Ringing Phone",
 
-  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.description": "When enter elite combat, procure a potion",
+  "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.description": "At the start of [gold]Elite[/gold] combats, procure a [gold]Potion[/gold].",
   "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.flavor": "",
   "ANCIENTSAWAKENED-BROKEN_RAINCATCHER.title": "Broken Raincatcher",
 
-  "ANCIENTSAWAKENED-CORE_TABLET.description": "Choose 1 of 2 powers to add",
+  "ANCIENTSAWAKENED-CORE_TABLET.description": "Upon pickup, choose [blue]1[/blue] of [blue]{Cards}[/blue] Powers to add to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-CORE_TABLET.flavor": "",
   "ANCIENTSAWAKENED-CORE_TABLET.title": "Core Tablet",
 
-  "ANCIENTSAWAKENED-ERODED_ONYX.description": "Enchant a card in your deck with Steady",
+  "ANCIENTSAWAKENED-ERODED_ONYX.description": "Upon pickup, [gold]Enchant[/gold] a card with [purple]Steady[/purple].",
   "ANCIENTSAWAKENED-ERODED_ONYX.selectionScreenPrompt": "Select a card to enchant.",
   "ANCIENTSAWAKENED-ERODED_ONYX.flavor": "",
   "ANCIENTSAWAKENED-ERODED_ONYX.title": "Eroded Onyx",
 
-  "ANCIENTSAWAKENED-FRAGMENTED_MIND.description": "Choose a card in your deck to add an 2 copy of",
-  "ANCIENTSAWAKENED-FRAGMENTED_MIND.selectionScreenPrompt": "Select a card to add an 2 copy of.",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.description": "Upon pickup, obtain [blue]{Cards}[/blue] additional copies of a card in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.eventDescription": "Obtain [blue]{Cards}[/blue] additional copies of a card in your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-FRAGMENTED_MIND.selectionScreenPrompt": "Select a card to add 2 copies of.",
   "ANCIENTSAWAKENED-FRAGMENTED_MIND.flavor": "",
   "ANCIENTSAWAKENED-FRAGMENTED_MIND.title": "Fragmented Mind",
   
@@ -259,48 +261,49 @@
   "ANCIENTSAWAKENED-SHATTERED_HAND.flavor": "",
   "ANCIENTSAWAKENED-SHATTERED_HAND.title": "Shattered Hand",
 
-  "ANCIENTSAWAKENED-TWISTED_COIN.description": "act 1 boss drops 333 gold",
+  "ANCIENTSAWAKENED-TWISTED_COIN.description": "The Act 1 Boss drops [blue]{Gold}[/blue] [gold]Gold[/gold].",
   "ANCIENTSAWAKENED-TWISTED_COIN.flavor": "",
   "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin",
 
-  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "Replace a basic card with a new one.",
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into a shadow version}.",
   "ANCIENTSAWAKENED-SHADOW_CRYSTAL.flavor": "",
   "ANCIENTSAWAKENED-SHADOW_CRYSTAL.title": "Shadow Crystal",
-
-  "ANCIENTSAWAKENED-SPIKED_CIRCLET.description": "Replace your starter relic with a new one.",
-  "ANCIENTSAWAKENED-SPIKED_CIRCLET.flavor": "",
-  "ANCIENTSAWAKENED-SPIKED_CIRCLET.title": "Spiked Circlet",
-
-  "ANCIENTSAWAKENED-FRIGID_CORE.description": "At the start of combat, channel 1 Frost.",
-  "ANCIENTSAWAKENED-FRIGID_CORE.flavor": "",
-  "ANCIENTSAWAKENED-FRIGID_CORE.title": "Frigid Core",
-
-  "ANCIENTSAWAKENED-RECLAIMED_QUICHE.description": "Procure 2 Bottled Dreams. Add a Guilty to your Deck.",
+  
+  "ANCIENTSAWAKENED-RECLAIMED_QUICHE.description": "Upon pickup, procure [blue]{Potions}[/blue] [gold]Bottled Dreams[/gold] and add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-RECLAIMED_QUICHE.flavor": "",
   "ANCIENTSAWAKENED-RECLAIMED_QUICHE.title": "Reclaimed Quiche",
 
-  "ANCIENTSAWAKENED-MELTING_CANDLE.description": "Transform and Upgrade 2 cards. Procure 2 Hot Wax.",
+  "ANCIENTSAWAKENED-MELTING_CANDLE.description": "Upon pickup, [gold]Transform[/gold] and [gold]Upgrade[/gold] [blue]{Cards}[/blue] cards and procure [blue]{Potions}[/blue] [gold]Hot Wax[/gold].",
   "ANCIENTSAWAKENED-MELTING_CANDLE.flavor": "",
   "ANCIENTSAWAKENED-MELTING_CANDLE.title": "Melting Candle",
 
-  "ANCIENTSAWAKENED-STRANGE_KEY.description": "Obtain 1 of 3 Rare relics. Lose 15 Max HP.",
+  "ANCIENTSAWAKENED-STRANGE_KEY.description": "Upon pickup, obtain [blue]1[/blue] of [blue]{Repeat}[/blue] [gold]Rare Relics[/gold]. Lose [blue]{MaxHp}[/blue] Max HP.",
+  "ANCIENTSAWAKENED-STRANGE_KEY.eventDescription": "Obtain [blue]1[/blue] of [blue]{Repeat}[/blue] [gold]Rare Relics[/gold]. Lose [blue]{MaxHp}[/blue] Max HP.",
   "ANCIENTSAWAKENED-STRANGE_KEY.flavor": "",
   "ANCIENTSAWAKENED-STRANGE_KEY.title": "Strange Key",
 
-  "ANCIENTSAWAKENED-SNOW_FEATHER.description": "[gold]Enchant[/gold] all relevant cards in your card rewards with [purple]Stronger[/purple]. When you skip a card, disable this",
+  "ANCIENTSAWAKENED-SNOW_FEATHER.description": "[gold]Enchant[/gold] all card rewards with [purple]Stronger[/purple] until you skip a card reward.",
   "ANCIENTSAWAKENED-SNOW_FEATHER.flavor": "",
   "ANCIENTSAWAKENED-SNOW_FEATHER.title": "Snow Feather",
 
-  "ANCIENTSAWAKENED-BLACK_KNIFE.description": "Kill the first elite.",
+  "ANCIENTSAWAKENED-BLACK_KNIFE.description": "At the start of the next [gold]Elite[/gold] combat, kill ALL enemies.",
   "ANCIENTSAWAKENED-BLACK_KNIFE.flavor": "",
   "ANCIENTSAWAKENED-BLACK_KNIFE.title": "Black Knife",
 
-  "ANCIENTSAWAKENED-DARK_SPARK.description": "Add 3 floors to every Act. Reroll the current Act.",
-  "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Add 3 floors to every Act. Reroll the current Act.{FourPlusMP:cond:\n(Maximum additional floors is 9. Can be changed in config.)|}",
+  "ANCIENTSAWAKENED-DARK_SPARK.description": "Upon pickup, add [blue]{Floors}[/blue] floors to all Acts and reroll the current Act.",
+  "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Add [blue]{Floors}[/blue] floors to all Acts and reroll the current Act.{FourPlusMP:cond:|\n(Maximum additional floors is 9. Can be changed in config.)}",
   "ANCIENTSAWAKENED-DARK_SPARK.flavor": "",
   "ANCIENTSAWAKENED-DARK_SPARK.title": "Dark Spark",
 
-  "ANCIENTSAWAKENED-THOUGHT_FIBERS.description": "",
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.description": "Upon pickup, ALL players add a [gold]Multiplayer Card[/gold] to add to their [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-THOUGHT_FIBERS.flavor": "",
-  "ANCIENTSAWAKENED-THOUGHT_FIBERS.title": "Thought Fibers"
+  "ANCIENTSAWAKENED-THOUGHT_FIBERS.title": "Thought Fibers",
+
+  "ANCIENTSAWAKENED-SPIKED_CIRCLET.description": "Replace your starter relic with a new one. (PLACEHOLDER)",
+  "ANCIENTSAWAKENED-SPIKED_CIRCLET.flavor": "",
+  "ANCIENTSAWAKENED-SPIKED_CIRCLET.title": "Spiked Circlet",
+
+  "ANCIENTSAWAKENED-FRIGID_CORE.description": "At the start of each combat, [gold]Channel[/gold] [blue]{Frost}[/blue] [gold]Frost[/gold].",
+  "ANCIENTSAWAKENED-FRIGID_CORE.flavor": "",
+  "ANCIENTSAWAKENED-FRIGID_CORE.title": "Frigid Core"
 }
