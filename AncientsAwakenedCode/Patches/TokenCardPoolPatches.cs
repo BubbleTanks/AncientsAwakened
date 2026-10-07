@@ -1,14 +1,15 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Pools.Gaster;
 using AncientsAwakened.AncientsAwakenedCode.Pools.Mithrix;
 using HarmonyLib;
+using MegaCrit.Sts2.Core.Factories;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Nodes.Screens.CardLibrary;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public static class CardPoolPatch
+public static class TokenCardPoolPatches
 {
-    internal static readonly List<CardPoolModel> SpecialTokenPools = 
+    private static readonly List<CardPoolModel> SpecialTokenPools = 
     [
         ModelDb.CardPool<PerfectedPool>(), 
         ModelDb.CardPool<ShadowPool>()
@@ -36,6 +37,16 @@ public static class CardPoolPatch
         {
             var miscPoolFilter = __instance._poolFilters[__instance._miscPoolFilter];
             __instance._poolFilters[__instance._miscPoolFilter] = c => !SpecialTokenPools.Contains(c.VisualCardPool) && miscPoolFilter(c);
+        }
+    }
+    
+    [HarmonyPatch(typeof(CardFactory), "FilterForCombat")]
+    public class FilterForCombatPatch
+    {
+        public static IEnumerable<CardModel> Postfix(IEnumerable<CardModel> __result)
+        {
+            var card = __result.Where(c => !SpecialTokenPools.Contains(c.VisualCardPool));
+            return card;
         }
     }
 }

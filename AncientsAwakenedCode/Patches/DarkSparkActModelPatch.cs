@@ -10,7 +10,7 @@ using MegaCrit.Sts2.Core.Unlocks;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public static class ActModelPatch
+public static class DarkSparkActModelPatch
 {
     [HarmonyPatch(typeof(ActModel), nameof(ActModel.GetNumberOfRooms))]
     public class GetNumberOfRoomsPatch

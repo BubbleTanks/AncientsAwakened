@@ -15,7 +15,7 @@ using MegaCrit.Sts2.Core.ValueProps;
 namespace AncientsAwakened.AncientsAwakenedCode.Potions.Gaster;
 
 [Pool(typeof(EventPotionPool))]
-public sealed class HotWax : AncientsAwakenedPotion, NPotionPopupPatches.IDisablePotionDiscard
+public sealed class HotWax : AncientsAwakenedPotion, PotionDiscardPatch.IDisablePotionDiscard
 {
     public override PotionRarity Rarity => PotionRarity.Event;
     public override PotionUsage Usage => PotionUsage.AnyTime;

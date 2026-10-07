@@ -1,8 +1,9 @@
-﻿using BaseLib.Audio;
+﻿using AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
+using BaseLib.Audio;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Rewards;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Relics.Gaster;
+namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
 //patch dedicated to this cuz I couldn't find a hook for card rewards being skipped. this should work for every instance of a card being skipped, including events, which is nice. 
 [HarmonyPatch(typeof(CardReward), nameof(CardReward.OnSkipped))]
