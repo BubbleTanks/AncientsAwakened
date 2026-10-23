@@ -81,11 +81,9 @@ internal class MountainMap : ActMap
         }
 
         StartingMapPoint = original.StartingMapPoint;
-        BossMapPoint = original.BossMapPoint;
-        _secondBoss = original.SecondBossMapPoint;
-        
         if (original.SecondBossMapPoint != null)
         {
+            _secondBoss = original.SecondBossMapPoint;
         }
         else
         {
@@ -101,24 +99,28 @@ internal class MountainMap : ActMap
             relicCount--;
         }
         
+        BossMapPoint = original.BossMapPoint;
+        // BossMapPoint.coord.row -= relicCount;
+        // _secondBoss.coord.row -= relicCount;
+        
         if(relicCount <= 0 || _secondBoss == null)
             return;
         
-        /*var previous = _secondBoss;
+        var previous = _secondBoss;
 
         for (var i = 0; i < relicCount; i++)
         {
-            var bossPoint = new MapPoint(previous.coord.col, previous.coord.row + i + 1)
+            var bossPoint = new MapPoint(previous.coord.col, previous.coord.row + i)
             {
                 PointType = MapPointType.Boss,
                 CanBeModified = false
             };
             
-            // Grid[bossPoint.coord.col - 1, bossPoint.coord.row] = bossPoint;
+            Grid[bossPoint.coord.col, bossPoint.coord.row] = bossPoint;
 
-            // bossPoint.AddChildPoint(previous);
+            bossPoint.AddChildPoint(previous);
             previous = bossPoint;
-        }*/
+        }
     }
 
     public override MapPoint? SecondBossMapPoint => _secondBoss;
