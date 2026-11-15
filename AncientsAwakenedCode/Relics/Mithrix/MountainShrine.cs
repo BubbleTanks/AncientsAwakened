@@ -59,10 +59,11 @@ internal class MountainMap : ActMap
     {
         if (count <= 0)
             return;
+        var relicCount = count;
         
         var oldRows = original.GetRowCount();
         var columnCount = original.GetColumnCount();
-        Grid = new MapPoint?[columnCount, oldRows + count];
+        Grid = new MapPoint?[columnCount, oldRows + relicCount];
 
         for (var row = 1; row < oldRows; row++)
         {
@@ -80,12 +81,9 @@ internal class MountainMap : ActMap
         }
 
         StartingMapPoint = original.StartingMapPoint;
-
-        BossMapPoint = original.BossMapPoint;
-
-        _secondBoss = original.SecondBossMapPoint;
-        if (_secondBoss != null)
+        if (original.SecondBossMapPoint != null)
         {
+            _secondBoss = original.SecondBossMapPoint;
         }
         else
         {
@@ -98,41 +96,31 @@ internal class MountainMap : ActMap
             _secondBoss = secondBoss;
             var act = RunManager.Instance.State.Act;
             act.SetSecondBossEncounter(act.AllBossEncounters.First());
+            relicCount--;
         }
+        
+        BossMapPoint = original.BossMapPoint;
+        // BossMapPoint.coord.row -= relicCount;
+        // _secondBoss.coord.row -= relicCount;
+        
+        if(relicCount <= 0 || _secondBoss == null)
+            return;
+        
+        var previous = _secondBoss;
 
-        /*var restSites = BossMapPoint.parents.ToList();
-
-        foreach (var restSite in restSites)
+        for (var i = 0; i < relicCount; i++)
         {
-            Grid[restSite.coord.col, restSite.coord.row] = null;
-            restSite.coord.row += count;
-            Grid[restSite.coord.col, restSite.coord.row] = restSite;
-            
-            var parents = restSite.parents.ToList();
-            foreach (var parent in parents)
+            var bossPoint = new MapPoint(previous.coord.col, previous.coord.row + i)
             {
-                parent.RemoveChildPoint(restSite);
+                PointType = MapPointType.Boss,
+                CanBeModified = false
+            };
+            
+            Grid[bossPoint.coord.col, bossPoint.coord.row] = bossPoint;
 
-                var previous = parent;
-
-                for (var i = 0; i < count; i++)
-                {
-                    var shop = new MapPoint(parent.coord.col, parent.coord.row + i + 1)
-                    {
-                        PointType = MapPointType.Shop,
-                        CanBeModified = false
-                    };
-
-                    Grid[shop.coord.col, shop.coord.row] = shop;
-
-                    previous.AddChildPoint(shop);
-
-                    previous = shop;
-                }
-
-                previous.AddChildPoint(restSite);
-            }
-        }*/
+            bossPoint.AddChildPoint(previous);
+            previous = bossPoint;
+        }
     }
 
     public override MapPoint? SecondBossMapPoint => _secondBoss;

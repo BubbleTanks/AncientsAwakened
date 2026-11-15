@@ -3,7 +3,7 @@ using MegaCrit.Sts2.Core.Nodes.Potions;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Patches;
 
-public class NPotionPopupPatches
+public class PotionDiscardPatch
 {
     [HarmonyPatch(typeof(NPotionPopup), "RefreshButtons")]
     [HarmonyPatch(typeof(NPotionPopup), "_Ready")]
