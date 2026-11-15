@@ -1,5 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Mithrix;
-using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using AncientsAwakened.AncientsAwakenedCode.CrossModCompatability;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Context;

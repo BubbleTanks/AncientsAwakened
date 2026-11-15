@@ -7,6 +7,14 @@ namespace AncientsAwakened.AncientsAwakenedCode.UI;
 [ConfigHoverTipsByDefault]
 internal class AncientConfigs : SimpleModConfig
 {
+    [ConfigSection("Metrics")]
+    [ConfigHoverTip]
+    public static bool UploadMetrics { get; set; } = false;
+
+    [ConfigHideInUI]
+    [ConfigIgnoreRestoreDefaults]
+    public static bool UploadMetricsFtueSeen { get; set; } = false;
+    
     [ConfigSection("Mithrix")]
     public static bool MultiplayerFlawlessHammer { get; set; } = true;
     public static bool MultiplayerMonsoonCharm { get; set; } = false;
