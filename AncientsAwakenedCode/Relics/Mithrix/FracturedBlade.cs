@@ -43,7 +43,7 @@ public sealed class FracturedBlade : AncientsAwakenedRelic
     {
         if (cardPlay.Card.Owner == Owner && isFirstTurn)
         {
-            await CreatureCmd.LoseMaxHp(context, Owner.Creature, 1, false);
+            await CreatureCmd.LoseMaxHp(context, Owner.Creature, 1, null);
         }
     }
 }

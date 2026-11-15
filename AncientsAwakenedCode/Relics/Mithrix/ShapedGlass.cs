@@ -44,6 +44,6 @@ public sealed class ShapedGlass : AncientsAwakenedRelic
         }
 
         var amount = Owner.Creature.MaxHp / 2;
-        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner.Creature, amount, false);
+        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner.Creature, amount, null);
     }
 }
