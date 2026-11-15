@@ -22,7 +22,7 @@ public sealed class StrangeKey : AncientsAwakenedRelic
 
     public override async Task AfterObtained()
     {
-        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.MaxHp.BaseValue, false);
+        await CreatureCmd.LoseMaxHp(new ThrowingPlayerChoiceContext(), Owner.Creature, DynamicVars.MaxHp.BaseValue, null);
 
         List<Reward> rewards = [];
         for (var i = 0; i < DynamicVars.Repeat.BaseValue; i++)

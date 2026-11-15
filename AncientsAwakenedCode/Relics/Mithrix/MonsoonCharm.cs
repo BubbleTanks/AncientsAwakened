@@ -38,9 +38,9 @@ public sealed class MonsoonCharm : AncientsAwakenedRelic
         return Task.CompletedTask;
     }
     
-    public override bool IsAllowed(IRunState runState)
+    protected override bool IsAllowedInternal(IRunState runState)
     {
-        return runState.Players.Count == 1 || AncientConfigs.MultiplayerMonsoonCharm;
+        return (runState.Players.Count == 1 || AncientConfigs.MultiplayerMonsoonCharm) && runState.GameMode != GameMode.Blitz;
     }
 
     protected override bool RelicAllowedToSpawn(Player owner)

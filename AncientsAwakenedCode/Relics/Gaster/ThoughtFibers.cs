@@ -27,7 +27,7 @@ public sealed class ThoughtFibers : AncientsAwakenedRelic
 
     protected override bool RelicAllowedToSpawn(Player owner) => IsAllowed(owner.RunState);
     
-    public override bool IsAllowed(IRunState runState) => runState.Players.Count > 1;
+    protected override bool IsAllowedInternal(IRunState runState) => runState.Players.Count > 1;
 
     public override async Task AfterObtained()
     {
