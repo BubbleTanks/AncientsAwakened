@@ -20,8 +20,6 @@ public sealed class LunaticRitual() : AncientsAwakenedCard(1,
     
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<RitualPower>()];
 
-    public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Innate];
-
     protected override async Task OnPlay(
         PlayerChoiceContext choiceContext,
         CardPlay play)

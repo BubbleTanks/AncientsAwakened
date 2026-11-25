@@ -2,20 +2,12 @@
 using AncientsAwakened.AncientsAwakenedCode.Enchantments.LunaticCultist;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.CardSelection;
-using MegaCrit.Sts2.Core.Combat;
-using MegaCrit.Sts2.Core.Combat.History.Entries;
 using MegaCrit.Sts2.Core.Commands;
-using MegaCrit.Sts2.Core.Entities.Cards;
-using MegaCrit.Sts2.Core.Entities.Creatures;
-using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
-using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Afflictions;
 using MegaCrit.Sts2.Core.Models.RelicPools;
-using MegaCrit.Sts2.Core.Nodes.CommonUi;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Relics.LunaticCultist;
 
@@ -25,7 +17,7 @@ public sealed class StardustShackles : AncientsAwakenedRelic
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
     public override bool HasUponPickupEffect => true;
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(5)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [..HoverTipFactory.FromEnchantment<Celestial>(), ..HoverTipFactory.FromAffliction<Shackled>()];
 
     public override async Task AfterObtained()
@@ -41,37 +33,5 @@ public sealed class StardustShackles : AncientsAwakenedRelic
             CardCmd.Enchant(canonicalEnchantment.ToMutable(), card, 1);
             CardCmd.Preview(card);
         }
-    }
-    
-    public override async Task AfterCardDrawn(
-        PlayerChoiceContext choiceContext,
-        CardModel card,
-        bool fromHandDraw)
-    {
-        if (card.Owner != Owner || Owner.Creature.CombatState?.CurrentSide != Owner.Creature.Side || !ModelDb.Affliction<Shackled>().CanAfflict(card) ||
-            CombatManager.Instance.History.Entries.OfType<CardAfflictedEntry>().Any(e => e.HappenedThisTurn(Owner.Creature.CombatState) && e.Actor == Owner.Creature && e.Affliction is Shackled))
-            return;
-        var affliction = await CardCmd.AfflictAndPreview<Shackled>([card], 1, CardPreviewStyle.None);
-        if (!affliction.Any() || card.Keywords.Contains(CardKeyword.Unplayable))
-            return;
-        CardCmd.ApplyKeyword(card, CardKeyword.Unplayable);
-    }
-    
-    public override Task AfterSideTurnEnd(
-        PlayerChoiceContext choiceContext,
-        CombatSide side,
-        IEnumerable<Creature> participants)
-    {
-        if (!participants.Contains(Owner.Creature))
-            return Task.CompletedTask;
-        var cards = Owner.PlayerCombatState?.AllCards ?? [];
-        foreach (var card in cards)
-        {
-            if (card.Affliction is not Shackled) continue;
-            CardCmd.ClearAffliction(card);
-            if(!card.CanonicalKeywords.Contains(CardKeyword.Unplayable))
-                CardCmd.RemoveKeyword(card, CardKeyword.Unplayable);
-        }
-        return Task.CompletedTask;
     }
 }

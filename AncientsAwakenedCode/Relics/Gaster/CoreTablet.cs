@@ -15,7 +15,7 @@ public sealed class CoreTablet : AncientsAwakenedRelic
     public override RelicRarity Rarity =>
         RelicRarity.Ancient;
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(2)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new CardsVar(3)];
     
     public override bool HasUponPickupEffect => true;
 

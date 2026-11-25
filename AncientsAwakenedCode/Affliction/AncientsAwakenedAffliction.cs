@@ -21,7 +21,7 @@ public abstract class AncientsAwakenedAffliction : AfflictionModel, ICustomModel
     }
     
     [HarmonyPatch(typeof(AfflictionModel), nameof(OverlayPath), MethodType.Getter)]
-    public static class CustomRestSiteIconPatch
+    public static class CustomAfflictionPatch
     {
         [HarmonyPrefix]
         public static bool UseAltTexture(AfflictionModel __instance, ref string __result)

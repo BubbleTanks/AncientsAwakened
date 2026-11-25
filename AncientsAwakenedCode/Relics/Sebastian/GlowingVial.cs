@@ -1,5 +1,6 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.RestSiteOptions.Sebastian;
 using BaseLib.Utils;
+using MegaCrit.Sts2.Core.Entities.Creatures;
 using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Entities.RestSite;
@@ -15,7 +16,7 @@ public sealed class GlowingVial : AncientsAwakenedRelic
 {
     public override RelicRarity Rarity => RelicRarity.Ancient;
     
-    private ICollection<RestSiteOption> _options;
+    private ICollection<RestSiteOption>? _options;
     protected override IEnumerable<IHoverTip> ExtraHoverTips => [new HoverTip(new LocString("rest_site_ui", "ANCIENTSAWAKENED-MUTATE.name"), new LocString("rest_site_ui", "ANCIENTSAWAKENED-MUTATE.description"))];
 
     public override bool TryModifyRestSiteOptions(Player player, ICollection<RestSiteOption> options)
@@ -36,20 +37,16 @@ public sealed class GlowingVial : AncientsAwakenedRelic
         {
             if (option is not Mutate) 
                 continue;
-            if (option.IsEnabled) 
-                return true;
             if (NRestSiteRoom.Instance == null) 
                 continue;
             
             var button = NRestSiteRoom.Instance.GetButtonForOption(option);
+            if (button == null) 
+                continue;
             
-            if (button != null)
-            {
-                button._isUnclickable = false;
-                button.Reload();
-            }
+            button._isUnclickable = false;
+            button.Reload();
         }
         return true;
     }
-    
 }

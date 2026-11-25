@@ -1,9 +1,8 @@
 using BaseLib.Utils;
-using MegaCrit.Sts2.Core.Entities.Players;
+using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models.RelicPools;
-using MegaCrit.Sts2.Core.Rewards;
 using MegaCrit.Sts2.Core.Rooms;
 using MegaCrit.Sts2.Core.Saves.Runs;
 
@@ -17,7 +16,7 @@ public sealed class TwistedCoin : AncientsAwakenedRelic
 
     private bool _hasTriggered;
 
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(333)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new GoldVar(222)];
     
     [SavedProperty]
     private bool HasTriggered
@@ -31,14 +30,17 @@ public sealed class TwistedCoin : AncientsAwakenedRelic
         }
     }
     
-    public override bool TryModifyRewards(Player player, List<Reward> rewards, AbstractRoom? room)
+    public override async Task AfterRoomEntered(AbstractRoom room)
     {
-        if (player != Owner || (room != null ? (room.RoomType != RoomType.Boss ? 1 : 0) : 1) != 0 || Owner.RunState.CurrentActIndex != 0 || HasTriggered)
-            return false;
+        if (HasTriggered || room is not { RoomType: RoomType.Shop })
+            return;
         Flash();
-        rewards.Add(new GoldReward(DynamicVars.Gold.IntValue, player));
+        if (Status != RelicStatus.Active)
+        {
+            Status = RelicStatus.Active;
+            return;
+        }
+        await PlayerCmd.GainGold(DynamicVars.Gold.BaseValue, Owner);
         HasTriggered = true;
-        Status = RelicStatus.Disabled;
-        return true;
     }
 }

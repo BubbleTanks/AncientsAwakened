@@ -14,7 +14,7 @@
   "ANCIENTSAWAKENED-SMOKEY.title": "Candlelit",
   
   
-  "ANCIENTSAWAKENED-CELESTIAL.description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
+  "ANCIENTSAWAKENED-CELESTIAL.description": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}. This card is Afflicted with [gold]Shackled[/gold] at the start of combat.",
   "ANCIENTSAWAKENED-CELESTIAL.extraCardText": "Draw [blue]{Cards}[/blue] {Cards:plural:card|cards}.",
   "ANCIENTSAWAKENED-CELESTIAL.title": "Celestial",
 
@@ -23,6 +23,7 @@
   "ANCIENTSAWAKENED-ORDAINED.extraCardText": "Whenever you draw this card, gain [blue]{StrengthPower}[/blue] [gold]Strength[/gold].",
   "ANCIENTSAWAKENED-ORDAINED.title": "Ordained",
 
+  
   "ANCIENTSAWAKENED-STRONGER.description": "Increase damage and [gold]Block[/gold] on this card by [blue]{Amount}[/blue].",
   "ANCIENTSAWAKENED-STRONGER.title": "Stronger"
 }

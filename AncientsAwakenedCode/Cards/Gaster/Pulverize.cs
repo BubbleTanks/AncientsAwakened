@@ -1,5 +1,4 @@
 using AncientsAwakened.AncientsAwakenedCode.Pools.Gaster;
-using BaseLib.Abstracts;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
@@ -16,23 +15,21 @@ namespace AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
 [Pool(typeof(IroncladCardPool))]
 public sealed class Pulverize() : AncientsAwakenedCard(2,
     CardType.Attack, CardRarity.Token,
-    TargetType.AnyEnemy), ITranscendenceCard
+    TargetType.AnyEnemy)
 {
     public override CardPoolModel VisualCardPool => ModelDb.CardPool<ShadowPool>();
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(10M, ValueProp.Move), new PowerVar<VulnerablePower>(3M)];
-    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<VulnerablePower>()];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(8M, ValueProp.Move), new PowerVar<StrengthPower>(1M)];
+    protected override IEnumerable<IHoverTip> ExtraHoverTips => [HoverTipFactory.FromPower<StrengthPower>()];
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await DamageCmd.Attack(DynamicVars.Damage.BaseValue).FromCard(this, cardPlay).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_blunt", tmpSfx: "blunt_attack.mp3").Execute(choiceContext);
-        await PowerCmd.Apply<VulnerablePower>(choiceContext, cardPlay.Target, DynamicVars.Vulnerable.BaseValue, Owner.Creature, this);
+        await PowerCmd.Apply<StrengthPower>(choiceContext, Owner.Creature, DynamicVars.Strength.BaseValue, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Damage.UpgradeValueBy(2M);
-        DynamicVars.Vulnerable.UpgradeValueBy(1M);
+        DynamicVars.Strength.UpgradeValueBy(1M);
     }
-
-    public CardModel GetTranscendenceTransformedCard() => ModelDb.Card<Crush>();
 }
