@@ -1,6 +1,6 @@
 ﻿using MegaCrit.Sts2.Core.Models;
 
-namespace AncientsAwakened.AncientsAwakenedCode.Extensions;
+namespace AncientsAwakened.AncientsAwakenedCode.CrossModCompatability;
 
 public static class CustomExperimentalCardExtension
 {

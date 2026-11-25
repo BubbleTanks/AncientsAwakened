@@ -1,4 +1,5 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Cards.Sebastian;
+using AncientsAwakened.AncientsAwakenedCode.CrossModCompatability;
 using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;

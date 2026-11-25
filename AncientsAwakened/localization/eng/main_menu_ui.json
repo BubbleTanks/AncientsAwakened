@@ -1,0 +1,10 @@
+﻿{
+  "ANCIENTSAWAKENED-METRICS_FTUE_PROMPT.header": "Help Improve Ancients Awakened?",
+  "ANCIENTSAWAKENED-METRICS_FTUE_PROMPT.body": "Would you like to anonymously share gameplay data to help improve Ancient Awakened's balance?\n\nCollected data includes run results, Ascension, card choices, your final deck and relics, encounters, and event or shop choices.\n\nNo Steam account information, account name, or persistent player identifier is collected.\n\nYou can change this setting later in Mod Settings.",
+
+  "ANCIENTSAWAKENED-METRICS_FTUE_ENABLED.header": "Gameplay Data Enabled",
+  "ANCIENTSAWAKENED-METRICS_FTUE_ENABLED.body": "Thank you! Anonymous run data will be shared to help with balance analysis.\n\nYou can disable this at any time in Mod Settings.",
+
+  "ANCIENTSAWAKENED-METRICS_FTUE_DISABLED.header": "Gameplay Data Disabled",
+  "ANCIENTSAWAKENED-METRICS_FTUE_DISABLED.body": "Gameplay data will not be shared.\n\nYou can enable this later in Mod Settings."
+}

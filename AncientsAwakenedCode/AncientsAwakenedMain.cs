@@ -2,6 +2,7 @@ using System.Reflection;
 using AncientsAwakened.AncientsAwakenedCode.UI;
 using BaseLib.Config;
 using Godot;
+using Godot.Bridge;
 using HarmonyLib;
 using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Modding;
@@ -20,7 +21,7 @@ public partial class AncientsAwakenedMain : Node
     
     public static void Initialize()
     {
-        Godot.Bridge.ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
+        ScriptManagerBridge.LookupScriptsInAssembly(Assembly.GetExecutingAssembly());
         Harmony harmony = new(ModId);
         ModConfigRegistry.Register(ModId, new AncientConfigs());
         harmony.PatchAll(Assembly.GetExecutingAssembly());

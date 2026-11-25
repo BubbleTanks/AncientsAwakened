@@ -1,7 +1,7 @@
 {
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.description": "В конце хода вы получаете дополнительный ход.",
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.smartDescription": "В конце хода вы получаете дополнительный ход.",
-  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Сломись Подо Мной",
+  "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Сломись подо мной",
 
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "Враги с неудобством наносят на [blue]15%[/blue] меньше урона и получают на [blue]30%[/blue] больше урона от Атак.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Наносит на [blue]15%[/blue] меньше урона и получает на [blue]30%[/blue] больше урона от атак на [blue]{Amount}[/blue] {Amount:plural:ход|ходов}.",
@@ -9,7 +9,7 @@
   
   
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Оглушенные существа не могут совершить ход.",
-  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:На следующий ход|На [blue]{}[/blue] следующих ходов} это существо будет [gold]оглушено[/gold].",
+  "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:На следующий ход|На [blue]{}[/blue] следующих хода} это существо будет [gold]оглушено[/gold].",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Оглушить на следующий ход",
 
   
