@@ -45,10 +45,10 @@
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.description": "Deal {Damage:diff()} damage to ALL enemies {Repeat:diff()} times.\nDraw {Cards:diff()} cards.",
   "ANCIENTSAWAKENED-TRIPLE_BARREL_SHOTGUN.title": "Triple Barrel Shotgun",
 
-  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "Will be opened after defeating the boss.",
+  "ANCIENTSAWAKENED-HEAVY_CRATE.description": "This enemy takes {Damage:diff()} damage.\nRelease a random reward from the crate.{InCombat:\n{HasDeckVersion:({RewardCount:cond:>1?You have {RewardCount:diff()} rewards left.|The crate is empty.})|(Seems like it only duplicated the box...)}|}",
   "ANCIENTSAWAKENED-HEAVY_CRATE.title": "Heavy Crate",
 
-  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "Removed from your [gold]Deck[/gold] after the Act {ActNumber:diff()} [gold]Treasure Room[/gold].",
+  "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "Removed from your [gold]Deck[/gold] upon emptying a [gold]Heavy Crate[/gold].",
   "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down",
 
   "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HpLoss:diff()} HP {Repeat:diff()} times.\nHeal {Heal:diff()} HP.",

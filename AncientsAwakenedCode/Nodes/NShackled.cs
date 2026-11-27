@@ -1,6 +1,5 @@
 using Godot;
 using MegaCrit.Sts2.Core.Assets;
-using MegaCrit.Sts2.Core.Models;
 
 public partial class NShackled : Control
 {

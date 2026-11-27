@@ -1,4 +1,3 @@
-using AncientsAwakened.AncientsAwakenedCode.Cards.Gaster;
 using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using AncientsAwakened.AncientsAwakenedCode.Relics.Gaster.CircletRelics;
 using BaseLib.Utils;
@@ -8,7 +7,6 @@ using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
-using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Models.Relics;
 using MegaCrit.Sts2.Core.Saves.Runs;

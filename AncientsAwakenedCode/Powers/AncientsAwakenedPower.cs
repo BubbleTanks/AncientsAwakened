@@ -1,6 +1,6 @@
-﻿using BaseLib.Abstracts;
+﻿using AncientsAwakened.AncientsAwakenedCode.Extensions;
+using BaseLib.Abstracts;
 using BaseLib.Extensions;
-using AncientsAwakened.AncientsAwakenedCode.Extensions;
 using Godot;
 
 namespace AncientsAwakened.AncientsAwakenedCode.Powers;

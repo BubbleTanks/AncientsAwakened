@@ -68,8 +68,8 @@
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.flavor": "\"This should contain everything you need to know about all the monsters and freaks you may encounter in the Spire. Written by yours truly, of course~\"",
   "ANCIENTSAWAKENED-WILDLIFE_DOCUMENTS.title": "Wildlife Documents",
 
-  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, [gold]Enchant[/gold] a Power with [purple]Charmed[/purple].",
-  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]Enchant[/gold] a Power with [purple]Charmed[/purple].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.description": "Upon pickup, [gold]Enchant[/gold] a Power with [purple]Charmed[/purple], and add [blue]1[/blue] [red]Debt[/red] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-SEBBY_CHARM.eventDescription": "[gold]Enchant[/gold] a Power with [purple]Charmed[/purple], and add [blue]1[/blue] [red]Debt[/red] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-SEBBY_CHARM.flavor": "\"Fine, fine. Since you're just so fond of me for some reason, how about a little charm? Best I can do, terribly sorry~\"",
   "ANCIENTSAWAKENED-SEBBY_CHARM.title": "Sebby Charm",
 

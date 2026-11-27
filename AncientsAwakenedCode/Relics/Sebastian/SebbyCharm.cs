@@ -10,6 +10,7 @@ using MegaCrit.Sts2.Core.Helpers;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.Models;
+using MegaCrit.Sts2.Core.Models.Cards;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Nodes;
 using MegaCrit.Sts2.Core.Nodes.Vfx;
@@ -45,6 +46,9 @@ public sealed class SebbyCharm : AncientsAwakenedRelic
         if (child == null)
             return;
         NRun.Instance?.GlobalUi.CardPreviewContainer.AddChildSafely(child);
+        await Cmd.Wait(0.75f);
+        CardCmd.PreviewCardPileAdd(await CardPileCmd.Add(Owner.RunState.CreateCard<Debt>(Owner), PileType.Deck), 2f); 
+        await Cmd.Wait(0.75f);
     }
     
 }

@@ -1,5 +1,4 @@
 ﻿using AncientsAwakened.AncientsAwakenedCode.Enchantments.Gaster;
-using AncientsAwakened.AncientsAwakenedCode.Relics;
 using BaseLib.Audio;
 using BaseLib.Utils;
 using MegaCrit.Sts2.Core.Commands;
@@ -9,7 +8,6 @@ using MegaCrit.Sts2.Core.Entities.Players;
 using MegaCrit.Sts2.Core.Entities.Relics;
 using MegaCrit.Sts2.Core.HoverTips;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.Logging;
 using MegaCrit.Sts2.Core.Models;
 using MegaCrit.Sts2.Core.Models.RelicPools;
 using MegaCrit.Sts2.Core.Runs;
