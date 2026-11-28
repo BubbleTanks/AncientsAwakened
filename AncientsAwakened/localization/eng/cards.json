@@ -51,7 +51,7 @@
   "ANCIENTSAWAKENED-WEIGHED_DOWN.description": "Removed from your [gold]Deck[/gold] upon emptying a [gold]Heavy Crate[/gold].",
   "ANCIENTSAWAKENED-WEIGHED_DOWN.title": "Weighed Down",
 
-  "ANCIENTSAWAKENED-CINDERBORN.description": "Lose {HpLoss:diff()} HP {Repeat:diff()} times.\nHeal {Heal:diff()} HP.",
+  "ANCIENTSAWAKENED-CINDERBORN.description": "Gain {Block:diff()} [gold]Block[/gold].\nLook at the top {Cards:diff()} of your [gold]Draw Pile[/gold]. Choose any number of them to [gold]Exhaust[/gold]",
   "ANCIENTSAWAKENED-CINDERBORN.title": "Cinderborn",
 
   "ANCIENTSAWAKENED-SLEIGHT_OF_HAND.description": "Apply {PoisonPower:diff()} [gold]Poison[/gold].\nWhenever you discard another card, add this to your [gold]Hand[/gold].",
@@ -60,7 +60,7 @@
   "ANCIENTSAWAKENED-NEBULA_HAMMER.description": "[gold]Forge[/gold] {Forge:diff()}.\nReturn this card to your [gold]Hand[/gold].",
   "ANCIENTSAWAKENED-NEBULA_HAMMER.title": "Starfaller",
 
-  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "[gold]Summon[/gold] {Summon:diff()}.\n[gold]Transform[/gold] your [gold]Hand[/gold] into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
+  "ANCIENTSAWAKENED-NECROTIC_BURST.description": "Apply [gold]Doom[/gold] {Doom:diff()}.\n[gold]Transform[/gold] your [gold]Hand[/gold] into [gold]{IfUpgraded:show:Necrotic Burst+|Necrotic Burst}[/gold].",
   "ANCIENTSAWAKENED-NECROTIC_BURST.title": "Necrotic Burst",
 
   "ANCIENTSAWAKENED-ELECTROLYZE.description": "[gold]Channel[/gold] {Repeat:diff()} [gold]Lightning[/gold].\nGain {FocusPower:diff()} [gold]Focus[/gold] this turn.",
@@ -102,31 +102,24 @@
   "ANCIENTSAWAKENED-GUIDANCE_CHOICE.description": "Permanently [gold]Upgrade[/gold] a card in your [gold]Deck[/gold] after combat.",
   "ANCIENTSAWAKENED-GUIDANCE_CHOICE.title": "Guidance",
 
-  
-  "ANCIENTSAWAKENED-STRESS.description": "Whenever you draw this card, you receive {StressPower:diff()} additional damage for the rest of combat.",
-  "ANCIENTSAWAKENED-STRESS.title": "Stress",
 
-  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.description": "Gain 1 [gold]Buffer[/gold].\nYour next Attack deals triple damage.",
-  "ANCIENTSAWAKENED-NOCTURNE_COMMUTE.title": "Nocturne Commune",
-
-
-  "ANCIENTSAWAKENED-PULVERIZE.description": "Deal {Damage:diff()} damage.\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
+  "ANCIENTSAWAKENED-PULVERIZE.description": "Deal {Damage:diff()} damage.\nGain {StrengthPower:diff()} [gold]Strength[/gold].",
   "ANCIENTSAWAKENED-PULVERIZE.title": "Pulverize",
 
-  "ANCIENTSAWAKENED-CRUSH.description": "Deal {Damage:diff()} damage.\nApply {VulnerablePower:diff()} [gold]Vulnerable[/gold].",
-  "ANCIENTSAWAKENED-CRUSH.title": "Crush",
-
-  "ANCIENTSAWAKENED-VESTIGE.description": "Gain {Block:diff()} [gold]Block[/gold].\nDiscard 1 card.",
+  "ANCIENTSAWAKENED-VESTIGE.description": "Gain {Block:diff()} [gold]Block[/gold].\nDeal {Damage:diff()} to ALL enemies.",
   "ANCIENTSAWAKENED-VESTIGE.title": "Vestige",
 
-  "ANCIENTSAWAKENED-REVERE.description": "Gain {Stars:starIcons()}.",
+  "ANCIENTSAWAKENED-REVERE.description": "[gold]Forge[/gold] {Forge:diff()}.\nPut a card from your [gold]Hand[/gold] on top of your [gold]Draw Pile[/gold].",
   "ANCIENTSAWAKENED-REVERE.title": "Revere",
 
-  "ANCIENTSAWAKENED-GUARDIAN.description": "[gold]Summon[/gold] {Summon:diff()}.",
-  "ANCIENTSAWAKENED-GUARDIAN.title": "Guardian",
+  "ANCIENTSAWAKENED-HARVEST.description": "Deal {Damage:diff()} damage.\nNext turn, gain {Energy:energyIcons()}.",
+  "ANCIENTSAWAKENED-HARVEST.title": "Harvest",
 
   "ANCIENTSAWAKENED-LUCID.description": "[gold]Channel[/gold] 1 [gold]Glass[/gold].",
   "ANCIENTSAWAKENED-LUCID.title": "Lucid",
+
+  "ANCIENTSAWAKENED-DARKEN.description": "At the start of your turn, deal {DarkenPower:diff()} damage to ALL enemies.",
+  "ANCIENTSAWAKENED-DARKEN.title": "Darken",
 
   "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.description": "Receive an additional card reward after combat.\nRemoved from your Deck after {Combats:diff()} {Combats:plural:combat|combats}.",
   "ANCIENTSAWAKENED-ENTRY_SEVENTEEN.title": "ENTRY SEVENTEEN"

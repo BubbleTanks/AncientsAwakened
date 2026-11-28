@@ -43,7 +43,7 @@ public sealed class HeavyCrate() : AncientsAwakenedCard(2, CardType.Quest, CardR
         }
     }
     
-    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(20M, ValueProp.Unpowered), new IntVar("RewardCount", Rewards.Length)];
+    protected override IEnumerable<DynamicVar> CanonicalVars => [new DamageVar(20M, ValueProp.Unpowered), new IntVar("RewardCount", 0)];
     public override int MaxUpgradeLevel => 0;
     public override IEnumerable<CardKeyword> CanonicalKeywords => [CardKeyword.Exhaust];
     
@@ -123,6 +123,7 @@ public sealed class HeavyCrate() : AncientsAwakenedCard(2, CardType.Quest, CardR
             }
             
             Rewards = list.ToArray();
+            ((HeavyCrate)DeckVersion).Rewards = list.ToArray();
         }
     }
     

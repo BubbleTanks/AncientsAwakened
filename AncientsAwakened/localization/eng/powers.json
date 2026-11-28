@@ -4,35 +4,38 @@
   "ANCIENTSAWAKENED-BREAK_BENEATH_ME_POWER.title": "Break Beneath Me",
 
   
+  
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.description": "Disadvantaged creatures deal [blue]15%[/blue] less attack damage and take [blue]30%[/blue] more damage from Attacks.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.smartDescription": "Deal [blue]15%[/blue] less attack damage and receive [blue]30%[/blue] more attack damage for [blue]{Amount}[/blue] {Amount:plural:turn|turns}.",
   "ANCIENTSAWAKENED-DISADVANTAGED_POWER.title": "Disadvantaged",
 
-  "ANCIENTSAWAKENED-CRATE_RARE_CARD_REWARD_POWER.description": "",
-  "ANCIENTSAWAKENED-CRATE_RARE_CARD_REWARD_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-CRATE_RARE_CARD_REWARD_POWER.description": "Gain an additional [gold]Rare[/gold] card reward at the end of combat.",
+  "ANCIENTSAWAKENED-CRATE_RARE_CARD_REWARD_POWER.smartDescription": "Gain [blue]{Amount}[/blue] additional [gold]Rare[/gold] card {Amount:plural:reward|rewards} at the end of combat.",
   "ANCIENTSAWAKENED-CRATE_RARE_CARD_REWARD_POWER.title": "Rare Card Reward",
 
-  "ANCIENTSAWAKENED-CRATE_CARD_REWARD_POWER.description": "",
-  "ANCIENTSAWAKENED-CRATE_CARD_REWARD_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-CRATE_CARD_REWARD_POWER.description": "Gain an additional card reward at the end of combat.",
+  "ANCIENTSAWAKENED-CRATE_CARD_REWARD_POWER.smartDescription": "Gain [blue]{Amount}[/blue] additional card {Amount:plural:reward|rewards} at the end of combat.",
   "ANCIENTSAWAKENED-CRATE_CARD_REWARD_POWER.title": "Card Reward",
 
-  "ANCIENTSAWAKENED-CRATE_POTION_REWARD_POWER.description": "",
-  "ANCIENTSAWAKENED-CRATE_POTION_REWARD_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-CRATE_POTION_REWARD_POWER.description": "Gain an additional [gold]Potion[/gold] reward at the end of combat.",
+  "ANCIENTSAWAKENED-CRATE_POTION_REWARD_POWER.smartDescription": "Gain [blue]{Amount}[/blue] additional [gold]Potion[/gold] {Amount:plural:reward|rewards} at the end of combat.",
   "ANCIENTSAWAKENED-CRATE_POTION_REWARD_POWER.title": "Potion Reward",
 
-  "ANCIENTSAWAKENED-CRATE_RELIC_REWARD_POWER.description": "",
-  "ANCIENTSAWAKENED-CRATE_RELIC_REWARD_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-CRATE_RELIC_REWARD_POWER.description": "Gain an additional Relic reward at the end of combat.",
+  "ANCIENTSAWAKENED-CRATE_RELIC_REWARD_POWER.smartDescription": "Gain [blue]{Amount}[/blue] additional Relic {Amount:plural:reward|rewards} at the end of combat.",
   "ANCIENTSAWAKENED-CRATE_RELIC_REWARD_POWER.title": "Relic Reward",
 
-  "ANCIENTSAWAKENED-CRATE_GOLD_REWARD_POWER.description": "",
-  "ANCIENTSAWAKENED-CRATE_GOLD_REWARD_POWER.smartDescription": "",
+  "ANCIENTSAWAKENED-CRATE_GOLD_REWARD_POWER.description": "Gain an additional [gold]Gold[/gold] reward at the end of combat.",
+  "ANCIENTSAWAKENED-CRATE_GOLD_REWARD_POWER.smartDescription": "Gain [blue]{Amount}[/blue] additional [gold]Gold[/gold] {Amount:plural:reward|rewards} at the end of combat.",
   "ANCIENTSAWAKENED-CRATE_GOLD_REWARD_POWER.title": "Gold Reward",
+  
   
   
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.description": "Stunned creatures cannot act.",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.smartDescription": "{Amount:plural:Next turn|For the next [blue]{}[/blue] turns}, this creature is [gold]Stunned[/gold].",
   "ANCIENTSAWAKENED-STUN_NEXT_TURN_POWER.title": "Stun Next Turn",
 
+  
   
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.description": "At the start of your turn, deal damage to all enemies.",
   "ANCIENTSAWAKENED-LUNATIC_RITUAL_POWER.smartDescription": "At the start of your turn, deal [blue]{Amount}[/blue] damage to all enemies.",
@@ -47,13 +50,12 @@
   "ANCIENTSAWAKENED-GUIDANCE_POWER.title": "Guidance",
 
 
-  "ANCIENTSAWAKENED-STRESS_POWER.description": "Stressed creatures take additional damage from Attacks.",
-  "ANCIENTSAWAKENED-STRESS_POWER.smartDescription": "Receive [blue]{Amount}[/blue] additional damage from Attacks.",
-  "ANCIENTSAWAKENED-STRESS_POWER.title": "Stress",
+  
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.description": "Gain an additional card reward at the end of combat.",
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.smartDescription": "Gain [blue]{Amount}[/blue] additional card {Amount:plural:reward|rewards} at the end of combat.",
+  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.title": "Entry Seventeen",
 
-
-
-  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.description": "",
-  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.smartDescription": "",
-  "ANCIENTSAWAKENED-ENTRY_SEVENTEEN_POWER.title": "Entry Seventeen"
+  "ANCIENTSAWAKENED-DARKEN_POWER.description": "At the start of your turn, deal damage to ALL enemies.",
+  "ANCIENTSAWAKENED-DARKEN_POWER.smartDescription": "At the start of your turn, deal [blue]{Amount}[/blue] damage to ALL enemies.",
+  "ANCIENTSAWAKENED-DARKEN_POWER.title": "Darken"
 }

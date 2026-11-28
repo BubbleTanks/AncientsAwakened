@@ -78,8 +78,8 @@
   "ANCIENTSAWAKENED-SHOTGUN_SHELLS.flavor": "\"Ahh, definitely one of my favorite inventions from the gizmo makers back in R&D. Just be sure to bring it back in one piece, yeah?\"",
   "ANCIENTSAWAKENED-SHOTGUN_SHELLS.title": "Shotgun Shells",
 
-  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Upon pickup, add [blue]1[/blue] [gold]Heavy Crate[/gold] and [blue]1[/blue] [red]Weighed Down[/red] to your [gold]Deck[/gold]. The crate will be opened after defeating the boss.",
-  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Add [blue]1[/blue] [gold]Heavy Crate[/gold] and [blue]1[/blue] [red]Weighed Down[/red] to your [gold]Deck[/gold]. The crate will be opened after defeating the boss.",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.description": "Upon pickup, add [blue]1[/blue] [gold]Heavy Crate[/gold] and [blue]1[/blue] [red]Weighed Down[/red] to your [gold]Deck[/gold].",
+  "ANCIENTSAWAKENED-SHIPPING_REQUEST.eventDescription": "Add [blue]1[/blue] [gold]Heavy Crate[/gold] and [blue]1[/blue] [red]Weighed Down[/red] to your [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.flavor": "\"The big crate? Yeah, you can have it, and whatever's inside. You'll have to head on up to get the key, though, I dropped the damn thing and I'm pretty sure the big guy at the top of this layer has it.\"",
   "ANCIENTSAWAKENED-SHIPPING_REQUEST.title": "Shipping Request",
   
@@ -186,55 +186,6 @@
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.flavor": "Tendrils perforate your sight, beckoning you with visions of greatness. You can feel your mind growing numb.",
   "ANCIENTSAWAKENED-WHISPERING_TENDRILS.title": "Whispering Tendrils",
 
-  
-  "ANCIENTSAWAKENED-IRON_CROWN.description": "At the start of each combat, gain [blue]{PlatingPower}[/blue] [gold]Plating[/gold]. You can no longer heal.",
-  "ANCIENTSAWAKENED-IRON_CROWN.flavor": "",
-  "ANCIENTSAWAKENED-IRON_CROWN.title": "Iron Crown",
-
-  "ANCIENTSAWAKENED-LOATHING.description": "Upon pickup, mark [blue]{Combats}[/blue] random combats. At the end of a marked combat, gain [blue]{MaxHp}[/blue] Max HP.",
-  "ANCIENTSAWAKENED-LOATHING.flavor": "",
-  "ANCIENTSAWAKENED-LOATHING.title": "Loathing",
-
-  "ANCIENTSAWAKENED-INFERNAL_FLAME.additionalRestSiteHealText": "Full Heal from Infernal Flame.",
-  "ANCIENTSAWAKENED-INFERNAL_FLAME.description": "Whenever you [gold]Rest[/gold], heal to full HP.",
-  "ANCIENTSAWAKENED-INFERNAL_FLAME.flavor": "",
-  "ANCIENTSAWAKENED-INFERNAL_FLAME.title": "Infernal Flame",
-
-  "ANCIENTSAWAKENED-EYE_OF_OBSESSION.description": "Powers cost 0 {energyPrefix:energyIcons(1)}. At the start of each turn, draw [blue]{Cards}[/blue] less {Cards:plural:card|cards}.",
-  "ANCIENTSAWAKENED-EYE_OF_OBSESSION.flavor": "",
-  "ANCIENTSAWAKENED-EYE_OF_OBSESSION.title": "Eye of Obsession",
-
-  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.description": "Upon pickup, obtain [blue]{Relics}[/blue] Common [gold]Relics[/gold] and add [blue]1[/blue] [red]Stress[/red] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.eventDescription": "Obtain [blue]{Relics}[/blue] Common [gold]Relics[/gold] and add [blue]1[/blue] [red]Stress[/red] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.flavor": "",
-  "ANCIENTSAWAKENED-EXEMPLAR_TROPHY.title": "Exemplar's Trophy",
-
-  "ANCIENTSAWAKENED-CARDINAL_STAR.description": "Upon pickup, [gold]Enchant[/gold] up to [blue]{Cards}[/blue] Attacks with [purple]Ordained[/purple] and add [blue]1[/blue] [red]Stress[/red] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-CARDINAL_STAR.eventDescription": "[gold]Enchant[/gold] up to [blue]{Cards}[/blue] Attacks with [purple]Ordained[/purple] and add [blue]1[/blue] [red]Stress[/red] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-CARDINAL_STAR.flavor": "",
-  "ANCIENTSAWAKENED-CARDINAL_STAR.title": "Cardinal's Star",
-
-  "ANCIENTSAWAKENED-EVANGELIST_BLADES.description": "Upon pickup, add [blue]1[/blue] [gold]Nocturne Commute[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-EVANGELIST_BLADES.eventDescription": "Add [blue]1[/blue] [gold]Nocturne Commute[/gold] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-EVANGELIST_BLADES.flavor": "",
-  "ANCIENTSAWAKENED-EVANGELIST_BLADES.title": "Evangelist's Blades",
-
-  "ANCIENTSAWAKENED-DEACON_FLESH.description": "Upon pickup, obtain a copy of all of your non-Ancient relics and add [blue]{Cards}[/blue] [red]Stresses[/red] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-DEACON_FLESH.eventDescription": "Obtain a copy of all of your non-Ancient relics and add [blue]{Cards}[/blue] [red]Stresses[/red] to your [gold]Deck[/gold].",
-  "ANCIENTSAWAKENED-DEACON_FLESH.flavor": "",
-  "ANCIENTSAWAKENED-DEACON_FLESH.title": "Deacon's Flesh",
-
-  "ANCIENTSAWAKENED-CURSED_CACHE.description": "Upon pickup, gain [blue]{Gold}[/blue] [gold]Gold[/gold], [blue]{Relics}[/blue] [gold]Relics[/gold], and [blue]{Cards}[/blue] [gold]Rare[/gold] card rewards. At the start of each combat, shuffle [blue]{Curses}[/blue] [red]Curses[/red] into your [gold]Draw Pile[/gold].",
-  "ANCIENTSAWAKENED-CURSED_CACHE.eventDescription": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold], [blue]{Relics}[/blue] [gold]Relics[/gold], and [blue]{Cards}[/blue] [gold]Rare[/gold] card rewards. At the start of each combat, shuffle [blue]{Curses}[/blue] [red]Curses[/red] into your [gold]Draw Pile[/gold].",
-  "ANCIENTSAWAKENED-CURSED_CACHE.flavor": "",
-  "ANCIENTSAWAKENED-CURSED_CACHE.title": "Cursed Cache",
-
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.description": "Upon pickup, [gold]Transform[/gold] any number of cards into random [red]Curses[/red] and, for every [red]Curse[/red] in your [gold]Deck[/gold], raise your Max HP by [blue]{MaxHp}[/blue] and obtain [blue]{Relics}[/blue] [gold]{Relics:plural:Relic|Relics}[/gold].",
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.eventDescription": "[gold]Transform[/gold] any number of cards into random [red]Curses[/red] and, for every [red]Curse[/red] in your [gold]Deck[/gold], raise your Max HP by [blue]{MaxHp}[/blue] and obtain [blue]{Relics}[/blue] [gold]{Relics:plural:Relic|Relics}[/gold].",
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.selectionScreenPrompt": "Select cards to [gold]Transform[/gold] into [red]Curses[/red].",
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.flavor": "",
-  "ANCIENTSAWAKENED-BLOODSTAINED_SNOW.title": "Bloodstained Snow",
-
 
   "ANCIENTSAWAKENED-RINGING_PHONE.description": "Upon pickup, gain [blue]{Gold}[/blue] [gold]Gold[/gold] and procure [blue]{Potions}[/blue] random [gold]Potion[/gold].",
   "ANCIENTSAWAKENED-RINGING_PHONE.eventDescription": "Gain [blue]{Gold}[/blue] [gold]Gold[/gold] and procure [blue]{Potions}[/blue] random [gold]Potion[/gold].",
@@ -269,8 +220,8 @@
   "ANCIENTSAWAKENED-TWISTED_COIN.flavor": "",
   "ANCIENTSAWAKENED-TWISTED_COIN.title": "Twisted Coin",
 
-  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "Upon pickup, [gold]Transform[/gold] {StarterCard.StringValue:cond:[gold]{StarterCard}[/gold] into [gold]{AncientCard}[/gold]|a starter card into a shadow version}.",
-  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.flavor": "",
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.description": "Upon pickup, obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Shadow Card[/gold]}.",
+  "ANCIENTSAWAKENED-SHADOW_CRYSTAL.flavor": "Obtain {AncientCard.StringValue:cond:[gold]{}[/gold]|an [gold]Shadow Card[/gold]}.",
   "ANCIENTSAWAKENED-SHADOW_CRYSTAL.title": "Shadow Crystal",
   
   "ANCIENTSAWAKENED-RECLAIMED_QUICHE.description": "Upon pickup, procure [blue]{Potions}[/blue] [gold]Bottled Dreams[/gold] and add [blue]1[/blue] [red]Guilty[/red] to your [gold]Deck[/gold].",
@@ -294,14 +245,19 @@
   "ANCIENTSAWAKENED-BLACK_KNIFE.flavor": "",
   "ANCIENTSAWAKENED-BLACK_KNIFE.title": "Black Knife",
 
-  "ANCIENTSAWAKENED-DARK_SPARK.description": "Upon pickup, add [blue]{Floors}[/blue] floors to all Acts and reroll the current Act.",
-  "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Add [blue]{Floors}[/blue] floors to all Acts and reroll the current Act.{FourPlusMP:cond:|\n(Maximum additional floors is 9. Can be changed in config.)}",
+  "ANCIENTSAWAKENED-DARK_SPARK.description": "Upon pickup, reroll the current Act. All Acts have an additional [blue]{Floors}[/blue] floors.",
+  "ANCIENTSAWAKENED-DARK_SPARK.eventDescription": "Reroll the current Act. All Acts have an additional [blue]{Floors}[/blue] floors.{FourPlusMP:cond:|\n(Maximum additional floors is 9. Can be changed in config.)}",
   "ANCIENTSAWAKENED-DARK_SPARK.flavor": "",
   "ANCIENTSAWAKENED-DARK_SPARK.title": "Dark Spark",
 
   "ANCIENTSAWAKENED-THOUGHT_FIBERS.description": "Upon pickup, ALL players add a [gold]Multiplayer Card[/gold] to add to their [gold]Deck[/gold].",
   "ANCIENTSAWAKENED-THOUGHT_FIBERS.flavor": "",
   "ANCIENTSAWAKENED-THOUGHT_FIBERS.title": "Thought Fibers",
+
+  "ANCIENTSAWAKENED-DYING_FICUS.description": "Receive a Colorless card reward after [blue]{RemainingCombats}[/blue] {RemainingCombats:plural:combat|combats}.",
+  "ANCIENTSAWAKENED-DYING_FICUS.flavor": "",
+  "ANCIENTSAWAKENED-DYING_FICUS.title": "Dying Ficus",
+
 
   "ANCIENTSAWAKENED-SPIKED_CIRCLET.description": "Replace your starter relic with a new one. (PLACEHOLDER)",
   "ANCIENTSAWAKENED-SPIKED_CIRCLET.flavor": "",

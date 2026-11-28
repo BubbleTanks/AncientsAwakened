@@ -18,7 +18,7 @@ public class GasterAncient : AncientsAwakenedAncient
                 AncientOption<ShatteredHand>(),
                 AncientOption<TwistedCoin>(),
                 AncientOption<ErodedOnyx>(),
-                AncientOption<FragmentedMind>(),
+                // AncientOption<FragmentedMind>(),
                 AncientOption<ThoughtFibers>(),
                 AncientOption<BlackKnife>(),
                 AncientOption<DarkSpark>()

@@ -45,7 +45,7 @@ public sealed class ShadowCrystal : AncientsAwakenedRelic
         },
         {
             ModelDb.Character<Necrobinder>().Id,
-            ModelDb.Card<Guardian>().Id
+            ModelDb.Card<Harvest>().Id
         },
         {
             ModelDb.Character<Defect>().Id,
@@ -121,16 +121,16 @@ public sealed class ShadowCrystal : AncientsAwakenedRelic
     
     private CardModel GetShadowCrystalCard(Player owner)
     {
-        ModelId? replacement = null;
+        ModelId? cardId = null;
         if (ShadowCrystalCards.TryGetValue(owner.Character.Id, out var shadowCard))
         {
-            replacement = shadowCard;
+            cardId = shadowCard;
         } 
         
-        if (replacement == null) 
-            return Owner.RunState.CreateCard<Doubt>(owner);
+        if (cardId == null) 
+            return Owner.RunState.CreateCard<Darken>(owner);
         
-        var cardModel = owner.RunState.CreateCard(ModelDb.GetById<CardModel>(replacement), owner);
+        var cardModel = owner.RunState.CreateCard(ModelDb.GetById<CardModel>(cardId), owner);
         
         return cardModel;
     }
